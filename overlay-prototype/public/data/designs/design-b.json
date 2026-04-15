@@ -1,0 +1,26 @@
+{
+  "id": "design-b",
+  "name": "Grilled Meals",
+  "backgroundImage": "/assets/test-bg.png",
+  "slots": [
+    { "itemId": "grilled-chicken",      "variantId": "meal",        "field": "price",    "x": 50,   "y": 24 },
+    { "itemId": "grilled-chicken",      "variantId": "meal",        "field": "calories", "x": 53.5, "y": 24 },
+    { "itemId": "grilled-chicken",      "variantId": "entree",      "field": "price",    "x": 50,   "y": 29 },
+    { "itemId": "grilled-chicken",      "variantId": "entree",      "field": "calories", "x": 53.5, "y": 29 },
+
+    { "itemId": "grilled-chicken-club", "variantId": "meal",        "field": "price",    "x": 50,   "y": 35 },
+    { "itemId": "grilled-chicken-club", "variantId": "meal",        "field": "calories", "x": 53.5, "y": 35 },
+    { "itemId": "grilled-chicken-club", "variantId": "entree",      "field": "price",    "x": 50,   "y": 40 },
+    { "itemId": "grilled-chicken-club", "variantId": "entree",      "field": "calories", "x": 53.5, "y": 40 },
+
+    { "itemId": "grilled-nuggets",      "variantId": "meal-8ct",    "field": "price",    "x": 50,   "y": 46 },
+    { "itemId": "grilled-nuggets",      "variantId": "meal-8ct",    "field": "calories", "x": 53.5, "y": 46 },
+    { "itemId": "grilled-nuggets",      "variantId": "entree-12ct", "field": "price",    "x": 50,   "y": 51 },
+    { "itemId": "grilled-nuggets",      "variantId": "entree-12ct", "field": "calories", "x": 53.5, "y": 51 },
+
+    { "itemId": "grilled-cool-wrap",    "variantId": "meal",        "field": "price",    "x": 50,   "y": 57 },
+    { "itemId": "grilled-cool-wrap",    "variantId": "meal",        "field": "calories", "x": 53.5, "y": 57 },
+    { "itemId": "grilled-cool-wrap",    "variantId": "entree",      "field": "price",    "x": 50,   "y": 62 },
+    { "itemId": "grilled-cool-wrap",    "variantId": "entree",      "field": "calories", "x": 53.5, "y": 62 }
+  ]
+}

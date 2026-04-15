@@ -1,0 +1,36 @@
+{
+  "id": "design-a",
+  "name": "Original Meals",
+  "backgroundImage": "/assets/test-bg.png",
+  "slots": [
+    { "itemId": "cfa-chicken",    "variantId": "meal",        "field": "price",    "x": 14,   "y": 25 },
+    { "itemId": "cfa-chicken",    "variantId": "meal",        "field": "calories", "x": 17.5, "y": 25 },
+    { "itemId": "cfa-chicken",    "variantId": "entree",      "field": "price",    "x": 14,   "y": 30 },
+    { "itemId": "cfa-chicken",    "variantId": "entree",      "field": "calories", "x": 17.5, "y": 30 },
+
+    { "itemId": "cfa-deluxe",     "variantId": "meal",        "field": "price",    "x": 14,   "y": 38 },
+    { "itemId": "cfa-deluxe",     "variantId": "meal",        "field": "calories", "x": 17.5, "y": 38 },
+    { "itemId": "cfa-deluxe",     "variantId": "entree",      "field": "price",    "x": 14,   "y": 43 },
+    { "itemId": "cfa-deluxe",     "variantId": "entree",      "field": "calories", "x": 17.5, "y": 43 },
+
+    { "itemId": "cfa-nuggets",    "variantId": "meal-8ct",    "field": "price",    "x": 14,   "y": 51 },
+    { "itemId": "cfa-nuggets",    "variantId": "meal-8ct",    "field": "calories", "x": 17.5, "y": 51 },
+    { "itemId": "cfa-nuggets",    "variantId": "entree-12ct", "field": "price",    "x": 14,   "y": 56 },
+    { "itemId": "cfa-nuggets",    "variantId": "entree-12ct", "field": "calories", "x": 17.5, "y": 56 },
+
+    { "itemId": "chicken-strips", "variantId": "meal-3ct",    "field": "price",    "x": 30,   "y": 25 },
+    { "itemId": "chicken-strips", "variantId": "meal-3ct",    "field": "calories", "x": 33.5, "y": 25 },
+    { "itemId": "chicken-strips", "variantId": "entree-4ct",  "field": "price",    "x": 30,   "y": 30 },
+    { "itemId": "chicken-strips", "variantId": "entree-4ct",  "field": "calories", "x": 33.5, "y": 30 },
+
+    { "itemId": "spicy-chicken",  "variantId": "meal",        "field": "price",    "x": 30,   "y": 38 },
+    { "itemId": "spicy-chicken",  "variantId": "meal",        "field": "calories", "x": 33.5, "y": 38 },
+    { "itemId": "spicy-chicken",  "variantId": "entree",      "field": "price",    "x": 30,   "y": 43 },
+    { "itemId": "spicy-chicken",  "variantId": "entree",      "field": "calories", "x": 33.5, "y": 43 },
+
+    { "itemId": "spicy-deluxe",   "variantId": "meal",        "field": "price",    "x": 30,   "y": 51 },
+    { "itemId": "spicy-deluxe",   "variantId": "meal",        "field": "calories", "x": 33.5, "y": 51 },
+    { "itemId": "spicy-deluxe",   "variantId": "entree",      "field": "price",    "x": 30,   "y": 56 },
+    { "itemId": "spicy-deluxe",   "variantId": "entree",      "field": "calories", "x": 33.5, "y": 56 }
+  ]
+}

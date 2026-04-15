@@ -14,7 +14,6 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 
 - This is a prototype; some existing code from another developer may be available
 - Production front-end will use Angular
-- Prototype can use vanilla JS if easier
 - We can also just start by working with 1 screen design before doing 3 simoultaneously
 
 ## Pipeline Overview
@@ -59,7 +58,3 @@ Expected format:
 - 4 stores total
 - Each store has 1–3 screens
 - Each store has an ID corresponding to its screen configuration
-
-## Question for Claude
-
-What is the best way to structure the front-end application for initial prototyping to align with production needs? Expected prototype behavior: display one menu layout in HTML, with toggles to switch between stores/screens and see designs and data update accordingly.

@@ -1,0 +1,83 @@
+{
+  "storeId": "store-001",
+  "items": {
+    "cfa-chicken": {
+      "variants": {
+        "meal":   { "price": 10.45, "calories": 1050 },
+        "entree": { "price": 6.49,  "calories": 440 }
+      }
+    },
+    "cfa-deluxe": {
+      "variants": {
+        "meal":   { "price": 11.15, "calories": 1100 },
+        "entree": { "price": 7.15,  "calories": 490 }
+      }
+    },
+    "cfa-nuggets": {
+      "variants": {
+        "meal-8ct":    { "price": 9.95,  "calories": 860 },
+        "entree-12ct": { "price": 7.25,  "calories": 380 }
+      }
+    },
+    "chicken-strips": {
+      "variants": {
+        "meal-3ct":    { "price": 9.75,  "calories": 910 },
+        "entree-4ct":  { "price": 8.65,  "calories": 410 }
+      }
+    },
+    "spicy-chicken": {
+      "variants": {
+        "meal":   { "price": 10.65, "calories": 1060 },
+        "entree": { "price": 6.65,  "calories": 450 }
+      }
+    },
+    "spicy-deluxe": {
+      "variants": {
+        "meal":   { "price": 11.35, "calories": 1110 },
+        "entree": { "price": 7.35,  "calories": 500 }
+      }
+    },
+    "grilled-chicken": {
+      "variants": {
+        "meal":   { "price": 11.65, "calories": 870 },
+        "entree": { "price": 7.65,  "calories": 320 }
+      }
+    },
+    "grilled-chicken-club": {
+      "variants": {
+        "meal":   { "price": 12.45, "calories": 1050 },
+        "entree": { "price": 8.45,  "calories": 490 }
+      }
+    },
+    "grilled-nuggets": {
+      "variants": {
+        "meal-8ct":    { "price": 10.15, "calories": 730 },
+        "entree-12ct": { "price": 6.55,  "calories": 210 }
+      }
+    },
+    "grilled-cool-wrap": {
+      "variants": {
+        "meal":   { "price": 11.95, "calories": 910 },
+        "entree": { "price": 7.95,  "calories": 350 }
+      }
+    },
+    "cobb-salad": {
+      "variants": {
+        "base":          { "price": 10.49, "calories": 710 },
+        "with-toppings": { "price": 12.49, "calories": 920 }
+      }
+    },
+    "market-salad": {
+      "variants": {
+        "base":          { "price": 10.29, "calories": 580 },
+        "with-toppings": { "price": 12.29, "calories": 780 }
+      }
+    },
+    "spicy-southwest-salad": {
+      "variants": {
+        "base":          { "price": 10.45, "calories": 700 },
+        "with-toppings": { "price": 12.45, "calories": 900 }
+      }
+    }
+  }
+}

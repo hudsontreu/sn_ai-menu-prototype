@@ -1,0 +1,15 @@
+{
+  "cfa-chicken":           { "name": "Chick-fil-A Chicken" },
+  "cfa-deluxe":            { "name": "Chick-fil-A Deluxe" },
+  "cfa-nuggets":           { "name": "Chick-fil-A Nuggets" },
+  "chicken-strips":        { "name": "Chick-n-Strips" },
+  "spicy-chicken":         { "name": "Spicy Chicken" },
+  "spicy-deluxe":          { "name": "Spicy Deluxe" },
+  "grilled-chicken":       { "name": "Grilled Chicken" },
+  "grilled-chicken-club":  { "name": "Grilled Chicken Club" },
+  "grilled-nuggets":       { "name": "Grilled Nuggets" },
+  "grilled-cool-wrap":     { "name": "Grilled Chicken Cool Wrap" },
+  "cobb-salad":            { "name": "Cobb Salad" },
+  "market-salad":          { "name": "Market Salad" },
+  "spicy-southwest-salad": { "name": "Spicy Southwest Salad" }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Overlay Prototype</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-group">
+        <label for="store-select">Store</label>
+        <select id="store-select"></select>
+      </div>
+      <div class="toolbar-group">
+        <label for="screen-select">Screen</label>
+        <select id="screen-select"></select>
+      </div>
+      <div class="toolbar-meta" id="toolbar-meta"></div>
+    </header>
+
+    <main class="stage">
+      <div class="menu-frame" id="menu-frame">
+        <div class="menu-empty" id="menu-empty">Select a store and screen.</div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

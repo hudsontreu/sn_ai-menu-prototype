@@ -1,0 +1,33 @@
+{
+  "stores": {
+    "store-001": {
+      "name": "Atlanta - Peachtree",
+      "screens": {
+        "01": "design-a",
+        "02": "design-b",
+        "03": "design-c"
+      }
+    },
+    "store-002": {
+      "name": "Birmingham - Summit",
+      "screens": {
+        "01": "design-a",
+        "02": "design-b"
+      }
+    },
+    "store-003": {
+      "name": "Nashville - Green Hills",
+      "screens": {
+        "01": "design-a"
+      }
+    },
+    "store-004": {
+      "name": "Charlotte - Uptown",
+      "screens": {
+        "01": "design-a",
+        "02": "design-b",
+        "03": "design-c"
+      }
+    }
+  }
+}

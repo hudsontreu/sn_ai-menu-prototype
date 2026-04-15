@@ -1,0 +1,21 @@
+{
+  "id": "design-c",
+  "name": "Salads",
+  "backgroundImage": "/assets/test-bg.png",
+  "slots": [
+    { "itemId": "cobb-salad",            "variantId": "base",          "field": "price",    "x": 74,   "y": 25 },
+    { "itemId": "cobb-salad",            "variantId": "base",          "field": "calories", "x": 77.5, "y": 25 },
+    { "itemId": "cobb-salad",            "variantId": "with-toppings", "field": "price",    "x": 74,   "y": 30 },
+    { "itemId": "cobb-salad",            "variantId": "with-toppings", "field": "calories", "x": 77.5, "y": 30 },
+
+    { "itemId": "market-salad",          "variantId": "base",          "field": "price",    "x": 74,   "y": 40 },
+    { "itemId": "market-salad",          "variantId": "base",          "field": "calories", "x": 77.5, "y": 40 },
+    { "itemId": "market-salad",          "variantId": "with-toppings", "field": "price",    "x": 74,   "y": 45 },
+    { "itemId": "market-salad",          "variantId": "with-toppings", "field": "calories", "x": 77.5, "y": 45 },
+
+    { "itemId": "spicy-southwest-salad", "variantId": "base",          "field": "price",    "x": 74,   "y": 55 },
+    { "itemId": "spicy-southwest-salad", "variantId": "base",          "field": "calories", "x": 77.5, "y": 55 },
+    { "itemId": "spicy-southwest-salad", "variantId": "with-toppings", "field": "price",    "x": 74,   "y": 60 },
+    { "itemId": "spicy-southwest-salad", "variantId": "with-toppings", "field": "calories", "x": 77.5, "y": 60 }
+  ]
+}

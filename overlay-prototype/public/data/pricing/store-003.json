@@ -1,0 +1,39 @@
+{
+  "storeId": "store-003",
+  "items": {
+    "cfa-chicken": {
+      "variants": {
+        "meal":   { "price": 10.85, "calories": 1050 },
+        "entree": { "price": 6.89,  "calories": 440 }
+      }
+    },
+    "cfa-deluxe": {
+      "variants": {
+        "meal":   { "price": 11.55, "calories": 1100 },
+        "entree": { "price": 7.55,  "calories": 490 }
+      }
+    },
+    "cfa-nuggets": {
+      "variants": {
+        "meal-8ct":    { "price": 10.35, "calories": 860 },
+        "entree-12ct": { "price": 7.65,  "calories": 380 }
+      }
+    },
+    "chicken-strips": {
+      "variants": {
+        "meal-3ct":   { "price": 10.15, "calories": 910 }
+      }
+    },
+    "spicy-chicken": {
+      "variants": {
+        "meal":   { "price": 11.05, "calories": 1060 },
+        "entree": { "price": 7.05,  "calories": 450 }
+      }
+    },
+    "spicy-deluxe": {
+      "variants": {
+        "entree": { "price": 7.75,  "calories": 500 }
+      }
+    }
+  }
+}

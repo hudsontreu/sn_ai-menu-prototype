@@ -1,0 +1,59 @@
+{
+  "storeId": "store-002",
+  "items": {
+    "cfa-chicken": {
+      "variants": {
+        "meal":   { "price": 9.95,  "calories": 1050 },
+        "entree": { "price": 5.99,  "calories": 440 }
+      }
+    },
+    "cfa-deluxe": {
+      "variants": {
+        "meal":   { "price": 10.65, "calories": 1100 },
+        "entree": { "price": 6.65,  "calories": 490 }
+      }
+    },
+    "cfa-nuggets": {
+      "variants": {
+        "meal-8ct":    { "price": 9.45,  "calories": 860 },
+        "entree-12ct": { "price": 6.75,  "calories": 380 }
+      }
+    },
+    "chicken-strips": {
+      "variants": {
+        "meal-3ct":    { "price": 9.25,  "calories": 910 },
+        "entree-4ct":  { "price": 8.15,  "calories": 410 }
+      }
+    },
+    "spicy-chicken": {
+      "variants": {
+        "meal":   { "price": 10.15, "calories": 1060 },
+        "entree": { "price": 6.15,  "calories": 450 }
+      }
+    },
+    "spicy-deluxe": {
+      "variants": {
+        "meal":   { "price": 10.85, "calories": 1110 },
+        "entree": { "price": 6.85,  "calories": 500 }
+      }
+    },
+    "grilled-chicken": {
+      "variants": {
+        "meal":   { "price": 11.15, "calories": 870 },
+        "entree": { "price": 7.15,  "calories": 320 }
+      }
+    },
+    "grilled-chicken-club": {
+      "variants": {
+        "meal":   { "price": 11.95, "calories": 1050 },
+        "entree": { "price": 7.95,  "calories": 490 }
+      }
+    },
+    "grilled-nuggets": {
+      "variants": {
+        "meal-8ct":    { "price": 9.65,  "calories": 730 },
+        "entree-12ct": { "price": 6.05,  "calories": 210 }
+      }
+    }
+  }
+}
