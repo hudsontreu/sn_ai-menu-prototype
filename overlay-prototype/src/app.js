@@ -77,7 +77,7 @@ async function renderCurrent() {
     items: state.items,
   });
 
-  toolbarMeta.textContent = `${store.name} · ${designId} · ${design.overlays.length} items`;
+  toolbarMeta.textContent = `${store.name} · ${designId} · ${design.slots.length} items`;
 }
 
 async function init() {
