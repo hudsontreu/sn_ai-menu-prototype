@@ -1,0 +1,17 @@
+{
+  "id": "design-a",
+  "name": "Original Meals",
+  "backgroundImage": "/assets/test-bg.png",
+  "slots": [
+    {
+      "itemId": "cfa-chicken",
+      "variantId": "unknown",
+      "field": "price",
+      "x": 0,
+      "y": 0,
+      "xPx": 0,
+      "yPx": 0,
+      "confidence": 0
+    }
+  ]
+}

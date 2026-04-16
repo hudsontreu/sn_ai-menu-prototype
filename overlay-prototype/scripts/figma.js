@@ -3,14 +3,48 @@ import { fileURLToPath } from 'node:url';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 import { query } from '@anthropic-ai/claude-agent-sdk';
-import { FIGMA_SYNC_CONFIG } from '../config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const DESIGNS_DIR = path.join(PROJECT_ROOT, 'public', 'data', 'designs');
-const ITEMS_PATH = path.join(PROJECT_ROOT, 'public', 'data', 'items.json');
+const DESIGNS_DIR = path.join(PROJECT_ROOT, 'data', 'designs');
+const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
 const ASSETS_DIR = path.join(PROJECT_ROOT, 'public', 'assets');
+
+const CONFIG = {
+  canvas: {
+    width: 2102,
+    height: 1336,
+  },
+  model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-5',
+  mcpUrl: process.env.FIGMA_MCP_URL || '',
+  systemPromptAppend: [
+    'You are extracting dynamic pricing/calorie overlay coordinates from menu-board designs.',
+    'Use MCP Figma tools to inspect the design assets and return strictly structured output.',
+    'Extract only dynamic value coordinates (price and calories), not static labels or item names.',
+    'Coordinates must map to a 2102x1336 design frame.',
+  ].join(' '),
+  designs: [
+    {
+      designId: 'design-a',
+      designUrl: 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=1-2&m=dev',
+      blankUrl: 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=3-35&m=dev',
+      outputAssetName: 'design-a-blank.png',
+    },
+    {
+      designId: 'design-b',
+      designUrl: '',
+      blankUrl: '',
+      outputAssetName: 'design-b-blank.png',
+    },
+    {
+      designId: 'design-c',
+      designUrl: '',
+      blankUrl: '',
+      outputAssetName: 'design-c-blank.png',
+    },
+  ],
+};
 
 const SLOT_OUTPUT_SCHEMA = {
   type: 'object',
@@ -47,26 +81,8 @@ function parseRequestedDesignIds(argv, configuredIds) {
   return [...new Set(explicit)];
 }
 
-function normalizeMcpServer(serverConfig) {
-  if (!serverConfig || typeof serverConfig !== 'object') {
-    throw new Error('Missing FIGMA_SYNC_CONFIG.mcpServer in config.js');
-  }
-
-  if ('type' in serverConfig) {
-    if (!serverConfig.url) {
-      throw new Error('FIGMA MCP HTTP/SSE server requires a url. Set FIGMA_MCP_URL or config.js mcpServer.url');
-    }
-    return serverConfig;
-  }
-
-  if ('command' in serverConfig) {
-    if (!serverConfig.command) {
-      throw new Error('FIGMA MCP stdio server requires command in config.js');
-    }
-    return serverConfig;
-  }
-
-  throw new Error('Invalid mcpServer config. Use either {type,url} or {command,args}');
+function cleanUrl(value) {
+  return String(value || '').trim().replace(/^@+/, '');
 }
 
 function round(value, decimals = 3) {
@@ -182,7 +198,7 @@ function buildPrompt({ designId, designUrl, blankUrl, itemsCatalog, canvas }) {
   ].join('\n');
 }
 
-async function runExtraction({ design, itemsCatalog, canvas, mcpServer }) {
+async function runExtraction({ design, itemsCatalog, canvas, model, mcpUrl, systemPromptAppend }) {
   const prompt = buildPrompt({
     designId: design.designId,
     designUrl: design.designUrl,
@@ -196,14 +212,17 @@ async function runExtraction({ design, itemsCatalog, canvas, mcpServer }) {
   for await (const message of query({
     prompt,
     options: {
-      model: FIGMA_SYNC_CONFIG.model,
+      model,
       systemPrompt: {
         type: 'preset',
         preset: 'claude_code',
-        append: FIGMA_SYNC_CONFIG.systemPromptAppend,
+        append: systemPromptAppend,
       },
       mcpServers: {
-        figma: mcpServer,
+        figma: {
+          type: 'http',
+          url: mcpUrl,
+        },
       },
       allowedTools: ['mcp__figma__*', 'WebFetch'],
       outputFormat: {
@@ -237,10 +256,12 @@ function validateConfiguredDesigns(designs) {
   const ids = new Set();
   for (const design of designs) {
     if (!design.designId || !design.designUrl || !design.blankUrl) {
-      throw new Error(`Each configured design requires designId, designUrl, and blankUrl. Invalid: ${JSON.stringify(design)}`);
+      throw new Error(
+        `Each configured design requires designId, designUrl, and blankUrl. Invalid: ${JSON.stringify(design)}`
+      );
     }
     if (ids.has(design.designId)) {
-      throw new Error(`Duplicate designId in config.js: ${design.designId}`);
+      throw new Error(`Duplicate designId in script config: ${design.designId}`);
     }
     ids.add(design.designId);
   }
@@ -251,20 +272,32 @@ async function main() {
     throw new Error('ANTHROPIC_API_KEY is required');
   }
 
-  const canvas = FIGMA_SYNC_CONFIG.canvas;
-  if (!canvas?.width || !canvas?.height) {
-    throw new Error('FIGMA_SYNC_CONFIG.canvas.width/height are required');
+  if (!CONFIG.canvas?.width || !CONFIG.canvas?.height) {
+    throw new Error('CONFIG.canvas.width/height are required');
   }
 
-  const configuredDesigns = FIGMA_SYNC_CONFIG.designs || [];
+  if (!cleanUrl(CONFIG.mcpUrl)) {
+    throw new Error('FIGMA_MCP_URL is required (set in .env)');
+  }
+
+  const configuredDesigns = (CONFIG.designs || [])
+    .map((d) => ({
+      ...d,
+      designUrl: cleanUrl(d.designUrl),
+      blankUrl: cleanUrl(d.blankUrl),
+    }))
+    .filter((d) => d.designUrl && d.blankUrl);
+
   validateConfiguredDesigns(configuredDesigns);
 
-  const mcpServer = normalizeMcpServer(FIGMA_SYNC_CONFIG.mcpServer);
-  const requestedIds = parseRequestedDesignIds(process.argv.slice(2), configuredDesigns.map((d) => d.designId));
+  const requestedIds = parseRequestedDesignIds(
+    process.argv.slice(2),
+    configuredDesigns.map((d) => d.designId)
+  );
   const selected = configuredDesigns.filter((d) => requestedIds.includes(d.designId));
 
   if (!selected.length) {
-    throw new Error(`No matching design IDs selected. Requested: ${requestedIds.join(', ')}`);
+    throw new Error(`No matching configured design IDs selected. Requested: ${requestedIds.join(', ')}`);
   }
 
   const itemsCatalog = await loadJson(ITEMS_PATH);
@@ -278,22 +311,26 @@ async function main() {
     const extracted = await runExtraction({
       design,
       itemsCatalog,
-      canvas,
-      mcpServer,
+      canvas: CONFIG.canvas,
+      model: CONFIG.model,
+      mcpUrl: cleanUrl(CONFIG.mcpUrl),
+      systemPromptAppend: CONFIG.systemPromptAppend,
     });
 
-    const normalizedSlots = (extracted.slots || []).map((slot) => normalizeSlot(slot, canvas));
+    const normalizedSlots = (extracted.slots || []).map((slot) => normalizeSlot(slot, CONFIG.canvas));
     if (!normalizedSlots.length) {
       throw new Error(`No slots returned for ${design.designId}`);
     }
 
-    const unknownItems = [...new Set(normalizedSlots.map((s) => s.itemId).filter((itemId) => !knownItemIds.has(itemId)))];
+    const unknownItems = [
+      ...new Set(normalizedSlots.map((s) => s.itemId).filter((itemId) => !knownItemIds.has(itemId))),
+    ];
     if (unknownItems.length) {
       console.warn(`Warning: ${design.designId} proposed unknown itemIds: ${unknownItems.join(', ')}`);
     }
 
     const outputAssetName = design.outputAssetName || `${design.designId}-blank.png`;
-    const blankImageSource = extracted.backgroundImageUrl || design.blankUrl;
+    const blankImageSource = cleanUrl(extracted.backgroundImageUrl) || design.blankUrl;
     const backgroundImage = await downloadImageToAssets(blankImageSource, outputAssetName);
 
     const nextDesign = {
@@ -304,10 +341,12 @@ async function main() {
     };
 
     await writeFile(designPath, `${JSON.stringify(nextDesign, null, 2)}\n`, 'utf8');
-    console.log(`Updated ${path.relative(PROJECT_ROOT, designPath)} with ${normalizedSlots.length} slots.`);
+    console.log(
+      `Updated ${path.relative(PROJECT_ROOT, designPath)} with ${normalizedSlots.length} slots and background ${backgroundImage}.`
+    );
   }
 
-  console.log('Done.');
+  console.log('Done. Run `npm run build:overlays` next.');
 }
 
 main().catch((error) => {
