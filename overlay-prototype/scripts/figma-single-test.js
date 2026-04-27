@@ -32,13 +32,11 @@ const OUTPUT_SCHEMA = {
           itemId: { type: 'string' },
           variantId: { type: 'string' },
           field: { type: 'string', enum: ['price', 'calories'] },
-          xPx: { type: 'number' },
-          yPx: { type: 'number' },
           x: { type: 'number' },
           y: { type: 'number' },
           confidence: { type: 'number' },
         },
-        required: ['itemId', 'variantId', 'field', 'confidence'],
+        required: ['itemId', 'variantId', 'field', 'x', 'y', 'confidence'],
       },
     },
   },
@@ -62,26 +60,14 @@ function normalizeSlot(slot) {
   const variantId = String(slot.variantId || '').trim();
   const field = String(slot.field || '').trim();
   const confidence = Number(slot.confidence);
+  const x = Number(slot.x);
+  const y = Number(slot.y);
 
   if (!itemId || !variantId) throw new Error('slot.itemId and slot.variantId are required');
   if (field !== 'price' && field !== 'calories') throw new Error(`Invalid field: ${field}`);
   if (!Number.isFinite(confidence)) throw new Error(`Invalid confidence: ${slot.confidence}`);
-
-  let xPx = Number.isFinite(Number(slot.xPx)) ? Number(slot.xPx) : null;
-  let yPx = Number.isFinite(Number(slot.yPx)) ? Number(slot.yPx) : null;
-  let x = Number.isFinite(Number(slot.x)) ? Number(slot.x) : null;
-  let y = Number.isFinite(Number(slot.y)) ? Number(slot.y) : null;
-
-  if (xPx == null || yPx == null) {
-    if (x == null || y == null) throw new Error('Each slot needs x/y or xPx/yPx');
-    xPx = (x / 100) * CANVAS_WIDTH;
-    yPx = (y / 100) * CANVAS_HEIGHT;
-  }
-
-  if (x == null || y == null) {
-    x = (xPx / CANVAS_WIDTH) * 100;
-    y = (yPx / CANVAS_HEIGHT) * 100;
-  }
+  if (!Number.isFinite(x) || !Number.isFinite(y)) throw new Error(`Invalid coordinates for ${itemId}/${variantId}/${field}`);
+  if (x < 0 || x > 100 || y < 0 || y > 100) throw new Error(`Coordinates out of range for ${itemId}/${variantId}/${field}`);
 
   return {
     itemId,
@@ -89,8 +75,6 @@ function normalizeSlot(slot) {
     field,
     x: round(x, 4),
     y: round(y, 4),
-    xPx: round(xPx, 2),
-    yPx: round(yPx, 2),
     confidence: Math.max(0, Math.min(1, round(confidence, 4))),
   };
 }
@@ -112,9 +96,7 @@ function validateSemanticQuality(slots) {
     );
   }
 
-  const allZero = slots.filter(
-    (s) => Number(s.x) === 0 && Number(s.y) === 0 && Number(s.xPx) === 0 && Number(s.yPx) === 0
-  );
+  const allZero = slots.filter((s) => Number(s.x) === 0 && Number(s.y) === 0);
   if (allZero.length > 0) {
     throw new Error(
       `Extraction quality gate failed: ${allZero.length} slots returned 0,0 coordinates`
@@ -128,7 +110,7 @@ function validateSemanticQuality(slots) {
     );
   }
 
-  const uniquePositions = new Set(slots.map((s) => `${s.xPx}:${s.yPx}`));
+  const uniquePositions = new Set(slots.map((s) => `${s.x}:${s.y}`));
   if (uniquePositions.size < Math.max(6, Math.floor(slots.length * 0.5))) {
     throw new Error(
       'Extraction quality gate failed: too many overlapping/repeated coordinates'
@@ -174,38 +156,52 @@ async function main() {
   const items = JSON.parse(await readFile(ITEMS_PATH, 'utf8'));
 
   const systemPromptAppend = [
-    'You are extracting dynamic pricing and calorie overlay coordinates from one menu-board design.',
-    'Use Figma MCP tools and return structured JSON only.',
-    'Do not output placeholder values such as variantId "unknown", confidence 0, or 0/0 coordinates.',
-    'Extract all visible dynamic price and calories values, not just one example.',
+    'You are visually analyzing JPG images of a menu board designs to extract exact positioning of certain elements within the design',
+    'The posisition coordinate you identify will be used for producing dynamic html overlays',
+    'You are specifically identifying price and calorie values associated with specific menu items',
+    'Use Figma MCP tools to view the design images.',
+    'Return structured JSON only — no placeholder values, no zero coordinates, no "unknown" variants.',
   ].join(' ');
 
   const prompt = [
-    'Task: Build design slot data for a Chick-fil-A menu board design.',
+    'Task: Extract dynamic overlay slot data from a Chick-fil-A menu board design.',
     '',
-    'Task Outline:',
-    '1) Identify each menu item entity in the filled design, found at the filled design url shared below (item name + dynamic price/calorie values).',
-    '2) Match each detected item name to an itemId in the provided items catalog.',
-    '3) Identify variants for each item. Valid examples include:',
-    '- meal',
-    '- entree',
-    '- meal-3ct, meal-4ct, meal-8ct, meal-12ct',
-    '- entree-3ct, entree-4ct, entree-8ct, entree-12ct',
-    '4) For every dynamic value, extract exact coordinates for the start of the rendered text element.',
-    '5) Return one slot per value with field exactly "price" or "calories".',
+    'Background:',
+    'You are analyzing JPG images of a menu board. The filled design shows the board with price',
+    'and calorie text populated. The blank design shows the same layout with those dynamic values',
+    'removed. Your job is to identify every dynamic value in the filled design and record its position',
+    'as a percentage of the 1920x1080 image frame. Price and calorie data is specific to a single menu item.',
+    'Additionally, each menu item may have multiple price/calorie data depending on variants. Variants include',
+    'meal, entree, meal-3ct, meal-4ct, meal-8ct, meal-12ct, entree-3ct, entree-4ct, entree-8ct, entree-12ct.',
+    'It will be beneficial for you to indentify key key words in the design in order to locate the price and calorie text',
+    'that you are trying to extract coordinates for. Keywords could include the menu item title (identified by matching against',
+    'the item catalog), the names of variants, and values that represent a price (ie. 7.50 or 10.25) or calories (ie. 690 cal).',
+
+    'Steps:',
+    '1) Use Figma MCP tools to view the filled design image.',
+    '2) Identify every menu item visible on the board by reading the item name text.',
+    '3) Match each item name to an itemId from the items catalog below.',
+    '4) Identify the variant(s) for each item. Valid examples:',
+    '   meal, entree, meal-3ct, meal-4ct, meal-8ct, meal-12ct, entree-3ct, entree-4ct, entree-8ct, entree-12ct',
+    '5) View the blank design to confirm which values are dynamic (present in filled, absent in blank).',
+    '6) For each confirmed dynamic value, visually estimate its position in the image. Make your estimations',
+        'as accurate as possible, but provide an honest confidence score for each estimation to reflect uncertainty.',
+    '7) Return one slot per value with field exactly "price" or "calories".',
     '',
-    'Rules:',
-    '- Extract complete coverage for the entire design (all visible dynamic values).',
-    '- Do not output placeholders: no "unknown" variants, no confidence 0, no 0/0 coordinates.',
-    '- Provide both x/y percentages and xPx/yPx pixels.',
-    '- Coordinates are based on a 2102x1336 frame.',
-    '- If uncertain, still provide best estimate with honest confidence > 0.',
-    '- Return only structured output matching schema.',
+    'Coordinate rules:',
+    '- x and y are percentages of the 1920x1080 frame: x=0 left edge, x=100 right edge; y=0 top, y=100 bottom.',
+    '- Coordinates mark the top-left corner of where the text value begins.',
+    '- These are visual estimates — provide your best estimate with an honest confidence score (0–1).',
+    '',
+    'Output rules:',
+    '- Cover the entire design — every visible dynamic price and calorie value.',
+    '- No placeholders: no "unknown" variants, no confidence 0, no 0,0 coordinates.',
+    '- Return only structured output matching the schema.',
     '',
     `Design ID: ${TEST_DESIGN_ID}`,
     `Filled design URL: ${TEST_DESIGN_URL}`,
     `Blank design URL: ${TEST_BLANK_URL}`,
-    `Canvas size: ${CANVAS_WIDTH}x${CANVAS_HEIGHT}`,
+    '',
     'Item catalog (id -> name):',
     JSON.stringify(items, null, 2),
   ].join('\n');

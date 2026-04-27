@@ -58,13 +58,11 @@ const SLOT_OUTPUT_SCHEMA = {
           itemId: { type: 'string' },
           variantId: { type: 'string' },
           field: { type: 'string', enum: ['price', 'calories'] },
-          xPx: { type: 'number' },
-          yPx: { type: 'number' },
           x: { type: 'number' },
           y: { type: 'number' },
           confidence: { type: 'number' },
         },
-        required: ['itemId', 'variantId', 'field', 'confidence'],
+        required: ['itemId', 'variantId', 'field', 'x', 'y', 'confidence'],
       },
     },
   },
@@ -96,40 +94,22 @@ function ensureFiniteNumber(value, label) {
   return n;
 }
 
-function normalizeSlot(slot, canvas) {
+function normalizeSlot(slot) {
   const itemId = String(slot.itemId || '').trim();
   const variantId = String(slot.variantId || '').trim();
   const field = String(slot.field || '').trim();
   const confidenceRaw = ensureFiniteNumber(slot.confidence, 'confidence');
+  const x = Number(slot.x);
+  const y = Number(slot.y);
 
   if (!itemId) throw new Error('slot.itemId is required');
   if (!variantId) throw new Error('slot.variantId is required');
   if (field !== 'price' && field !== 'calories') {
     throw new Error(`slot.field must be price|calories. Received: ${field}`);
   }
-
-  let xPx = Number.isFinite(Number(slot.xPx)) ? Number(slot.xPx) : null;
-  let yPx = Number.isFinite(Number(slot.yPx)) ? Number(slot.yPx) : null;
-  let x = Number.isFinite(Number(slot.x)) ? Number(slot.x) : null;
-  let y = Number.isFinite(Number(slot.y)) ? Number(slot.y) : null;
-
-  if (xPx == null || yPx == null) {
-    if (x == null || y == null) {
-      throw new Error(`slot ${itemId}/${variantId}/${field} must include x/y or xPx/yPx`);
-    }
-    xPx = (x / 100) * canvas.width;
-    yPx = (y / 100) * canvas.height;
+  if (!Number.isFinite(x) || !Number.isFinite(y)) {
+    throw new Error(`slot ${itemId}/${variantId}/${field} must include numeric x/y`);
   }
-
-  if (x == null || y == null) {
-    x = (xPx / canvas.width) * 100;
-    y = (yPx / canvas.height) * 100;
-  }
-
-  if (xPx < 0 || xPx > canvas.width || yPx < 0 || yPx > canvas.height) {
-    throw new Error(`slot ${itemId}/${variantId}/${field} outside canvas bounds`);
-  }
-
   if (x < 0 || x > 100 || y < 0 || y > 100) {
     throw new Error(`slot ${itemId}/${variantId}/${field} has out-of-range percent coordinates`);
   }
@@ -140,8 +120,6 @@ function normalizeSlot(slot, canvas) {
     field,
     x: round(x, 4),
     y: round(y, 4),
-    xPx: round(xPx, 2),
-    yPx: round(yPx, 2),
     confidence: Math.max(0, Math.min(1, round(confidenceRaw, 4))),
   };
 }
@@ -189,7 +167,7 @@ function buildPrompt({ designId, designUrl, blankUrl, itemsCatalog, canvas }) {
     '- Identify each dynamic price and calories value that should be overlaid.',
     '- Output one slot per dynamic value.',
     '- field must be exactly "price" or "calories".',
-    '- Provide both pixel coordinates (xPx/yPx) and percent coordinates (x/y).',
+    `- Provide x/y as percentages of the canvas (${canvas.width}x${canvas.height}). x=0 is left edge, x=100 is right edge; y=0 is top, y=100 is bottom.`,
     '- confidence must be 0..1 for each slot.',
     '- Use itemIds from catalog when possible, but you may propose new itemIds if needed.',
     '- Return only structured output matching schema.',
@@ -317,7 +295,7 @@ async function main() {
       systemPromptAppend: CONFIG.systemPromptAppend,
     });
 
-    const normalizedSlots = (extracted.slots || []).map((slot) => normalizeSlot(slot, CONFIG.canvas));
+    const normalizedSlots = (extracted.slots || []).map((slot) => normalizeSlot(slot));
     if (!normalizedSlots.length) {
       throw new Error(`No slots returned for ${design.designId}`);
     }
