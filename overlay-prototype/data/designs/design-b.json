@@ -1,6 +1,6 @@
 {
   "id": "design-b",
-  "name": "Grilled Meals",
+  "name": "design-b",
   "backgroundImage": "/assets/test-bg.png",
   "slots": [
     { "itemId": "grilled-chicken",      "variantId": "meal",        "field": "price",    "x": 50,   "y": 24 },

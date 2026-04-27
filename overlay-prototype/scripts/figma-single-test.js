@@ -8,12 +8,12 @@ const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const TEST_DESIGN_ID = 'design-a';
-const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=1-2&m=dev';
-const TEST_BLANK_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=3-35&m=dev';
+const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-63&m=dev';
+const TEST_BLANK_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-76&m=dev';
 const TEST_OUTPUT_ASSET_NAME = 'design-a-blank.png';
 
-const CANVAS_WIDTH = 2102;
-const CANVAS_HEIGHT = 1336;
+const CANVAS_WIDTH = 1920;
+const CANVAS_HEIGHT = 1080;
 
 const DESIGN_PATH = path.join(PROJECT_ROOT, 'data', 'designs', `${TEST_DESIGN_ID}.json`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
@@ -46,7 +46,7 @@ const OUTPUT_SCHEMA = {
 };
 
 const DEBUG = process.argv.includes('--debug');
-const MIN_SLOT_COUNT = 8;
+const MIN_SLOT_COUNT = 4;
 
 function round(value, decimals = 3) {
   const p = 10 ** decimals;

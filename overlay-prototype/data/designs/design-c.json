@@ -1,6 +1,6 @@
 {
   "id": "design-c",
-  "name": "Salads",
+  "name": "design-c",
   "backgroundImage": "/assets/test-bg.png",
   "slots": [
     { "itemId": "cobb-salad",            "variantId": "base",          "field": "price",    "x": 74,   "y": 25 },
