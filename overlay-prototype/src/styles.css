@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Apercu";
+  src: url("/assets/fonts/Apercu Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/assets/fonts/Apercu_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --toolbar-bg: #1c1f24;
   --toolbar-fg: #f3f4f6;
@@ -11,17 +25,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background: #0b0d10;
   color: var(--toolbar-fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .toolbar {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 0.75rem 1.25rem;
+  padding: 1dvh 1.25rem;
   background: var(--toolbar-bg);
   border-bottom: 1px solid #2a2e35;
 }
@@ -57,71 +70,64 @@ html, body {
 
 .stage {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  height: calc(100vh - 58px);
+  justify-content: start;
+  align-items: start;
+  width: 1920px;
+  height: 1080px;
 }
 
 .menu-frame {
   position: relative;
   width: 100%;
-  max-width: 1600px;
-  aspect-ratio: 2102 / 1336;
+  aspect-ratio: 1920 / 1080;
   background-color: #000;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .layer-bg {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  pointer-events: none;
+  height: 100%
 }
 
 .layer-overlay {
   position: absolute;
   inset: 0;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-empty {
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   color: var(--toolbar-muted);
-  font-size: 1.1rem;
 }
 
 .overlay {
   position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
   line-height: 1.1;
   pointer-events: none;
 }
 
 .overlay .value {
-  font-weight: 800;
+  font-size: 28px;
   letter-spacing: 0.02em;
 }
 
 .overlay.field-price .value {
-  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 600;
   color: var(--price-color);
 }
 
 .overlay.field-calories .value {
-  font-size: clamp(10px, 1vw, 20px);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--calorie-color);
-  opacity: 0.85;
 }
 
 .overlay.missing .value {

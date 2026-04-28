@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -10,19 +10,15 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 const TEST_DESIGN_ID = 'design-a';
 const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-63&m=dev';
 const TEST_BLANK_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-76&m=dev';
-const TEST_OUTPUT_ASSET_NAME = 'design-a-blank.png';
-
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
 
 const DESIGN_PATH = path.join(PROJECT_ROOT, 'data', 'designs', `${TEST_DESIGN_ID}.json`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
-const ASSETS_DIR = path.join(PROJECT_ROOT, 'public', 'assets');
 
 const OUTPUT_SCHEMA = {
   type: 'object',
   properties: {
-    backgroundImageUrl: { type: 'string' },
     slots: {
       type: 'array',
       minItems: 1,
@@ -118,35 +114,6 @@ function validateSemanticQuality(slots) {
   }
 }
 
-function inferExtFromUrl(url) {
-  const clean = url.split('?')[0].toLowerCase();
-  if (clean.endsWith('.jpg') || clean.endsWith('.jpeg')) return 'jpg';
-  if (clean.endsWith('.webp')) return 'webp';
-  return 'png';
-}
-
-async function downloadImage(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to download blank image: ${response.status} ${response.statusText}`);
-  }
-
-  const contentType = response.headers.get('content-type') || '';
-  const ext = contentType.includes('image/jpeg')
-    ? 'jpg'
-    : contentType.includes('image/webp')
-      ? 'webp'
-      : inferExtFromUrl(url);
-
-  const baseName = TEST_OUTPUT_ASSET_NAME.replace(/\.[a-z0-9]+$/i, '');
-  const fileName = `${baseName}.${ext}`;
-  const targetPath = path.join(ASSETS_DIR, fileName);
-
-  await mkdir(ASSETS_DIR, { recursive: true });
-  const bytes = Buffer.from(await response.arrayBuffer());
-  await writeFile(targetPath, bytes);
-  return `/assets/${fileName}`;
-}
 
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) throw new Error('ANTHROPIC_API_KEY is required');
@@ -166,23 +133,21 @@ async function main() {
     'Task: Extract dynamic overlay slot data from a Chick-fil-A menu board design.',
     '',
     'Background:',
-    'You are analyzing JPG images of a menu board. The filled design shows the board with price',
-    'and calorie text populated. The blank design shows the same layout with those dynamic values',
-    'removed. Your job is to identify every dynamic value in the filled design and record its position',
-    'as a percentage of the 1920x1080 image frame.',
+    'You are analyzing a JPG image of a Chick-fil-A menu board. The image shows the board with price',
+    'and calorie text populated. Your job is to identify every price and calorie value in the image',
+    'and record its position as a percentage of the 1920x1080 frame.',
     '',
     'Each menu item may have multiple price/calorie values depending on its variants. To locate them,',
     'use visual keywords: the item name (matched against the catalog), variant labels such as "Meal" or',
     '"Entree", and the values themselves — prices look like "7.50" or "10.25", calories look like "690 cal".',
     '',
     'Steps:',
-    '1) Use Figma MCP tools to view the filled design image.',
+    '1) Use Figma MCP tools to view the design image.',
     '2) Identify every menu item visible on the board by reading the item name text.',
     '3) Match each item name to an itemId from the items catalog below.',
     '4) Identify the variant(s) for each item (meal, entree, meal-3ct, meal-8ct, entree-3ct, entree-8ct, etc.).',
-    '5) View the blank design to confirm which values are dynamic (present in filled, absent in blank).',
-    '6) For each confirmed dynamic value, visually estimate its position as accurately as possible.',
-    '7) Return one slot per value with field exactly "price" or "calories".',
+    '5) For each price and calorie value, visually estimate its position as accurately as possible.',
+    '6) Return one slot per value with field exactly "price" or "calories".',
     '',
     'Coordinate rules:',
     `- x and y are percentages of the ${CANVAS_WIDTH}x${CANVAS_HEIGHT} frame: x=0 left edge, x=100 right edge; y=0 top, y=100 bottom.`,
@@ -190,13 +155,12 @@ async function main() {
     '- These are visual estimates — provide an honest confidence score (0–1) for each.',
     '',
     'Output rules:',
-    '- Cover the entire design — every visible dynamic price and calorie value.',
+    '- Cover the entire design — every visible price and calorie value.',
     '- No placeholders: no "unknown" variants, no confidence 0, no 0,0 coordinates.',
     '- Return only structured output matching the schema.',
     '',
     `Design ID: ${TEST_DESIGN_ID}`,
-    `Filled design URL: ${TEST_DESIGN_URL}`,
-    `Blank design URL: ${TEST_BLANK_URL}`,
+    `Design URL: ${TEST_DESIGN_URL}`,
     '',
     'Item catalog (id -> name):',
     JSON.stringify(items, null, 2),
@@ -268,30 +232,16 @@ async function main() {
 
   const slots = rawSlots.map(normalizeSlot);
   validateSemanticQuality(slots);
-  const backgroundImageSource = cleanUrl(structured.backgroundImageUrl) || TEST_BLANK_URL;
-  let backgroundImage = existingDesign.backgroundImage || '/assets/test-bg.png';
-  try {
-    backgroundImage = await downloadImage(backgroundImageSource);
-  } catch (error) {
-    console.warn(
-      `[warn] Could not download background image from source URL (${backgroundImageSource}). ` +
-      `Falling back to existing background path: ${backgroundImage}`
-    );
-    if (DEBUG) {
-      console.warn(`[warn] download error: ${error?.message || error}`);
-    }
-  }
 
   const updated = {
     id: existingDesign.id,
     name: existingDesign.name,
-    backgroundImage,
+    backgroundImage: existingDesign.backgroundImage || '/assets/test-bg.png',
     slots,
   };
 
   await writeFile(DESIGN_PATH, `${JSON.stringify(updated, null, 2)}\n`, 'utf8');
   console.log(`Updated ${TEST_DESIGN_ID} with ${slots.length} slots.`);
-  console.log(`Background image saved to ${backgroundImage}.`);
   console.log('Run npm run build:overlays next.');
 }
 

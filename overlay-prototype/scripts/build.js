@@ -11,7 +11,7 @@ const OVERLAYS_DIR = path.join(PUBLIC_DIR, 'overlays');
 const ASSETS_DIR = path.join(PUBLIC_DIR, 'assets');
 
 const FORMATTERS = {
-  price: (v) => (v == null ? null : `$${Number(v).toFixed(2)}`),
+  price: (v) => (v == null ? null : `${Number(v).toFixed(2)}`),
   calories: (v) => (v == null ? null : `${v} cal`),
 };
 
