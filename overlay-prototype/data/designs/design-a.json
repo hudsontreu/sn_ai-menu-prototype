@@ -7,128 +7,128 @@
       "itemId": "cfa-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 3,
-      "y": 12.5,
+      "x": 58,
+      "y": 135,
       "confidence": 0.85
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "meal",
       "field": "calories",
-      "x": 16.5,
-      "y": 12.5,
+      "x": 317,
+      "y": 135,
       "confidence": 0.85
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 3,
-      "y": 16.5,
+      "x": 58,
+      "y": 178,
       "confidence": 0.85
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "entree",
       "field": "calories",
-      "x": 16.5,
-      "y": 16.5,
+      "x": 317,
+      "y": 178,
       "confidence": 0.85
     },
     {
       "itemId": "chicken-minis",
       "variantId": "meal",
       "field": "price",
-      "x": 3,
-      "y": 43.5,
+      "x": 58,
+      "y": 470,
       "confidence": 0.85
     },
     {
       "itemId": "chicken-minis",
       "variantId": "meal",
       "field": "calories",
-      "x": 16.5,
-      "y": 43.5,
+      "x": 317,
+      "y": 470,
       "confidence": 0.85
     },
     {
       "itemId": "chicken-minis",
       "variantId": "entree",
       "field": "price",
-      "x": 3,
-      "y": 47.5,
+      "x": 58,
+      "y": 513,
       "confidence": 0.85
     },
     {
       "itemId": "chicken-minis",
       "variantId": "entree",
       "field": "calories",
-      "x": 16.5,
-      "y": 47.5,
+      "x": 317,
+      "y": 513,
       "confidence": 0.85
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 57,
-      "y": 12.5,
+      "x": 1094,
+      "y": 135,
       "confidence": 0.85
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "meal",
       "field": "calories",
-      "x": 67.5,
-      "y": 12.5,
+      "x": 1296,
+      "y": 135,
       "confidence": 0.85
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 57,
-      "y": 16.5,
+      "x": 1094,
+      "y": 178,
       "confidence": 0.85
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "entree",
       "field": "calories",
-      "x": 67.5,
-      "y": 16.5,
+      "x": 1296,
+      "y": 178,
       "confidence": 0.85
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 57,
-      "y": 44.5,
+      "x": 1094,
+      "y": 481,
       "confidence": 0.85
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "calories",
-      "x": 67.5,
-      "y": 44.5,
+      "x": 1296,
+      "y": 481,
       "confidence": 0.85
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 57,
-      "y": 48.5,
+      "x": 1094,
+      "y": 524,
       "confidence": 0.85
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "calories",
-      "x": 67.5,
-      "y": 48.5,
+      "x": 1296,
+      "y": 524,
       "confidence": 0.85
     }
   ]

@@ -8,8 +8,8 @@ const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const TEST_DESIGN_ID = 'design-a';
-const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-63&m=dev';
-const SUCCESSFUL_EXAMPLE_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=63-142&m=dev';
+const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=68-178&m=devv';
+const REFERENCE_EXAMPLE_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=68-276&m=dev';
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
 
@@ -178,16 +178,19 @@ async function main() {
     '',
     'Steps:',
     '1) Use Figma MCP tools to view the design image.',
-    '2) Identify every menu item visible on the board by reading the item name text.',
+    '2) Identify every menu item visible on the board by identifying text that matches an item name.',
     '3) Match each item name to an itemId from the items catalog below.',
     '4) Identify the variant(s) for each item (meal, entree, meal-3ct, meal-8ct, entree-3ct, entree-8ct, etc.).',
     '   If an item has no visible variant label — just a single price and calories — use variantId "base".',
-    '5) For each price and calorie value, visually estimate its position coordinates as accurately as possible.',
+    '   variants that include a count (like "3ct" or "8ct") can be identified by looking for the number followed by "ct".',
+    '5) For each price and calorie value, visually estimate its position coordinates as accurately as possible, utilizing the accurate pixel ruler',
+    'measurments displayed along the top and left edges of the frame.',
     '6) Return one slot per value with field exactly "price" or "calories".',
     '',
     'Coordinate rules:',
     `- x and y are pixel coordinates within the ${CANVAS_WIDTH}x${CANVAS_HEIGHT} frame: x=0 is the left edge, x=${CANVAS_WIDTH} is the right edge; y=0 is the top, y=${CANVAS_HEIGHT} is the bottom.`,
     '- Coordinates mark the top-left corner of where the text value begins.',
+    '- Determine an elements coordinate by visually aligning it with the pixel ruler values along the top and left edges of the frame.',
     '- Provide an honest confidence score (0–1) for each. Do not use a generic confidence score to pass the validation step. Consider why you are more or less confident and provide an accurate value.',
     '',
     'Output rules:',
@@ -200,7 +203,7 @@ async function main() {
     'Begin by analyzing the reference design URL, taking note of item names, variant labels, and price and calorie values.',
     'Then, analyze what the correct output looks like in the REFERENCE_EXAMPLE object. Pay attention to how the coordinates align with the visual positions of the values in the reference design.',
     'Return to this reference as needed to calibrate your understanding of the task and ensure your output matches the',
-    `Reference design URL: ${SUCCESSFUL_EXAMPLE_URL}`,
+    `Reference design URL: ${REFERENCE_EXAMPLE_URL}`,
     JSON.stringify(REFERENCE_EXAMPLE, null, 2),
     '',
     `Design ID: ${TEST_DESIGN_ID}`,
