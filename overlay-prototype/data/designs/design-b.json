@@ -1,7 +1,7 @@
 {
   "id": "design-b",
   "name": "design-b",
-  "backgroundImage": "/assets/test-bg.png",
+  "backgroundImage": "/assets/example-bg.png",
   "slots": [
     { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "price",    "x": 108,   "y": 243 },
     { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "calories", "x": 317, "y": 243 },
