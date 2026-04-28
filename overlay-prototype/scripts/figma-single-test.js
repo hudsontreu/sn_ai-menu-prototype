@@ -146,6 +146,7 @@ async function main() {
     '2) Identify every menu item visible on the board by reading the item name text.',
     '3) Match each item name to an itemId from the items catalog below.',
     '4) Identify the variant(s) for each item (meal, entree, meal-3ct, meal-8ct, entree-3ct, entree-8ct, etc.).',
+    '   If an item has no visible variant label — just a single price and calories — use variantId "base".',
     '5) For each price and calorie value, visually estimate its position as accurately as possible.',
     '6) Return one slot per value with field exactly "price" or "calories".',
     '',

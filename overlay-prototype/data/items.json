@@ -1,6 +1,13 @@
 {
-  "cfa-biscuit":           { "name": "Chick-fil-A Biscuit" },
+  "hash-browns":           { "name": "Hash Browns" },
+  "fruit-cup":             { "name": "Fruit Cup" },
+  "berry-parfait":         { "name": "Berry Parfait" },
+  "hot-buttered-biscuit":  { "name": "Hot Buttered Biscuit" },
+  "egg-biscuit":           { "name": "Egg Biscuit" },
+  "sausage-biscuit":       { "name": "Sausage Biscuit" },
+  "bacon-biscuit":         { "name": "Bacon Biscuit" },
   "spicy-biscuit":         { "name": "Spicy Biscuit" },
   "chicken-minis":         { "name": "Chick-n-Minis" },
-  "b-e-c-biscuit":         { "name": "Bacon, Egg & Cheese Biscuit" }
+  "b-e-c-biscuit":         { "name": "Bacon, Egg & Cheese Biscuit" },
+  "cfa-biscuit":           { "name": "Chick-fil-A Biscuit" }
 }
