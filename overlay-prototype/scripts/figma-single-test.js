@@ -9,7 +9,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const TEST_DESIGN_ID = 'design-a';
 const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-63&m=dev';
-const TEST_BLANK_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=51-76&m=dev';
+const SUCCESSFUL_EXAMPLE_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=63-142&m=dev';
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
 
@@ -39,6 +39,41 @@ const OUTPUT_SCHEMA = {
   required: ['slots'],
 };
 
+const REFERENCE_EXAMPLE = {
+  "slots": [
+    { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "price",    "x": 108,  "y": 243 },
+    { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "calories", "x": 317,  "y": 243 },
+    { "itemId": "spicy-biscuit",        "variantId": "entree",      "field": "price",    "x": 108,  "y": 280 },
+    { "itemId": "spicy-biscuit",        "variantId": "entree",      "field": "calories", "x": 317,  "y": 280 },
+
+    { "itemId": "b-e-c-biscuit",        "variantId": "meal",        "field": "price",    "x": 108,  "y": 740 },
+    { "itemId": "b-e-c-biscuit",        "variantId": "meal",        "field": "calories", "x": 317,  "y": 740 },
+    { "itemId": "b-e-c-biscuit",        "variantId": "entree",      "field": "price",    "x": 108,  "y": 777 },
+    { "itemId": "b-e-c-biscuit",        "variantId": "entree",      "field": "calories", "x": 317,  "y": 777 },
+
+    { "itemId": "hash-browns",          "variantId": "base",        "field": "price",    "x": 1602, "y": 192 },
+    { "itemId": "hash-browns",          "variantId": "base",        "field": "calories", "x": 1689, "y": 192 },
+
+    { "itemId": "fruit-cup",            "variantId": "base",        "field": "price",    "x": 1602, "y": 252 },
+    { "itemId": "fruit-cup",            "variantId": "base",        "field": "calories", "x": 1689, "y": 252 },
+
+    { "itemId": "berry-parfait",        "variantId": "base",        "field": "price",    "x": 1602, "y": 312 },
+    { "itemId": "berry-parfait",        "variantId": "base",        "field": "calories", "x": 1689, "y": 312 },
+
+    { "itemId": "hot-buttered-biscuit", "variantId": "base",        "field": "price",    "x": 1602, "y": 483 },
+    { "itemId": "hot-buttered-biscuit", "variantId": "base",        "field": "calories", "x": 1689, "y": 483 },
+
+    { "itemId": "egg-biscuit",          "variantId": "base",        "field": "price",    "x": 1602, "y": 543 },
+    { "itemId": "egg-biscuit",          "variantId": "base",        "field": "calories", "x": 1689, "y": 543 },
+
+    { "itemId": "bacon-biscuit",        "variantId": "base",        "field": "price",    "x": 1602, "y": 603 },
+    { "itemId": "bacon-biscuit",        "variantId": "base",        "field": "calories", "x": 1689, "y": 603 },
+
+    { "itemId": "sausage-biscuit",      "variantId": "base",        "field": "price",    "x": 1602, "y": 663 },
+    { "itemId": "sausage-biscuit",      "variantId": "base",        "field": "calories", "x": 1689, "y": 663 }
+  ]
+};
+
 const DEBUG = process.argv.includes('--debug');
 const MIN_SLOT_COUNT = 4;
 
@@ -63,7 +98,7 @@ function normalizeSlot(slot) {
   if (field !== 'price' && field !== 'calories') throw new Error(`Invalid field: ${field}`);
   if (!Number.isFinite(confidence)) throw new Error(`Invalid confidence: ${slot.confidence}`);
   if (!Number.isFinite(x) || !Number.isFinite(y)) throw new Error(`Invalid coordinates for ${itemId}/${variantId}/${field}`);
-  if (x < 0 || x > 100 || y < 0 || y > 100) throw new Error(`Coordinates out of range for ${itemId}/${variantId}/${field}`);
+  if (x < 0 || x > CANVAS_WIDTH || y < 0 || y > CANVAS_HEIGHT) throw new Error(`Coordinates out of range for ${itemId}/${variantId}/${field}`);
 
   return {
     itemId,
@@ -135,7 +170,7 @@ async function main() {
     'Background:',
     'You are analyzing a JPG image of a Chick-fil-A menu board. The image shows the board with price',
     'and calorie text populated. Your job is to identify every price and calorie value in the image',
-    'and record its position as a percentage of the 1920x1080 frame.',
+    'and record its exact pixel coordinates within the 1920x1080 frame.',
     '',
     'Each menu item may have multiple price/calorie values depending on its variants. To locate them,',
     'use visual keywords: the item name (matched against the catalog), variant labels such as "Meal" or',
@@ -147,18 +182,26 @@ async function main() {
     '3) Match each item name to an itemId from the items catalog below.',
     '4) Identify the variant(s) for each item (meal, entree, meal-3ct, meal-8ct, entree-3ct, entree-8ct, etc.).',
     '   If an item has no visible variant label — just a single price and calories — use variantId "base".',
-    '5) For each price and calorie value, visually estimate its position as accurately as possible.',
+    '5) For each price and calorie value, visually estimate its position coordinates as accurately as possible.',
     '6) Return one slot per value with field exactly "price" or "calories".',
     '',
     'Coordinate rules:',
-    `- x and y are percentages of the ${CANVAS_WIDTH}x${CANVAS_HEIGHT} frame: x=0 left edge, x=100 right edge; y=0 top, y=100 bottom.`,
+    `- x and y are pixel coordinates within the ${CANVAS_WIDTH}x${CANVAS_HEIGHT} frame: x=0 is the left edge, x=${CANVAS_WIDTH} is the right edge; y=0 is the top, y=${CANVAS_HEIGHT} is the bottom.`,
     '- Coordinates mark the top-left corner of where the text value begins.',
-    '- These are visual estimates — provide an honest confidence score (0–1) for each.',
+    '- Provide an honest confidence score (0–1) for each. Do not use a generic confidence score to pass the validation step. Consider why you are more or less confident and provide an accurate value.',
     '',
     'Output rules:',
     '- Cover the entire design — every visible price and calorie value.',
     '- No placeholders: no "unknown" variants, no confidence 0, no 0,0 coordinates.',
     '- Return only structured output matching the schema.',
+    '',
+    'Reference example:',
+    'Below is a correct output for a different menu board design. Use it as a reference for the correct coordinate identification.',
+    'Begin by analyzing the reference design URL, taking note of item names, variant labels, and price and calorie values.',
+    'Then, analyze what the correct output looks like in the REFERENCE_EXAMPLE object. Pay attention to how the coordinates align with the visual positions of the values in the reference design.',
+    'Return to this reference as needed to calibrate your understanding of the task and ensure your output matches the',
+    `Reference design URL: ${SUCCESSFUL_EXAMPLE_URL}`,
+    JSON.stringify(REFERENCE_EXAMPLE, null, 2),
     '',
     `Design ID: ${TEST_DESIGN_ID}`,
     `Design URL: ${TEST_DESIGN_URL}`,

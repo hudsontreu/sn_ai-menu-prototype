@@ -41,7 +41,7 @@ function renderOverlayHtml(design, pricing) {
       text = formatted;
     }
     lines.push(
-      `<div class="${classes.join(' ')}" data-item="${slot.itemId}" data-variant="${slot.variantId}" style="left:${slot.x}%;top:${slot.y}%"><span class="value">${text}</span></div>`
+      `<div class="${classes.join(' ')}" data-item="${slot.itemId}" data-variant="${slot.variantId}" style="left:${slot.x}px;top:${slot.y}px"><span class="value">${text}</span></div>`
     );
   }
   return lines.join('\n');
