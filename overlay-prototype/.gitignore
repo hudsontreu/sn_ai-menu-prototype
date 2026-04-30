@@ -5,3 +5,4 @@ dist
 .env
 public/overlays/
 public/assets/active.json
+debug/

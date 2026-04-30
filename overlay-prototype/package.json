@@ -8,13 +8,16 @@
     "build": "vite build",
     "preview": "vite preview",
     "build:overlays": "node ./scripts/build.js",
-    "figma:sync": "node --env-file=.env ./scripts/figma.js",
-    "figma:sync:test": "node --env-file=.env ./scripts/figma-single-test.js"
+    "figma:claude": "node --env-file=.env ./scripts/figma-claude.js",
+    "figma:gemini": "node --env-file=.env ./scripts/figma-gemini.js",
+    "figma:debug": "node --env-file=.env ./scripts/figma-gemini-debug.js"
   },
   "devDependencies": {
     "vite": "^5.4.0"
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "latest"
+    "@anthropic-ai/claude-agent-sdk": "latest",
+    "@google/genai": "latest",
+    "@modelcontextprotocol/sdk": "latest"
   }
 }
