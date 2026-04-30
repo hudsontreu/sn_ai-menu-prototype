@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
-const DESIGN_ID = 'design-b';
+const DESIGN_ID = 'design-c';
 const IMAGE_PATH = path.join(PROJECT_ROOT, 'data', 'test-data', `${DESIGN_ID}.png`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
 const DEBUG_DIR = path.join(PROJECT_ROOT, 'debug');

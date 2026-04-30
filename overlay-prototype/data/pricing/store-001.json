@@ -47,20 +47,57 @@
     },
     "egg-biscuit": {
       "variants": {
-        "meal":   { "price": 7.85, "calories": 620 },
-        "entree": { "price": 3.99, "calories": 360 }
+        "base":   { "price": 7.85, "calories": 620 }
       }
     },
     "sausage-biscuit": {
       "variants": {
-        "meal":   { "price": 8.45, "calories": 700 },
-        "entree": { "price": 4.29, "calories": 440 }
+        "base":   { "price": 8.45, "calories": 700 }
       }
     },
     "bacon-biscuit": {
       "variants": {
-        "meal":   { "price": 8.65, "calories": 660 },
-        "entree": { "price": 4.39, "calories": 400 }
+        "base":   { "price": 8.65, "calories": 660 }
+      }
+    },
+    "cfa-chicken": {
+      "variants": {
+        "meal":   { "price": 10.39, "calories": 630 },
+        "entree": { "price": 4.44,  "calories": 420 }
+      }
+    },
+    "cfa-deluxe": {
+      "variants": {
+        "meal":   { "price": 11.39, "calories": 700 },
+        "entree": { "price": 6.55,  "calories": 490 }
+      }
+    },
+    "spicy-chicken": {
+      "variants": {
+        "meal":   { "price": 8.29, "calories": 720 },
+        "entree": { "price": 4.44,  "calories": 460 }
+      }
+    },
+    "spicy-deluxe": {
+      "variants": {
+        "meal":   { "price": 11.39, "calories": 700 },
+        "entree": { "price": 6.79,  "calories": 540 }
+      }
+    },
+    "cfa-nuggets": {
+      "variants": {
+        "meal-8ct":   { "price": 8.29, "calories": 720 },
+        "entree-8ct": { "price": 4.44,  "calories": 460 },
+        "meal-12ct":   { "price": 10.39, "calories": 1080 },
+        "entree-12ct": { "price": 6.55,  "calories": 690 }
+      }
+    },
+    "grilled-nuggets": {
+      "variants": {
+        "meal-8ct":   { "price": 11.25, "calories": 720 },
+        "entree-8ct": { "price": 6.69,  "calories": 460 },
+        "meal-12ct":   { "price": 12.39, "calories": 1080 },
+        "entree-12ct": { "price": 9.55,  "calories": 690 }
       }
     }
   }

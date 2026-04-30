@@ -9,5 +9,11 @@
   "spicy-biscuit":         { "name": "Spicy Biscuit" },
   "chicken-minis":         { "name": "Chick-n-Minis" },
   "b-e-c-biscuit":         { "name": "Bacon, Egg & Cheese Biscuit" },
-  "cfa-biscuit":           { "name": "Chick-fil-A Biscuit" }
+  "cfa-biscuit":           { "name": "Chick-fil-A Biscuit" },
+  "cfa-chicken":           { "name": "Chick-fil-A Chicken" },
+  "cfa-deluxe":            { "name": "Chick-fil-A Deluxe" },
+  "spicy-chicken":         { "name": "Spicy Chicken" },
+  "spicy-deluxe":          { "name": "Spicy Deluxe" },
+  "cfa-nuggets":           { "name": "Chick-fil-A Nuggets" },
+  "grilled-nuggets":       { "name": "Grilled Nuggets" }
 }

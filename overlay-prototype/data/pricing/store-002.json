@@ -1,58 +1,66 @@
 {
   "storeId": "store-002",
   "items": {
-    "cfa-chicken": {
+    "cfa-biscuit": {
       "variants": {
-        "meal":   { "price": 9.95,  "calories": 1050 },
-        "entree": { "price": 5.99,  "calories": 440 }
+        "meal":   { "price": 8.29, "calories": 720 },
+        "entree": { "price": 4.44,  "calories": 460 }
       }
     },
-    "cfa-deluxe": {
+    "chicken-minis": {
       "variants": {
-        "meal":   { "price": 10.65, "calories": 1100 },
-        "entree": { "price": 6.65,  "calories": 490 }
+        "meal-4ct":   { "price": 10.60, "calories": 630 },
+        "entree-4ct": { "price": 5.70,  "calories": 360 }
       }
     },
-    "cfa-nuggets": {
+    "spicy-biscuit": {
       "variants": {
-        "meal-8ct":    { "price": 9.45,  "calories": 860 },
-        "entree-12ct": { "price": 6.75,  "calories": 380 }
+        "meal":    { "price": 9.01,  "calories": 710 },
+        "entree": { "price": 4.72,  "calories": 450 }
       }
     },
-    "chicken-strips": {
+    "b-e-c-biscuit": {
       "variants": {
-        "meal-3ct":    { "price": 9.25,  "calories": 910 },
-        "entree-4ct":  { "price": 8.15,  "calories": 410 }
+        "meal":    { "price": 50.00,  "calories": 4000 },
+        "entree":  { "price": 120.00,  "calories": 6000 }
       }
     },
-    "spicy-chicken": {
+    "hash-browns": {
       "variants": {
-        "meal":   { "price": 10.15, "calories": 1060 },
-        "entree": { "price": 6.15,  "calories": 450 }
+        "base": { "price": 1.99, "calories": 250 }
       }
     },
-    "spicy-deluxe": {
+    "fruit-cup": {
       "variants": {
-        "meal":   { "price": 10.85, "calories": 1110 },
-        "entree": { "price": 6.85,  "calories": 500 }
+        "base": { "price": 3.29, "calories": 60 }
       }
     },
-    "grilled-chicken": {
+    "berry-parfait": {
       "variants": {
-        "meal":   { "price": 11.15, "calories": 870 },
-        "entree": { "price": 7.15,  "calories": 320 }
+        "base": { "price": 4.49, "calories": 300 }
       }
     },
-    "grilled-chicken-club": {
+    "hot-buttered-biscuit": {
       "variants": {
-        "meal":   { "price": 11.95, "calories": 1050 },
-        "entree": { "price": 7.95,  "calories": 490 }
+        "base": { "price": 1.79, "calories": 310 }
       }
     },
-    "grilled-nuggets": {
+    "egg-biscuit": {
       "variants": {
-        "meal-8ct":    { "price": 9.65,  "calories": 730 },
-        "entree-12ct": { "price": 6.05,  "calories": 210 }
+        "meal":   { "price": 7.85, "calories": 620 },
+        "entree": { "price": 3.99, "calories": 360 }
+      }
+    },
+    "sausage-biscuit": {
+      "variants": {
+        "meal":   { "price": 8.45, "calories": 700 },
+        "entree": { "price": 4.29, "calories": 440 }
+      }
+    },
+    "bacon-biscuit": {
+      "variants": {
+        "meal":   { "price": 8.65, "calories": 660 },
+        "entree": { "price": 4.39, "calories": 400 }
       }
     }
   }
