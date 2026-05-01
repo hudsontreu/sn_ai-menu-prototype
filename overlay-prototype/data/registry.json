@@ -4,9 +4,7 @@
       "name": "Atlanta - Peachtree",
       "screens": {
         "01": "design-a",
-        "02": "design-b",
-        "03": "design-c",
-        "04": "design-d"
+        "02": "design-b"
       }
     },
     "store-002": {
@@ -26,8 +24,7 @@
       "name": "Charlotte - Uptown",
       "screens": {
         "01": "design-a",
-        "02": "design-b",
-        "03": "design-c"
+        "02": "design-b"
       }
     }
   }

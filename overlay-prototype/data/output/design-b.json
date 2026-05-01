@@ -1,359 +1,205 @@
 {
   "id": "design-b",
   "name": "design-b",
-  "backgroundImage": "/assets/design-b-bg.png",
+  "backgroundImage": "/assets/design-b.png",
   "slots": [
     {
       "itemId": "spicy-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 109.4,
-      "y": 250.6,
-      "box_px": {
-        "x": 109,
-        "y": 251,
-        "w": 65,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' meal price positioned beneath the item name and to the left of the 'meal' variant label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 460.1,
+      "confidence": 1,
+      "reasoning": "Price value for the meal variant of the Spicy Biscuit, located to the left of the 'meal' label."
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "meal",
       "field": "calories",
       "x": 318.7,
-      "y": 250.6,
-      "box_px": {
-        "x": 319,
-        "y": 251,
-        "w": 94,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' meal calories placed to the right of the 'meal' variant label.",
-      "inCatalog": true
+      "y": 460.1,
+      "confidence": 1,
+      "reasoning": "Calorie count for the meal variant of the Spicy Biscuit, located to the right of the 'meal' label."
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 109.4,
-      "y": 285.1,
-      "box_px": {
-        "x": 109,
-        "y": 285,
-        "w": 65,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' entree price positioned vertically below the meal price, aligned with the 'entree' label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 500,
+      "confidence": 1,
+      "reasoning": "Price value for the entree variant of the Spicy Biscuit, located to the left of the 'entree' label."
     },
     {
       "itemId": "spicy-biscuit",
       "variantId": "entree",
       "field": "calories",
-      "x": 318.7,
-      "y": 285.1,
-      "box_px": {
-        "x": 319,
-        "y": 285,
-        "w": 94,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' entree calories placed to the right of the 'entree' variant label.",
-      "inCatalog": true
+      "x": 316.8,
+      "y": 500,
+      "confidence": 1,
+      "reasoning": "Calorie count for the entree variant of the Spicy Biscuit, located to the right of the 'entree' label."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 109.4,
-      "y": 746.3,
-      "box_px": {
-        "x": 109,
-        "y": 746,
-        "w": 65,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Located the meal price for 'Bacon, Egg & Cheese Biscuit' below the item title on the left.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 744.1,
+      "confidence": 1,
+      "reasoning": "Price value for the meal variant of the Bacon, Egg & Cheese Biscuit."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "calories",
       "x": 318.7,
-      "y": 746.3,
-      "box_px": {
-        "x": 319,
-        "y": 746,
-        "w": 94,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Located the meal calories for 'Bacon, Egg & Cheese Biscuit' right of the 'meal' label.",
-      "inCatalog": true
+      "y": 744.1,
+      "confidence": 1,
+      "reasoning": "Calorie count for the meal variant of the Bacon, Egg & Cheese Biscuit."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 109.4,
-      "y": 780.8,
-      "box_px": {
-        "x": 109,
-        "y": 781,
-        "w": 65,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Located the entree price for 'Bacon, Egg & Cheese Biscuit' beneath the meal price.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 783,
+      "confidence": 1,
+      "reasoning": "Price value for the entree variant of the Bacon, Egg & Cheese Biscuit."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "calories",
       "x": 318.7,
-      "y": 780.8,
-      "box_px": {
-        "x": 319,
-        "y": 781,
-        "w": 94,
-        "h": 25
-      },
-      "confidence": 0.95,
-      "reasoning": "Located the entree calories for 'Bacon, Egg & Cheese Biscuit' right of the 'entree' label.",
-      "inCatalog": true
+      "y": 783,
+      "confidence": 1,
+      "reasoning": "Calorie count for the entree variant of the Bacon, Egg & Cheese Biscuit."
     },
     {
       "itemId": "hash-browns",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 194.4,
-      "box_px": {
-        "x": 1599,
-        "y": 194,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Hash Browns' aligned to the right side column.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 195.5,
+      "confidence": 1,
+      "reasoning": "Price value for Hash Browns, located on the right side of the menu."
     },
     {
       "itemId": "hash-browns",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 194.4,
-      "box_px": {
-        "x": 1690,
-        "y": 194,
-        "w": 100,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Hash Browns' directly to the right of its price.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 195.5,
+      "confidence": 1,
+      "reasoning": "Calorie count for Hash Browns, located to the right of the price."
     },
     {
       "itemId": "fruit-cup",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 254.9,
-      "box_px": {
-        "x": 1599,
-        "y": 255,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Fruit Cup' aligned vertically under the Hash Browns price.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 257,
+      "confidence": 1,
+      "reasoning": "Price value for Fruit Cup."
     },
     {
       "itemId": "fruit-cup",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 254.9,
-      "box_px": {
-        "x": 1690,
-        "y": 255,
-        "w": 81,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Fruit Cup' to the right of its price.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 257,
+      "confidence": 1,
+      "reasoning": "Calorie count for Fruit Cup."
     },
     {
       "itemId": "berry-parfait",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 315.4,
-      "box_px": {
-        "x": 1599,
-        "y": 315,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Berry Parfait' aligned vertically in the sides list.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 319.7,
+      "confidence": 1,
+      "reasoning": "Price value for Berry Parfait."
     },
     {
       "itemId": "berry-parfait",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 315.4,
-      "box_px": {
-        "x": 1690,
-        "y": 315,
-        "w": 159,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Berry Parfait', matching a slightly wider format '270/240 cal' to the right of the price.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 319.7,
+      "confidence": 1,
+      "reasoning": "Dual calorie counts for Berry Parfait variants."
     },
     {
       "itemId": "hot-buttered-biscuit",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 494.6,
-      "box_px": {
-        "x": 1599,
-        "y": 495,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Hot Buttered Biscuit' under the 'also serving' section, aligned to the right.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 487.1,
+      "confidence": 1,
+      "reasoning": "Price value for Hot Buttered Biscuit."
     },
     {
       "itemId": "hot-buttered-biscuit",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 494.6,
-      "box_px": {
-        "x": 1690,
-        "y": 495,
-        "w": 100,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Hot Buttered Biscuit' next to its price.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 487.1,
+      "confidence": 1,
+      "reasoning": "Calorie count for Hot Buttered Biscuit."
     },
     {
       "itemId": "egg-biscuit",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 555.1,
-      "box_px": {
-        "x": 1599,
-        "y": 555,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Egg Biscuit' aligned beneath the previous item.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 543.2,
+      "confidence": 1,
+      "reasoning": "Price value for Egg Biscuit."
     },
     {
       "itemId": "egg-biscuit",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 555.1,
-      "box_px": {
-        "x": 1690,
-        "y": 555,
-        "w": 100,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Egg Biscuit' to the right of its price.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 543.2,
+      "confidence": 1,
+      "reasoning": "Calorie count for Egg Biscuit."
     },
     {
       "itemId": "bacon-biscuit",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 614.5,
-      "box_px": {
-        "x": 1599,
-        "y": 615,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Bacon Biscuit' aligned correctly in the price column.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 600.5,
+      "confidence": 1,
+      "reasoning": "Price value for Bacon Biscuit."
     },
     {
       "itemId": "bacon-biscuit",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 614.5,
-      "box_px": {
-        "x": 1690,
-        "y": 615,
-        "w": 100,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Bacon Biscuit' right-aligned in the calories column.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 600.5,
+      "confidence": 1,
+      "reasoning": "Calorie count for Bacon Biscuit."
     },
     {
       "itemId": "sausage-biscuit",
       "variantId": "base",
       "field": "price",
-      "x": 1599.4,
-      "y": 675,
-      "box_px": {
-        "x": 1599,
-        "y": 675,
-        "w": 60,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found price for 'Sausage Biscuit' at the bottom of the 'also serving' list.",
-      "inCatalog": true
+      "x": 1597.4,
+      "y": 659.9,
+      "confidence": 1,
+      "reasoning": "Price value for Sausage Biscuit."
     },
     {
       "itemId": "sausage-biscuit",
       "variantId": "base",
       "field": "calories",
-      "x": 1689.6,
-      "y": 675,
-      "box_px": {
-        "x": 1690,
-        "y": 675,
-        "w": 100,
-        "h": 24
-      },
-      "confidence": 0.98,
-      "reasoning": "Found calories for 'Sausage Biscuit' properly formatted to the right.",
-      "inCatalog": true
+      "x": 1691.5,
+      "y": 659.9,
+      "confidence": 1,
+      "reasoning": "Calorie count for Sausage Biscuit."
     }
   ]
 }

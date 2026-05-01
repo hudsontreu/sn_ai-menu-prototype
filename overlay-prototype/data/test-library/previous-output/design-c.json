@@ -1,7 +1,7 @@
 {
   "id": "design-c",
   "name": "design-c",
-  "backgroundImage": "/assets/design-c-bg.png",
+  "backgroundImage": "/assets/design-c.png",
   "slots": [
     {
       "itemId": "cfa-chicken",

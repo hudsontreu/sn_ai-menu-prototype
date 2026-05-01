@@ -10,7 +10,8 @@
     "build:overlays": "node ./scripts/build.js",
     "figma:claude": "node --env-file=.env ./scripts/figma-claude.js",
     "figma:gemini": "node --env-file=.env ./scripts/figma-gemini.js",
-    "figma:debug": "node --env-file=.env ./scripts/figma-gemini-debug.js"
+    "figma:debug": "node --env-file=.env ./scripts/figma-gemini-debug.js",
+    "figma:batch": "node --env-file=.env ./scripts/figma-gemini-batch.js"
   },
   "devDependencies": {
     "vite": "^5.4.0"

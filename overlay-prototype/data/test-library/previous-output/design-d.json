@@ -1,7 +1,7 @@
 {
   "id": "design-d",
   "name": "design-d",
-  "backgroundImage": "/assets/design-d-bg.png",
+  "backgroundImage": "/assets/design-d.png",
   "slots": [
     {
       "itemId": "grilled-nuggets",

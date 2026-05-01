@@ -1,263 +1,151 @@
 {
   "id": "design-a",
   "name": "design-a",
-  "backgroundImage": "/assets/design-a-bg.png",
+  "backgroundImage": "/assets/design-a.png",
   "slots": [
     {
       "itemId": "cfa-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 109.4,
-      "y": 230,
-      "box_px": {
-        "x": 109,
-        "y": 230,
-        "w": 65,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-fil-A Biscuit' from the catalog. The value '8.29' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 246.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-fil-A Biscuit' and variant label 'meal' located directly to the right of the price text."
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "meal",
       "field": "calories",
       "x": 318.7,
-      "y": 230,
-      "box_px": {
-        "x": 319,
-        "y": 230,
-        "w": 100,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-fil-A Biscuit' from the catalog. The value '720 cal' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "y": 246.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-fil-A Biscuit' and variant label 'meal' located directly to the left of the calorie value."
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 109.4,
-      "y": 264.6,
-      "box_px": {
-        "x": 109,
-        "y": 265,
-        "w": 65,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-fil-A Biscuit' from the catalog. The value '4.44' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 281.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-fil-A Biscuit' and variant label 'entree' located directly to the right of the price text."
     },
     {
       "itemId": "cfa-biscuit",
       "variantId": "entree",
       "field": "calories",
       "x": 318.7,
-      "y": 264.6,
-      "box_px": {
-        "x": 319,
-        "y": 265,
-        "w": 100,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-fil-A Biscuit' from the catalog. The value '460 cal' is adjacent to the 'entree' label.",
-      "inCatalog": true
-    },
-    {
-      "itemId": "spicy-biscuit",
-      "variantId": "meal",
-      "field": "price",
-      "x": 1069.4,
-      "y": 230,
-      "box_px": {
-        "x": 1069,
-        "y": 230,
-        "w": 69,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' from the catalog. The value '9.01' is adjacent to the 'meal' label.",
-      "inCatalog": true
-    },
-    {
-      "itemId": "spicy-biscuit",
-      "variantId": "meal",
-      "field": "calories",
-      "x": 1278.7,
-      "y": 230,
-      "box_px": {
-        "x": 1279,
-        "y": 230,
-        "w": 100,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' from the catalog. The value '710 cal' is adjacent to the 'meal' label.",
-      "inCatalog": true
-    },
-    {
-      "itemId": "spicy-biscuit",
-      "variantId": "entree",
-      "field": "price",
-      "x": 1069.4,
-      "y": 264.6,
-      "box_px": {
-        "x": 1069,
-        "y": 265,
-        "w": 69,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' from the catalog. The value '4.72' is adjacent to the 'entree' label.",
-      "inCatalog": true
-    },
-    {
-      "itemId": "spicy-biscuit",
-      "variantId": "entree",
-      "field": "calories",
-      "x": 1278.7,
-      "y": 264.6,
-      "box_px": {
-        "x": 1279,
-        "y": 265,
-        "w": 100,
-        "h": 30
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Spicy Biscuit' from the catalog. The value '450 cal' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "y": 281.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-fil-A Biscuit' and variant label 'entree' located directly to the left of the calorie value."
     },
     {
       "itemId": "chicken-minis",
       "variantId": "meal-4ct",
       "field": "price",
-      "x": 109.4,
-      "y": 680.4,
-      "box_px": {
-        "x": 109,
-        "y": 680,
-        "w": 83,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-n-Minis' from the catalog with a '4ct' modifier. The value '10.60' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 733.3,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-n-Minis' with count label '4ct', and variant label 'meal' located directly to the right of the price text."
     },
     {
       "itemId": "chicken-minis",
       "variantId": "meal-4ct",
       "field": "calories",
       "x": 318.7,
-      "y": 680.4,
-      "box_px": {
-        "x": 319,
-        "y": 680,
-        "w": 100,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-n-Minis' from the catalog with a '4ct' modifier. The value '630 cal' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "y": 733.3,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-n-Minis' with count label '4ct', and variant label 'meal' located directly to the left of the calorie value."
     },
     {
       "itemId": "chicken-minis",
       "variantId": "entree-4ct",
       "field": "price",
-      "x": 109.4,
-      "y": 715,
-      "box_px": {
-        "x": 109,
-        "y": 715,
-        "w": 83,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-n-Minis' from the catalog with a '4ct' modifier. The value '5.70' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "x": 107.5,
+      "y": 767.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-n-Minis' with count label '4ct', and variant label 'entree' located directly to the right of the price text."
     },
     {
       "itemId": "chicken-minis",
       "variantId": "entree-4ct",
       "field": "calories",
       "x": 318.7,
-      "y": 715,
-      "box_px": {
-        "x": 319,
-        "y": 715,
-        "w": 100,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Chick-n-Minis' from the catalog with a '4ct' modifier. The value '360 cal' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "y": 767.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Chick-n-Minis' with count label '4ct', and variant label 'entree' located directly to the left of the calorie value."
+    },
+    {
+      "itemId": "spicy-biscuit",
+      "variantId": "meal",
+      "field": "price",
+      "x": 1067.5,
+      "y": 246.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Spicy Biscuit' and variant label 'meal' located directly to the right of the price text."
+    },
+    {
+      "itemId": "spicy-biscuit",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 1278.7,
+      "y": 246.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Spicy Biscuit' and variant label 'meal' located directly to the left of the calorie value."
+    },
+    {
+      "itemId": "spicy-biscuit",
+      "variantId": "entree",
+      "field": "price",
+      "x": 1067.5,
+      "y": 281.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Spicy Biscuit' and variant label 'entree' located directly to the right of the price text."
+    },
+    {
+      "itemId": "spicy-biscuit",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 1278.7,
+      "y": 281.9,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Spicy Biscuit' and variant label 'entree' located directly to the left of the calorie value."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "price",
-      "x": 1069.4,
-      "y": 689,
-      "box_px": {
-        "x": 1069,
-        "y": 689,
-        "w": 69,
-        "h": 27
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Bacon, Egg & Cheese Biscuit' from the catalog. The value '9.07' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "x": 1067.5,
+      "y": 744.1,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Bacon, Egg & Cheese Biscuit' and variant label 'meal' located directly to the right of the price text."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "meal",
       "field": "calories",
       "x": 1278.7,
-      "y": 689,
-      "box_px": {
-        "x": 1279,
-        "y": 689,
-        "w": 100,
-        "h": 27
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Bacon, Egg & Cheese Biscuit' from the catalog. The value '690 cal' is adjacent to the 'meal' label.",
-      "inCatalog": true
+      "y": 744.1,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Bacon, Egg & Cheese Biscuit' and variant label 'meal' located directly to the left of the calorie value."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "price",
-      "x": 1069.4,
-      "y": 723.6,
-      "box_px": {
-        "x": 1069,
-        "y": 724,
-        "w": 69,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Bacon, Egg & Cheese Biscuit' from the catalog. The value '4.84' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "x": 1067.5,
+      "y": 778.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Bacon, Egg & Cheese Biscuit' and variant label 'entree' located directly to the right of the price text."
     },
     {
       "itemId": "b-e-c-biscuit",
       "variantId": "entree",
       "field": "calories",
       "x": 1278.7,
-      "y": 723.6,
-      "box_px": {
-        "x": 1279,
-        "y": 724,
-        "w": 100,
-        "h": 26
-      },
-      "confidence": 0.95,
-      "reasoning": "Identified 'Bacon, Egg & Cheese Biscuit' from the catalog. The value '420 cal' is adjacent to the 'entree' label.",
-      "inCatalog": true
+      "y": 778.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by item label 'Bacon, Egg & Cheese Biscuit' and variant label 'entree' located directly to the left of the calorie value."
     }
   ]
 }
