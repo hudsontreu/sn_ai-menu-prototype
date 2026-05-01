@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(PROJECT_ROOT, 'data');
+const BG_SRC_DIR = path.join(DATA_DIR, 'menus', 'background');
 const PUBLIC_DIR = path.join(PROJECT_ROOT, 'public');
 const OVERLAYS_DIR = path.join(PUBLIC_DIR, 'overlays');
 const ASSETS_DIR = path.join(PUBLIC_DIR, 'assets');
@@ -53,12 +54,19 @@ async function main() {
   await mkdir(OVERLAYS_DIR, { recursive: true });
   await mkdir(ASSETS_DIR, { recursive: true });
 
+  // Copy background images from data/menus/background/ → public/assets/
+  const bgFiles = await readdir(BG_SRC_DIR);
+  await Promise.all(
+    bgFiles.map((f) => copyFile(path.join(BG_SRC_DIR, f), path.join(ASSETS_DIR, f)))
+  );
+  console.log(`Copied ${bgFiles.length} background image(s) → public/assets/`);
+
   const designCache = new Map();
   const pricingCache = new Map();
 
   const loadDesign = async (designId) => {
     if (!designCache.has(designId)) {
-      designCache.set(designId, await loadJson(path.join(DATA_DIR, 'designs', `${designId}.json`)));
+      designCache.set(designId, await loadJson(path.join(DATA_DIR, 'output', `${designId}.json`)));
     }
     return designCache.get(designId);
   };

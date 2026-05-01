@@ -3,7 +3,7 @@
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { GoogleGenAI } from '@google/genai';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -11,9 +11,9 @@ const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const DESIGN_ID = 'design-d';
-const IMAGE_PATH = path.join(PROJECT_ROOT, 'data', 'test-data', `${DESIGN_ID}.png`);
+const IMAGE_PATH = path.join(PROJECT_ROOT, 'data', 'menus', 'full', `${DESIGN_ID}.png`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
-const DESIGN_WRITE_PATH = path.join(PROJECT_ROOT, 'data', 'designs', `${DESIGN_ID}.json`);
+const DESIGN_WRITE_PATH = path.join(PROJECT_ROOT, 'data', 'output', `${DESIGN_ID}.json`);
 
 const OUTPUT_SCHEMA = {
   type: 'object',
@@ -176,7 +176,7 @@ async function main() {
   const updated = {
     id: existingDesign.id,
     name: existingDesign.name,
-    backgroundImage: existingDesign.backgroundImage || '/assets/design-a.png',
+    backgroundImage: existingDesign.backgroundImage || `/assets/${DESIGN_ID}-bg.png`,
     slots,
   };
 
