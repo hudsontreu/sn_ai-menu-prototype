@@ -8,512 +8,288 @@
       "variantId": "meal",
       "field": "price",
       "x": 107.5,
-      "y": 226.8,
-      "box_px": {
-        "x": 108,
-        "y": 227,
-        "w": 69,
-        "h": 23
-      },
+      "y": 245.2,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Chicken' and 'meal' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'meal' label."
     },
     {
       "itemId": "cfa-chicken",
       "variantId": "meal",
       "field": "calories",
-      "x": 301.4,
-      "y": 226.8,
-      "box_px": {
-        "x": 301,
-        "y": 227,
-        "w": 163,
-        "h": 23
-      },
+      "x": 297.6,
+      "y": 245.2,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Chicken' and 'meal' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'meal' label."
     },
     {
       "itemId": "cfa-chicken",
       "variantId": "entree",
       "field": "price",
       "x": 107.5,
-      "y": 258.1,
-      "box_px": {
-        "x": 108,
-        "y": 258,
-        "w": 56,
-        "h": 23
-      },
+      "y": 279.7,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Chicken' and 'entree' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'entree' label."
     },
     {
       "itemId": "cfa-chicken",
       "variantId": "entree",
       "field": "calories",
-      "x": 301.4,
-      "y": 258.1,
-      "box_px": {
-        "x": 301,
-        "y": 258,
-        "w": 81,
-        "h": 23
-      },
+      "x": 297.6,
+      "y": 279.7,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Chicken' and 'entree' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'entree' label."
     },
     {
       "itemId": "cfa-deluxe",
       "variantId": "meal",
       "field": "price",
-      "x": 211.2,
-      "y": 438.5,
-      "box_px": {
-        "x": 211,
-        "y": 438,
-        "w": 65,
-        "h": 21
-      },
+      "x": 207.4,
+      "y": 472,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Deluxe' and 'meal' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'meal' label."
     },
     {
       "itemId": "cfa-deluxe",
       "variantId": "meal",
       "field": "calories",
-      "x": 399.4,
-      "y": 438.5,
-      "box_px": {
-        "x": 399,
-        "y": 438,
-        "w": 167,
-        "h": 21
-      },
+      "x": 397.4,
+      "y": 472,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Deluxe' and 'meal' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'meal' label."
     },
     {
       "itemId": "cfa-deluxe",
       "variantId": "entree",
       "field": "price",
-      "x": 211.2,
-      "y": 467.6,
-      "box_px": {
-        "x": 211,
-        "y": 468,
-        "w": 56,
-        "h": 23
-      },
+      "x": 207.4,
+      "y": 504.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Deluxe' and 'entree' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'entree' label."
     },
     {
       "itemId": "cfa-deluxe",
       "variantId": "entree",
       "field": "calories",
-      "x": 399.4,
-      "y": 467.6,
-      "box_px": {
-        "x": 399,
-        "y": 468,
-        "w": 94,
-        "h": 23
-      },
+      "x": 397.4,
+      "y": 504.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Deluxe' and 'entree' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'entree' label."
     },
     {
       "itemId": "spicy-chicken",
       "variantId": "meal",
       "field": "price",
       "x": 107.5,
-      "y": 575.6,
-      "box_px": {
-        "x": 108,
-        "y": 576,
-        "w": 71,
-        "h": 25
-      },
+      "y": 624.2,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Chicken' and 'meal' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'meal' label."
     },
     {
       "itemId": "spicy-chicken",
       "variantId": "meal",
       "field": "calories",
-      "x": 299.5,
-      "y": 575.6,
-      "box_px": {
-        "x": 300,
-        "y": 576,
-        "w": 167,
-        "h": 25
-      },
+      "x": 297.6,
+      "y": 624.2,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Chicken' and 'meal' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'meal' label."
     },
     {
       "itemId": "spicy-chicken",
       "variantId": "entree",
       "field": "price",
       "x": 107.5,
-      "y": 609.1,
-      "box_px": {
-        "x": 108,
-        "y": 609,
-        "w": 56,
-        "h": 23
-      },
+      "y": 657.7,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Chicken' and 'entree' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'entree' label."
     },
     {
       "itemId": "spicy-chicken",
       "variantId": "entree",
       "field": "calories",
-      "x": 299.5,
-      "y": 609.1,
-      "box_px": {
-        "x": 300,
-        "y": 609,
-        "w": 81,
-        "h": 23
-      },
+      "x": 297.6,
+      "y": 657.7,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Chicken' and 'entree' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'entree' label."
     },
     {
       "itemId": "spicy-deluxe",
       "variantId": "meal",
       "field": "price",
-      "x": 211.2,
-      "y": 788.4,
-      "box_px": {
-        "x": 211,
-        "y": 788,
-        "w": 67,
-        "h": 22
-      },
+      "x": 207.4,
+      "y": 850,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Deluxe' and 'meal' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'meal' label."
     },
     {
       "itemId": "spicy-deluxe",
       "variantId": "meal",
       "field": "calories",
-      "x": 399.4,
-      "y": 788.4,
-      "box_px": {
-        "x": 399,
-        "y": 788,
-        "w": 159,
-        "h": 22
-      },
+      "x": 397.4,
+      "y": 850,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Deluxe' and 'meal' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'meal' label."
     },
     {
       "itemId": "spicy-deluxe",
       "variantId": "entree",
       "field": "price",
-      "x": 211.2,
-      "y": 818.6,
-      "box_px": {
-        "x": 211,
-        "y": 819,
-        "w": 56,
-        "h": 24
-      },
+      "x": 207.4,
+      "y": 883.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Deluxe' and 'entree' label; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'entree' label."
     },
     {
       "itemId": "spicy-deluxe",
       "variantId": "entree",
       "field": "calories",
-      "x": 399.4,
-      "y": 818.6,
-      "box_px": {
-        "x": 399,
-        "y": 819,
-        "w": 94,
-        "h": 24
-      },
+      "x": 397.4,
+      "y": 883.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Spicy Deluxe' and 'entree' label; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'entree' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "meal-8ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 258.1,
-      "box_px": {
-        "x": 1068,
-        "y": 258,
-        "w": 69,
-        "h": 21
-      },
+      "x": 1065.6,
+      "y": 278.6,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '8ct' and 'meal' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'meal' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "meal-8ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 258.1,
-      "box_px": {
-        "x": 1256,
-        "y": 258,
-        "w": 157,
-        "h": 21
-      },
+      "x": 1257.6,
+      "y": 278.6,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '8ct' and 'meal' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'meal' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "entree-8ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 288.4,
-      "box_px": {
-        "x": 1068,
-        "y": 288,
-        "w": 58,
-        "h": 23
-      },
+      "x": 1065.6,
+      "y": 311,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '8ct' and 'entree' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'entree' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "entree-8ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 288.4,
-      "box_px": {
-        "x": 1256,
-        "y": 288,
-        "w": 92,
-        "h": 23
-      },
+      "x": 1257.6,
+      "y": 311,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '8ct' and 'entree' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'entree' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "meal-12ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 349.9,
-      "box_px": {
-        "x": 1068,
-        "y": 350,
-        "w": 69,
-        "h": 22
-      },
+      "x": 1065.6,
+      "y": 378,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '12ct' and 'meal' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'meal' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "meal-12ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 349.9,
-      "box_px": {
-        "x": 1256,
-        "y": 350,
-        "w": 157,
-        "h": 22
-      },
+      "x": 1257.6,
+      "y": 378,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '12ct' and 'meal' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'meal' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "entree-12ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 380.2,
-      "box_px": {
-        "x": 1068,
-        "y": 380,
-        "w": 60,
-        "h": 23
-      },
+      "x": 1065.6,
+      "y": 411.5,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '12ct' and 'entree' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'entree' label."
     },
     {
       "itemId": "cfa-nuggets",
       "variantId": "entree-12ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 380.2,
-      "box_px": {
-        "x": 1256,
-        "y": 380,
-        "w": 94,
-        "h": 23
-      },
+      "x": 1257.6,
+      "y": 411.5,
       "confidence": 0.99,
-      "reasoning": "Identified 'Chick-fil-A Nuggets', '12ct' and 'entree' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'entree' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "meal-8ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 596.2,
-      "box_px": {
-        "x": 1068,
-        "y": 596,
-        "w": 69,
-        "h": 23
-      },
+      "x": 1065.6,
+      "y": 642.6,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '8ct' and 'meal' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'meal' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "meal-8ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 596.2,
-      "box_px": {
-        "x": 1256,
-        "y": 596,
-        "w": 157,
-        "h": 23
-      },
+      "x": 1257.6,
+      "y": 642.6,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '8ct' and 'meal' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'meal' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "entree-8ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 626.4,
-      "box_px": {
-        "x": 1068,
-        "y": 626,
-        "w": 61,
-        "h": 23
-      },
+      "x": 1065.6,
+      "y": 675,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '8ct' and 'entree' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'entree' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "entree-8ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 626.4,
-      "box_px": {
-        "x": 1256,
-        "y": 626,
-        "w": 86,
-        "h": 23
-      },
+      "x": 1257.6,
+      "y": 675,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '8ct' and 'entree' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'entree' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "meal-12ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 688,
-      "box_px": {
-        "x": 1068,
-        "y": 688,
-        "w": 69,
-        "h": 22
-      },
+      "x": 1065.6,
+      "y": 742,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '12ct' and 'meal' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'meal' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "meal-12ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 688,
-      "box_px": {
-        "x": 1256,
-        "y": 688,
-        "w": 156,
-        "h": 22
-      },
+      "x": 1257.6,
+      "y": 742,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '12ct' and 'meal' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'meal' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "entree-12ct",
       "field": "price",
-      "x": 1067.5,
-      "y": 719.3,
-      "box_px": {
-        "x": 1068,
-        "y": 719,
-        "w": 61,
-        "h": 22
-      },
+      "x": 1065.6,
+      "y": 774.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '12ct' and 'entree' labels; drew tight box around the price.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'entree' label."
     },
     {
       "itemId": "grilled-nuggets",
       "variantId": "entree-12ct",
       "field": "calories",
-      "x": 1255.7,
-      "y": 719.3,
-      "box_px": {
-        "x": 1256,
-        "y": 719,
-        "w": 88,
-        "h": 22
-      },
+      "x": 1257.6,
+      "y": 774.4,
       "confidence": 0.99,
-      "reasoning": "Identified 'Grilled Nuggets', '12ct' and 'entree' labels; drew tight box around the calories.",
-      "inCatalog": true
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'entree' label."
     }
   ]
 }
