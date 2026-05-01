@@ -1,3 +1,5 @@
+// Debug script that passes image directly, no mcp connection
+
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -7,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
-const DESIGN_ID = 'design-c';
+const DESIGN_ID = 'design-d';
 const IMAGE_PATH = path.join(PROJECT_ROOT, 'data', 'test-data', `${DESIGN_ID}.png`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
 const DEBUG_DIR = path.join(PROJECT_ROOT, 'debug');
@@ -90,6 +92,8 @@ async function main() {
     '     - "meal", "entree" — the common variants.',
     '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). N is whatever integer is shown.',
     '     - "base" — only when the item has a single price/calories pair and NO visible variant label.',
+    '     - "toppings" - typically associated with items in the salad category. This variant will be detected slightly',
+    '       differently as it can be identified by the text "with toppings" appearing AFTER the calorie value and not in bold.',
     '3. For each variant, find its price text and calorie text:',
     '     - Price looks like a decimal number, e.g. "7.50", "10.25".',
     '     - Calories looks like a number followed by "cal", e.g. "690 cal", "1050 cal".',

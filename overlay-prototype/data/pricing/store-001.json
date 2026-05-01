@@ -99,6 +99,42 @@
         "meal-12ct":   { "price": 12.39, "calories": 1080 },
         "entree-12ct": { "price": 9.55,  "calories": 690 }
       }
+    },
+    "grilled-chicken": {
+      "variants": {
+        "meal":   { "price": 11.25, "calories": 720 },
+        "entree": { "price": 6.69,  "calories": 460 }
+      }
+    },
+    "grilled-chicken-club": {
+      "variants": {
+        "meal":   { "price": 11.25, "calories": 720 },
+        "entree": { "price": 6.69,  "calories": 460 }
+      }
+    },
+    "grilled-chicken-cool-wrap": {
+      "variants": {
+        "meal":   { "price": 11.25, "calories": 720 },
+        "entree": { "price": 6.69,  "calories": 460 }
+      }
+    },
+    "salad-cobb": {
+      "variants": {
+        "base":   { "price": 11.25, "calories": 720 },
+        "toppings": { "calories": 950 }
+      }
+    },
+    "salad-market": {
+      "variants": {
+        "base":   { "price": 11.25, "calories": 720 },
+        "toppings": { "calories": 800 }
+      }
+    },
+    "salad-spicy-southwest": {
+      "variants": {
+        "base":   { "price": 11.25, "calories": 720 },
+        "toppings": { "calories": 800 }
+      }
     }
   }
 }

@@ -1,22 +1,19 @@
+// This version is optimized after making the debug script and actually outputs to the design files
+// for html rendering. It doesnt use mcp conection yet, just passes in image file from local test-data dir
+
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readFile, writeFile } from 'node:fs/promises';
-import { GoogleGenAI, mcpToTool } from '@google/genai';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { GoogleGenAI } from '@google/genai';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
-const TEST_DESIGN_ID = 'design-a';
-const TEST_DESIGN_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=86-288&m=dev';
-const REFERENCE_EXAMPLE_URL = 'https://www.figma.com/design/DveUacGuz5nlURkX6OSrto/AI-Menu-Board-Pipeline?node-id=68-276&m=dev';
-const CANVAS_WIDTH = 1920;
-const CANVAS_HEIGHT = 1080;
-
-const DESIGN_PATH = path.join(PROJECT_ROOT, 'data', 'designs', `${TEST_DESIGN_ID}.json`);
+const DESIGN_ID = 'design-d';
+const IMAGE_PATH = path.join(PROJECT_ROOT, 'data', 'test-data', `${DESIGN_ID}.png`);
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
+const DESIGN_WRITE_PATH = path.join(PROJECT_ROOT, 'data', 'designs', `${DESIGN_ID}.json`);
 
 const OUTPUT_SCHEMA = {
   type: 'object',
@@ -30,260 +27,161 @@ const OUTPUT_SCHEMA = {
           itemId: { type: 'string' },
           variantId: { type: 'string' },
           field: { type: 'string', enum: ['price', 'calories'] },
-          x: { type: 'number' },
-          y: { type: 'number' },
-          confidence: { type: 'number' },
+          // [ymin, xmin, ymax, xmax] normalized to 0-1000 — Gemini's native detection format
+          box_2d: {
+            type: 'array',
+            items: { type: 'number', minimum: 0, maximum: 1000 },
+            minItems: 4,
+            maxItems: 4,
+          },
+          confidence: { type: 'number', minimum: 0, maximum: 1 },
           reasoning: { type: 'string' },
         },
-        required: ['itemId', 'variantId', 'field', 'x', 'y', 'confidence', 'reasoning'],
+        required: ['itemId', 'variantId', 'field', 'box_2d', 'confidence', 'reasoning'],
       },
     },
   },
   required: ['slots'],
 };
 
-const REFERENCE_EXAMPLE = {
-  "slots": [
-    { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "price",    "x": 108,  "y": 243 },
-    { "itemId": "spicy-biscuit",        "variantId": "meal",        "field": "calories", "x": 317,  "y": 243 },
-    { "itemId": "spicy-biscuit",        "variantId": "entree",      "field": "price",    "x": 108,  "y": 280 },
-    { "itemId": "spicy-biscuit",        "variantId": "entree",      "field": "calories", "x": 317,  "y": 280 },
-
-    { "itemId": "b-e-c-biscuit",        "variantId": "meal",        "field": "price",    "x": 108,  "y": 740 },
-    { "itemId": "b-e-c-biscuit",        "variantId": "meal",        "field": "calories", "x": 317,  "y": 740 },
-    { "itemId": "b-e-c-biscuit",        "variantId": "entree",      "field": "price",    "x": 108,  "y": 777 },
-    { "itemId": "b-e-c-biscuit",        "variantId": "entree",      "field": "calories", "x": 317,  "y": 777 },
-
-    { "itemId": "hash-browns",          "variantId": "base",        "field": "price",    "x": 1602, "y": 192 },
-    { "itemId": "hash-browns",          "variantId": "base",        "field": "calories", "x": 1689, "y": 192 },
-
-    { "itemId": "fruit-cup",            "variantId": "base",        "field": "price",    "x": 1602, "y": 252 },
-    { "itemId": "fruit-cup",            "variantId": "base",        "field": "calories", "x": 1689, "y": 252 },
-
-    { "itemId": "berry-parfait",        "variantId": "base",        "field": "price",    "x": 1602, "y": 312 },
-    { "itemId": "berry-parfait",        "variantId": "base",        "field": "calories", "x": 1689, "y": 312 },
-
-    { "itemId": "hot-buttered-biscuit", "variantId": "base",        "field": "price",    "x": 1602, "y": 483 },
-    { "itemId": "hot-buttered-biscuit", "variantId": "base",        "field": "calories", "x": 1689, "y": 483 },
-
-    { "itemId": "egg-biscuit",          "variantId": "base",        "field": "price",    "x": 1602, "y": 543 },
-    { "itemId": "egg-biscuit",          "variantId": "base",        "field": "calories", "x": 1689, "y": 543 },
-
-    { "itemId": "bacon-biscuit",        "variantId": "base",        "field": "price",    "x": 1602, "y": 603 },
-    { "itemId": "bacon-biscuit",        "variantId": "base",        "field": "calories", "x": 1689, "y": 603 },
-
-    { "itemId": "sausage-biscuit",      "variantId": "base",        "field": "price",    "x": 1602, "y": 663 },
-    { "itemId": "sausage-biscuit",      "variantId": "base",        "field": "calories", "x": 1689, "y": 663 }
-  ]
-};
-
-const DEBUG = process.argv.includes('--debug');
-const MIN_SLOT_COUNT = 4;
-
-function round(value, decimals = 3) {
-  const p = 10 ** decimals;
-  return Math.round(value * p) / p;
+function readPngSize(buf) {
+  // PNG signature is 8 bytes; IHDR width is bytes 16-19, height 20-23 (big-endian).
+  if (buf.length < 24 || buf.readUInt32BE(0) !== 0x89504e47) {
+    throw new Error('Not a PNG file');
+  }
+  return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
 }
-
-function cleanUrl(value) {
-  return String(value || '').trim().replace(/^@+/, '');
-}
-
-function normalizeSlot(slot) {
-  const itemId = String(slot.itemId || '').trim();
-  const variantId = String(slot.variantId || '').trim();
-  const field = String(slot.field || '').trim();
-  const confidence = Number(slot.confidence);
-  const x = Number(slot.x);
-  const y = Number(slot.y);
-
-  if (!itemId || !variantId) throw new Error('slot.itemId and slot.variantId are required');
-  if (field !== 'price' && field !== 'calories') throw new Error(`Invalid field: ${field}`);
-  if (!Number.isFinite(confidence)) throw new Error(`Invalid confidence: ${slot.confidence}`);
-  if (!Number.isFinite(x) || !Number.isFinite(y)) throw new Error(`Invalid coordinates for ${itemId}/${variantId}/${field}`);
-  if (x < 0 || x > CANVAS_WIDTH || y < 0 || y > CANVAS_HEIGHT) throw new Error(`Coordinates out of range for ${itemId}/${variantId}/${field}`);
-
-  return {
-    itemId,
-    variantId,
-    field,
-    x: round(x, 4),
-    y: round(y, 4),
-    confidence: Math.max(0, Math.min(1, round(confidence, 4))),
-    reasoning: String(slot.reasoning || '').trim(),
-  };
-}
-
-function validateSemanticQuality(slots) {
-  if (!Array.isArray(slots) || slots.length < MIN_SLOT_COUNT) {
-    throw new Error(
-      `Extraction quality gate failed: expected at least ${MIN_SLOT_COUNT} slots, received ${slots?.length || 0}`
-    );
-  }
-
-  const invalidVariant = slots.find((s) => {
-    const v = String(s.variantId || '').toLowerCase();
-    return !v || v === 'unknown' || v === 'n/a' || v === 'na';
-  });
-  if (invalidVariant) {
-    throw new Error(
-      `Extraction quality gate failed: invalid variantId "${invalidVariant.variantId}" for item "${invalidVariant.itemId}"`
-    );
-  }
-
-  const allZero = slots.filter((s) => Number(s.x) === 0 && Number(s.y) === 0);
-  if (allZero.length > 0) {
-    throw new Error(
-      `Extraction quality gate failed: ${allZero.length} slots returned 0,0 coordinates`
-    );
-  }
-
-  const lowConfidence = slots.filter((s) => Number(s.confidence) <= 0.01);
-  if (lowConfidence.length > 0) {
-    throw new Error(
-      `Extraction quality gate failed: ${lowConfidence.length} slots have confidence <= 0.01`
-    );
-  }
-
-  const uniquePositions = new Set(slots.map((s) => `${s.x}:${s.y}`));
-  if (uniquePositions.size < Math.max(6, Math.floor(slots.length * 0.5))) {
-    throw new Error(
-      'Extraction quality gate failed: too many overlapping/repeated coordinates'
-    );
-  }
-}
-
 
 async function main() {
   if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is required');
-  if (!process.env.FIGMA_MCP_URL) throw new Error('FIGMA_MCP_URL is required');
 
-  const existingDesign = JSON.parse(await readFile(DESIGN_PATH, 'utf8'));
+  const imageBuf = await readFile(IMAGE_PATH);
+  const { width: imgW, height: imgH } = readPngSize(imageBuf);
   const items = JSON.parse(await readFile(ITEMS_PATH, 'utf8'));
 
-  // ── Clients ────────────────────────────────────────────────────────────────
-  // JSON output + tools requires a Gemini 3 series model.
+  console.log(`Image: ${IMAGE_PATH} (${imgW}x${imgH}, ${imageBuf.length} bytes)`);
+
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-  const model = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
+  const model = process.env.GEMINI_MODEL || 'gemini-3.1-pro-preview';
 
-  const mcpClient = new Client({ name: 'figma-gemini', version: '1.0.0' });
-  const transport = new StreamableHTTPClientTransport(new URL(cleanUrl(process.env.FIGMA_MCP_URL)));
-  await mcpClient.connect(transport);
-  if (DEBUG) console.log('[debug] MCP connected');
-
-  // ── Prompts ────────────────────────────────────────────────────────────────
   const systemInstruction = [
-    'You are visually analyzing JPG images of a menu board design to extract the position of price and calorie values.',
-    'The position coordinates you identify will be used to produce dynamic HTML overlays.',
-    'Use the provided Figma tools to view the design images.',
-    'Return structured JSON only — no placeholder values, no zero coordinates, no "unknown" variants.',
+    'You are a visual analyst extracting the on-image position of price and calorie text from a menu board image.',
+    'The bounding boxes you return will be used to render dynamic HTML overlays on top of the design.',
+    'Look only at the provided image — do not invent items, prices, or layouts you cannot see.',
+    'Return structured JSON only — no placeholder values, no "unknown" variants, no zero confidence.',
   ].join(' ');
 
   const prompt = [
-    'Task: Extract dynamic overlay slot data from a Chick-fil-A menu board design.',
+    '## Task',
+    'Detect every price and calorie text value in the attached menu board image, and for each one return:',
+    '  - the menu item it belongs to (itemId, from the catalog below)',
+    '  - the variant of that item (variantId)',
+    '  - which value it is (field: "price" or "calories")',
+    '  - a tight bounding box around the text (box_2d)',
+    '  - a confidence score and reasoning',
     '',
-    'Background:',
-    'You are analyzing a JPG image of a Chick-fil-A menu board. The image shows the board with price',
-    'and calorie text populated. Your job is to identify every price and calorie value in the image',
-    'and record its exact pixel coordinates within the 1920x1080 frame.',
-    '',
-    'Each menu item may have multiple price/calorie values depending on its variants. To locate them,',
-    'use visual keywords: the item name (matched against the catalog), variant labels such as "Meal" or',
-    '"Entree", and the values themselves — prices look like "7.50" or "10.25", calories look like "690 cal".',
-    '',
-    'Steps:',
-    '1) Use Figma tools to view the design image.',
-    '2) Identify every menu item visible on the board by identifying text that matches an item name.',
-    '3) Match each item name to an itemId from the items catalog below.',
-    '4) Identify the variant(s) for each item (meal, entree, meal-3ct, meal-8ct, entree-3ct, entree-8ct, etc.).',
-    '   If an item has no visible variant label — just a single price and calories — use variantId "base".',
-    '   variants that include a count (like "3ct" or "8ct") can be identified by looking for the number followed by "ct".',
-    '5) For each price and calorie value, visually estimate its position coordinates as accurately as possible, utilizing the accurate pixel ruler',
-    'measurments displayed along the top and left edges of the frame.',
-    '6) Return one slot per value with field exactly "price" or "calories".',
-    '',
-    'Coordinate rules:',
-    `- x and y are pixel coordinates within the ${CANVAS_WIDTH}x${CANVAS_HEIGHT} frame: x=0 is the left edge, x=${CANVAS_WIDTH} is the right edge; y=0 is the top, y=${CANVAS_HEIGHT} is the bottom.`,
-    '- Coordinates mark the top-left corner of where the text value begins.',
-    '- Determine an elements coordinate by visually aligning it with the pixel ruler values along the top and left edges of the frame.',
-    '- Provide an honest confidence score (0–1) for each. Do not use a generic confidence score to pass the validation step. Consider why you are more or less confident and provide an accurate value.',
-    '',
-    'Output rules:',
-    '- Cover the entire design — every visible price and calorie value.',
-    '- No placeholders: no "unknown" variants, no confidence 0, no 0,0 coordinates.',
-    '- For each slot, include a "reasoning" string that explains: how you identified the item and variant,',
-    '  how you determined the coordinates, what reference points you used, and anything you were uncertain about.',
-    '- Return only structured output matching the schema.',
-    '',
-    'Reference example:',
-    'Below is a correct output for a different menu board design. Use it as a reference for the correct coordinate identification.',
-    'Begin by analyzing the reference design URL, taking note of item names, variant labels, and price and calorie values.',
-    'Then, analyze what the correct output looks like in the REFERENCE_EXAMPLE object. Pay attention to how the coordinates align with the visual positions of the values in the reference design.',
-    'Return to this reference as needed to calibrate your understanding of the task and ensure your output matches the expected format.',
-    `Reference design URL: ${REFERENCE_EXAMPLE_URL}`,
-    JSON.stringify(REFERENCE_EXAMPLE, null, 2),
-    '',
-    `Design ID: ${TEST_DESIGN_ID}`,
-    `Design URL: ${TEST_DESIGN_URL}`,
-    '',
-    'Item catalog (id -> name):',
+    '## Inputs',
+    `- Design ID: ${DESIGN_ID}`,
+    `- Image dimensions: ${imgW} x ${imgH} pixels`,
+    '- Item catalog (itemId -> name) — itemId MUST be one of these keys:',
     JSON.stringify(items, null, 2),
+    '',
+    '## Procedure',
+    '1. Locate every menu item in the image. Match each visible item-name text to an itemId in the catalog above.',
+    '   If a text label does not match any item in the catalog, do NOT invent an itemId — skip it.',
+    '2. For each item, identify its variant(s) from nearby labels:',
+    '     - "meal", "entree" — the common variants.',
+    '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). N is whatever integer is shown.',
+    '     - "base" — only when the item has a single price/calories pair and NO visible variant label.',
+    '     - "toppings" - typically associated with items in the salad category. This variant will be detected slightly',
+    '       differently as it can be identified by the text "with toppings" appearing AFTER the calorie value and not in bold.',
+    '3. For each variant, find its price text and calorie text:',
+    '     - Price looks like a decimal number, e.g. "7.50", "10.25".',
+    '     - Calories looks like a number followed by "cal", e.g. "690 cal", "1050 cal".',
+    '     - Price and calorie values are typically positioned to the left and right of the variant label.',
+    '     - Associate values with an item by their proximity to the item name and variant label.',
+    '4. For each value, draw the tightest bounding box that contains ONLY the text itself (e.g. just "10.25" or "690 cal"),',
+    '   not the surrounding item block.',
+    '5. Emit one slot per value, with field exactly "price" or "calories".',
+    '',
+    '## Bounding box format',
+    '- box_2d is [ymin, xmin, ymax, xmax], all normalized to 0–1000.',
+    '- (0, 0) is the top-left corner of the image; (1000, 1000) is the bottom-right.',
+    '- Tighter is better — the box should hug the text.',
+    '',
+    '## Confidence and reasoning',
+    '- confidence is 0–1 and must be honest. Lower it when the text is small, partially obscured, or the variant',
+    '  label is ambiguous. Do not return 0 — if you are that unsure, omit the slot.',
+    '- reasoning is a short string per slot explaining: how you identified the item and variant, what visual cues',
+    '  located the bounding box, and anything you were uncertain about.',
+    '',
+    '## Output rules',
+    '- Cover the entire design: every visible price and every visible calorie value.',
+    '- No placeholders, no "unknown" variants, no confidence 0.',
+    '- itemId must be a key from the catalog above. If you cannot match, skip the slot rather than inventing.',
+    '- Return only structured JSON matching the response schema.',
   ].join('\n');
 
-  // ── Single call: mcpToTool bridges the MCP server and the SDK auto-executes
-  //   tool calls. JSON output + tools requires a Gemini 3 series model. ───────
-  let result;
-  try {
-    result = await ai.models.generateContent({
-      model,
-      contents: prompt,
-      config: {
-        systemInstruction,
-        tools: [mcpToTool(mcpClient)],
-        responseMimeType: 'application/json',
-        responseJsonSchema: OUTPUT_SCHEMA,
+  console.log(`Calling Gemini (${model})...`);
+  const t0 = Date.now();
+  const result = await ai.models.generateContent({
+    model,
+    contents: [
+      {
+        role: 'user',
+        parts: [
+          { inlineData: { mimeType: 'image/png', data: imageBuf.toString('base64') } },
+          { text: prompt },
+        ],
       },
-    });
-  } finally {
-    await mcpClient.close().catch(() => {});
-  }
+    ],
+    config: {
+      systemInstruction,
+      responseMimeType: 'application/json',
+      responseJsonSchema: OUTPUT_SCHEMA,
+    },
+  });
 
-  if (DEBUG) {
-    console.log('[debug] usage:', result.usageMetadata);
-    console.log('[debug] raw (first 1000 chars):', result.text?.slice(0, 1000));
-  }
+  // Simple logging about response time and usage
+  console.log(`Gemini responded in ${((Date.now() - t0) / 1000).toFixed(1)}s. usage:`, result.usageMetadata);
 
   const raw = result.text ?? '';
-  if (!raw.trim()) {
-    throw new Error('Gemini returned an empty response. Re-run with --debug to inspect.');
-  }
-  let structured;
-  try {
-    structured = JSON.parse(raw);
-  } catch (e) {
-    throw new Error(`Failed to parse Gemini structured output: ${e.message}\nRaw (first 500 chars): ${raw.slice(0, 500)}`);
-  }
+  if (!raw.trim()) throw new Error('Gemini returned an empty response.');
 
+  const structured = JSON.parse(raw);
   const rawSlots = structured?.slots || [];
-  if (!rawSlots.length) {
-    throw new Error(
-      'No structured slots returned for design-a. The run succeeded but produced no slots. Re-run with --debug to inspect Gemini tool calls and responses.'
-    );
-  }
+  if (!rawSlots.length) throw new Error('No slots returned.');
 
-  const slots = rawSlots.map(normalizeSlot);
-  validateSemanticQuality(slots);
+  // Convert normalized boxes to pixel coordinates and the (x, y) anchor used by the renderer.
+  const slots = rawSlots.map((s) => {
+    const [ymin, xmin, ymax, xmax] = s.box_2d.map(Number);
+    const px = {
+      xmin: (xmin / 1000) * imgW,
+      ymin: (ymin / 1000) * imgH,
+      xmax: (xmax / 1000) * imgW,
+      ymax: (ymax / 1000) * imgH,
+    };
+    return {
+      itemId: s.itemId,
+      variantId: s.variantId,
+      field: s.field,
+      x: Math.round(px.xmin * 10) / 10,
+      y: Math.round(px.ymin * 10) / 10,
+      confidence: s.confidence,
+      reasoning: s.reasoning,
+    };
+  });
 
+  const existingDesign = JSON.parse(await readFile(DESIGN_WRITE_PATH, 'utf8'));
   const updated = {
     id: existingDesign.id,
     name: existingDesign.name,
-    backgroundImage: existingDesign.backgroundImage || '/assets/test-bg.png',
+    backgroundImage: existingDesign.backgroundImage || '/assets/design-a.png',
     slots,
   };
 
-  await writeFile(DESIGN_PATH, `${JSON.stringify(updated, null, 2)}\n`, 'utf8');
-  console.log(`Updated ${TEST_DESIGN_ID} with ${slots.length} slots.`);
-  console.log('Run npm run build:overlays next.');
+  // Write to the design jsons for html rendering
+  await writeFile(DESIGN_WRITE_PATH, `${JSON.stringify(updated, null, 2)}\n`, 'utf8');
 }
 
 main().catch((err) => {

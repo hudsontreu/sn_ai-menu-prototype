@@ -1,0 +1,297 @@
+{
+  "id": "design-a",
+  "name": "design-a",
+  "backgroundImage": "/assets/design-d-bg.png",
+  "slots": [
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "price",
+      "x": 82.6,
+      "y": 225.7,
+      "confidence": 0.95,
+      "reasoning": "Price found next to '8ct meal' variant for Grilled Nuggets.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "calories",
+      "x": 180.5,
+      "y": 225.7,
+      "confidence": 0.95,
+      "reasoning": "Calories found right of the '8ct meal' label for Grilled Nuggets.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "price",
+      "x": 82.6,
+      "y": 256,
+      "confidence": 0.95,
+      "reasoning": "Price found left of 'entree' label under the 8ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "calories",
+      "x": 180.5,
+      "y": 256,
+      "confidence": 0.95,
+      "reasoning": "Calories found right of 'entree' label under the 8ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "price",
+      "x": 82.6,
+      "y": 286.2,
+      "confidence": 0.95,
+      "reasoning": "Price found left of 'meal' label under the 12ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "calories",
+      "x": 180.5,
+      "y": 286.2,
+      "confidence": 0.95,
+      "reasoning": "Calories found right of 'meal' label under the 12ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "price",
+      "x": 82.6,
+      "y": 317.5,
+      "confidence": 0.95,
+      "reasoning": "Price found left of 'entree' label under the 12ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "calories",
+      "x": 180.5,
+      "y": 317.5,
+      "confidence": 0.95,
+      "reasoning": "Calories found right of 'entree' label under the 12ct section.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "meal",
+      "field": "price",
+      "x": 42.2,
+      "y": 450.4,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'meal' variant of Grilled Chicken.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 153.6,
+      "y": 450.4,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'meal' variant of Grilled Chicken.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "entree",
+      "field": "price",
+      "x": 42.2,
+      "y": 480.6,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'entree' variant of Grilled Chicken.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 153.6,
+      "y": 480.6,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'entree' variant of Grilled Chicken.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "meal",
+      "field": "price",
+      "x": 42.2,
+      "y": 613.4,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'meal' variant of Grilled Chicken Club.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 153.6,
+      "y": 613.4,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'meal' variant of Grilled Chicken Club.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "entree",
+      "field": "price",
+      "x": 42.2,
+      "y": 644.8,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'entree' variant of Grilled Chicken Club.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 153.6,
+      "y": 644.8,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'entree' variant of Grilled Chicken Club.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "meal",
+      "field": "price",
+      "x": 42.2,
+      "y": 895.3,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'meal' variant of Grilled Chicken Cool Wrap.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 153.6,
+      "y": 895.3,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'meal' variant of Grilled Chicken Cool Wrap.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "entree",
+      "field": "price",
+      "x": 42.2,
+      "y": 925.6,
+      "confidence": 0.95,
+      "reasoning": "Price for the 'entree' variant of Grilled Chicken Cool Wrap.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 153.6,
+      "y": 925.6,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'entree' variant of Grilled Chicken Cool Wrap.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "base",
+      "field": "price",
+      "x": 524.2,
+      "y": 297,
+      "confidence": 0.95,
+      "reasoning": "Base price for the Cobb Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "base",
+      "field": "calories",
+      "x": 570.2,
+      "y": 297,
+      "confidence": 0.95,
+      "reasoning": "Base calories for the Cobb Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 570.2,
+      "y": 327.2,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'toppings' variant of Cobb Salad (labeled 'with toppings').",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "base",
+      "field": "price",
+      "x": 524.2,
+      "y": 491.4,
+      "confidence": 0.95,
+      "reasoning": "Base price for the Market Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "base",
+      "field": "calories",
+      "x": 570.2,
+      "y": 491.4,
+      "confidence": 0.95,
+      "reasoning": "Base calories for the Market Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 570.2,
+      "y": 524.9,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'toppings' variant of Market Salad (labeled 'with toppings').",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "base",
+      "field": "price",
+      "x": 524.2,
+      "y": 715,
+      "confidence": 0.95,
+      "reasoning": "Base price for the Spicy Southwest Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "base",
+      "field": "calories",
+      "x": 570.2,
+      "y": 715,
+      "confidence": 0.95,
+      "reasoning": "Base calories for the Spicy Southwest Salad with no explicit variant label.",
+      "inCatalog": true
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 570.2,
+      "y": 746.3,
+      "confidence": 0.95,
+      "reasoning": "Calories for the 'toppings' variant of Spicy Southwest Salad (labeled 'with toppings').",
+      "inCatalog": true
+    }
+  ]
+}

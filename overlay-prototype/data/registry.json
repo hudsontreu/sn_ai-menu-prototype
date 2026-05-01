@@ -5,7 +5,8 @@
       "screens": {
         "01": "design-a",
         "02": "design-b",
-        "03": "design-c"
+        "03": "design-c",
+        "04": "design-d"
       }
     },
     "store-002": {
