@@ -1,0 +1,20 @@
+const variants = [
+    "base",
+    "meal",
+    "entree",
+    "1ct",
+    "6ct",
+    "meal-4ct",
+    "entree-4ct",
+    "meal-8ct",
+    "entree-8ct",
+    "meal-12ct",
+    "entree-12ct",
+    "toppings",
+    "m",
+    "l",
+    "cookies-&-cream",
+    "chocolate",
+    "strawberry",
+    "vanilla"
+]
