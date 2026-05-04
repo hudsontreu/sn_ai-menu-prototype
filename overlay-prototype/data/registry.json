@@ -5,7 +5,9 @@
       "screens": {
         "01": "design-a",
         "02": "design-b",
-        "03": "design-c"
+        "03": "design-c",
+        "04": "design-d",
+        "05": "design-e"
       }
     },
     "store-002": {
@@ -13,7 +15,9 @@
       "screens": {
         "01": "design-a",
         "02": "design-b",
-        "03": "design-c"
+        "03": "design-c",
+        "04": "design-d",
+        "05": "design-e"
       }
     },
     "store-003": {
@@ -21,7 +25,9 @@
       "screens": {
         "01": "design-a",
         "02": "design-b",
-        "03": "design-c"
+        "03": "design-c",
+        "04": "design-d",
+        "05": "design-e"
       }
     },
     "store-004": {
@@ -29,7 +35,9 @@
       "screens": {
         "01": "design-a",
         "02": "design-b",
-        "03": "design-c"
+        "03": "design-c",
+        "04": "design-d",
+        "05": "design-e"
       }
     }
   }
