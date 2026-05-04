@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { GoogleGenAI } from '@google/genai';
+import { VARIANTS } from '../data/variants.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -81,15 +82,20 @@ async function processDesign(designId, imagePath, items, ai, model) {
     '## Procedure',
     '1. Locate every menu item in the image. Match each visible item-name text to an itemId in the catalog above.',
     '   If a text label does not match any item in the catalog, do NOT invent an itemId — skip it.',
-    '2. For each item, identify its variant(s) from nearby labels:',
-    '     - "meal", "entree" — the common variants.',
-    '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). N is whatever integer is shown.',
+    '2. For each item, identify its variant(s) from nearby labels. variantId MUST be one of these keys:',
+    `   ${JSON.stringify(VARIANTS)}`,
+    '   Detection notes for specific variants:',
     '     - "base" — only when the item has a single price/calories pair and NO visible variant label.',
-    '     - "toppings" - typically associated with items in the salad category. This variant will be detected slightly',
-    '       differently as it can be identified by the text "with toppings" appearing AFTER the calorie value and not in bold.',
+    '     - "meal", "entree" — the common variants, usually shown as labels next to price/calorie pairs.',
+    '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). Use the integer N shown in the image.',
+    '     - "toppings" — typically associated with items in the salad category. Identified by the text "with toppings"',
+    '       appearing AFTER the calorie value and not in bold.',
+    '     - "m", "l" — medium and large size labels used for drinks.',
+    '     - "1ct", "6ct" — count-based variants primarily used for desert (e.g. cookies sold individually or in packs).',
+    '     - "chocolate", "vanilla", "strawberry", "cookies-&-cream" - these are flavor names used for milkshakes.',
     '3. For each variant, find its price text and calorie text:',
     '     - Price looks like a decimal number, e.g. "7.50", "10.25".',
-    '     - Calories looks like a number followed by "cal", e.g. "690 cal", "1050 cal".',
+    '     - Calories looks like a number or pair of numbers followed by "cal", e.g. "690 cal", "1050 cal", "0/360 cal", or "0-500 cal".',
     '     - Price and calorie values are typically positioned to the left and right of the variant label.',
     '     - Associate values with an item by their proximity to the item name and variant label.',
     '4. For each value, draw the tightest bounding box that contains ONLY the text itself (e.g. just "10.25" or "690 cal"),',

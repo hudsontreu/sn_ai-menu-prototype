@@ -1,4 +1,4 @@
-const variants = [
+export const VARIANTS = [
     "base",
     "meal",
     "entree",
