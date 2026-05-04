@@ -66,7 +66,12 @@ async function main() {
 
   const loadDesign = async (designId) => {
     if (!designCache.has(designId)) {
-      designCache.set(designId, await loadJson(path.join(DATA_DIR, 'output', `${designId}.json`)));
+      try {
+        designCache.set(designId, await loadJson(path.join(DATA_DIR, 'output', `${designId}.json`)));
+      } catch (err) {
+        if (err.code !== 'ENOENT') throw err;
+        designCache.set(designId, null);
+      }
     }
     return designCache.get(designId);
   };
@@ -84,10 +89,16 @@ async function main() {
   };
 
   let overlayCount = 0;
+  let skippedCount = 0;
   for (const [storeId, store] of Object.entries(registry.stores)) {
     const storeEntry = { name: store.name, screens: {} };
     for (const [screenId, designId] of Object.entries(store.screens)) {
       const design = await loadDesign(designId);
+      if (!design) {
+        console.warn(`Skipping ${storeId}/${screenId}: design "${designId}" not found in data/output/`);
+        skippedCount++;
+        continue;
+      }
       const pricing = await loadPricing(storeId);
       const html = renderOverlayHtml(design, pricing);
       const overlayFile = `${storeId}-${screenId}.html`;
@@ -109,6 +120,7 @@ async function main() {
   );
 
   console.log(`Wrote ${overlayCount} overlay HTML files → public/overlays/`);
+  if (skippedCount) console.log(`Skipped ${skippedCount} screen(s) due to missing designs`);
   console.log(`Wrote manifest → public/assets/active.json`);
 }
 

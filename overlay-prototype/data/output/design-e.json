@@ -1,0 +1,268 @@
+{
+  "id": "design-e",
+  "name": "design-e",
+  "backgroundImage": "/assets/design-e.png",
+  "slots": [
+    {
+      "itemId": "iced-tea",
+      "variantId": "m",
+      "field": "price",
+      "x": 82.6,
+      "y": 263.5,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Freshly-Brewed Iced Tea'. Price '2.69' is adjacent to the 'M'."
+    },
+    {
+      "itemId": "iced-tea",
+      "variantId": "m",
+      "field": "calories",
+      "x": 161.3,
+      "y": 264.6,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Freshly-Brewed Iced Tea'. Calories '0/120 cal' is right of the price."
+    },
+    {
+      "itemId": "iced-tea",
+      "variantId": "l",
+      "field": "price",
+      "x": 82.6,
+      "y": 295.9,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Freshly-Brewed Iced Tea'. Price '2.99' is adjacent to the 'L'."
+    },
+    {
+      "itemId": "iced-tea",
+      "variantId": "l",
+      "field": "calories",
+      "x": 161.3,
+      "y": 297,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Freshly-Brewed Iced Tea'. Calories '0/170 cal' is right of the price."
+    },
+    {
+      "itemId": "cfa-lemonade",
+      "variantId": "m",
+      "field": "price",
+      "x": 86.4,
+      "y": 419,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Chick-fil-A Lemonade'. Price '3.09' is adjacent to the 'M'."
+    },
+    {
+      "itemId": "cfa-lemonade",
+      "variantId": "m",
+      "field": "calories",
+      "x": 161.3,
+      "y": 420.1,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Chick-fil-A Lemonade'. Calories '60/260 cal' is right of the price."
+    },
+    {
+      "itemId": "cfa-lemonade",
+      "variantId": "l",
+      "field": "price",
+      "x": 86.4,
+      "y": 451.4,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Chick-fil-A Lemonade'. Price '3.39' is adjacent to the 'L'."
+    },
+    {
+      "itemId": "cfa-lemonade",
+      "variantId": "l",
+      "field": "calories",
+      "x": 161.3,
+      "y": 452.5,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Chick-fil-A Lemonade'. Calories '80/380 cal' is right of the price."
+    },
+    {
+      "itemId": "cfa-sunjoy",
+      "variantId": "m",
+      "field": "price",
+      "x": 86.4,
+      "y": 610.2,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Chick-fil-A Sunjoy'. Price '3.09' is adjacent to the 'M'."
+    },
+    {
+      "itemId": "cfa-sunjoy",
+      "variantId": "m",
+      "field": "calories",
+      "x": 161.3,
+      "y": 611.3,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Chick-fil-A Sunjoy'. Calories '240 cal' is right of the price."
+    },
+    {
+      "itemId": "cfa-sunjoy",
+      "variantId": "l",
+      "field": "price",
+      "x": 86.4,
+      "y": 641.5,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Chick-fil-A Sunjoy'. Price '3.39' is adjacent to the 'L'."
+    },
+    {
+      "itemId": "cfa-sunjoy",
+      "variantId": "l",
+      "field": "calories",
+      "x": 161.3,
+      "y": 642.6,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Chick-fil-A Sunjoy'. Calories '350 cal' is right of the price."
+    },
+    {
+      "itemId": "soft-drinks",
+      "variantId": "m",
+      "field": "price",
+      "x": 84.5,
+      "y": 735.5,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Soft Drinks'. Price '2.69' is adjacent to the 'M'."
+    },
+    {
+      "itemId": "soft-drinks",
+      "variantId": "m",
+      "field": "calories",
+      "x": 159.4,
+      "y": 735.5,
+      "confidence": 1,
+      "reasoning": "Found 'M' variant under 'Soft Drinks'. Calories '0-190 cal' is right of the price."
+    },
+    {
+      "itemId": "soft-drinks",
+      "variantId": "l",
+      "field": "price",
+      "x": 84.5,
+      "y": 767.9,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Soft Drinks'. Price '2.99' is adjacent to the 'L'."
+    },
+    {
+      "itemId": "soft-drinks",
+      "variantId": "l",
+      "field": "calories",
+      "x": 159.4,
+      "y": 767.9,
+      "confidence": 1,
+      "reasoning": "Found 'L' variant under 'Soft Drinks'. Calories '0-270 cal' is right of the price."
+    },
+    {
+      "itemId": "bottled-water",
+      "variantId": "base",
+      "field": "price",
+      "x": 51.8,
+      "y": 859.7,
+      "confidence": 1,
+      "reasoning": "Found base variant under 'Bottled Water'. Price '2.49' is left of the calories."
+    },
+    {
+      "itemId": "bottled-water",
+      "variantId": "base",
+      "field": "calories",
+      "x": 130.6,
+      "y": 860.8,
+      "confidence": 1,
+      "reasoning": "Found base variant under 'Bottled Water'. Calories '0 cal' is right of the price."
+    },
+    {
+      "itemId": "milkshakes",
+      "variantId": "base",
+      "field": "price",
+      "x": 1011.8,
+      "y": 230,
+      "confidence": 1,
+      "reasoning": "Found base variant under 'Hand-Spun Milkshakes'. Price '5.19' is under the item title."
+    },
+    {
+      "itemId": "milkshakes",
+      "variantId": "cookies-&-cream",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 263.5,
+      "confidence": 1,
+      "reasoning": "Found 'Cookies & Cream' variant under 'Hand-Spun Milkshakes'. Calories '630 cal' is next to flavor text."
+    },
+    {
+      "itemId": "milkshakes",
+      "variantId": "chocolate",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 299.2,
+      "confidence": 1,
+      "reasoning": "Found 'Chocolate' variant under 'Hand-Spun Milkshakes'. Calories '600 cal' is next to flavor text."
+    },
+    {
+      "itemId": "milkshakes",
+      "variantId": "strawberry",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 333.7,
+      "confidence": 1,
+      "reasoning": "Found 'Strawberry' variant under 'Hand-Spun Milkshakes'. Calories '560 cal' is next to flavor text."
+    },
+    {
+      "itemId": "milkshakes",
+      "variantId": "vanilla",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 369.4,
+      "confidence": 1,
+      "reasoning": "Found 'Vanilla' variant under 'Hand-Spun Milkshakes'. Calories '580 cal' is next to flavor text."
+    },
+    {
+      "itemId": "chocolate-chunk-cookie",
+      "variantId": "1ct",
+      "field": "price",
+      "x": 1067.5,
+      "y": 937.4,
+      "confidence": 1,
+      "reasoning": "Found '1 ct' variant under 'Chocolate Chunk Cookie'. Price '1.79' is adjacent to the variant label."
+    },
+    {
+      "itemId": "chocolate-chunk-cookie",
+      "variantId": "1ct",
+      "field": "calories",
+      "x": 1144.3,
+      "y": 938.5,
+      "confidence": 1,
+      "reasoning": "Found '1 ct' variant under 'Chocolate Chunk Cookie'. Calories '370 cal' is right of the price."
+    },
+    {
+      "itemId": "chocolate-chunk-cookie",
+      "variantId": "6ct",
+      "field": "price",
+      "x": 1067.5,
+      "y": 972,
+      "confidence": 1,
+      "reasoning": "Found '6 ct' variant under 'Chocolate Chunk Cookie'. Price '10.09' is adjacent to the variant label."
+    },
+    {
+      "itemId": "chocolate-chunk-cookie",
+      "variantId": "6ct",
+      "field": "calories",
+      "x": 1144.3,
+      "y": 973.1,
+      "confidence": 1,
+      "reasoning": "Found '6 ct' variant under 'Chocolate Chunk Cookie'. Calories '370 cal' is right of the price."
+    },
+    {
+      "itemId": "chocolate-fudge-brownie",
+      "variantId": "1ct",
+      "field": "price",
+      "x": 1516.8,
+      "y": 937.4,
+      "confidence": 1,
+      "reasoning": "Found '1 ct' variant under 'Chocolate Fudge Brownie'. Price '2.39' is adjacent to the variant label."
+    },
+    {
+      "itemId": "chocolate-fudge-brownie",
+      "variantId": "1ct",
+      "field": "calories",
+      "x": 1593.6,
+      "y": 938.5,
+      "confidence": 1,
+      "reasoning": "Found '1 ct' variant under 'Chocolate Fudge Brownie'. Calories '370 cal' is right of the price."
+    }
+  ]
+}

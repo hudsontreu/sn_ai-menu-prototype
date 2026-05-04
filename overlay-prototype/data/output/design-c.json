@@ -1,0 +1,295 @@
+{
+  "id": "design-c",
+  "name": "design-c",
+  "backgroundImage": "/assets/design-c.png",
+  "slots": [
+    {
+      "itemId": "cfa-chicken",
+      "variantId": "meal",
+      "field": "price",
+      "x": 107.5,
+      "y": 245.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'meal' label."
+    },
+    {
+      "itemId": "cfa-chicken",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 297.6,
+      "y": 245.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'meal' label."
+    },
+    {
+      "itemId": "cfa-chicken",
+      "variantId": "entree",
+      "field": "price",
+      "x": 107.5,
+      "y": 279.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'entree' label."
+    },
+    {
+      "itemId": "cfa-chicken",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 297.6,
+      "y": 279.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Chicken' and 'entree' label."
+    },
+    {
+      "itemId": "cfa-deluxe",
+      "variantId": "meal",
+      "field": "price",
+      "x": 207.4,
+      "y": 472,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'meal' label."
+    },
+    {
+      "itemId": "cfa-deluxe",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 397.4,
+      "y": 472,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'meal' label."
+    },
+    {
+      "itemId": "cfa-deluxe",
+      "variantId": "entree",
+      "field": "price",
+      "x": 207.4,
+      "y": 504.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'entree' label."
+    },
+    {
+      "itemId": "cfa-deluxe",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 397.4,
+      "y": 504.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Deluxe' and 'entree' label."
+    },
+    {
+      "itemId": "spicy-chicken",
+      "variantId": "meal",
+      "field": "price",
+      "x": 107.5,
+      "y": 624.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'meal' label."
+    },
+    {
+      "itemId": "spicy-chicken",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 297.6,
+      "y": 624.2,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'meal' label."
+    },
+    {
+      "itemId": "spicy-chicken",
+      "variantId": "entree",
+      "field": "price",
+      "x": 107.5,
+      "y": 657.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'entree' label."
+    },
+    {
+      "itemId": "spicy-chicken",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 297.6,
+      "y": 657.7,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Chicken' and 'entree' label."
+    },
+    {
+      "itemId": "spicy-deluxe",
+      "variantId": "meal",
+      "field": "price",
+      "x": 207.4,
+      "y": 850,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'meal' label."
+    },
+    {
+      "itemId": "spicy-deluxe",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 397.4,
+      "y": 850,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'meal' label."
+    },
+    {
+      "itemId": "spicy-deluxe",
+      "variantId": "entree",
+      "field": "price",
+      "x": 207.4,
+      "y": 883.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'entree' label."
+    },
+    {
+      "itemId": "spicy-deluxe",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 397.4,
+      "y": 883.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Spicy Deluxe' and 'entree' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "meal-8ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 278.6,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'meal' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "meal-8ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 278.6,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'meal' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "entree-8ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 311,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'entree' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "entree-8ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 311,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '8ct', and 'entree' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "meal-12ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 378,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'meal' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "meal-12ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 378,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'meal' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "entree-12ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 411.5,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'entree' label."
+    },
+    {
+      "itemId": "cfa-nuggets",
+      "variantId": "entree-12ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 411.5,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Chick-fil-A Nuggets', '12ct', and 'entree' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 642.6,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'meal' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 642.6,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'meal' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 675,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'entree' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 675,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '8ct', and 'entree' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 742,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'meal' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 742,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'meal' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "price",
+      "x": 1065.6,
+      "y": 774.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'entree' label."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "calories",
+      "x": 1257.6,
+      "y": 774.4,
+      "confidence": 0.99,
+      "reasoning": "Identified by proximity to 'Grilled Nuggets', '12ct', and 'entree' label."
+    }
+  ]
+}

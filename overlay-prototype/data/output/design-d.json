@@ -1,0 +1,268 @@
+{
+  "id": "design-d",
+  "name": "design-d",
+  "backgroundImage": "/assets/design-d.png",
+  "slots": [
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "price",
+      "x": 161.3,
+      "y": 247.3,
+      "confidence": 1,
+      "reasoning": "Detected 'Grilled Nuggets' and '8ct meal'. Located '10.99' next to it."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-8ct",
+      "field": "calories",
+      "x": 347.5,
+      "y": 247.3,
+      "confidence": 1,
+      "reasoning": "Located '340-730 cal' on the right of '8ct meal'."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "price",
+      "x": 161.3,
+      "y": 280.8,
+      "confidence": 1,
+      "reasoning": "Detected 'entree' below 'meal'. Associated with '8ct'. Located '6.55' next to it."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-8ct",
+      "field": "calories",
+      "x": 347.5,
+      "y": 280.8,
+      "confidence": 1,
+      "reasoning": "Located '130 cal' on the right of 'entree'."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "price",
+      "x": 161.3,
+      "y": 314.3,
+      "confidence": 1,
+      "reasoning": "Detected '12ct meal'. Located '12.69' next to it."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "meal-12ct",
+      "field": "calories",
+      "x": 347.5,
+      "y": 315.4,
+      "confidence": 1,
+      "reasoning": "Located '410-800 cal' on the right of '12ct meal'."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "price",
+      "x": 161.3,
+      "y": 347.8,
+      "confidence": 1,
+      "reasoning": "Detected 'entree' below 'meal'. Associated with '12ct'. Located '9.35' next to it."
+    },
+    {
+      "itemId": "grilled-nuggets",
+      "variantId": "entree-12ct",
+      "field": "calories",
+      "x": 347.5,
+      "y": 348.8,
+      "confidence": 1,
+      "reasoning": "Located '200 cal' on the right of 'entree'."
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "meal",
+      "field": "price",
+      "x": 88.3,
+      "y": 489.2,
+      "confidence": 1,
+      "reasoning": "Detected 'Grilled Chicken' and 'meal'. Located '10.95' next to it."
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 301.4,
+      "y": 491.4,
+      "confidence": 1,
+      "reasoning": "Located '540-930 cal' on the right of 'meal'."
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "entree",
+      "field": "price",
+      "x": 88.3,
+      "y": 523.8,
+      "confidence": 1,
+      "reasoning": "Detected 'entree' below 'meal'. Located '7.25' next to it."
+    },
+    {
+      "itemId": "grilled-chicken",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 301.4,
+      "y": 524.9,
+      "confidence": 1,
+      "reasoning": "Located '330 cal' on the right of 'entree'."
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "meal",
+      "field": "price",
+      "x": 88.3,
+      "y": 666.4,
+      "confidence": 1,
+      "reasoning": "Detected 'Grilled Chicken Club' and 'meal'. Located '12.79' next to it."
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 299.5,
+      "y": 667.4,
+      "confidence": 1,
+      "reasoning": "Located '670-1060 cal' on the right of 'meal'."
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "entree",
+      "field": "price",
+      "x": 88.3,
+      "y": 698.8,
+      "confidence": 1,
+      "reasoning": "Detected 'entree' below 'meal'. Located '9.19' next to it."
+    },
+    {
+      "itemId": "grilled-chicken-club",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 299.5,
+      "y": 700.9,
+      "confidence": 1,
+      "reasoning": "Located '460 cal' on the right of 'entree'."
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "meal",
+      "field": "price",
+      "x": 88.3,
+      "y": 970.9,
+      "confidence": 1,
+      "reasoning": "Detected 'Grilled Chicken Cool Wrap' and 'meal'. Located '12.49' next to it."
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "meal",
+      "field": "calories",
+      "x": 301.4,
+      "y": 970.9,
+      "confidence": 1,
+      "reasoning": "Located '560-950 cal' on the right of 'meal'."
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "entree",
+      "field": "price",
+      "x": 88.3,
+      "y": 1004.4,
+      "confidence": 1,
+      "reasoning": "Detected 'entree' below 'meal'. Located '8.89' next to it."
+    },
+    {
+      "itemId": "grilled-chicken-cool-wrap",
+      "variantId": "entree",
+      "field": "calories",
+      "x": 301.4,
+      "y": 1004.4,
+      "confidence": 1,
+      "reasoning": "Located '350 cal' on the right of 'entree'."
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "base",
+      "field": "price",
+      "x": 1009.9,
+      "y": 324,
+      "confidence": 1,
+      "reasoning": "Detected 'Cobb'. Located '9.99' below."
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "base",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 325.1,
+      "confidence": 1,
+      "reasoning": "Located '440 cal' to the right of the price."
+    },
+    {
+      "itemId": "salad-cobb",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 359.6,
+      "confidence": 1,
+      "reasoning": "Located '520 cal' associated with 'with toppings'."
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "base",
+      "field": "price",
+      "x": 1009.9,
+      "y": 534.6,
+      "confidence": 1,
+      "reasoning": "Detected 'Market'. Located '10.19' below."
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "base",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 535.7,
+      "confidence": 1,
+      "reasoning": "Located '190 cal' to the right of the price."
+    },
+    {
+      "itemId": "salad-market",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 571.3,
+      "confidence": 1,
+      "reasoning": "Located '320 cal' associated with 'with toppings'."
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "base",
+      "field": "price",
+      "x": 1009.9,
+      "y": 772.2,
+      "confidence": 1,
+      "reasoning": "Detected 'Spicy Southwest'. Located '10.19' below."
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "base",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 775.4,
+      "confidence": 1,
+      "reasoning": "Located '240 cal' to the right of the price."
+    },
+    {
+      "itemId": "salad-spicy-southwest",
+      "variantId": "toppings",
+      "field": "calories",
+      "x": 1102.1,
+      "y": 810,
+      "confidence": 1,
+      "reasoning": "Located '390 cal' associated with 'with toppings'."
+    }
+  ]
+}
