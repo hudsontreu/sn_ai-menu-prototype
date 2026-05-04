@@ -91,5 +91,20 @@
   },
   "chocolate-fudge-brownie": {
     "name": "Chocolate Fudge Brownie"
+  },
+  "cold-brew-coffee": {
+    "name": "Cold Brew Iced Coffee"
+  },
+  "frosted-lemonade": {
+    "name": "Frosted Lemonade"
+  },
+  "frosted-coffee": {
+    "name": "Frosted Coffee"
+  },
+  "frosted-sodas-floats": {
+    "name": "Frosted Sodas & Floats"
+  },
+  "icedream-cone": {
+    "name": "Icedream Cone"
   }
 }

@@ -165,6 +165,11 @@
         "base":   { "price": 2.49, "calories": "0" }
       }
     },
+    "cold-brew-coffee": {
+      "variants": {
+        "base":   { "price": 4.29, "calories": "200" }
+      }
+    },
     "milkshakes": {
       "variants": {
         "base":   { "price": 5.19 },
@@ -172,6 +177,26 @@
         "chocolate":         { "calories": "600" },
         "strawberry":        { "calories": "560" },
         "vanilla":           { "calories": "580" }
+      }
+    },
+    "frosted-lemonade": {
+      "variants": {
+        "base":   { "price": 5.09, "calories": "280/350" }
+      }
+    },
+    "frosted-coffee": {
+      "variants": {
+        "base":   { "price": 4.29, "calories": "260" }
+      }
+    },
+    "frosted-sodas-floats": {
+      "variants": {
+        "base":   { "price": 4.69, "calories": "260-380" }
+      }
+    },
+    "icedream-cone": {
+      "variants": {
+        "base":   { "price": 2.09, "calories": "180" }
       }
     },
     "chocolate-chunk-cookie": {
