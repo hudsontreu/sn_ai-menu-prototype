@@ -67,5 +67,29 @@
   },
   "salad-spicy-southwest": {
     "name": "Spicy Southwest Salad"
+  },
+  "iced-tea": {
+    "name": "Freshly-Brewed Iced Tea"
+  },
+  "cfa-lemonade": {
+    "name": "Chick-fil-a Lemonade"
+  },
+  "cfa-sunjoy": {
+    "name": "Chick-fil-a Sunjoy"
+  },
+  "soft-drinks": {
+    "name": "Soft Drinks"
+  },
+  "bottled-water": {
+    "name": "Bottled Water"
+  },
+  "milkshakes": {
+    "name": "Hand-Spun Milkshakes"
+  },
+  "chocolate-chunk-cookie": {
+    "name": "Chocolate Chunk Cookie"
+  },
+  "chocolate-fudge-brownie": {
+    "name": "Chocolate Fudge Brownie"
   }
 }

@@ -16,35 +16,26 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 - Production front-end will use Angular
 - We can also just start by working with 1 screen design before doing 3 simoultaneously
 
-## Pipeline Overview
+## Pipeline Overview - Current Directory Structure
 
-**Source assets:**
+**script/figma-gemini-batch.js**
 
-- Menu designs are JPGs in Figma
-- 3 menu designs total (one per possible screen position)
-- Each design has two versions:
-    - Blank version (no price/calorie text)
-    - Example version (with price/calorie text filled in)
+- reads design assets from data/menus
+- reads items list from items.json
+- identifies coordinates and produces json files for each design in data/output
 
-**Generation process:**
+**script/build.js**
 
-1. Claude Code pulls images from Figma via MCP
-2. Claude Code analyzes the content
-3. Claude Code produces an HTML version:
-    - Displays the blank image as a full-size background
-    - Overlays HTML text for prices and calories at correct positions
-    - Text is dynamic (same design works across stores with different data)
+- reads jsons in data/output
+- reads data/pricing to match item pricing to store locations
+- reads registry.json to map designs to stores and screens
+- generates html overlay that displays price and calorie in the correct coodinates, placed in public/overlays
+- generates public/active.json manifest to map stores and screens to the correct design overlays and background images
+- copies the background images over from data/menus/background into public/assets for use by the front-end
 
-**Deployment:**
+**src/**
 
-- Full application is sent to all screens in all stores
-- Each screen receives the same payload and code
-- Screen provides data to identify:
-    - Which store it's in
-    - Which position it holds
-- Application uses this to determine:
-    - Which design to display
-    - Which price/calorie data to show
+- front-end app includes store/screen selectors to select the correct background image/overlay html to display
 
 ## Data Structure
 

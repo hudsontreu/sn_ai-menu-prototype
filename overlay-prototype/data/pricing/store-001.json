@@ -135,6 +135,55 @@
         "base":   { "price": 11.25, "calories": 720 },
         "toppings": { "calories": 800 }
       }
+    },
+    "iced-tea": {
+      "variants": {
+        "m":   { "price": 2.69, "calories": "0/120" },
+        "l":   { "price": 2.69, "calories": "0/120" }
+      }
+    },
+    "cfa-lemonade": {
+      "variants": {
+        "m":   { "price": 2.69, "calories": "6/260" },
+        "l":   { "price": 2.69, "calories": "80/280" }
+      }
+    },
+    "cfa-sunjoy": {
+      "variants": {
+        "m":   { "price": 2.69, "calories": "240" },
+        "l":   { "price": 2.69, "calories": "360" }
+      }
+    },
+    "soft-drinks": {
+      "variants": {
+        "m":   { "price": 2.69, "calories": "0-190" },
+        "l":   { "price": 2.69, "calories": "0-270" }
+      }
+    },
+    "bottled-water": {
+      "variants": {
+        "base":   { "price": 2.49, "calories": "0" }
+      }
+    },
+    "milkshakes": {
+      "variants": {
+        "base":   { "price": 5.19 },
+        "cookies-&-cream":   { "calories": "630" },
+        "chocolate":         { "calories": "600" },
+        "strawberry":        { "calories": "560" },
+        "vanilla":           { "calories": "580" }
+      }
+    },
+    "chocolate-chunk-cookie": {
+      "variants": {
+        "1ct":   { "price": 1.79, "calories": "370" },
+        "6ct":   { "price": 10.09, "calories": "370" }
+      }
+    },
+    "chocolate-fudge-brownie": {
+      "variants": {
+        "1ct":   { "price": 2.39, "calories": "370" }
+      }
     }
   }
 }

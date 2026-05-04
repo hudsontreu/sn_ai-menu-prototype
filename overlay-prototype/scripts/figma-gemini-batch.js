@@ -185,12 +185,9 @@ async function main() {
 
   const items = JSON.parse(await readFile(ITEMS_PATH, 'utf8'));
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-  const model = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
+  const model = process.env.MODEL_NAME || 'gemini-3-flash-preview';
 
-  const files = (await readdir(MENUS_FULL_DIR))
-    .filter((f) => f.endsWith('.png'))
-    .sort();
-
+  const files = (await readdir(MENUS_FULL_DIR)).filter((f) => f.endsWith('.png'));
   if (!files.length) throw new Error(`No PNG files found in ${MENUS_FULL_DIR}`);
 
   for (const file of files) {
