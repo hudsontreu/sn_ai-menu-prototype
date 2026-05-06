@@ -1,0 +1,1602 @@
+{
+  "PINE_DRAGON_LEMONADE": {
+    "menu-item": "Pineapple Dragonfruit Lemonade",
+    "pricing-tag": 1009330,
+    "group": "Summer Campaign 2026"
+  },
+  "PINE_DRAGON_SWEETTEA": {
+    "menu-item": "Pineapple Dragonfruit Tea (Sweet)",
+    "pricing-tag": 1009328,
+    "group": "Summer Campaign 2026"
+  },
+  "PINE_DRAGON_SWEETTEA_LEM": {
+    "menu-item": "Pineapple Dragonfruit Sunjoy",
+    "pricing-tag": 1009324,
+    "group": "Summer Campaign 2026"
+  },
+  "FROSTED_PINE_DRAGON_LEM": {
+    "menu-item": "Pineapple Dragonfruit Frosted Lemonade",
+    "pricing-tag": 1009332,
+    "group": "Summer Campaign 2026"
+  },
+  "HONEY_PEP_PIMENTO_SAND": {
+    "menu-item": "Honey Pepper Pimento Sandwich w/ Chick-fil-A Filet",
+    "pricing-tag": 1007251,
+    "group": "Summer Campaign 2026"
+  },
+  "HONEY_PEP_PIM_CFA_MEAL": {
+    "menu-item": "Honey Pepper Pimento CFA Filet Meal",
+    "pricing-tag": 1007254,
+    "group": "Summer Campaign 2026"
+  },
+  "HONEY_PEP_PIMENTO_SAND_SPICY": {
+    "menu-item": "Honey Pepper Pimento Sandwich w/ Spicy Filet",
+    "pricing-tag": 1007252,
+    "group": "Summer Campaign 2026"
+  },
+  "HONEY_PEP_PIM_SAND_SPICY_MEAL": {
+    "menu-item": "Honey Pepper Pimento Spicy Filet Meal",
+    "pricing-tag": 1007255,
+    "group": "Summer Campaign 2026"
+  },
+  "SM_PEACH_MILKSHAKE": {
+    "menu-item": "Peach Milkshake",
+    "pricing-tag": 1002498,
+    "group": "Summer Campaign 2026"
+  },
+  "PEACH_FROSTED_LEM": {
+    "menu-item": "Peach Frosted Lemonade",
+    "pricing-tag": 1009451,
+    "group": "Summer Campaign 2026"
+  },
+  "DCB_PROMO_12": {
+    "menu-item": "8ct nuggets + med fry + SH sprite meal",
+    "pricing-tag": 1005711,
+    "group": "Summer Campaign 2026"
+  },
+  "DCB_PROMO_13": {
+    "menu-item": "4ct spicy strips + med fry + med coke meal",
+    "pricing-tag": 1006383,
+    "group": "Summer Campaign 2026"
+  },
+  "DCB_PROMO_8": {
+    "menu-item": "Chicken minis + hashbrowns + hot coffee",
+    "pricing-tag": 1004751,
+    "group": "Summer Campaign 2026"
+  },
+  "SALSA_ALLACARTE": {
+    "menu-item": "Jalapeno salsa",
+    "pricing-tag": null,
+    "group": "Summer Campaign 2026"
+  },
+  "STRAWBERRY_HIBISCUS_SWEETTEA_LEM": {
+    "menu-item": "Strawberry Hibiscus Sunjoy",
+    "pricing-tag": 1009964,
+    "group": "Spring Campaign 2026"
+  },
+  "STRAWBERRY_HIBISCUS_SPRITE": {
+    "menu-item": "Strawberry Hibiscus & Sprite",
+    "pricing-tag": 1009935,
+    "group": "Spring Campaign 2026"
+  },
+  "STRAWBERRY_HIBISCUS_LEMONADE": {
+    "menu-item": "Strawberry Hibiscus Lemonade",
+    "pricing-tag": 1009957,
+    "group": "Spring Campaign 2026"
+  },
+  "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE": {
+    "menu-item": "Strawberry Hibiscus Frosted Lemonade",
+    "pricing-tag": 1009959,
+    "group": "Spring Campaign 2026"
+  },
+  "JALAPENO_CFA_FILET": {
+    "menu-item": "Jalapeno Ranch Orignal Sandwich",
+    "pricing-tag": 1009473,
+    "group": "Spring Campaign 2026"
+  },
+  "JALAPENO_GRILLED_FILET": {
+    "menu-item": "Jalapeno Ranch Grilled Sandwich",
+    "pricing-tag": 1009474,
+    "group": "Spring Campaign 2026"
+  },
+  "JALAPENO_SPICY_FILET": {
+    "menu-item": "Jalapeno Ranch Spicy Sandwich",
+    "pricing-tag": 1009475,
+    "group": "Spring Campaign 2026"
+  },
+  "JALAPENO_RANCH_ALCARTE": {
+    "menu-item": "Jalapeno Ranch Sauce",
+    "pricing-tag": 1009481,
+    "group": "Spring Campaign 2026"
+  },
+  "SOBAO_BACON_EGGCHEESE": {
+    "menu-item": "Sobao con tocineta (bacon)",
+    "pricing-tag": 1010000,
+    "group": "Spring Campaign 2026"
+  },
+  "SOBAO_HAM_EGGCHEESE": {
+    "menu-item": "Sobao con jamon (ham)",
+    "pricing-tag": 1009998,
+    "group": "Spring Campaign 2026"
+  },
+  "SOBAO_CFA_EGGCHEESE": {
+    "menu-item": "Sobao con pollo (chicken)",
+    "pricing-tag": 1009999,
+    "group": "Spring Campaign 2026"
+  },
+  "DCB_PROMO_5": {
+    "menu-item": "Sobao meal upcgrade (price and cals)",
+    "pricing-tag": 1009310,
+    "group": "Spring Campaign 2026"
+  },
+  "DCB_PROMO_10": {
+    "menu-item": "CFA dlx + med fry + strawberry hibiscus sprite",
+    "pricing-tag": 1009187,
+    "group": "Spring Campaign 2026"
+  },
+  "DCB_PROMO_11": {
+    "menu-item": "Spicy dlx + med fry + strawberry hibiscus sprite",
+    "pricing-tag": 1009310,
+    "group": "Spring Campaign 2026"
+  },
+  "HASH_BROWNS": {
+    "menu-item": "Hash Browns",
+    "pricing-tag": 1000225,
+    "group": "Breakfast"
+  },
+  "BFST_FRUIT_CUP": {
+    "menu-item": "Fruit Cup - Med",
+    "pricing-tag": 1005724,
+    "group": "Breakfast"
+  },
+  "CFA_BISCUIT_MEAL": {
+    "menu-item": "Chicken Biscuit Meal",
+    "pricing-tag": 1004738,
+    "group": "Breakfast"
+  },
+  "BISCUIT_CHICKEN": {
+    "menu-item": "Chicken Biscuit Entree",
+    "pricing-tag": 1000085,
+    "group": "Breakfast"
+  },
+  "MINIS_4CT_MEAL": {
+    "menu-item": "Chicken Mini Meal",
+    "pricing-tag": 1004751,
+    "group": "Breakfast"
+  },
+  "CHICK_N_MINIS_4_COUNT": {
+    "menu-item": "Chicken Mini Entree",
+    "pricing-tag": 1000093,
+    "group": "Breakfast"
+  },
+  "CHICK_N_MINIS_10_CT": {
+    "menu-item": "Chicken Mini Entree (10)",
+    "pricing-tag": 1008141,
+    "group": "Breakfast"
+  },
+  "SPICY_BISCUIT_MEAL": {
+    "menu-item": "Spicy Biscuit Meal",
+    "pricing-tag": 1004745,
+    "group": "Breakfast"
+  },
+  "BISCUIT_SPICY_CHICKEN": {
+    "menu-item": "Spicy Biscuit Entree",
+    "pricing-tag": 1002843,
+    "group": "Breakfast"
+  },
+  "HBS_SAUS_BOWL_MEAL": {
+    "menu-item": "Sausage Hash Brown Scramble Bowl Meal",
+    "pricing-tag": 1006076,
+    "group": "Breakfast"
+  },
+  "HBS_SAUSAGE": {
+    "menu-item": "Sausage Hash Brown Scramble Bowl Entree",
+    "pricing-tag": 1005922,
+    "group": "Breakfast"
+  },
+  "HBS_NUG_BOWL_MEAL": {
+    "menu-item": "Chicken Hash Brown Scramble Bowl Meal",
+    "pricing-tag": 1006075,
+    "group": "Breakfast"
+  },
+  "HBS_NUGGETS": {
+    "menu-item": "Chicken Hash Brown Scramble Bowl Entree",
+    "pricing-tag": 1005921,
+    "group": "Breakfast"
+  },
+  "HB_BUR_NUGGETS": {
+    "menu-item": "Chicken Hash Brown Scramble Burritto Entree",
+    "pricing-tag": 1005924,
+    "group": "Breakfast"
+  },
+  "HBS_NUG_BURRITO_MEAL": {
+    "menu-item": "Chicken Hash Brown Scramble Burritto Meal",
+    "pricing-tag": 1006074,
+    "group": "Breakfast"
+  },
+  "HBS_SAUS_BURRITO_MEAL": {
+    "menu-item": "Sausage Hash Brown Scramble Burritto Meal",
+    "pricing-tag": 1006078,
+    "group": "Breakfast"
+  },
+  "HBS_BUR_SAUSAGE": {
+    "menu-item": "Sausage Hash Brown Scramble Burritto Entree",
+    "pricing-tag": 1005925,
+    "group": "Breakfast"
+  },
+  "EGG_WHITE_CHKN_MEAL": {
+    "menu-item": "Egg White Grill Meal",
+    "pricing-tag": 1005332,
+    "group": "Breakfast"
+  },
+  "EGG_WHITE_GRILL": {
+    "menu-item": "Egg White Grill Entree",
+    "pricing-tag": 1005312,
+    "group": "Breakfast"
+  },
+  "BISCUIT_BEC_MEAL": {
+    "menu-item": "Bacon Egg & Cheese Biscuit Meal",
+    "pricing-tag": 1004739,
+    "group": "Breakfast"
+  },
+  "BISCUIT_SEC_MEAL": {
+    "menu-item": "Sausage Egg & Cheese Biscuit Meal",
+    "pricing-tag": 1004742,
+    "group": "Breakfast"
+  },
+  "BEC_BISCUIT": {
+    "menu-item": "Bacon Egg & Cheese Biscuit Entree",
+    "pricing-tag": 1000082,
+    "group": "Breakfast"
+  },
+  "SEC_BISCUIT": {
+    "menu-item": "Sausage Egg & Cheese Biscuit Entree",
+    "pricing-tag": 1000089,
+    "group": "Breakfast"
+  },
+  "MUFFIN_BEC_MEAL": {
+    "menu-item": "Bacon Egg & Cheese Muffin Meal",
+    "pricing-tag": 1004761,
+    "group": "Breakfast"
+  },
+  "MUFFIN_SEC_MEAL": {
+    "menu-item": "Sausage Egg & Cheese Muffin Meal",
+    "pricing-tag": 1004763,
+    "group": "Breakfast"
+  },
+  "BEC_MUFFIN": {
+    "menu-item": "Bacon Egg & Cheese Muffin Entree",
+    "pricing-tag": 1004565,
+    "group": "Breakfast"
+  },
+  "SEC_MUFFIN": {
+    "menu-item": "Sausage Egg & Cheese Muffin Entree",
+    "pricing-tag": 1004564,
+    "group": "Breakfast"
+  },
+  "BISCUIT_BUTTERED": {
+    "menu-item": "Hot Buttered Biscuit",
+    "pricing-tag": 1000083,
+    "group": "Breakfast"
+  },
+  "BISCUIT_BACON": {
+    "menu-item": "Bacon Biscuit",
+    "pricing-tag": 1000081,
+    "group": "Breakfast"
+  },
+  "BISCUIT_SAUSAGE": {
+    "menu-item": "Sausage Biscuit",
+    "pricing-tag": 1000088,
+    "group": "Breakfast"
+  },
+  "ENGLISH_MUFFIN": {
+    "menu-item": "English Muffin",
+    "pricing-tag": 1004563,
+    "group": "Breakfast"
+  },
+  "SE_BISCUIT": {
+    "menu-item": "Sausage & Egg Biscuit",
+    "pricing-tag": 1009027,
+    "group": "Breakfast"
+  },
+  "CE_BISCUIT": {
+    "menu-item": "Chicken & Egg Biscuit",
+    "pricing-tag": 1009028,
+    "group": "Breakfast"
+  },
+  "BISCUIT_EGG": {
+    "menu-item": "Biscuit with Egg",
+    "pricing-tag": 1000086,
+    "group": "Breakfast"
+  },
+  "BFST_PLATTER_CFAFILET": {
+    "menu-item": "Pollo Chickfila Platos",
+    "pricing-tag": 1001130,
+    "group": "Breakfast"
+  },
+  "BFST_PLATTER_SAUSAGE": {
+    "menu-item": "Salchicha",
+    "pricing-tag": 1001131,
+    "group": "Breakfast"
+  },
+  "BFST_PLATTER_BACON": {
+    "menu-item": "Tocineta",
+    "pricing-tag": 1001129,
+    "group": "Breakfast"
+  },
+  "DCB_MINI": {
+    "menu-item": "10 ct mini (per mini)",
+    "pricing-tag": null,
+    "group": "Breakfast"
+  },
+  "N/A": {
+    "menu-item": "Substitute For",
+    "pricing-tag": 1000154,
+    "group": "Breakfast"
+  },
+  "GRILLED_CHICKEN_SANDWICH": {
+    "menu-item": "Grilled Chicken Sandwich Entree",
+    "pricing-tag": 1004610,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_CLUB_COLBY_JACK": {
+    "menu-item": "Grilled Chicken Club Colby Jack Entree",
+    "pricing-tag": 1004613,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "CLUB_NATURAL_CHEDDAR": {
+    "menu-item": "Grilled Chicken Club Cheddar Cheese Entree",
+    "pricing-tag": 1007434,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "CLUB_SWISS": {
+    "menu-item": "Club w/ Swiss Entree",
+    "pricing-tag": 1007539,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_CLUB_AMERICAN": {
+    "menu-item": "Grilled Chicken Club American Entree",
+    "pricing-tag": 1004611,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_CLUB_PEPPER_JACK": {
+    "menu-item": "Grilled Chicken Club Pepper Jack Entree",
+    "pricing-tag": 1004612,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_CLUB_NO_CHEESE": {
+    "menu-item": "Grilled Chicken Club No Cheese Entree",
+    "pricing-tag": 1004639,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_NUGGETS_8_COUNT": {
+    "menu-item": "Grilled Nuggets (8) Entree",
+    "pricing-tag": 1004667,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_NUGGETS_12_COUNT": {
+    "menu-item": "Grilled Nugget (12) Entree",
+    "pricing-tag": 1004668,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SANDWICH_CFA_CHICKEN": {
+    "menu-item": "Chicken Sandwich Entree",
+    "pricing-tag": 1000231,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "DELUXE_AMERICAN": {
+    "menu-item": "Chickfila Deluxe Entree",
+    "pricing-tag": 1003016,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "CFA_DLX_NATURAL_CHEDDAR": {
+    "menu-item": "Chickfila Deluxe w/ Cheddar Cheese Entree",
+    "pricing-tag": 1007430,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "NUGGETS_CFA_8_COUNT": {
+    "menu-item": "Chickfila Nuggets (8) Entree",
+    "pricing-tag": 1000161,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "NUGGETS_CFA_12_COUNT": {
+    "menu-item": "Chickfila Nuggets (12) Entree",
+    "pricing-tag": 1000162,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SPICY_CHICKEN_CFA_SANDWICH": {
+    "menu-item": "Spicy Chicken Entree",
+    "pricing-tag": 1001285,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SPICY_DELUXE_PEPPER_JACK": {
+    "menu-item": "Spicy Deluxe Entree",
+    "pricing-tag": 1003021,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "CHICK_N_STRIPS_3_COUNT": {
+    "menu-item": "Chicken Strip (3) Entree",
+    "pricing-tag": 1001327,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "CHICK_N_STRIPS_4_COUNT": {
+    "menu-item": "Chicken Strip (4) Entree",
+    "pricing-tag": 1001328,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SPICY_DLX_MONTEREY_JALAPENOS": {
+    "menu-item": "Spicy Deluxe Sandwich w/ Monterey Jack w/ Jalape\u00f1os Cheese Entree",
+    "pricing-tag": 1007433,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SPICY_STRIPS_4_COUNT": {
+    "menu-item": "Spicy Strips (4) Entree",
+    "pricing-tag": 1006387,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "SPICY_STRIPS_3_COUNT": {
+    "menu-item": "Spicy Strips (3) Entree",
+    "pricing-tag": 1006386,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "30_CT_NUGGETS": {
+    "menu-item": "Chickfila Nuggets (30) Entree",
+    "pricing-tag": 1006616,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "DCB_30_CT_NUGGETS": {
+    "menu-item": "Chickfila Nuggets (30) per nugget",
+    "pricing-tag": 1006616,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "DCB_30_CT_GRILLED_NUGGETS": {
+    "menu-item": "Grilled Nugget (30) Entree",
+    "pricing-tag": 1007846,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "DCB_GRILLED_NUGGET": {
+    "menu-item": "Grilled Nugget (30) Entree (Per nugget)",
+    "pricing-tag": null,
+    "group": "Lunch/Dinner Entrees"
+  },
+  "GRILLED_SANDWICH_MEAL": {
+    "menu-item": "Grilled Chicken Sandwich Meal",
+    "pricing-tag": 1005717,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_CJ_MEAL": {
+    "menu-item": "Grilled Chicken Club Colby Jack Meal",
+    "pricing-tag": 1005720,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_NATURAL_CHEDDAR_MEAL": {
+    "menu-item": "Grilled Chicken Club Cheddar Cheese Meal",
+    "pricing-tag": 1007438,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_SWISS_MEAL": {
+    "menu-item": "Club w/ Swiss Meal",
+    "pricing-tag": 1007563,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_AMERICAN_MEAL": {
+    "menu-item": "Grilled Chicken Club American Meal",
+    "pricing-tag": 1005718,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_PJ_MEAL": {
+    "menu-item": "Grilled Chicken Club Pepper Jack Meal",
+    "pricing-tag": 1005719,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CLUB_NOCHEESE_MEAL": {
+    "menu-item": "Grilled Chicken Club No Cheese Meal",
+    "pricing-tag": 1005721,
+    "group": "Lunch/Dinner Meals"
+  },
+  "NUGGETS_GRILLED_8CT_MEAL": {
+    "menu-item": "Grilled Nuggets (8) Meal",
+    "pricing-tag": 1005713,
+    "group": "Lunch/Dinner Meals"
+  },
+  "NUGGETS_GRILLED_12CT_MEAL": {
+    "menu-item": "Grilled Nugget (12) Meal",
+    "pricing-tag": 1005714,
+    "group": "Lunch/Dinner Meals"
+  },
+  "COOL_WRAP_MEAL": {
+    "menu-item": "Grilled Chicken Cool Wrap Meal",
+    "pricing-tag": 1005723,
+    "group": "Lunch/Dinner Meals"
+  },
+  "30_CT_GRILLED_NUGGET_MEAL": {
+    "menu-item": "Grilled Nugget (30) Meal",
+    "pricing-tag": 1007847,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CFA_SANDWICH_MEAL": {
+    "menu-item": "Chicken Sandwich Meal",
+    "pricing-tag": 1005727,
+    "group": "Lunch/Dinner Meals"
+  },
+  "DELUXE_AMERICAN_MEAL": {
+    "menu-item": "Chickfila Deluxe Meal",
+    "pricing-tag": 1005704,
+    "group": "Lunch/Dinner Meals"
+  },
+  "CFA_DLX_NATURAL_CHEDDAR_MEAL": {
+    "menu-item": "Chickfila Deluxe w/ Cheddar Cheese Meal",
+    "pricing-tag": 1007437,
+    "group": "Lunch/Dinner Meals"
+  },
+  "NUGGETS_8CT_MEAL": {
+    "menu-item": "Chickfila Nuggets (8) Meal",
+    "pricing-tag": 1005711,
+    "group": "Lunch/Dinner Meals"
+  },
+  "NUGGETS_12CT_MEAL": {
+    "menu-item": "Chickfila Nuggets (12) Meal",
+    "pricing-tag": 1005712,
+    "group": "Lunch/Dinner Meals"
+  },
+  "SPICY_MEAL": {
+    "menu-item": "Spicy Chicken Meal",
+    "pricing-tag": 1005706,
+    "group": "Lunch/Dinner Meals"
+  },
+  "SPICY_PJ_MEAL": {
+    "menu-item": "Spicy Deluxe Meal",
+    "pricing-tag": 1005709,
+    "group": "Lunch/Dinner Meals"
+  },
+  "STRIPS_3CT_MEAL": {
+    "menu-item": "Chicken Strip (3) Meal",
+    "pricing-tag": 1005715,
+    "group": "Lunch/Dinner Meals"
+  },
+  "STRIPS_4CT_MEAL": {
+    "menu-item": "Chicken Strip (4) Meal",
+    "pricing-tag": 1005716,
+    "group": "Lunch/Dinner Meals"
+  },
+  "SPICY_DLX_MONTERERY_JALAPENOS_MEAL": {
+    "menu-item": "Spicy Deluxe w/ Monterey Jack w/ Jalape\u00f1os Meal",
+    "pricing-tag": 1007441,
+    "group": "Lunch/Dinner Meals"
+  },
+  "30_NUG_MEAL": {
+    "menu-item": "Chickfila Nuggets (30) Meal",
+    "pricing-tag": 1006642,
+    "group": "Lunch/Dinner Meals"
+  },
+  "4_SPICYSTRIP_MEAL": {
+    "menu-item": "Spicy Strips (4) Meal",
+    "pricing-tag": 1006383,
+    "group": "Lunch/Dinner Meals"
+  },
+  "3_SPICYSTRIP_MEAL": {
+    "menu-item": "Spicy Strips (3) Meal",
+    "pricing-tag": 1006382,
+    "group": "Lunch/Dinner Meals"
+  },
+  "DCB_CFA_MACNCHEESE_MEAL": {
+    "menu-item": "Generic Promo: CFA Sandwich + mac-n-cheese + Coke",
+    "pricing-tag": 1009187,
+    "group": "Lunch/Dinner Meals"
+  },
+  "COOL_WRAP_GRILLED": {
+    "menu-item": "Grilled Chicken Cool Wrap Entree",
+    "pricing-tag": 1004641,
+    "group": "Salads & Wraps"
+  },
+  "COBB_NUGGETS": {
+    "menu-item": "Cobb Salad w/ Nuggets w/ Toppings",
+    "pricing-tag": 1004273,
+    "group": "Salads & Wraps"
+  },
+  "DCB_COBB_NUGGETS": {
+    "menu-item": "Cobb Salad w/ Nuggets w/o Toppings",
+    "pricing-tag": null,
+    "group": "Salads & Wraps"
+  },
+  "COBB_GRILLED_NUGGETS": {
+    "menu-item": "Cobb Salad w/ Grilled Nuggets w/ Toppings",
+    "pricing-tag": 1004655,
+    "group": "Salads & Wraps"
+  },
+  "DCB_COBB_GRILLED_NUGGETS": {
+    "menu-item": "Cobb Salad w/ Grilled Nuggets w/o Toppings",
+    "pricing-tag": null,
+    "group": "Salads & Wraps"
+  },
+  "SALAD_GRILLED_MARKET": {
+    "menu-item": "Market Salad w/ Grilled Filet w/ Toppings",
+    "pricing-tag": 1004654,
+    "group": "Salads & Wraps"
+  },
+  "DCB_SALAD_GRILLED_MARKET": {
+    "menu-item": "Market Salad w/ Grilled Filet w/o Toppings",
+    "pricing-tag": null,
+    "group": "Salads & Wraps"
+  },
+  "SPICY_SOUTHWEST_SALAD_SGF": {
+    "menu-item": "Spicy Southwest Salad w/ Spicy Grillet Filet w/ Toppings",
+    "pricing-tag": 1005539,
+    "group": "Salads & Wraps"
+  },
+  "DCB_SPICY_SOUTHWEST_SALAD_SGF": {
+    "menu-item": "Spicy Southwest Salad w/ Spicy Grillet Filet w/o Toppings",
+    "pricing-tag": null,
+    "group": "Salads & Wraps"
+  },
+  "MD_WAFFLE_POTATO_FRIES": {
+    "menu-item": "Waffle Potato Fries (M)",
+    "pricing-tag": 1000123,
+    "group": "Sides"
+  },
+  "LG_WAFFLE_POTATO_FRIES": {
+    "menu-item": "Waffle Potato Fries (L)",
+    "pricing-tag": 1000124,
+    "group": "Sides"
+  },
+  "CHIPS_WAFFLE": {
+    "menu-item": "Waffle Potato Chips",
+    "pricing-tag": 1000224,
+    "group": "Sides"
+  },
+  "CHIPS_WAFFLE_CFA_SAUCE": {
+    "menu-item": "CFA Sauce Chips",
+    "pricing-tag": 1008615,
+    "group": "Sides"
+  },
+  "SM_CHICKEN_SOUP": {
+    "menu-item": "Chicken Noodle Soup Cup",
+    "pricing-tag": 1000166,
+    "group": "Sides"
+  },
+  "LG_CHICKEN_SOUP": {
+    "menu-item": "Chicken Noodle Soup Bowl",
+    "pricing-tag": 1000167,
+    "group": "Sides"
+  },
+  "FRUIT_CUP_MEDIUM": {
+    "menu-item": "Fruit Cup - Med",
+    "pricing-tag": 1004576,
+    "group": "Sides"
+  },
+  "SALAD_SIDE": {
+    "menu-item": "Side Salad",
+    "pricing-tag": 1004265,
+    "group": "Sides"
+  },
+  "TEST_MD_MACNCHEESE": {
+    "menu-item": "Mac & Cheese (M)",
+    "pricing-tag": 1006280,
+    "group": "Sides"
+  },
+  "LG_KALE_CRUNCH": {
+    "menu-item": "Kale Crunch",
+    "pricing-tag": 1006832,
+    "group": "Sides"
+  },
+  "YOGURT_GREEK_PARFAIT_COOKIE": {
+    "menu-item": "Greek Yogurt Parfait w/ Cookie",
+    "pricing-tag": 1005315,
+    "group": "Sides"
+  },
+  "YOGURT_GREEK_PARFAIT_GRANOLA": {
+    "menu-item": "Greek Yogurt Parfait w/ Granola",
+    "pricing-tag": 1005316,
+    "group": "Sides"
+  },
+  "GUACAMOLE": {
+    "menu-item": "Add Guacamole",
+    "pricing-tag": 1004267,
+    "group": "Sides"
+  },
+  "JALAPENO_PEPPERS": {
+    "menu-item": "Add Jalape\u00f1o Peppers",
+    "pricing-tag": 1006445,
+    "group": "Sides"
+  },
+  "CHEESE_SAUCE": {
+    "menu-item": "Add Cheese Sauce",
+    "pricing-tag": 1006462,
+    "group": "Sides"
+  },
+  "30 cals (hardcoded)": {
+    "menu-item": "Gluten-Free Bun Substitute",
+    "pricing-tag": 1005847,
+    "group": "Sides"
+  },
+  "BACON": {
+    "menu-item": "Add Bacon",
+    "pricing-tag": 1000391,
+    "group": "Sides"
+  },
+  "SM_COOKIES_CREAM_MILKSHAKE": {
+    "menu-item": "Cookies and Cream Milkshake",
+    "pricing-tag": 1002075,
+    "group": "Treats"
+  },
+  "SM_CHOCOLATE_MILKSHAKE": {
+    "menu-item": "Chocolate Milkshake",
+    "pricing-tag": 1002071,
+    "group": "Treats"
+  },
+  "SM_STRAWBERRY_MILKSHAKE": {
+    "menu-item": "Strawberry Milkshake",
+    "pricing-tag": 1002073,
+    "group": "Treats"
+  },
+  "SM_VANILLA_MILKSHAKE": {
+    "menu-item": "Vanilla Milkshake",
+    "pricing-tag": 1002069,
+    "group": "Treats"
+  },
+  "SM_FROSTED_LEMONADE": {
+    "menu-item": "Frosted Lemonade",
+    "pricing-tag": 1005216,
+    "group": "Treats"
+  },
+  "SM_DIET_FROSTED_LEMONADE": {
+    "menu-item": "Diet Frosted Lemonade",
+    "pricing-tag": 1005216,
+    "group": "Treats"
+  },
+  "SM_FROSTED_COFFEE": {
+    "menu-item": "Frosted Coffee",
+    "pricing-tag": 1005767,
+    "group": "Treats"
+  },
+  "SM_ICEDREAM_CONE": {
+    "menu-item": "Icedream Cone",
+    "pricing-tag": 1000108,
+    "group": "Treats"
+  },
+  "COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL": {
+    "menu-item": "Chocolate Chunk Cookie (1)",
+    "pricing-tag": 1004056,
+    "group": "Treats"
+  },
+  "COOKIE_CHOCOLATE_CHUNK_6_COUNT": {
+    "menu-item": "Chocolate Chunk Cookie (6)",
+    "pricing-tag": 1004057,
+    "group": "Treats"
+  },
+  "BROWNIE": {
+    "menu-item": "Chocolate Fudge Brownie",
+    "pricing-tag": 1006266,
+    "group": "Treats"
+  },
+  "CARAMEL_SUNDAE": {
+    "menu-item": "Salted Caramel Sundae",
+    "pricing-tag": 1008596,
+    "group": "Treats"
+  },
+  "SM_CARAMEL_SHAKE": {
+    "menu-item": "Salted Caramel Crumble Shake",
+    "pricing-tag": 1008595,
+    "group": "Treats"
+  },
+  "DCB_FLOATS_RANGE": {
+    "menu-item": "Frosted sodas & floats range",
+    "pricing-tag": 1009343,
+    "group": "Treats"
+  },
+  "FLOAT_COKE": {
+    "menu-item": "Coke Float",
+    "pricing-tag": 1009386,
+    "group": "Treats"
+  },
+  "SPIN_DRPEPPER": {
+    "menu-item": "Dr. Pepper Spun Soda",
+    "pricing-tag": 1009402,
+    "group": "Treats"
+  },
+  "JUICE_SIMPLY_ORANGE": {
+    "menu-item": "Simply Orange",
+    "pricing-tag": 1003375,
+    "group": "Drinks"
+  },
+  "DEL_VALLE_OJ": {
+    "menu-item": "Del Valle Orange Juice",
+    "pricing-tag": 1007551,
+    "group": "Drinks"
+  },
+  "SM_ICED_COFFEE": {
+    "menu-item": "Cold Brew Iced Coffee Orignial",
+    "pricing-tag": 1004723,
+    "group": "Drinks"
+  },
+  "SM_ICED_COFFEE_VANILLA": {
+    "menu-item": "Cold Brew Iced Coffee Vanilla",
+    "pricing-tag": 1004728,
+    "group": "Drinks"
+  },
+  "CARAMEL_ICED_COFFEE": {
+    "menu-item": "Caramel Iced Coffee",
+    "pricing-tag": 1009675,
+    "group": "Drinks"
+  },
+  "MOCHA_ICED_COFFEE": {
+    "menu-item": "Mocha Iced Coffee",
+    "pricing-tag": 1009677,
+    "group": "Drinks"
+  },
+  "DCB_ICED_COFFEE_RANGE": {
+    "menu-item": "Iced Coffee calorie range",
+    "pricing-tag": 1004723,
+    "group": "Drinks"
+  },
+  "CARAMEL_CREAM_COLDBREW": {
+    "menu-item": "Caramel Cream Cold Brew",
+    "pricing-tag": 1009676,
+    "group": "Drinks"
+  },
+  "VANILLA_CREAM_COLDBREW": {
+    "menu-item": "Vanilla Cream Cold Brew",
+    "pricing-tag": 1009779,
+    "group": "Drinks"
+  },
+  "SM_MOCHA_COLDBREW": {
+    "menu-item": "Mocha Cream Cold Brew",
+    "pricing-tag": 1007075,
+    "group": "Drinks"
+  },
+  "DCB_CREAM_COLDBREW_RANGE": {
+    "menu-item": "Cream Cold Brew calorie range",
+    "pricing-tag": 1007075,
+    "group": "Drinks"
+  },
+  "SM_COFFEE": {
+    "menu-item": "Hot Coffee",
+    "pricing-tag": 1004713,
+    "group": "Drinks"
+  },
+  "CAFE_LATTE_SINGLE": {
+    "menu-item": "Cafe Latte",
+    "pricing-tag": 1007552,
+    "group": "Drinks"
+  },
+  "CAFE_LATTE_DOUBLE": {
+    "menu-item": "Latte Doble",
+    "pricing-tag": 1007553,
+    "group": "Drinks"
+  },
+  "ESPRESSO_SINGLE": {
+    "menu-item": "Espresso",
+    "pricing-tag": 1007556,
+    "group": "Drinks"
+  },
+  "AMERICANO": {
+    "menu-item": "Americano",
+    "pricing-tag": 1007554,
+    "group": "Drinks"
+  },
+  "CORTADO": {
+    "menu-item": "Cortado",
+    "pricing-tag": 1007555,
+    "group": "Drinks"
+  },
+  "MD_TEA_UNSWEET": {
+    "menu-item": "Freshly Brewed Iced Tea (M) Unsweetened",
+    "pricing-tag": 1000340,
+    "group": "Drinks"
+  },
+  "LG_TEA_UNSWEET": {
+    "menu-item": "Freshly Brewed Iced Tea (L) Unsweetened",
+    "pricing-tag": 1000339,
+    "group": "Drinks"
+  },
+  "MD_DIET_LEMONADE": {
+    "menu-item": "Chickfila Lemonade (M) Diet",
+    "pricing-tag": 1000131,
+    "group": "Drinks"
+  },
+  "LG_DIET_LEMONADE": {
+    "menu-item": "Chickfila Lemonade (L) Diet",
+    "pricing-tag": 1000130,
+    "group": "Drinks"
+  },
+  "MD_LEMONADE": {
+    "menu-item": "Chickfila Lemonade (M)",
+    "pricing-tag": 1000126,
+    "group": "Drinks"
+  },
+  "LG_LEMONADE": {
+    "menu-item": "Chickfila Lemonade (L)",
+    "pricing-tag": 1000125,
+    "group": "Drinks"
+  },
+  "MD_SWEET_TEA_LEMONADE": {
+    "menu-item": "Chickfila Sunjoy (M)",
+    "pricing-tag": 1004158,
+    "group": "Drinks"
+  },
+  "LG_SWEET_TEA_LEMONADE": {
+    "menu-item": "Chickfila Sunjoy (L)",
+    "pricing-tag": 1004157,
+    "group": "Drinks"
+  },
+  "MD_FANTA_APPLE": {
+    "menu-item": "Fanta Apple (M)",
+    "pricing-tag": 1003382,
+    "group": "Drinks"
+  },
+  "LG_FANTA_APPLE": {
+    "menu-item": "Fanta Apple (L)",
+    "pricing-tag": 1003381,
+    "group": "Drinks"
+  },
+  "MD_COCA_COLA": {
+    "menu-item": "Coca-Cola (M)",
+    "pricing-tag": 1000247,
+    "group": "Drinks"
+  },
+  "LG_COCA_COLA": {
+    "menu-item": "Coca-Cola (L)",
+    "pricing-tag": 1000246,
+    "group": "Drinks"
+  },
+  "MD_DIET_COKE": {
+    "menu-item": "Diet Coke (M)",
+    "pricing-tag": 1000252,
+    "group": "Drinks"
+  },
+  "LG_DIET_COKE": {
+    "menu-item": "Diet Coke (L)",
+    "pricing-tag": 1000251,
+    "group": "Drinks"
+  },
+  "MD_COKE_ZERO": {
+    "menu-item": "Coke Zero (M)",
+    "pricing-tag": 1001505,
+    "group": "Drinks"
+  },
+  "LG_COKE_ZERO": {
+    "menu-item": "Coke Zero (L)",
+    "pricing-tag": 1001504,
+    "group": "Drinks"
+  },
+  "MD_DRPEPPER": {
+    "menu-item": "Dr. Pepper (M)",
+    "pricing-tag": 1000262,
+    "group": "Drinks"
+  },
+  "LG_DRPEPPER": {
+    "menu-item": "Dr. Pepper (L)",
+    "pricing-tag": 1000261,
+    "group": "Drinks"
+  },
+  "MD_DIET_DRPEPPER": {
+    "menu-item": "Diet Dr. Pepper (M)",
+    "pricing-tag": 1000257,
+    "group": "Drinks"
+  },
+  "LG_DIET_DRPEPPER": {
+    "menu-item": "Diet Dr. Pepper (L)",
+    "pricing-tag": 1000256,
+    "group": "Drinks"
+  },
+  "MD_SPRITE": {
+    "menu-item": "Sprite (M)",
+    "pricing-tag": 1000311,
+    "group": "Drinks"
+  },
+  "LG_SPRITE": {
+    "menu-item": "Sprite (L)",
+    "pricing-tag": 1000310,
+    "group": "Drinks"
+  },
+  "MD_HIC_PUNCH": {
+    "menu-item": "Hi-C Fruit Punch(M)",
+    "pricing-tag": 1000267,
+    "group": "Drinks"
+  },
+  "LG_HIC_PUNCH": {
+    "menu-item": "Hi-C Fruit Punch (L)",
+    "pricing-tag": 1000266,
+    "group": "Drinks"
+  },
+  "MD_FANTA_FRUITPUNCH": {
+    "menu-item": "Fanta Fruit Punch (M)",
+    "pricing-tag": 1008298,
+    "group": "Drinks"
+  },
+  "LG_FANTA_FRUITPUNCH": {
+    "menu-item": "Fanta Fruit Punch (L)",
+    "pricing-tag": 1008297,
+    "group": "Drinks"
+  },
+  "MD_FANTA_ORANGE": {
+    "menu-item": "Fanta (M) Orange",
+    "pricing-tag": 1000952,
+    "group": "Drinks"
+  },
+  "LG_FANTA_ORANGE": {
+    "menu-item": "Fanta (L) Organge",
+    "pricing-tag": 1000951,
+    "group": "Drinks"
+  },
+  "MD_BARQS": {
+    "menu-item": "Root Beer (M)",
+    "pricing-tag": 1000282,
+    "group": "Drinks"
+  },
+  "LG_BARQS": {
+    "menu-item": "Root Beer (L)",
+    "pricing-tag": 1000281,
+    "group": "Drinks"
+  },
+  "MD_POWERADE": {
+    "menu-item": "Powerade (M)",
+    "pricing-tag": 1000431,
+    "group": "Drinks"
+  },
+  "LG_POWERADE": {
+    "menu-item": "Powerade (L)",
+    "pricing-tag": 1000430,
+    "group": "Drinks"
+  },
+  "MD_CANADA_DRY": {
+    "menu-item": "Ginger Ale (Canada Dry) (M)",
+    "pricing-tag": 1006929,
+    "group": "Drinks"
+  },
+  "LG_CANADA_DRY": {
+    "menu-item": "Ginger Ale (Canada Dry) (L)",
+    "pricing-tag": 1006928,
+    "group": "Drinks"
+  },
+  "MD_CHERRY_COKE": {
+    "menu-item": "Cherry Coke (M)",
+    "pricing-tag": 1000069,
+    "group": "Drinks"
+  },
+  "MD_SWEET_TEA": {
+    "menu-item": "Freshly Brewed Iced Tea (M) Sweet",
+    "pricing-tag": 1000335,
+    "group": "Drinks"
+  },
+  "LG_SWEET_TEA": {
+    "menu-item": "Freshly Brewed Iced Tea (L) Sweet",
+    "pricing-tag": 1000334,
+    "group": "Drinks"
+  },
+  "BOTTLED_WATER": {
+    "menu-item": "Dasani Bottle",
+    "pricing-tag": 1000190,
+    "group": "Drinks"
+  },
+  "SMART_WATER": {
+    "menu-item": "Smart Water Bottle",
+    "pricing-tag": 1000190,
+    "group": "Drinks"
+  },
+  "LG_CHERRY_COKE": {
+    "menu-item": "Cherry Coke (L)",
+    "pricing-tag": 1000068,
+    "group": "Drinks"
+  },
+  "MD_FANTA_STRAWBERRY": {
+    "menu-item": "Fanta Strawberry (M)",
+    "pricing-tag": 1001848,
+    "group": "Drinks"
+  },
+  "LG_FANTA_STRAWBERRY": {
+    "menu-item": "Fanta Strawberry (L)",
+    "pricing-tag": 1001847,
+    "group": "Drinks"
+  },
+  "DCB_MED_SODA": {
+    "menu-item": "Med soda",
+    "pricing-tag": 1000247,
+    "group": "Drinks"
+  },
+  "DCB_LG_SODA": {
+    "menu-item": "Large soda",
+    "pricing-tag": 1000246,
+    "group": "Drinks"
+  },
+  "AVACADO_RAN_ALLACART": {
+    "menu-item": "Avocado Lime Ranch",
+    "pricing-tag": 1004276,
+    "group": "Dressings and Sauce"
+  },
+  "VIN_APPLE_ALLACART": {
+    "menu-item": "Apple Cidar Vinaigrette",
+    "pricing-tag": 1004249,
+    "group": "Dressings and Sauce"
+  },
+  "LITE_BALSAM_ALLACART": {
+    "menu-item": "Light Balsamic Vinaigrette",
+    "pricing-tag": 1005788,
+    "group": "Dressings and Sauce"
+  },
+  "GARLIC_HERB_ALLACART": {
+    "menu-item": "Garden Herb Ranch",
+    "pricing-tag": 1000045,
+    "group": "Dressings and Sauce"
+  },
+  "CFA_SAUCE_ALLACART": {
+    "menu-item": "Chickfila Sauce",
+    "pricing-tag": 1001323,
+    "group": "Dressings and Sauce"
+  },
+  "POLYNESIAN_ALLACART": {
+    "menu-item": "Polynesian Sauce",
+    "pricing-tag": 1000044,
+    "group": "Dressings and Sauce"
+  },
+  "HONEY_MUSTARD_1OZ_SAUCE": {
+    "menu-item": "Honey Mustard Sauce",
+    "pricing-tag": 1000029,
+    "group": "Dressings and Sauce"
+  },
+  "RANCH_SAUCE_ALACARTE": {
+    "menu-item": "Garden Herb Ranch Sauce",
+    "pricing-tag": 1000045,
+    "group": "Dressings and Sauce"
+  },
+  "BUFFALO_ALLACART": {
+    "menu-item": "Buffalo Sauce",
+    "pricing-tag": 1000013,
+    "group": "Dressings and Sauce"
+  },
+  "BBQ_ALLACART": {
+    "menu-item": "Barbeque Sauce",
+    "pricing-tag": 1000010,
+    "group": "Dressings and Sauce"
+  },
+  "SRIRACHA_ALLACART": {
+    "menu-item": "Sweet and Spicy Sriracha",
+    "pricing-tag": 1005749,
+    "group": "Dressings and Sauce"
+  },
+  "CREAMY_SALSA_ALLACART": {
+    "menu-item": "Creamy Salsa",
+    "pricing-tag": 1005543,
+    "group": "Dressings and Sauce"
+  },
+  "HONEY_MUST_ALLACART": {
+    "menu-item": "Fat Free Honey Mustard",
+    "pricing-tag": 1000028,
+    "group": "Dressings and Sauce"
+  },
+  "ITALIAN_LITE_ALLACART": {
+    "menu-item": "Light Italian",
+    "pricing-tag": 1000038,
+    "group": "Dressings and Sauce"
+  },
+  "DCB_SAUCE_RANGE": {
+    "menu-item": "DCB sauce range",
+    "pricing-tag": null,
+    "group": "Dressings and Sauce"
+  },
+  "DCB_DRESSING_RANGE": {
+    "menu-item": "DCB dressing range",
+    "pricing-tag": null,
+    "group": "Dressings and Sauce"
+  },
+  "5CT_NUGGETS": {
+    "menu-item": "Chickfila Nuggets (5)",
+    "pricing-tag": 1007118,
+    "group": "Kids Meal"
+  },
+  "GRILLED_NUGS_5_CT": {
+    "menu-item": "Grilled Nuggets (5)",
+    "pricing-tag": 1007120,
+    "group": "Kids Meal"
+  },
+  "CHICK_N_STRIPS_2_COUNT": {
+    "menu-item": "Chick-n-Strips (2)",
+    "pricing-tag": 1000351,
+    "group": "Kids Meal"
+  },
+  "SM_WAFFLE_POTATO_FRIES": {
+    "menu-item": "Waffle Potato Fries (S)",
+    "pricing-tag": 1000122,
+    "group": "Kids Meal"
+  },
+  "FRUIT_CUP_SMALL": {
+    "menu-item": "Fruit Cup",
+    "pricing-tag": 1004575,
+    "group": "Kids Meal"
+  },
+  "BUDDY_FRUITS_MULTIPACK": {
+    "menu-item": "Multifruit Pouch",
+    "pricing-tag": 1007845,
+    "group": "Kids Meal"
+  },
+  "APPLE_SAUCE": {
+    "menu-item": "Cinnamon Apple Sauce",
+    "pricing-tag": 1003653,
+    "group": "Kids Meal"
+  },
+  "TEST_SM_MACNCHEESE": {
+    "menu-item": "Substitute for mac & cheese (kids meal)",
+    "pricing-tag": "1006212-1000065",
+    "group": "Kids Meal"
+  },
+  "MILK_WHITE_1_PERCENT": {
+    "menu-item": "1% Milk",
+    "pricing-tag": 1001170,
+    "group": "Kids Meal"
+  },
+  "MILK_CHOCOLATE_1_PERCENT": {
+    "menu-item": "1% Chocolate Milk",
+    "pricing-tag": 1001175,
+    "group": "Kids Meal"
+  },
+  "2PER_WHITE_MILK": {
+    "menu-item": "2% Milk",
+    "pricing-tag": 1001170,
+    "group": "Kids Meal"
+  },
+  "AJ_MINUTEMAID": {
+    "menu-item": "Minute Maid Apple Juice",
+    "pricing-tag": 1007550,
+    "group": "Kids Meal"
+  },
+  "JUICE_MINUTE_MAID_APPLE": {
+    "menu-item": "Honest Kids Apple Juice",
+    "pricing-tag": 1001290,
+    "group": "Kids Meal"
+  },
+  "DCB_GRILLEDNUG_KIDSMEAL": {
+    "menu-item": "Grilled 5ct nuggets + milk + fruit cup kids meal",
+    "pricing-tag": null,
+    "group": "Kids Meal"
+  },
+  "STC_BERRY_LATTE": {
+    "menu-item": "Berry Pie Iced Latte",
+    "pricing-tag": 1009496,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_PUMPKINPIE_LATTE": {
+    "menu-item": "Iced Pumpkin Pie Latte",
+    "pricing-tag": 1009050,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_CHICKEN_SALAD_SANDWICH": {
+    "menu-item": "Chicken Salad Sandwich",
+    "pricing-tag": 1000237,
+    "group": "STC / Truett's Brand"
+  },
+  "HOT_BROWN_DH": {
+    "menu-item": "Hot Brown",
+    "pricing-tag": 1002913,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_HOT_BROWN_NUG_SS": {
+    "menu-item": "",
+    "pricing-tag": 1009607,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_HOT_BROWN": {
+    "menu-item": "",
+    "pricing-tag": 1009607,
+    "group": "STC / Truett's Brand"
+  },
+  "SWEET_POTATO_SOUFFLE_DH": {
+    "menu-item": "Sweet Potato Souffle",
+    "pricing-tag": 1003121,
+    "group": "STC / Truett's Brand"
+  },
+  "CORNBREAD": {
+    "menu-item": "Cornbread",
+    "pricing-tag": 1003135,
+    "group": "STC / Truett's Brand"
+  },
+  "OKRA_DH": {
+    "menu-item": "Okra",
+    "pricing-tag": 1003102,
+    "group": "STC / Truett's Brand"
+  },
+  "CHICKEN_SALAD": {
+    "menu-item": "Chicken Salad",
+    "pricing-tag": 1000422,
+    "group": "STC / Truett's Brand"
+  },
+  "COLESLAW": {
+    "menu-item": "Cole Slaw",
+    "pricing-tag": 1000419,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_MED_CRISPY_SPROUTS": {
+    "menu-item": "Crispy Sprouts",
+    "pricing-tag": 1006360,
+    "group": "STC / Truett's Brand"
+  },
+  "PEACH_FRIED_PIE": {
+    "menu-item": "Peach Fried Pie",
+    "pricing-tag": 1000573,
+    "group": "STC / Truett's Brand"
+  },
+  "APPLE_FRIED_PIE": {
+    "menu-item": "Apple Fried Pie",
+    "pricing-tag": 1000569,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_BANANA_PUDDING": {
+    "menu-item": "Banana Pudding",
+    "pricing-tag": 1006944,
+    "group": "STC / Truett's Brand"
+  },
+  "LEMON_PIE_SLICE": {
+    "menu-item": "Lemon Pie (slice)",
+    "pricing-tag": 1000757,
+    "group": "STC / Truett's Brand"
+  },
+  "LEMON_PIE_WHOLE": {
+    "menu-item": "Lemon Pie (whole)",
+    "pricing-tag": 1000758,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_CHOCOLATE_PIE_SLICE": {
+    "menu-item": "Chocolate Pie (Slice)",
+    "pricing-tag": 1000571,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_COCONUT_PIE_SLICE": {
+    "menu-item": "Coconut Pie (Slice)",
+    "pricing-tag": 1001500,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_MINIPIE_LEMON": {
+    "menu-item": "Lemon Mini Pie",
+    "pricing-tag": 1009058,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_MINIPIE_COCONUT": {
+    "menu-item": "Coconut Mini Pie",
+    "pricing-tag": 1009060,
+    "group": "STC / Truett's Brand"
+  },
+  "STC_MINIPIE_CHOCOLATE": {
+    "menu-item": "Chocolate Mini Pie",
+    "pricing-tag": 1009059,
+    "group": "STC / Truett's Brand"
+  },
+  "BROWN_BUTTER_MARSHMALLOW_BAR": {
+    "menu-item": "Brown Butter Marshmallow Bar",
+    "pricing-tag": 1009051,
+    "group": "STC / Truett's Brand"
+  },
+  "AVOSRIRACHA_CFA_FILET": {
+    "menu-item": "Original Avocado Sriracha BLT",
+    "pricing-tag": 1009884,
+    "group": "Seasonal / Tests"
+  },
+  "AVOSRIRACHA_GRILLED": {
+    "menu-item": "Grilled Avocado Sriracha BLT",
+    "pricing-tag": 1009886,
+    "group": "Seasonal / Tests"
+  },
+  "AVOSRIRACHA_SPICY": {
+    "menu-item": "Spicy Avocado Sriracha BLT",
+    "pricing-tag": 1009885,
+    "group": "Seasonal / Tests"
+  },
+  "CAYENNE_RANCH": {
+    "menu-item": "Cayenne Ranch Sauce",
+    "pricing-tag": null,
+    "group": "Seasonal / Tests"
+  },
+  "SWEETCHILI_LIMECRUNCH_CFAFIELET": {
+    "menu-item": "Original Sweet Chili Lime Crunch",
+    "pricing-tag": 1009893,
+    "group": "Seasonal / Tests"
+  },
+  "SWEETCHILI_LIMECRUNCH_GRILLEDFILET": {
+    "menu-item": "Grilled Sweet Chili Lime Crunch",
+    "pricing-tag": 1009895,
+    "group": "Seasonal / Tests"
+  },
+  "SWEETCHILI_LIMECRUNCH_SPICYFILET": {
+    "menu-item": "Spicy Sweet Chili Lime Crunch",
+    "pricing-tag": 1009894,
+    "group": "Seasonal / Tests"
+  },
+  "CHICK_WAFFLES_CFA_FILET": {
+    "menu-item": "Chicken & Waffle - Original (breakfast)",
+    "pricing-tag": 1009734,
+    "group": "Seasonal / Tests"
+  },
+  "CHICK_WAFFLES_SDWCH_LCH": {
+    "menu-item": "Chicken & Waffle  - Original (lunch)",
+    "pricing-tag": 1009738,
+    "group": "Seasonal / Tests"
+  },
+  "CHICK_WAFFLES_SPICY_FILET": {
+    "menu-item": "Chicken & Waffle - Spicy (breakfast)",
+    "pricing-tag": 1009736,
+    "group": "Seasonal / Tests"
+  },
+  "CHICK_WAFFLES_SPICY_FILET_LCH": {
+    "menu-item": "Chicken & Waffle - Spicy (lunch)",
+    "pricing-tag": 1009740,
+    "group": "Seasonal / Tests"
+  },
+  "SYRUP_WFL_ALLACARTE": {
+    "menu-item": "Syrup",
+    "pricing-tag": 1009747,
+    "group": "Seasonal / Tests"
+  },
+  "SMOKEHOUSE_CFA_FILET": {
+    "menu-item": "Smokehouse BBQ Bacon sandwich - Original",
+    "pricing-tag": 1007856,
+    "group": "Seasonal / Tests"
+  },
+  "SMOKEHOUSE_BBQ_SAND_SPICY": {
+    "menu-item": "Smokehouse BBQ Bacon sandwich - Spicy",
+    "pricing-tag": 1007857,
+    "group": "Seasonal / Tests"
+  },
+  "SMOKEHOUSE_BBQ_SANDWICH": {
+    "menu-item": "Smokehouse BBQ Bacon sandwich - Grilled",
+    "pricing-tag": 1005615,
+    "group": "Seasonal / Tests"
+  },
+  "CHERRY_BERRY_SPRITE": {
+    "menu-item": "Cherry Berry Sprite",
+    "pricing-tag": 1009450,
+    "group": "Seasonal / Tests"
+  },
+  "SM_CHERRY_BERRY_UNSWEETTEA": {
+    "menu-item": "Cherry Berry Unsweet Tea",
+    "pricing-tag": 1008952,
+    "group": "Seasonal / Tests"
+  },
+  "SM_CHERRY_BERRY_SWEETTEA": {
+    "menu-item": "Cherry Berry Sweet Tea",
+    "pricing-tag": 1008951,
+    "group": "Seasonal / Tests"
+  },
+  "FROSTED_CHERRY_BERRY_DIET_LEM": {
+    "menu-item": "Cherry Berry Frosted Diet Lemonade",
+    "pricing-tag": 1008956,
+    "group": "Seasonal / Tests"
+  },
+  "FROSTED_CHERRY_BERRY_LEM": {
+    "menu-item": "Cherry Berry Frosted Lemonade",
+    "pricing-tag": 1008955,
+    "group": "Seasonal / Tests"
+  },
+  "SM_CHERRY_BERRY_DIET_LEMONADE": {
+    "menu-item": "Cherry Berry Diet Lemonade",
+    "pricing-tag": 1008954,
+    "group": "Seasonal / Tests"
+  },
+  "SM_CHERRY_BERRY_LEMONADE": {
+    "menu-item": "Cherry Berry Lemonade",
+    "pricing-tag": 1008953,
+    "group": "Seasonal / Tests"
+  },
+  "SM_CHERRY_BERRY_SWEETTEA_LEM": {
+    "menu-item": "Cherry Berry Sunjoy",
+    "pricing-tag": 1008949,
+    "group": "Seasonal / Tests"
+  },
+  "SM_BANANA_PUDDING_MILKSHAKE": {
+    "menu-item": "Banana Pudding Milkshake",
+    "pricing-tag": 1008689,
+    "group": "Seasonal / Tests"
+  },
+  "SM_PEPPERMINT_MILKSHAKE": {
+    "menu-item": "Peppermint Chip Milkshake",
+    "pricing-tag": 1002120,
+    "group": "Seasonal / Tests"
+  },
+  "SM_ICED_COFFEE_PEPPERMINT": {
+    "menu-item": "Peppermint Iced Coffee",
+    "pricing-tag": 1008321,
+    "group": "Seasonal / Tests"
+  },
+  "FROSTED_PEPPERMINT_COFFEE": {
+    "menu-item": "Peppermint Frosted Coffee",
+    "pricing-tag": 1008319,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_GRILLEDFILET": {
+    "menu-item": "Maple Pepper Bacon Grilled Sandwich",
+    "pricing-tag": 1008490,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_GRILLEDFILET_MEAL": {
+    "menu-item": "Maple Pepper Bacon Grilled Sandwich Meal",
+    "pricing-tag": 1008493,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_CFAFILET": {
+    "menu-item": "Maple Pepper Bacon Reg Sandwich",
+    "pricing-tag": 1008492,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_CFAFILET_MEAL": {
+    "menu-item": "Maple Pepper Bacon Reg Sandwich Meal",
+    "pricing-tag": 1008494,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_SPICYFILET": {
+    "menu-item": "Maple Pepper Bacon Spicy Sandwich",
+    "pricing-tag": 1008491,
+    "group": "Seasonal / Tests"
+  },
+  "MPB_SPICYFILET_MEAL": {
+    "menu-item": "Maple Pepper Bacon Spicy Sandwich Meal",
+    "pricing-tag": 1008495,
+    "group": "Seasonal / Tests"
+  },
+  "FROSTED_KEY_LIME_LEM": {
+    "menu-item": "Key Lime Frosted Lemonade",
+    "pricing-tag": 1009219,
+    "group": "Seasonal / Tests"
+  },
+  "SM_KEY_LIME_LEMONADE": {
+    "menu-item": "Key Lime Lemonade",
+    "pricing-tag": 1009216,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_GRILL_DLX_SPICY_CJ": {
+    "menu-item": "Grilled Spicy Deluxe Entree w/ CJ",
+    "pricing-tag": 1006398,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_SM_TORTILLA_SOUP": {
+    "menu-item": "Chicken Tortilla Soup Cup",
+    "pricing-tag": 1003845,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_LG_TORTILLA_SOUP": {
+    "menu-item": "Chicken Tortilla Soup Bowl",
+    "pricing-tag": 1003846,
+    "group": "Seasonal / Tests"
+  },
+  "8CT_SMOKEDBBQ_NUGGET": {
+    "menu-item": "8ct Smokehouse BBQ nuggets entree",
+    "pricing-tag": 1009469,
+    "group": "Seasonal / Tests"
+  },
+  "CREAMYBBQ_CFA_FILET": {
+    "menu-item": "Creamy BBQ Sandwich CFA",
+    "pricing-tag": 1009453,
+    "group": "Seasonal / Tests"
+  },
+  "CREAMYBBQ_SPICY": {
+    "menu-item": "Creamy BBQ Sandwich Spicy",
+    "pricing-tag": 1009454,
+    "group": "Seasonal / Tests"
+  },
+  "CREAMYBBQ_GRILLED": {
+    "menu-item": "Creamy BBQ Sandwich Grilled",
+    "pricing-tag": 1009455,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_PRETZELCHEDDARCLUB_CFAFILET": {
+    "menu-item": "Pretzel Cheddar Club (Original)",
+    "pricing-tag": 1008972,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_PRETZELCHEDDARCLUB_SPICY": {
+    "menu-item": "Pretzel Cheddar Club (Spicy)",
+    "pricing-tag": 1008973,
+    "group": "Seasonal / Tests"
+  },
+  "DCB_PRETZELCHEDDARCLUB_GRILLEDFILET": {
+    "menu-item": "Pretzel Cheddar Club (Grilled)",
+    "pricing-tag": 1008974,
+    "group": "Seasonal / Tests"
+  },
+  "SM_SMORES_MILKSHAKE": {
+    "menu-item": "S'Mores Milkshake",
+    "pricing-tag": 1009674,
+    "group": "Seasonal / Tests"
+  },
+  "SM_SMORES_FROSTEDCOFFEE": {
+    "menu-item": "S'Mores Frosted Coffee",
+    "pricing-tag": 1009681,
+    "group": "Seasonal / Tests"
+  }
+}

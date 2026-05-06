@@ -12,7 +12,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const MENUS_FULL_DIR = path.join(PROJECT_ROOT, 'data', 'menus', 'full');
 const OUTPUT_DIR = path.join(PROJECT_ROOT, 'data', 'output');
-const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'items.json');
+const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'cfa-items.json');
 
 const OUTPUT_SCHEMA = {
   type: 'object',
@@ -23,8 +23,7 @@ const OUTPUT_SCHEMA = {
       items: {
         type: 'object',
         properties: {
-          itemId: { type: 'string' },
-          variantId: { type: 'string' },
+          tag: { type: 'string' },
           field: { type: 'string', enum: ['price', 'calories'] },
           // [ymin, xmin, ymax, xmax] normalized to 0-1000 — Gemini's native detection format
           box_2d: {
@@ -36,7 +35,7 @@ const OUTPUT_SCHEMA = {
           confidence: { type: 'number', minimum: 0, maximum: 1 },
           reasoning: { type: 'string' },
         },
-        required: ['itemId', 'variantId', 'field', 'box_2d', 'confidence', 'reasoning'],
+        required: ['tag', 'field', 'box_2d', 'confidence', 'reasoning'],
       },
     },
   },
@@ -51,7 +50,16 @@ function readPngSize(buf) {
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
 }
 
-async function processDesign(designId, imagePath, items, ai, model) {
+function buildCatalog(itemsRaw) {
+  // Strip pricing-tag/group; Gemini only needs tag → menu-item for vision matching.
+  const out = {};
+  for (const [tag, entry] of Object.entries(itemsRaw)) {
+    out[tag] = entry['menu-item'];
+  }
+  return out;
+}
+
+async function processDesign(designId, imagePath, catalog, ai, model) {
   const imageBuf = await readFile(imagePath);
   const { width: imgW, height: imgH } = readPngSize(imageBuf);
 
@@ -61,14 +69,13 @@ async function processDesign(designId, imagePath, items, ai, model) {
     'You are a visual analyst extracting the on-image position of price and calorie text from a menu board image.',
     'The bounding boxes you return will be used to render dynamic HTML overlays on top of the design.',
     'Look only at the provided image — do not invent items, prices, or layouts you cannot see.',
-    'Return structured JSON only — no placeholder values, no "unknown" variants, no zero confidence.',
+    'Return structured JSON only — no placeholder values, no zero confidence.',
   ].join(' ');
 
   const prompt = [
     '## Task',
-    'Detect every price and calorie text value in the attached menu board image, and for each one return:',
-    '  - the menu item it belongs to (itemId, from the catalog below)',
-    '  - the variant of that item (variantId)',
+    'Detect every price and calorie text value in the attached menu board image. For each value return:',
+    '  - the catalog tag of the item-and-variant entity it belongs to (tag, from the catalog below)',
     '  - which value it is (field: "price" or "calories")',
     '  - a tight bounding box around the text (box_2d)',
     '  - a confidence score and reasoning',
@@ -76,31 +83,36 @@ async function processDesign(designId, imagePath, items, ai, model) {
     '## Inputs',
     `- Design ID: ${designId}`,
     `- Image dimensions: ${imgW} x ${imgH} pixels`,
-    '- Item catalog (itemId -> name) — itemId MUST be one of these keys:',
-    JSON.stringify(items, null, 2),
+    '- Catalog (tag -> menu-item description). Each tag represents a specific item-and-variant combination',
+    '  already collapsed into a single entity (e.g. HONEY_PEP_PIM_CFA_MEAL = "Honey Pepper Pimento CFA Filet Meal").',
+    '  The slot `tag` MUST be one of these keys:',
+    JSON.stringify(catalog, null, 2),
     '',
     '## Procedure',
-    '1. Locate every menu item in the image. Match each visible item-name text to an itemId in the catalog above.',
-    '   If a text label does not match any item in the catalog, do NOT invent an itemId — skip it.',
-    '2. For each item, identify its variant(s) from nearby labels. variantId MUST be one of these keys:',
+    '1. Identify every menu item visible on the board, including any subtext (e.g. "w/ Spicy Filet").',
+    '2. For each item, identify its variant(s) by proximity to a variant label. Variant labels you may see:',
     `   ${JSON.stringify(VARIANTS)}`,
-    '   Detection notes for specific variants:',
-    '     - "base" — only when the item has a single price/calories pair and NO visible variant label.',
-    '     - "meal", "entree" — the common variants, usually shown as labels next to price/calorie pairs.',
-    '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). Use the integer N shown in the image.',
-    '     - "toppings" — typically associated with items in the salad category. Identified by the text "with toppings"',
-    '       appearing AFTER the calorie value and not in bold.',
-    '     - "m", "l" — medium and large size labels used for drinks.',
-    '     - "1ct", "6ct" — count-based variants primarily used for desert (e.g. cookies sold individually or in packs).',
-    '     - "chocolate", "vanilla", "strawberry", "cookies-&-cream" - these are flavor names used for milkshakes.',
-    '3. For each variant, find its price text and calorie text:',
+    '   Variant detection notes:',
+    '     - "meal", "entree" — common variants, usually printed next to price/calorie pairs.',
+    '     - "meal-Nct", "entree-Nct" — when a count appears (e.g. "8ct" → "meal-8ct"). N is the integer shown.',
+    '     - "1ct", "6ct" — count-based variants for items like cookies sold individually or in packs.',
+    '     - "m", "l" — medium/large size labels for drinks.',
+    '     - "chocolate", "vanilla", "strawberry", "cookies-&-cream" — milkshake flavors.',
+    '     - "toppings" — typically salads. Identified by "with toppings" appearing AFTER the calorie value, not bold.',
+    '     - "base" — the item has a single price/calorie pair and NO visible variant label.',
+    '   Variants are NOT part of the output schema. They are only a hint to help you correctly group price/calorie',
+    '   values with the right entity.',
+    '3. Treat each item-and-variant pair as a unique ENTITY (e.g. "Grilled Chicken Club Colby Jack Meal").',
+    '   For each entity, find the catalog tag whose menu-item string is the closest match (semantic match, not exact).',
+    '     - The catalog already encodes the variant in the menu-item string (e.g. "...Meal", "...Entrée", "8ct").',
+    '     - If no catalog entry is a reasonable match, SKIP the entity entirely. Do not invent a tag.',
+    '4. For each entity, locate its price text and calorie text:',
     '     - Price looks like a decimal number, e.g. "7.50", "10.25".',
     '     - Calories looks like a number or pair of numbers followed by "cal", e.g. "690 cal", "1050 cal", "0/360 cal", or "0-500 cal".',
     '     - Price and calorie values are typically positioned to the left and right of the variant label.',
-    '     - Associate values with an item by their proximity to the item name and variant label.',
-    '4. For each value, draw the tightest bounding box that contains ONLY the text itself (e.g. just "10.25" or "690 cal"),',
+    '5. For each value, draw the tightest bounding box that contains ONLY the text itself (e.g. just "10.25" or "690 cal"),',
     '   not the surrounding item block.',
-    '5. Emit one slot per value, with field exactly "price" or "calories".',
+    '6. Emit one slot per value: { tag, field, box_2d, confidence, reasoning }.',
     '',
     '## Bounding box format',
     '- box_2d is [ymin, xmin, ymax, xmax], all normalized to 0–1000.',
@@ -108,15 +120,15 @@ async function processDesign(designId, imagePath, items, ai, model) {
     '- Tighter is better — the box should hug the text.',
     '',
     '## Confidence and reasoning',
-    '- confidence is 0–1 and must be honest. Lower it when the text is small, partially obscured, or the variant',
-    '  label is ambiguous. Do not return 0 — if you are that unsure, omit the slot.',
-    '- reasoning is a short string per slot explaining: how you identified the item and variant, what visual cues',
+    '- confidence is 0–1 and must be honest. Lower it when the text is small, partially obscured, or the entity-to-tag',
+    '  match is uncertain. Do not return 0 — if you are that unsure, omit the slot.',
+    '- reasoning is a short string per slot explaining: how you matched the entity to a catalog tag, what visual cues',
     '  located the bounding box, and anything you were uncertain about.',
     '',
     '## Output rules',
     '- Cover the entire design: every visible price and every visible calorie value.',
-    '- No placeholders, no "unknown" variants, no confidence 0.',
-    '- itemId must be a key from the catalog above. If you cannot match, skip the slot rather than inventing.',
+    '- No placeholders, no confidence 0.',
+    '- tag must be a key from the catalog above. If you cannot find a reasonable match, skip the slot.',
     '- Return only structured JSON matching the response schema.',
   ].join('\n');
 
@@ -148,7 +160,6 @@ async function processDesign(designId, imagePath, items, ai, model) {
   const rawSlots = structured?.slots || [];
   if (!rawSlots.length) throw new Error('No slots returned.');
 
-  // Convert normalized boxes to pixel coordinates and the (x, y) anchor used by the renderer.
   const slots = rawSlots.map((s) => {
     const [ymin, xmin, ymax, xmax] = s.box_2d.map(Number);
     const px = {
@@ -158,8 +169,7 @@ async function processDesign(designId, imagePath, items, ai, model) {
       ymax: (ymax / 1000) * imgH,
     };
     return {
-      itemId: s.itemId,
-      variantId: s.variantId,
+      tag: s.tag,
       field: s.field,
       x: Math.round(px.xmin * 10) / 10,
       y: Math.round(px.ymin * 10) / 10,
@@ -189,7 +199,8 @@ async function main() {
 
   await mkdir(OUTPUT_DIR, { recursive: true });
 
-  const items = JSON.parse(await readFile(ITEMS_PATH, 'utf8'));
+  const itemsRaw = JSON.parse(await readFile(ITEMS_PATH, 'utf8'));
+  const catalog = buildCatalog(itemsRaw);
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   const model = process.env.MODEL_NAME || 'gemini-3-flash-preview';
 
@@ -200,7 +211,7 @@ async function main() {
     const designId = path.basename(file, '.png');
     const imagePath = path.join(MENUS_FULL_DIR, file);
     console.log(`\n=== Processing ${designId} ===`);
-    await processDesign(designId, imagePath, items, ai, model);
+    await processDesign(designId, imagePath, catalog, ai, model);
   }
 
   console.log('\nDone.');

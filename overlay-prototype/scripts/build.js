@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, copyFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { XMLParser } from 'fast-xml-parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,19 +19,50 @@ const FORMATTERS = {
 
 const MISSING_TEXT = '—';
 
+const xmlParser = new XMLParser({
+  ignoreAttributes: true,
+  parseTagValue: false,
+  trimValues: true,
+});
+
 async function loadJson(filePath) {
   const raw = await readFile(filePath, 'utf8');
   return JSON.parse(raw);
 }
 
-function resolveValue(pricing, slot) {
-  return pricing?.items?.[slot.itemId]?.variants?.[slot.variantId]?.[slot.field];
+function isNonEmpty(v) {
+  return v != null && String(v).trim() !== '';
+}
+
+function composeCalories(item) {
+  if (isNonEmpty(item.Calories)) return String(item.Calories).trim();
+  const lo = isNonEmpty(item.CaloriesLow) ? String(item.CaloriesLow).trim() : null;
+  const hi = isNonEmpty(item.CaloriesHigh) ? String(item.CaloriesHigh).trim() : null;
+  if (lo && hi && !(lo === '0' && hi === '0')) return `${lo}/${hi}`;
+  return null;
+}
+
+async function loadPricingXml(filePath) {
+  const raw = await readFile(filePath, 'utf8');
+  const parsed = xmlParser.parse(raw);
+  const items = parsed?.Items?.Item ?? [];
+  const list = Array.isArray(items) ? items : [items];
+  const map = new Map();
+  for (const it of list) {
+    const tag = isNonEmpty(it.Tag) ? String(it.Tag).trim() : null;
+    if (!tag) continue;
+    map.set(tag, {
+      price: isNonEmpty(it.Price) ? Number(it.Price) : null,
+      calories: composeCalories(it),
+    });
+  }
+  return map;
 }
 
 function renderOverlayHtml(design, pricing) {
   const lines = [];
   for (const slot of design.slots) {
-    const raw = resolveValue(pricing, slot);
+    const raw = pricing.get(slot.tag)?.[slot.field];
     const format = FORMATTERS[slot.field] ?? ((v) => (v == null ? null : String(v)));
     const formatted = format(raw);
     const classes = ['overlay', `field-${slot.field}`];
@@ -42,7 +74,7 @@ function renderOverlayHtml(design, pricing) {
       text = formatted;
     }
     lines.push(
-      `<div class="${classes.join(' ')}" data-item="${slot.itemId}" data-variant="${slot.variantId}" style="left:${slot.x}px;top:${slot.y}px"><span class="value">${text}</span></div>`
+      `<div class="${classes.join(' ')}" data-tag="${slot.tag}" style="left:${slot.x}px;top:${slot.y}px"><span class="value">${text}</span></div>`
     );
   }
   return lines.join('\n');
@@ -54,7 +86,6 @@ async function main() {
   await mkdir(OVERLAYS_DIR, { recursive: true });
   await mkdir(ASSETS_DIR, { recursive: true });
 
-  // Copy background images from data/menus/background/ → public/assets/
   const bgFiles = await readdir(BG_SRC_DIR);
   await Promise.all(
     bgFiles.map((f) => copyFile(path.join(BG_SRC_DIR, f), path.join(ASSETS_DIR, f)))
@@ -78,7 +109,7 @@ async function main() {
 
   const loadPricing = async (storeId) => {
     if (!pricingCache.has(storeId)) {
-      pricingCache.set(storeId, await loadJson(path.join(DATA_DIR, 'pricing', `${storeId}.json`)));
+      pricingCache.set(storeId, await loadPricingXml(path.join(DATA_DIR, 'pricing', `${storeId}.xml`)));
     }
     return pricingCache.get(storeId);
   };

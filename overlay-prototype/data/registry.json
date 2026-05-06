@@ -9,36 +9,6 @@
         "04": "design-d",
         "05": "design-e"
       }
-    },
-    "store-002": {
-      "name": "Birmingham - Summit",
-      "screens": {
-        "01": "design-a",
-        "02": "design-b",
-        "03": "design-c",
-        "04": "design-d",
-        "05": "design-e"
-      }
-    },
-    "store-003": {
-      "name": "Nashville - Green Hills",
-      "screens": {
-        "01": "design-a",
-        "02": "design-b",
-        "03": "design-c",
-        "04": "design-d",
-        "05": "design-e"
-      }
-    },
-    "store-004": {
-      "name": "Charlotte - Uptown",
-      "screens": {
-        "01": "design-a",
-        "02": "design-b",
-        "03": "design-c",
-        "04": "design-d",
-        "05": "design-e"
-      }
     }
   }
 }
