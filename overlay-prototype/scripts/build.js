@@ -34,11 +34,18 @@ function isNonEmpty(v) {
   return v != null && String(v).trim() !== '';
 }
 
+function nonZero(v) {
+  if (!isNonEmpty(v)) return null;
+  const s = String(v).trim();
+  return Number(s) === 0 ? null : s;
+}
+
 function composeCalories(item) {
-  if (isNonEmpty(item.Calories)) return String(item.Calories).trim();
-  const lo = isNonEmpty(item.CaloriesLow) ? String(item.CaloriesLow).trim() : null;
-  const hi = isNonEmpty(item.CaloriesHigh) ? String(item.CaloriesHigh).trim() : null;
-  if (lo && hi && !(lo === '0' && hi === '0')) return `${lo}/${hi}`;
+  const single = nonZero(item.Calories);
+  if (single) return single;
+  const lo = nonZero(item.CaloriesLow);
+  const hi = nonZero(item.CaloriesHigh);
+  if (lo || hi) return `${lo ?? '0'}/${hi ?? '0'}`;
   return null;
 }
 
