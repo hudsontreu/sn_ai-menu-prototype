@@ -1,0 +1,199 @@
+{
+  "id": "design-f",
+  "name": "design-f",
+  "backgroundImage": "/assets/design-f.png",
+  "slots": [
+    {
+      "tag": "MD_WAFFLE_POTATO_FRIES",
+      "field": "price",
+      "x": 612.5,
+      "y": 272.2,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Fries (M)' from catalog. Detected '2.99' next to 'M' variant."
+    },
+    {
+      "tag": "MD_WAFFLE_POTATO_FRIES",
+      "field": "calories",
+      "x": 691.2,
+      "y": 273.2,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Fries (M)' from catalog. Detected '420 cal' next to 'M' variant."
+    },
+    {
+      "tag": "LG_WAFFLE_POTATO_FRIES",
+      "field": "price",
+      "x": 612.5,
+      "y": 312.1,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Fries (L)' from catalog. Detected '3.39' next to 'L' variant."
+    },
+    {
+      "tag": "LG_WAFFLE_POTATO_FRIES",
+      "field": "calories",
+      "x": 691.2,
+      "y": 313.2,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Fries (L)' from catalog. Detected '600 cal' next to 'L' variant."
+    },
+    {
+      "tag": "CHIPS_WAFFLE",
+      "field": "price",
+      "x": 577.9,
+      "y": 493.6,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Chips' from catalog. Detected '2.59' under item name."
+    },
+    {
+      "tag": "CHIPS_WAFFLE",
+      "field": "calories",
+      "x": 658.6,
+      "y": 493.6,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Waffle Potato Chips' from catalog. Detected '220/210 cal' under item name."
+    },
+    {
+      "tag": "FRUIT_CUP_MEDIUM",
+      "field": "price",
+      "x": 124.8,
+      "y": 793.8,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Fruit Cup - Med' from catalog. Detected '4.59' below 'Fruit Cup'."
+    },
+    {
+      "tag": "FRUIT_CUP_MEDIUM",
+      "field": "calories",
+      "x": 201.6,
+      "y": 794.9,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Fruit Cup - Med' from catalog. Detected '70 cal' below 'Fruit Cup'."
+    },
+    {
+      "tag": "LG_KALE_CRUNCH",
+      "field": "price",
+      "x": 370.6,
+      "y": 793.8,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Kale Crunch' from catalog. Detected '4.59' below 'Kale Crunch'."
+    },
+    {
+      "tag": "LG_KALE_CRUNCH",
+      "field": "calories",
+      "x": 453.1,
+      "y": 794.9,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Kale Crunch' from catalog. Detected '170 cal' below 'Kale Crunch'."
+    },
+    {
+      "tag": "TEST_MD_MACNCHEESE",
+      "field": "price",
+      "x": 645.1,
+      "y": 793.8,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Mac & Cheese' from catalog. Detected '4.59' below 'Mac & Cheese'."
+    },
+    {
+      "tag": "TEST_MD_MACNCHEESE",
+      "field": "calories",
+      "x": 727.7,
+      "y": 794.9,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Mac & Cheese' from catalog. Detected '450 cal' below 'Mac & Cheese'."
+    },
+    {
+      "tag": "SALAD_SIDE",
+      "field": "price",
+      "x": 113.3,
+      "y": 994.7,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Side Salad' from catalog. Detected '4.59' below 'Side Salad'."
+    },
+    {
+      "tag": "SALAD_SIDE",
+      "field": "calories",
+      "x": 195.8,
+      "y": 994.7,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Side Salad' from catalog. Detected '160 cal' below 'Side Salad'."
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "price",
+      "x": 539.5,
+      "y": 994.7,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Berry Parfait' to catalog option. Detected '5.09' below text block."
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "calories",
+      "x": 620.2,
+      "y": 994.7,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Berry Parfait' to catalog option. Detected '270/240 cal' below text block."
+    },
+    {
+      "tag": "CFA_SANDWICH_MEAL",
+      "field": "price",
+      "x": 1082.9,
+      "y": 246.2,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Meal' from catalog. Detected '10.39' next to 'meal'."
+    },
+    {
+      "tag": "CFA_SANDWICH_MEAL",
+      "field": "calories",
+      "x": 1271,
+      "y": 247.3,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Meal' from catalog. Detected '630-1020 cal' next to 'meal'."
+    },
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "price",
+      "x": 1082.9,
+      "y": 280.8,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Entree' from catalog. Detected '5.85' next to 'entree'."
+    },
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "calories",
+      "x": 1271,
+      "y": 281.9,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Entree' from catalog. Detected '420 cal' next to 'entree'."
+    },
+    {
+      "tag": "SPICY_MEAL",
+      "field": "price",
+      "x": 1082.9,
+      "y": 631.8,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Chicken Meal' from catalog. Detected '10.69' next to 'meal'."
+    },
+    {
+      "tag": "SPICY_MEAL",
+      "field": "calories",
+      "x": 1271,
+      "y": 632.9,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Chicken Meal' from catalog. Detected '660-1050 cal' next to 'meal'."
+    },
+    {
+      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
+      "field": "price",
+      "x": 1082.9,
+      "y": 667.4,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Chicken Entree' from catalog. Detected '6.15' next to 'entree'."
+    },
+    {
+      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
+      "field": "calories",
+      "x": 1271,
+      "y": 668.5,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Chicken Entree' from catalog. Detected '450 cal' next to 'entree'."
+    }
+  ]
+}
