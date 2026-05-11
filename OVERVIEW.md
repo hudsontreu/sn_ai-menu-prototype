@@ -18,7 +18,7 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 
 ## Pipeline Overview - Current Directory Structure
 
-**script/figma-gemini-batch.js**
+**script/gemini-batch.js**
 
 - reads design assets from data/menus
 - reads items list from items.json

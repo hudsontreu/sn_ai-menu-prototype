@@ -1,0 +1,87 @@
+{
+  "id": "design-k",
+  "name": "design-k",
+  "backgroundImage": "/assets/design-k.png",
+  "slots": [
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "price",
+      "x": 361,
+      "y": 333.7,
+      "confidence": 0.98,
+      "reasoning": "Matched 'Chick-fil-A Chicken Sandwich' + 'entree' to SANDWICH_CFA_CHICKEN. Box tightly wraps the price '6.69'."
+    },
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "calories",
+      "x": 403.2,
+      "y": 376.9,
+      "confidence": 0.98,
+      "reasoning": "Matched 'Chick-fil-A Chicken Sandwich' + 'entree' to SANDWICH_CFA_CHICKEN. Box tightly wraps the text '420 cal'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SPRITE",
+      "field": "price",
+      "x": 1132.8,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Sprite' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_SPRITE. Box tightly wraps the price '3.15'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SPRITE",
+      "field": "calories",
+      "x": 1198.1,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Sprite' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_SPRITE. Box tightly wraps '190 cal'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
+      "field": "price",
+      "x": 1297.9,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Sunjoy' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_SWEETTEA_LEM. Box tightly wraps the price '3.59'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
+      "field": "calories",
+      "x": 1363.2,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Sunjoy' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_SWEETTEA_LEM. Box tightly wraps '240 cal'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
+      "field": "price",
+      "x": 1461.1,
+      "y": 956.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Frosted Lemonade' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_FROSTED_LEMONADE. Box tightly wraps the price '5.09'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
+      "field": "calories",
+      "x": 1526.4,
+      "y": 956.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Frosted Lemonade' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_FROSTED_LEMONADE. Box tightly wraps '360 cal'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
+      "field": "price",
+      "x": 1628.2,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Lemonade' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_LEMONADE. Box tightly wraps the price '3.59'."
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
+      "field": "calories",
+      "x": 1693.4,
+      "y": 929.9,
+      "confidence": 0.96,
+      "reasoning": "Matched 'Lemonade' under 'Strawberry Hibiscus' to STRAWBERRY_HIBISCUS_LEMONADE. Box tightly wraps '270 cal'."
+    }
+  ]
+}

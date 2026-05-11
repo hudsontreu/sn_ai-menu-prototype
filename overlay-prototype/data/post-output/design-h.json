@@ -1,0 +1,55 @@
+{
+  "id": "design-h",
+  "name": "design-h",
+  "backgroundImage": "/assets/design-h.png",
+  "slots": [
+    {
+      "tag": "HASH_BROWNS",
+      "field": "price",
+      "x": 963.8,
+      "y": 980.6,
+      "confidence": 0.95,
+      "reasoning": "Price text '1.89' located directly below the 'Hash Browns' label. Matched to the HASH_BROWNS catalog tag."
+    },
+    {
+      "tag": "HASH_BROWNS",
+      "field": "calories",
+      "x": 1044.5,
+      "y": 980.6,
+      "confidence": 0.95,
+      "reasoning": "Calorie text '270 cal' located below 'Hash Browns' next to the price. Matched to the HASH_BROWNS catalog tag."
+    },
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "price",
+      "x": 1217.3,
+      "y": 980.6,
+      "confidence": 0.95,
+      "reasoning": "Price text '4.29' located below the 'Iced Coffee' label. Matched to SM_ICED_COFFEE representing the base/original iced coffee."
+    },
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "calories",
+      "x": 1305.6,
+      "y": 980.6,
+      "confidence": 0.95,
+      "reasoning": "Calorie text '200 cal' positioned below 'Iced Coffee' beside the price. Matched to the SM_ICED_COFFEE catalog tag."
+    },
+    {
+      "tag": "BISCUIT_CHICKEN",
+      "field": "price",
+      "x": 1480.3,
+      "y": 1016.3,
+      "confidence": 0.95,
+      "reasoning": "Price text '4.19' found below the 'Chick-fil-A Chicken Biscuit' item name. Matched to BISCUIT_CHICKEN as the entrée variant."
+    },
+    {
+      "tag": "BISCUIT_CHICKEN",
+      "field": "calories",
+      "x": 1574.4,
+      "y": 1016.3,
+      "confidence": 0.95,
+      "reasoning": "Calorie text '460 cal' located under 'Chick-fil-A Chicken Biscuit' next to the price. Matched to the BISCUIT_CHICKEN entrée tag."
+    }
+  ]
+}

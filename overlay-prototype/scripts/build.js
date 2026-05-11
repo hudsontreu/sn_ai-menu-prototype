@@ -105,7 +105,7 @@ async function main() {
   const loadDesign = async (designId) => {
     if (!designCache.has(designId)) {
       try {
-        designCache.set(designId, await loadJson(path.join(DATA_DIR, 'output', `${designId}.json`)));
+        designCache.set(designId, await loadJson(path.join(DATA_DIR, 'post-output', `${designId}.json`)));
       } catch (err) {
         if (err.code !== 'ENOENT') throw err;
         designCache.set(designId, null);
@@ -133,7 +133,7 @@ async function main() {
     for (const [screenId, designId] of Object.entries(store.screens)) {
       const design = await loadDesign(designId);
       if (!design) {
-        console.warn(`Skipping ${storeId}/${screenId}: design "${designId}" not found in data/output/`);
+        console.warn(`Skipping ${storeId}/${screenId}: design "${designId}" not found in data/post-output/`);
         skippedCount++;
         continue;
       }
