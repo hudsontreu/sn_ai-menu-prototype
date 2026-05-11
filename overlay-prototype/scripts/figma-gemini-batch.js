@@ -176,6 +176,8 @@ async function processDesign(designId, imagePath, catalog, ai, model) {
       field: s.field,
       x: Math.round(px.xmin * 10) / 10,
       y: Math.round(px.ymin * 10) / 10,
+      w: Math.round(px.xmax - px.xmin),
+      h: Math.round(px.ymax - px.ymin),
       confidence: s.confidence,
       reasoning: s.reasoning,
     };
