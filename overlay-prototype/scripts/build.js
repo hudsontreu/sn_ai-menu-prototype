@@ -72,7 +72,7 @@ function renderOverlayHtml(design, pricing) {
     const raw = pricing.get(slot.tag)?.[slot.field];
     const format = FORMATTERS[slot.field] ?? ((v) => (v == null ? null : String(v)));
     const formatted = format(raw);
-    const classes = ['overlay', `field-${slot.field}`];
+    const classes = ['overlay', `${slot.field}-base`];
     let text;
     if (formatted == null) {
       classes.push('missing');

@@ -116,16 +116,17 @@ html, body {
 }
 
 .overlay .value {
-  font-size: 28px;
   letter-spacing: 0.02em;
 }
 
-.overlay.field-price .value {
+.overlay.price-base .value {
+  font-size: 28px;
   font-weight: 600;
   color: var(--price-color);
 }
 
-.overlay.field-calories .value {
+.overlay.calories-base .value {
+  font-size: 28px;
   font-weight: 400;
   color: var(--calorie-color);
 }
@@ -134,4 +135,5 @@ html, body {
   color: #ff7373;
   font-style: italic;
   font-weight: 600;
+  font-size: 28px;
 }
