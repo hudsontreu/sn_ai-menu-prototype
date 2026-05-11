@@ -18,6 +18,7 @@
   --toolbar-muted: #9ca3af;
   --price-color: #576063;
   --calorie-color: #717D80;
+  --cfa-red: #ff0000;
 }
 
 * { box-sizing: border-box; }
@@ -119,6 +120,20 @@ html, body {
   letter-spacing: 0.02em;
 }
 
+/* Small */
+.overlay.price-small .value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--price-color);
+}
+
+.overlay.calories-small .value {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--calorie-color);
+}
+
+/* Base */
 .overlay.price-base .value {
   font-size: 28px;
   font-weight: 600;
@@ -130,6 +145,40 @@ html, body {
   font-weight: 400;
   color: var(--calorie-color);
 }
+
+/* Large */
+.overlay.price-large .value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--price-color);
+}
+
+.overlay.calories-large .value {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--calorie-color);
+}
+
+/* x-large */
+.overlay.price-xlarge .value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--price-color);
+}
+
+.overlay.calories-xlarge .value {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--calorie-color);
+}
+
+/* red */
+.red {
+  color: var(--cfa-red);
+}
+
+/* uniform */
+
 
 .overlay.missing .value {
   color: #ff7373;
