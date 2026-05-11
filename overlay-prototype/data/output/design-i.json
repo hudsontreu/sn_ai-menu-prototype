@@ -1,0 +1,23 @@
+{
+  "id": "design-i",
+  "name": "design-i",
+  "backgroundImage": "/assets/design-i.png",
+  "slots": [
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "price",
+      "x": 1674.2,
+      "y": 450.4,
+      "confidence": 0.98,
+      "reasoning": "Matched 'Original Iced Coffee' text to the 'SM_ICED_COFFEE' tag. The text applies to both Original and Vanilla, so we use the primary item tag. The bounding box tightly wraps the '4.29' text."
+    },
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "calories",
+      "x": 1580.2,
+      "y": 505.4,
+      "confidence": 0.98,
+      "reasoning": "Matched 'Original Iced Coffee' text to the 'SM_ICED_COFFEE' tag. The text applies to both Original and Vanilla, so we use the primary item tag. The bounding box tightly wraps the '200 cal' text."
+    }
+  ]
+}
