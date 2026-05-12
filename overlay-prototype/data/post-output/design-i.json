@@ -6,18 +6,24 @@
     {
       "tag": "SM_ICED_COFFEE",
       "field": "price",
-      "x": 1674.2,
-      "y": 450.4,
-      "confidence": 0.98,
-      "reasoning": "Matched 'Original Iced Coffee' text to the 'SM_ICED_COFFEE' tag. The text applies to both Original and Vanilla, so we use the primary item tag. The bounding box tightly wraps the '4.29' text."
+      "x": 1681.9,
+      "y": 448.2,
+      "w": 113,
+      "h": 46,
+      "confidence": 0.95,
+      "reasoning": "Matched to SM_ICED_COFFEE based on the primary item name 'Original Iced Coffee'. Box surrounds the red price text. Style matches group e for hero promotions.",
+      "styleGroup": "e"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "calories",
-      "x": 1580.2,
-      "y": 505.4,
-      "confidence": 0.98,
-      "reasoning": "Matched 'Original Iced Coffee' text to the 'SM_ICED_COFFEE' tag. The text applies to both Original and Vanilla, so we use the primary item tag. The bounding box tightly wraps the '200 cal' text."
+      "x": 1566.7,
+      "y": 504.4,
+      "w": 228,
+      "h": 51,
+      "confidence": 0.95,
+      "reasoning": "Matched to SM_ICED_COFFEE. Box tight around the red '200 cal' text. Matches style group e for full-page hero promotional items.",
+      "styleGroup": "e"
     }
   ]
 }

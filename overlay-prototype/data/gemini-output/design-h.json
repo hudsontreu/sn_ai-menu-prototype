@@ -8,48 +8,66 @@
       "field": "price",
       "x": 963.8,
       "y": 980.6,
+      "w": 58,
+      "h": 28,
       "confidence": 0.95,
-      "reasoning": "Price text '1.89' located directly below the 'Hash Browns' label. Matched to the HASH_BROWNS catalog tag."
+      "reasoning": "Red text located under 'Hash Browns'. Fits style 'd'.",
+      "styleGroup": "d"
     },
     {
       "tag": "HASH_BROWNS",
       "field": "calories",
-      "x": 1044.5,
+      "x": 1056,
       "y": 980.6,
+      "w": 96,
+      "h": 28,
       "confidence": 0.95,
-      "reasoning": "Calorie text '270 cal' located below 'Hash Browns' next to the price. Matched to the HASH_BROWNS catalog tag."
+      "reasoning": "Red text located under 'Hash Browns'. Fits style 'd'.",
+      "styleGroup": "d"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "price",
       "x": 1217.3,
       "y": 980.6,
+      "w": 58,
+      "h": 28,
       "confidence": 0.95,
-      "reasoning": "Price text '4.29' located below the 'Iced Coffee' label. Matched to SM_ICED_COFFEE representing the base/original iced coffee."
+      "reasoning": "Red text located under 'Iced Coffee'. Matches the original cold brew tag. Fits style 'd'.",
+      "styleGroup": "d"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "calories",
       "x": 1305.6,
       "y": 980.6,
+      "w": 111,
+      "h": 28,
       "confidence": 0.95,
-      "reasoning": "Calorie text '200 cal' positioned below 'Iced Coffee' beside the price. Matched to the SM_ICED_COFFEE catalog tag."
+      "reasoning": "Red text located under 'Iced Coffee'. Fits style 'd'.",
+      "styleGroup": "d"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "price",
-      "x": 1480.3,
-      "y": 1016.3,
+      "x": 1491.8,
+      "y": 1015.2,
+      "w": 58,
+      "h": 27,
       "confidence": 0.95,
-      "reasoning": "Price text '4.19' found below the 'Chick-fil-A Chicken Biscuit' item name. Matched to BISCUIT_CHICKEN as the entrée variant."
+      "reasoning": "Red text located under 'Chick-fil-A Chicken Biscuit'. Matched to chicken biscuit entree. Fits style 'd'.",
+      "styleGroup": "d"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "calories",
-      "x": 1574.4,
-      "y": 1016.3,
+      "x": 1584,
+      "y": 1015.2,
+      "w": 106,
+      "h": 27,
       "confidence": 0.95,
-      "reasoning": "Calorie text '460 cal' located under 'Chick-fil-A Chicken Biscuit' next to the price. Matched to the BISCUIT_CHICKEN entrée tag."
+      "reasoning": "Red text located under 'Chick-fil-A Chicken Biscuit'. Fits style 'd'.",
+      "styleGroup": "d"
     }
   ]
 }

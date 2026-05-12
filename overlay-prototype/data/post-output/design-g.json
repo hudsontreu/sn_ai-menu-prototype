@@ -6,66 +6,90 @@
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "price",
-      "x": 545.3,
-      "y": 262.4,
+      "x": 554.9,
+      "y": 264.6,
+      "w": 61,
+      "h": 22,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus & Sprite' in catalog based on the 'Sprite®' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 3.29 price text."
+      "reasoning": "Matched entity to Strawberry Hibiscus & Sprite. Price text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "calories",
-      "x": 606.7,
-      "y": 262.4,
+      "x": 625.9,
+      "y": 264.6,
+      "w": 75,
+      "h": 22,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus & Sprite' in catalog based on the 'Sprite®' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 190 cal text."
+      "reasoning": "Matched entity to Strawberry Hibiscus & Sprite. Calorie text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "price",
       "x": 785.3,
-      "y": 316.5,
+      "y": 318.6,
+      "w": 60,
+      "h": 21,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Sunjoy' in catalog based on the 'Sunjoy®' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 3.69 price text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Sunjoy. Price text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "calories",
-      "x": 844.8,
-      "y": 316.5,
+      "x": 856.3,
+      "y": 318.6,
+      "w": 79,
+      "h": 21,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Sunjoy' in catalog based on the 'Sunjoy®' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 240 cal text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Sunjoy. Calorie text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "price",
-      "x": 1019.5,
-      "y": 219.2,
+      "x": 1015.7,
+      "y": 222.5,
+      "w": 60,
+      "h": 22,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Lemonade' in catalog based on the 'Lemonade' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 3.69 price text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Lemonade. Price text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "calories",
-      "x": 1079,
-      "y": 219.2,
+      "x": 1086.7,
+      "y": 222.5,
+      "w": 79,
+      "h": 22,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Lemonade' in catalog based on the 'Lemonade' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 270 cal text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Lemonade. Calorie text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "price",
-      "x": 1244.2,
-      "y": 316.5,
+      "x": 1232.6,
+      "y": 318.6,
+      "w": 58,
+      "h": 21,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Frosted Lemonade' in catalog based on the 'Frosted Lemonade' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 5.49 price text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Frosted Lemonade. Price text is clearly visible in red.",
+      "styleGroup": "d"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "calories",
-      "x": 1305.6,
-      "y": 316.5,
+      "x": 1301.8,
+      "y": 318.6,
+      "w": 77,
+      "h": 21,
       "confidence": 0.99,
-      "reasoning": "Matches 'Strawberry Hibiscus Frosted Lemonade' in catalog based on the 'Frosted Lemonade' text positioned above the 'STRAWBERRY HIBISCUS' context. Extracted the 360 cal text."
+      "reasoning": "Matched entity to Strawberry Hibiscus Frosted Lemonade. Calorie text is clearly visible in red.",
+      "styleGroup": "d"
     }
   ]
 }
