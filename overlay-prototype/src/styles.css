@@ -16,9 +16,10 @@
   --toolbar-bg: #1c1f24;
   --toolbar-fg: #f3f4f6;
   --toolbar-muted: #9ca3af;
-  --price-color: #576063;
-  --calorie-color: #717D80;
-  --cfa-red: #ff0000;
+  --price-color-a: #77848C;
+  --cals-color-a: #76848D;
+  --cals-color-c: #99A4AA;
+  --cfa-red: #D21E37;
 }
 
 * { box-sizing: border-box; }
@@ -120,64 +121,64 @@ html, body {
   letter-spacing: 0.02em;
 }
 
-/* Small */
-.overlay.price-small .value {
-  font-size: 28px;
+/* Group A */
+.overlay.price-a .value {
+  font-size: 26px;
   font-weight: 600;
-  color: var(--price-color);
+  color: var(--price-color-a);
 }
 
-.overlay.calories-small .value {
-  font-size: 28px;
+.overlay.calories-a .value {
+  font-size: 26px;
   font-weight: 400;
-  color: var(--calorie-color);
+  color: var(--cals-color-a);
 }
 
-/* Base */
-.overlay.price-base .value {
-  font-size: 28px;
+/* Group B */
+.overlay.price-b .value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--price-color-a);
+}
+
+.overlay.calories-b .value {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cals-color-a);
+}
+
+/* Group C */
+.overlay.calories-c .value {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--cals-color-c);
+}
+
+/* Group D */
+.overlay.price-d .value {
+  font-size: 26px;
   font-weight: 600;
-  color: var(--price-color);
-}
-
-.overlay.calories-base .value {
-  font-size: 28px;
-  font-weight: 400;
-  color: var(--calorie-color);
-}
-
-/* Large */
-.overlay.price-large .value {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--price-color);
-}
-
-.overlay.calories-large .value {
-  font-size: 28px;
-  font-weight: 400;
-  color: var(--calorie-color);
-}
-
-/* x-large */
-.overlay.price-xlarge .value {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--price-color);
-}
-
-.overlay.calories-xlarge .value {
-  font-size: 28px;
-  font-weight: 400;
-  color: var(--calorie-color);
-}
-
-/* red */
-.red {
   color: var(--cfa-red);
 }
 
-/* uniform */
+.overlay.calories-d .value {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--cfa-red);
+}
+
+/* Group E */
+.overlay.price-e .value {
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--cfa-red);
+}
+
+.overlay.calories-e .value {
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--cfa-red);
+}
 
 
 .overlay.missing .value {
