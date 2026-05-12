@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Overlay QA Portal</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/qa/qa-styles.css" />
+  </head>
+  <body class="qa-body">
+    <header class="qa-toolbar">
+      <div class="toolbar-group">
+        <label for="qa-design-select">Design</label>
+        <select id="qa-design-select"></select>
+      </div>
+      <div class="toolbar-group">
+        <label>Background</label>
+        <div class="qa-bg-toggle" id="qa-bg-toggle" role="tablist">
+          <button type="button" data-bg="full" class="active">Full art</button>
+          <button type="button" data-bg="clean">Clean</button>
+        </div>
+      </div>
+      <div class="toolbar-group">
+        <button type="button" id="qa-add-slot">+ Add slot</button>
+      </div>
+      <div class="qa-status" id="qa-status">Loading…</div>
+      <div class="toolbar-group qa-right">
+        <button type="button" id="qa-save" disabled>Save</button>
+      </div>
+    </header>
+
+    <main class="qa-main">
+      <section class="qa-stage-wrap" id="qa-stage-wrap">
+        <div class="qa-stage" id="qa-stage">
+          <img class="qa-bg" id="qa-bg" alt="" />
+          <div class="qa-slot-layer" id="qa-slot-layer"></div>
+          <div class="qa-place-hint" id="qa-place-hint" hidden>Click on the stage to drop a new slot.</div>
+        </div>
+      </section>
+
+      <aside class="qa-inspector" id="qa-inspector">
+        <div class="qa-inspector-header">
+          <h2>Slots</h2>
+          <span class="qa-count" id="qa-count">0</span>
+        </div>
+        <div class="qa-table-wrap">
+          <table class="qa-table" id="qa-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Tag</th>
+                <th>Field</th>
+                <th>Group</th>
+                <th>x</th>
+                <th>y</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="qa-tbody"></tbody>
+          </table>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="/src/qa/qa-app.js"></script>
+  </body>
+</html>
