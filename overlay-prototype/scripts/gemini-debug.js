@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 const MENUS_FULL_DIR = path.join(PROJECT_ROOT, 'data', 'menus', 'full');
-const OUTPUT_DIR = path.join(PROJECT_ROOT, 'data', 'output');
+const OUTPUT_DIR = path.join(PROJECT_ROOT, 'data', 'gemini-output');
 const ITEMS_PATH = path.join(PROJECT_ROOT, 'data', 'cfa-items.json');
 const DEBUG_DIR = path.join(PROJECT_ROOT, 'debug');
 
