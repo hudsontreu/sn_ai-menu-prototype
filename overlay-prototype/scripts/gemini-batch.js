@@ -137,7 +137,7 @@ async function processDesign(designId, imagePath, catalog, ai, model) {
     '- "a" — Price and calorie text is medium sized, light/medium gray color. The most common group. Found for items that fall under the section groups',
        'including meals & entrees, drinks, treats, salads, grilled meals.',
     '- "b" — Larger, darker gray text. Typically found in "Meals Include" or sides sections or associated with the text "SUSTITUTE".',
-    '- "c" — Very small gray text, calories only (no price). Found exclusively in dressing section.',
+    '- "c" — Very small gray text, calories only (no price). Found exclusively in dressings and sauces sections.',
     '- "d" — Medium sized, red text. The price and calorie values share uniform, equivalent styling. This is the only group that has equivalent price and',
       'calorie style. Used for promotional menu views with items like Strawberry Hibiscus beverages.',
     '- "e" — Large red text (both price and calories). Used for full-page hero items like Iced Coffee promotions.',
