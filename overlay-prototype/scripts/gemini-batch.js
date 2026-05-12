@@ -114,6 +114,7 @@ async function processDesign(designId, imagePath, catalog, ai, model) {
     '     - Price looks like a decimal number, e.g. "7.50", "10.25".',
     '     - Most price values are displayed only as digits. However, some may be prefixed with a $ symbol. The $ symbol is not to be included in the bounding box. Only the digits should be inside the bounding box.',
     '     - Calories looks like a number or pair of numbers followed by "cal", e.g. "690 cal", "1050 cal", "0/360 cal", or "0-500 cal".',
+    '     - Occasionally, a calorie text will be prefixed with the word "add", such as "add 100 cal". In these cases, remember that the coordinate begins at the actual digit value (ie. 100), not the "add" text. This situation can be found in the dressings and sauces sections',
     '     - Price and calorie values are typically positioned to the left and right of the variant label.',
     '5. For each value, draw the tightest bounding box that contains ONLY the text itself (e.g. just "10.25" or "690 cal"),',
     '   not the surrounding item block.',
