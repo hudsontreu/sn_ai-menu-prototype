@@ -148,6 +148,12 @@ html, body {
 }
 
 /* Group C */
+.overlay.price-c .value {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--cals-color-c);
+}
+
 .overlay.calories-c .value {
   font-size: 22px;
   font-weight: 400;
