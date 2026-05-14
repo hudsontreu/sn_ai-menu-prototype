@@ -1,0 +1,183 @@
+{
+  "id": "design-a",
+  "name": "design-a",
+  "backgroundImage": "/assets/design-a.png",
+  "slots": [
+    {
+      "tag": "CFA_BISCUIT_MEAL",
+      "field": "price",
+      "x": 57.6,
+      "y": 227.9,
+      "w": 33,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Biscuit Meal' tag. Visual cue is '8.29' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "CFA_BISCUIT_MEAL",
+      "field": "calories",
+      "x": 165.1,
+      "y": 227.9,
+      "w": 54,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Biscuit Meal' tag. Visual cue is '720 cal' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_CHICKEN",
+      "field": "price",
+      "x": 57.6,
+      "y": 261.4,
+      "w": 33,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Biscuit Entree' tag. Visual cue is '4.44' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_CHICKEN",
+      "field": "calories",
+      "x": 165.1,
+      "y": 261.4,
+      "w": 54,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Biscuit Entree' tag. Visual cue is '460 cal' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SPICY_BISCUIT_MEAL",
+      "field": "price",
+      "x": 556.8,
+      "y": 227.9,
+      "w": 31,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Biscuit Meal' tag. Visual cue is '9.01' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SPICY_BISCUIT_MEAL",
+      "field": "calories",
+      "x": 664.3,
+      "y": 227.9,
+      "w": 50,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Biscuit Meal' tag. Visual cue is '710 cal' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_SPICY_CHICKEN",
+      "field": "price",
+      "x": 556.8,
+      "y": 261.4,
+      "w": 31,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Biscuit Entree' tag. Visual cue is '4.72' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_SPICY_CHICKEN",
+      "field": "calories",
+      "x": 666.2,
+      "y": 261.4,
+      "w": 52,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Spicy Biscuit Entree' tag. Visual cue is '450 cal' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "MINIS_4CT_MEAL",
+      "field": "price",
+      "x": 57.6,
+      "y": 680.4,
+      "w": 42,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Mini Meal' tag for the 4ct item. Visual cue is '10.60' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "MINIS_4CT_MEAL",
+      "field": "calories",
+      "x": 165.1,
+      "y": 680.4,
+      "w": 54,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Mini Meal' tag for the 4ct item. Visual cue is '630 cal' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "CHICK_N_MINIS_4_COUNT",
+      "field": "price",
+      "x": 57.6,
+      "y": 712.8,
+      "w": 33,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Mini Entree' tag for the 4ct item. Visual cue is '5.70' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "CHICK_N_MINIS_4_COUNT",
+      "field": "calories",
+      "x": 165.1,
+      "y": 712.8,
+      "w": 54,
+      "h": 28,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chicken Mini Entree' tag for the 4ct item. Visual cue is '360 cal' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_BEC_MEAL",
+      "field": "price",
+      "x": 556.8,
+      "y": 690.1,
+      "w": 33,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Bacon Egg & Cheese Biscuit Meal' tag. Visual cue is '9.07' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BISCUIT_BEC_MEAL",
+      "field": "calories",
+      "x": 666.2,
+      "y": 690.1,
+      "w": 52,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Bacon Egg & Cheese Biscuit Meal' tag. Visual cue is '690 cal' next to 'meal' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BEC_BISCUIT",
+      "field": "price",
+      "x": 556.8,
+      "y": 722.5,
+      "w": 33,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Bacon Egg & Cheese Biscuit Entree' tag. Visual cue is '4.84' next to 'entree' label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BEC_BISCUIT",
+      "field": "calories",
+      "x": 666.2,
+      "y": 722.5,
+      "w": 52,
+      "h": 27,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Bacon Egg & Cheese Biscuit Entree' tag. Visual cue is '420 cal' next to 'entree' label.",
+      "styleGroup": "a"
+    }
+  ]
+}

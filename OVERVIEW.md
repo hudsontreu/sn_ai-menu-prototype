@@ -22,11 +22,16 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 
 - reads design assets from data/menus
 - reads items list from items.json
-- identifies coordinates and produces json files for each design in data/output
+- identifies coordinates and produces json files for each design in data/gemini-output
+
+**script/post-gemini.js**
+
+- reads jsons in data/gemini-output and adjusts values to remove any jitter
+- creates edited jsons in data/post-output
 
 **script/build.js**
 
-- reads jsons in data/output
+- reads jsons in data/post-output
 - reads data/pricing to match item pricing to store locations
 - reads registry.json to map designs to stores and screens
 - generates html overlay that displays price and calorie in the correct coodinates, placed in public/overlays
@@ -36,6 +41,80 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 **src/**
 
 - front-end app includes store/screen selectors to select the correct background image/overlay html to display
+
+## Pipeline Overview - Written by Claude
+
+The system has two distinct halves with **build-time composition** between them:
+
+1. **Offline pipeline (Node scripts under `scripts/`)** — extract slot coordinates from menu PNGs, merge with per-store pricing, emit static artifacts to `public/`.
+2. **Runtime frontend (Vite app under `src/`)** — dumb renderer that fetches the manifest and stacks a background image + overlay HTML fragment for the selected (store, screen).
+
+The browser never sees the catalog, pricing XML, or design JSON. Everything in `data/` is authoring input; everything in `public/overlays/` and `public/assets/active.json` is build output (gitignored).
+
+### Authoring inputs (`data/`)
+
+- `data/menus/full/*.png` — source menu-board renders (one per design, currently exported manually from Figma). Filename stem = `designId`.
+- `data/menus/background/*.png` — background-only PNGs (no text) for runtime compositing. Copied verbatim to `public/assets/` by `build.js`.
+- `data/cfa-items.json` — flat catalog keyed by canonical `tag` (e.g. `HONEY_PEP_PIM_CFA_MEAL`) → `{menu-item, pricing-tag, group}`. The tag is the join key used across every downstream artifact and matches `<Tag>` in the POS XML.
+- `data/variants.js` — variant vocabulary (`meal`, `entree`, `1ct`, …) passed to Gemini as a detection hint only. Variants are baked into the catalog `tag`; they never appear in slot output or pricing.
+- `data/pricing/{storeId}.xml` — POS feed per store, flat list of `<Item>` records with `<Tag>`, `<Price>`, `<Calories>` / `<CaloriesLow>` / `<CaloriesHigh>`. Updated frequently; independent of designs.
+- `data/registry.json` — maps `storeId → {name, screens: {screenId → designId}}`. Defines which design plays on which physical screen.
+
+### Stage 1 — Slot extraction: `scripts/gemini-batch.js` (`npm run figma:batch`)
+
+- Loops every PNG in `data/menus/full/`.
+- Sends each image inline (base64) to Gemini along with a compact `{tag → menu-item}` catalog and the variant vocabulary.
+- Gemini returns one entry per visible price/calorie value: `{tag, field, box_2d, confidence, reasoning}`. It's instructed to skip rather than invent when no catalog match fits.
+- Converts each normalized `box_2d` (0–1000) to pixel coords in a 1920×1080 frame and takes the top-left as the slot anchor `(x, y)`.
+- Writes one design file per PNG → `data/gemini-output/{designId}.json`.
+- `scripts/gemini-debug.js` runs the same pipeline on one design and emits an HTML overlay of bounding boxes on the source image — for diagnosing extraction errors.
+
+### Stage 2 — Coordinate alignment: `scripts/post-gemini.js` (`npm run post-gemini`)
+
+- Reads `data/gemini-output/*.json`.
+- Groups slot x-values and y-values independently; any cluster within 3px is averaged and snapped, removing per-slot jitter from the model output (so a visual row/column shares one exact coordinate).
+- Writes cleaned designs to `data/post-output/{designId}.json` — this is the canonical design artifact consumed by `build.js`.
+
+### Stage 3 — Composition: `scripts/build.js` (`npm run build:overlays`)
+
+- Reads `data/registry.json` to walk every (storeId, screenId, designId) tuple.
+- For each design, lazy-loads `data/post-output/{designId}.json`. For each store, lazy-loads and parses `data/pricing/{storeId}.xml` into `Map<tag, {price, calories}>`.
+- For each (store, screen), renders an overlay HTML fragment: one absolutely-positioned `<div>` per slot, looked up by `tag`, formatted per `field` (`$X.XX`, `XXX cal`, or `—` with `.missing` class if absent). Calorie ranges fall back to `<CaloriesLow>/<CaloriesHigh>` when `<Calories>` is empty.
+- Writes `public/overlays/{storeId}-{screenId}.html` (one tiny fragment per physical screen).
+- Copies `data/menus/background/*.png` → `public/assets/` (shared bg images, CDN-cacheable).
+- Writes `public/assets/active.json` — the manifest, keyed by store then screen, pointing each screen at its `{designId, background, overlay}` URLs.
+
+Splitting bg image (rare, heavy, shared) from overlay HTML (frequent, tiny, per-store) is the whole reason for build-time composition — a pricing update invalidates only the small overlay file.
+
+### Stage 4 — Runtime frontend (`src/`, served by Vite)
+
+- `index.html` + `src/app.js` — toolbar with store/screen selectors; on selection change, asks `dynamic-view` to render.
+- `src/services/manifest-fetch.js` — fetches `/assets/active.json` once at startup (mirrors the Angular `ManifestFetchService` shape).
+- `src/views/dynamic-view.js` — for the selected (store, screen), stacks an `<img>` (background) with the fetched overlay HTML fragment injected on top (mirrors `DynamicViewComponent`).
+- `src/styles.css` — fixed font sizing/styling per `field` (text does not scale with any slot box; only the start position comes from the slot).
+- `src/qa/*` — separate QA portal app (`qa-app.js`, `inspector.js`, `stage.js`, `api.js`) for reviewing extraction quality on top of the source images. Not part of the production render path.
+
+The frontend has zero awareness of slots, catalog tags, pricing, or the XML schema — all of that lives in `scripts/build.js`.
+
+### End-to-end execution order
+
+```
+# One-time / when designs change:
+npm run figma:batch        # PNGs           → data/gemini-output/*.json
+npm run post-gemini        # gemini-output  → data/post-output/*.json
+
+# Whenever pricing OR designs OR registry change:
+npm run build:overlays     # post-output + pricing + registry → public/overlays/ + public/assets/active.json
+
+# Serve the frontend:
+npm run dev                # Vite on :5173
+```
+
+### How data gets assigned to a store/screen
+
+1. `registry.json` declares `storeId → screenId → designId`.
+2. `build.js` joins that with `data/post-output/{designId}.json` (slot positions) and `data/pricing/{storeId}.xml` (values) on the catalog `tag`.
+3. The resulting overlay fragment and manifest entry are static — at runtime, a screen identifies itself by `(storeId, screenId)`, the frontend looks that up in `active.json`, and renders the two layers it points to. No runtime computation, no client-side data joins.
 
 ## Data Structure
 

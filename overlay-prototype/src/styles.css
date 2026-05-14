@@ -20,6 +20,7 @@
   --cals-color-a: #76848D;
   --cals-color-c: #99A4AA;
   --cfa-red: #D21E37;
+  --text-white: #fff;
 }
 
 * { box-sizing: border-box; }
@@ -121,7 +122,9 @@ html, body {
   letter-spacing: 0.02em;
 }
 
-/* Group A */
+/* Group A:
+- Small, light gray
+- ex: meals & entrees, drinks, treats, salads */
 .overlay.price-a .value {
   font-size: 26px;
   font-weight: 600;
@@ -134,7 +137,9 @@ html, body {
   color: var(--cals-color-a);
 }
 
-/* Group B */
+/* Group B: 
+- larger, dark gray
+- ex: meals include, sides */
 .overlay.price-b .value {
   font-size: 32px;
   font-weight: 700;
@@ -147,20 +152,24 @@ html, body {
   color: var(--cals-color-a);
 }
 
-/* Group C */
+/* Group C: 
+- very small, only cals text
+- only found in the dressings section */
 .overlay.price-c .value {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--cals-color-c);
 }
 
 .overlay.calories-c .value {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--cals-color-c);
 }
 
-/* Group D */
+/* Group D: 
+- red, uniform price/cals styling
+- ex: strawberry hibiscus drinks */
 .overlay.price-d .value {
   font-size: 26px;
   font-weight: 600;
@@ -173,7 +182,9 @@ html, body {
   color: var(--cfa-red);
 }
 
-/* Group E */
+/* Group E: 
+- large red
+- ex: iced coffee full page */
 .overlay.price-e .value {
   font-size: 54px;
   font-weight: 600;
@@ -184,6 +195,36 @@ html, body {
   font-size: 54px;
   font-weight: 600;
   color: var(--cfa-red);
+}
+
+/* Group F: 
+- red, uniform price/cals styling
+- ex: strawberry hibiscus drinks */
+.overlay.price-f .value {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.overlay.calories-f .value {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+/* Group G: 
+- large white
+- ex: brownie full page */
+.overlay.price-g .value {
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.overlay.calories-g .value {
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--text-white);
 }
 
 

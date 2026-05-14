@@ -13,7 +13,19 @@
         "08": "design-h",
         "09": "design-i",
         "10": "design-j",
-        "11": "design-k"
+        "11": "design-k",
+        "12": "design-l",
+        "13": "design-m",
+        "14": "design-n"
+      }
+    },
+    "store-002": {
+      "name": "Atlanta - Peachtree",
+      "screens": {
+        "01": "design-a",
+        "02": "design-b",
+        "03": "design-c",
+        "04": "design-d"
       }
     }
   }
