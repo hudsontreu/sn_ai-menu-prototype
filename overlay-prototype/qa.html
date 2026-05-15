@@ -8,61 +8,72 @@
     <link rel="stylesheet" href="/src/qa/qa-styles.css" />
   </head>
   <body class="qa-body">
-    <header class="qa-toolbar">
-      <div class="toolbar-group">
-        <label for="qa-design-select">Design</label>
-        <select id="qa-design-select"></select>
-      </div>
-      <div class="toolbar-group">
-        <label>Background</label>
-        <div class="qa-bg-toggle" id="qa-bg-toggle" role="tablist">
-          <button type="button" data-bg="full">Full art</button>
-          <button type="button" data-bg="clean" class="active">Clean</button>
-        </div>
-      </div>
-      <div class="toolbar-group">
-        <button type="button" id="qa-add-slot">+ Add slot</button>
-      </div>
-      <div class="qa-status" id="qa-status">Loading…</div>
-      <div class="toolbar-group qa-right">
-        <button type="button" id="qa-save" disabled>Save</button>
-      </div>
-    </header>
-
     <main class="qa-main">
-      <section class="qa-stage-wrap" id="qa-stage-wrap">
-
-        <div class="qa-stage" id="qa-stage">
-          <img class="qa-bg" id="qa-bg" alt="" />
-          <div class="qa-slot-layer" id="qa-slot-layer"></div>
-          <div class="qa-place-hint" id="qa-place-hint" hidden>Click on the stage to drop a new slot.</div>
-        </div>
-      </section>
-
-      <div class="qa-resize-handle" id="qa-resize-handle"></div>
-
       <aside class="qa-inspector" id="qa-inspector">
-        <div class="qa-inspector-header">
-          <h2>Slots</h2>
-          <span class="qa-count" id="qa-count">0</span>
-        </div>
         <div class="qa-table-wrap">
           <table class="qa-table" id="qa-table">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Tag</th>
-                <th>Field</th>
-                <th>Group</th>
-                <th>x</th>
-                <th>y</th>
-                <th></th>
+                <th class="qa-col-idx"></th>
+                <th class="qa-col-tag">Tag</th>
+                <th class="qa-col-field">Field</th>
+                <th class="qa-col-group">Style Group</th>
+                <th class="qa-col-x">X</th>
+                <th class="qa-col-y">Y</th>
+                <th class="qa-col-del"></th>
               </tr>
             </thead>
             <tbody id="qa-tbody"></tbody>
           </table>
         </div>
+        <div class="qa-inspector-footer">
+          <button type="button" id="qa-add-slot" class="qa-btn-primary qa-btn-add">
+            <span class="qa-icon-plus" aria-hidden="true">+</span>
+            <span>Add item</span>
+          </button>
+        </div>
       </aside>
+
+      <div class="qa-resize-handle" id="qa-resize-handle" aria-hidden="true"></div>
+
+      <section class="qa-right">
+        <header class="qa-toolbar">
+          <div class="qa-toolbar-left">
+            <div class="qa-field">
+              <label for="qa-design-select" class="qa-field-label">Design</label>
+              <div class="qa-select-wrap">
+                <select id="qa-design-select" class="qa-select"></select>
+                <span class="qa-select-chevron" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="qa-field">
+              <label for="qa-view-select" class="qa-field-label">View</label>
+              <div class="qa-select-wrap">
+                <select id="qa-view-select" class="qa-select">
+                  <option value="generated">Generated</option>
+                  <option value="compare">Compare</option>
+                  <option value="boxes">Bounding Boxes</option>
+                </select>
+                <span class="qa-select-chevron" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+          <div class="qa-toolbar-right">
+            <div class="qa-status" id="qa-status">Loading…</div>
+            <button type="button" id="qa-save" class="qa-btn-primary" disabled>Save</button>
+          </div>
+        </header>
+
+        <section class="qa-stage-wrap" id="qa-stage-wrap">
+          <div class="qa-stage-frame" id="qa-stage-frame">
+            <div class="qa-stage" id="qa-stage">
+              <img class="qa-bg" id="qa-bg" alt="" />
+              <div class="qa-slot-layer" id="qa-slot-layer"></div>
+              <div class="qa-place-hint" id="qa-place-hint" hidden>Click on the stage to drop a new slot.</div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
 
     <script type="module" src="/src/qa/qa-app.js"></script>

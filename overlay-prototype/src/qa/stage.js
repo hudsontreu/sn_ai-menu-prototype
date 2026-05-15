@@ -15,33 +15,35 @@ function formatSlotValue(slot, pricing) {
   return slot.field === 'price' ? '—.——' : '— cal';
 }
 
-export function createStage({ root, slotLayer, bgImg, placeHint, getState, setState, onChange }) {
+export function createStage({ root, frame, slotLayer, bgImg, placeHint, getState, setState, onChange }) {
   let scale = 1;
-  let drag = null; // { index, startPointerX, startPointerY, startX, startY, moved }
+  let drag = null;
 
   function fit() {
-    const wrap = root.parentElement;
-    const availW = wrap.clientWidth - 32;
-    const availH = wrap.clientHeight - 32;
-    scale = Math.min(availW / DESIGN_W, availH / DESIGN_H, 1);
+    if (!frame) return;
+    const frameW = frame.clientWidth;
+    if (!frameW) return;
+    scale = frameW / DESIGN_W;
     root.style.transform = `scale(${scale})`;
   }
 
   function setBackground() {
-    const { design, background } = getState();
+    const { design, view } = getState();
     if (!design) {
       bgImg.removeAttribute('src');
       return;
     }
     const fileName = `${design.id}.png`;
-    bgImg.src = background === 'clean'
+    // 'generated' → clean bg; 'compare' and 'boxes' → full menu image
+    bgImg.src = view === 'generated'
       ? `/qa-assets/menus/background/${fileName}`
       : `/qa-assets/menus/full/${fileName}`;
   }
 
   function renderSlots() {
-    const { design, selectedIndex, pricing } = getState();
+    const { design, selectedIndex, pricing, view } = getState();
     slotLayer.innerHTML = '';
+    root.dataset.view = view || 'generated';
     if (!design) return;
     design.slots.forEach((slot, i) => {
       const el = document.createElement('div');
@@ -53,7 +55,6 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
       el.style.width = `${slot.w || 40}px`;
       el.style.height = `${slot.h || 24}px`;
 
-      // Render overlay text using production CSS classes so typography matches exactly
       const group = slot.styleGroup || 'a';
       const textEl = document.createElement('div');
       textEl.className = `overlay ${slot.field}-${group}`;
@@ -65,7 +66,6 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
       textEl.appendChild(span);
       el.appendChild(textEl);
 
-      // Slot index badge — sits above the box
       const label = document.createElement('span');
       label.className = 'qa-slot-label';
       label.textContent = `${i + 1}`;
@@ -78,6 +78,7 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
   function render() {
     setBackground();
     renderSlots();
+    fit();
   }
 
   function pointerToDesign(ev) {
@@ -200,6 +201,13 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
   });
 
   window.addEventListener('resize', fit);
+
+  // refit when frame size changes (resize handle dragging or window resizes)
+  if (window.ResizeObserver && frame) {
+    const ro = new ResizeObserver(() => fit());
+    ro.observe(frame);
+  }
+
   fit();
 
   return {

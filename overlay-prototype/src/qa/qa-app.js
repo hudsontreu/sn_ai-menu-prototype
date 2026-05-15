@@ -4,16 +4,16 @@ import { createInspector } from './inspector.js';
 
 const els = {
   designSelect: document.getElementById('qa-design-select'),
-  bgToggle: document.getElementById('qa-bg-toggle'),
+  viewSelect: document.getElementById('qa-view-select'),
   addBtn: document.getElementById('qa-add-slot'),
   saveBtn: document.getElementById('qa-save'),
   status: document.getElementById('qa-status'),
   stageRoot: document.getElementById('qa-stage'),
+  stageFrame: document.getElementById('qa-stage-frame'),
   slotLayer: document.getElementById('qa-slot-layer'),
   bgImg: document.getElementById('qa-bg'),
   placeHint: document.getElementById('qa-place-hint'),
   tbody: document.getElementById('qa-tbody'),
-  countEl: document.getElementById('qa-count'),
   inspector: document.getElementById('qa-inspector'),
   resizeHandle: document.getElementById('qa-resize-handle'),
 };
@@ -26,7 +26,7 @@ const state = {
   pricing: null,
   selectedIndex: null,
   placingNew: false,
-  background: 'clean',
+  view: 'generated', // 'generated' | 'compare' | 'boxes'
   dirty: false,
 };
 
@@ -93,6 +93,7 @@ async function loadDesign(id) {
 }
 
 function wireResizeHandle() {
+  // Inspector is on the LEFT now — dragging right widens it, left shrinks.
   let resizing = null;
   els.resizeHandle.addEventListener('pointerdown', (ev) => {
     resizing = { startX: ev.clientX, startW: els.inspector.offsetWidth };
@@ -101,9 +102,9 @@ function wireResizeHandle() {
   });
   els.resizeHandle.addEventListener('pointermove', (ev) => {
     if (!resizing) return;
-    // dragging left (negative dx) widens inspector; dragging right shrinks it
     const dx = ev.clientX - resizing.startX;
-    const newW = Math.max(280, Math.min(900, resizing.startW - dx));
+    const maxW = Math.min(window.innerWidth * 0.7, window.innerWidth - 400);
+    const newW = Math.max(380, Math.min(maxW, resizing.startW + dx));
     els.inspector.style.width = `${newW}px`;
     stage.refit();
   });
@@ -127,6 +128,7 @@ async function init() {
 
     stage = createStage({
       root: els.stageRoot,
+      frame: els.stageFrame,
       slotLayer: els.slotLayer,
       bgImg: els.bgImg,
       placeHint: els.placeHint,
@@ -136,22 +138,14 @@ async function init() {
     });
     inspector = createInspector({
       tbody: els.tbody,
-      countEl: els.countEl,
       getState,
       onChange,
     });
 
     els.designSelect.addEventListener('change', () => loadDesign(els.designSelect.value));
 
-    els.bgToggle.addEventListener('click', (ev) => {
-      const btn = ev.target.closest('button[data-bg]');
-      if (!btn) return;
-      const bg = btn.dataset.bg;
-      if (bg === state.background) return;
-      state.background = bg;
-      [...els.bgToggle.querySelectorAll('button')].forEach((b) =>
-        b.classList.toggle('active', b === btn)
-      );
+    els.viewSelect.addEventListener('change', () => {
+      state.view = els.viewSelect.value;
       stage.render();
     });
 
@@ -168,7 +162,7 @@ async function init() {
       try {
         await api.putDesign(state.designId, state.design);
         setDirty(false);
-        setStatus('Saved · run `npm run build:overlays` to regenerate store HTML', 'clean');
+        setStatus('Saved · run `npm run build:overlays`', 'clean');
       } catch (err) {
         setStatus(`Save failed: ${err.message}`, 'error');
         els.saveBtn.disabled = false;

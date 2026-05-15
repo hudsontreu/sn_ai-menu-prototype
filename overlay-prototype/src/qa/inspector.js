@@ -1,7 +1,7 @@
 const FIELDS = ['price', 'calories'];
 const STYLE_GROUPS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
-export function createInspector({ tbody, countEl, getState, onChange }) {
+export function createInspector({ tbody, getState, onChange }) {
   let cachedTagOptions = null;
   let cachedTagSet = null;
   function tagOptions() {
@@ -22,26 +22,27 @@ export function createInspector({ tbody, countEl, getState, onChange }) {
 
   function selectMarkup(name, value, options) {
     const opts = options
-      .map((o) => `<option value="${o}"${o === value ? ' selected' : ''}>${o}</option>`)
+      .map((o) => `<option value="${o}"${o === value ? ' selected' : ''}>${capitalize(o)}</option>`)
       .join('');
-    return `<select data-prop="${name}">${opts}</select>`;
+    return `<div class="qa-select-wrap"><select data-prop="${name}" class="qa-select">${opts}</select><span class="qa-select-chevron" aria-hidden="true"></span></div>`;
   }
 
   function tagSelectMarkup(value, optionsHtml) {
     const orphan = cachedTagSet && !cachedTagSet.has(value)
       ? `<option value="${value}">${value} (not in catalog)</option>`
       : '';
-    return `<select data-prop="tag" class="qa-tag-select">${orphan}${optionsHtml}</select>`;
+    return `<div class="qa-select-wrap"><select data-prop="tag" class="qa-select qa-tag-select">${orphan}${optionsHtml}</select><span class="qa-select-chevron" aria-hidden="true"></span></div>`;
+  }
+
+  function capitalize(s) {
+    if (!s) return s;
+    return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
   function render() {
     const { design, selectedIndex } = getState();
     tbody.innerHTML = '';
-    if (!design) {
-      countEl.textContent = '0';
-      return;
-    }
-    countEl.textContent = String(design.slots.length);
+    if (!design) return;
     const opts = tagOptions();
     design.slots.forEach((slot, i) => {
       const tr = document.createElement('tr');
@@ -51,12 +52,11 @@ export function createInspector({ tbody, countEl, getState, onChange }) {
         <td class="qa-idx">${i + 1}</td>
         <td>${tagSelectMarkup(slot.tag, opts)}</td>
         <td>${selectMarkup('field', slot.field, FIELDS)}</td>
-        <td>${selectMarkup('styleGroup', slot.styleGroup || 'a', STYLE_GROUPS)}</td>
-        <td><input type="number" data-prop="x" value="${slot.x}" step="0.1" /></td>
-        <td><input type="number" data-prop="y" value="${slot.y}" step="0.1" /></td>
+        <td>${selectMarkup('styleGroup', (slot.styleGroup || 'a'), STYLE_GROUPS)}</td>
+        <td><input type="number" data-prop="x" class="qa-input" value="${slot.x}" step="0.1" /></td>
+        <td><input type="number" data-prop="y" class="qa-input" value="${slot.y}" step="0.1" /></td>
         <td><button type="button" class="qa-row-delete" title="Delete">×</button></td>
       `;
-      // tag select needs the right value
       const tagSel = tr.querySelector('select[data-prop="tag"]');
       if (tagSel) tagSel.value = slot.tag;
       tbody.appendChild(tr);
