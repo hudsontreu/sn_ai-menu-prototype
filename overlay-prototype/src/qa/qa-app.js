@@ -14,6 +14,8 @@ const els = {
   placeHint: document.getElementById('qa-place-hint'),
   tbody: document.getElementById('qa-tbody'),
   countEl: document.getElementById('qa-count'),
+  inspector: document.getElementById('qa-inspector'),
+  resizeHandle: document.getElementById('qa-resize-handle'),
 };
 
 const state = {
@@ -21,9 +23,10 @@ const state = {
   designId: null,
   design: null,
   catalog: null,
+  pricing: null,
   selectedIndex: null,
   placingNew: false,
-  background: 'full',
+  background: 'clean',
   dirty: false,
 };
 
@@ -51,8 +54,7 @@ function onChange(evt) {
   } else if (evt.positionChanged != null) {
     inspector.refreshRow(evt.positionChanged);
   } else if (evt.propertyChanged) {
-    // value change comes from inspector itself; no re-render needed unless field changed
-    if (evt.propertyChanged.prop === 'tag' || evt.propertyChanged.prop === 'field' || evt.propertyChanged.prop === 'styleGroup') {
+    if (['tag', 'field', 'styleGroup'].includes(evt.propertyChanged.prop)) {
       stage.render();
     }
   }
@@ -90,11 +92,34 @@ async function loadDesign(id) {
   inspector.render();
 }
 
+function wireResizeHandle() {
+  let resizing = null;
+  els.resizeHandle.addEventListener('pointerdown', (ev) => {
+    resizing = { startX: ev.clientX, startW: els.inspector.offsetWidth };
+    els.resizeHandle.setPointerCapture(ev.pointerId);
+    ev.preventDefault();
+  });
+  els.resizeHandle.addEventListener('pointermove', (ev) => {
+    if (!resizing) return;
+    // dragging left (negative dx) widens inspector; dragging right shrinks it
+    const dx = ev.clientX - resizing.startX;
+    const newW = Math.max(280, Math.min(900, resizing.startW - dx));
+    els.inspector.style.width = `${newW}px`;
+    stage.refit();
+  });
+  els.resizeHandle.addEventListener('pointerup', () => { resizing = null; });
+}
+
 async function init() {
   try {
-    const [designsRes, catalogRes] = await Promise.all([api.listDesigns(), api.getCatalog()]);
+    const [designsRes, catalogRes, pricingRes] = await Promise.all([
+      api.listDesigns(),
+      api.getCatalog(),
+      api.getPricing(),
+    ]);
     state.designs = designsRes.designs;
     state.catalog = catalogRes;
+    state.pricing = pricingRes;
 
     els.designSelect.innerHTML = state.designs
       .map((id) => `<option value="${id}">${id}</option>`)
@@ -149,6 +174,8 @@ async function init() {
         els.saveBtn.disabled = false;
       }
     });
+
+    wireResizeHandle();
 
     window.addEventListener('beforeunload', (ev) => {
       if (state.dirty) {

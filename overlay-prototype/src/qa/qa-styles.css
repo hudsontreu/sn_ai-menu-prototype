@@ -67,11 +67,22 @@
 .qa-right { margin-left: auto; }
 
 .qa-main {
-  display: grid;
-  grid-template-columns: 1fr 480px;
+  display: flex;
   flex: 1;
   min-height: 0;
+  overflow: hidden;
 }
+
+.qa-resize-handle {
+  width: 6px;
+  flex-shrink: 0;
+  cursor: col-resize;
+  background: transparent;
+  border-left: 1px solid #2a2e35;
+  transition: background 0.15s;
+}
+.qa-resize-handle:hover,
+.qa-resize-handle:active { background: #2a3038; }
 
 .qa-stage-wrap {
   position: relative;
@@ -81,6 +92,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 16px;
+  flex: 1;
+  min-width: 0;
 }
 
 .qa-stage {
@@ -109,19 +122,26 @@
 
 .qa-slot {
   position: absolute;
-  border: 1.5px solid rgba(95, 182, 255, 0.85);
-  background: rgba(95, 182, 255, 0.08);
+  border: 1.5px solid rgba(95, 182, 255, 0.6);
+  background: rgba(95, 182, 255, 0.04);
   cursor: grab;
   min-width: 16px;
   min-height: 16px;
   touch-action: none;
+  overflow: visible;
 }
-.qa-slot:hover { background: rgba(95, 182, 255, 0.18); }
+.qa-slot:hover { background: rgba(95, 182, 255, 0.1); }
 .qa-slot.selected {
   border-color: #ffd24d;
-  background: rgba(255, 210, 77, 0.18);
+  background: rgba(255, 210, 77, 0.08);
   box-shadow: 0 0 0 2px rgba(255, 210, 77, 0.25);
   cursor: grabbing;
+}
+
+/* Text inside slots inherits production overlay CSS — just fix position and interactivity */
+.qa-slot .overlay {
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .qa-slot-label {
@@ -158,11 +178,13 @@
 }
 
 .qa-inspector {
+  width: 480px;
+  flex-shrink: 0;
   background: #15171c;
-  border-left: 1px solid #2a2e35;
   display: flex;
   flex-direction: column;
   min-height: 0;
+  overflow: hidden;
 }
 
 .qa-inspector-header {

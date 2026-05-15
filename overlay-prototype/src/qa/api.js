@@ -25,4 +25,7 @@ export const api = {
   async getCatalog() {
     return jsonOrThrow(await fetch('/api/qa/catalog'));
   },
+  async getPricing() {
+    return jsonOrThrow(await fetch('/api/qa/pricing'));
+  },
 };

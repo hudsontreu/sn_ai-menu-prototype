@@ -2,6 +2,7 @@ import { readFile, writeFile, readdir, stat } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { XMLParser } from 'fast-xml-parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +13,43 @@ const FULL_DIR = path.join(DATA_DIR, 'menus', 'full');
 const BG_DIR = path.join(DATA_DIR, 'menus', 'background');
 const CATALOG_PATH = path.join(DATA_DIR, 'cfa-items.json');
 
+const PRICING_DIR = path.join(DATA_DIR, 'pricing');
+const REGISTRY_PATH = path.join(DATA_DIR, 'registry.json');
 const DESIGN_ID_RE = /^[a-z0-9._-]+$/i;
+
+const xmlParser = new XMLParser({ ignoreAttributes: true, parseTagValue: false, trimValues: true });
+
+function isNonEmpty(v) { return v != null && String(v).trim() !== ''; }
+function nonZero(v) {
+  if (!isNonEmpty(v)) return null;
+  const s = String(v).trim();
+  return Number(s) === 0 ? null : s;
+}
+function composeCalories(item) {
+  const single = nonZero(item.Calories);
+  if (single) return single;
+  const lo = nonZero(item.CaloriesLow);
+  const hi = nonZero(item.CaloriesHigh);
+  if (lo || hi) return `${lo ?? '0'}/${hi ?? '0'}`;
+  return null;
+}
+
+async function loadPricingForStore(storeId) {
+  const raw = await readFile(path.join(PRICING_DIR, `${storeId}.xml`), 'utf8');
+  const parsed = xmlParser.parse(raw);
+  const items = parsed?.Items?.Item ?? [];
+  const list = Array.isArray(items) ? items : [items];
+  const out = {};
+  for (const it of list) {
+    const tag = isNonEmpty(it.Tag) ? String(it.Tag).trim() : null;
+    if (!tag) continue;
+    out[tag] = {
+      price: isNonEmpty(it.Price) ? Number(it.Price) : null,
+      calories: composeCalories(it),
+    };
+  }
+  return out;
+}
 
 function sendJson(res, status, body) {
   const payload = JSON.stringify(body);
@@ -68,6 +105,20 @@ export function qaPlugin() {
               .map((f) => f.replace(/\.json$/, ''))
               .sort();
             return sendJson(res, 200, { designs: ids });
+          }
+
+          // GET /api/qa/pricing  — first available store's pricing as {TAG: {price, calories}}
+          if (req.method === 'GET' && url === '/api/qa/pricing') {
+            try {
+              const registry = JSON.parse(await readFile(REGISTRY_PATH, 'utf8'));
+              const storeIds = Object.keys(registry.stores || {});
+              if (!storeIds.length) return sendJson(res, 200, {});
+              const pricing = await loadPricingForStore(storeIds[0]);
+              return sendJson(res, 200, pricing);
+            } catch (err) {
+              if (err.code === 'ENOENT') return sendJson(res, 200, {});
+              throw err;
+            }
           }
 
           // GET /api/qa/catalog

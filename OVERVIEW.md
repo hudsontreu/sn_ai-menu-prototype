@@ -20,7 +20,8 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 
 **script/gemini-batch.js**
 
-- reads design assets from data/menus
+- reads design assets from data/menus/full
+    - Can be called with optional arguments for specifiying only certain designs to process (ex: `node scripts/gemini-batch.js design-d.png design-f.png`)
 - reads items list from items.json
 - identifies coordinates and produces json files for each design in data/gemini-output
 

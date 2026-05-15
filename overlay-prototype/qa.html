@@ -16,8 +16,8 @@
       <div class="toolbar-group">
         <label>Background</label>
         <div class="qa-bg-toggle" id="qa-bg-toggle" role="tablist">
-          <button type="button" data-bg="full" class="active">Full art</button>
-          <button type="button" data-bg="clean">Clean</button>
+          <button type="button" data-bg="full">Full art</button>
+          <button type="button" data-bg="clean" class="active">Clean</button>
         </div>
       </div>
       <div class="toolbar-group">
@@ -31,12 +31,15 @@
 
     <main class="qa-main">
       <section class="qa-stage-wrap" id="qa-stage-wrap">
+
         <div class="qa-stage" id="qa-stage">
           <img class="qa-bg" id="qa-bg" alt="" />
           <div class="qa-slot-layer" id="qa-slot-layer"></div>
           <div class="qa-place-hint" id="qa-place-hint" hidden>Click on the stage to drop a new slot.</div>
         </div>
       </section>
+
+      <div class="qa-resize-handle" id="qa-resize-handle"></div>
 
       <aside class="qa-inspector" id="qa-inspector">
         <div class="qa-inspector-header">

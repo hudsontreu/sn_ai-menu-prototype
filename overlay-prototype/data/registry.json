@@ -27,6 +27,13 @@
         "03": "design-c",
         "04": "design-d"
       }
+    },
+    "store-003": {
+      "name": "Atlanta - Peachtree",
+      "screens": {
+        "01": "design-c",
+        "02": "design-d"
+      }
     }
   }
 }

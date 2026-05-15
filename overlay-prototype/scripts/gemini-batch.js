@@ -243,7 +243,19 @@ async function main() {
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   const model = process.env.MODEL_NAME || 'gemini-3-flash-preview';
 
-  const files = (await readdir(MENUS_FULL_DIR)).filter((f) => f.endsWith('.png'));
+  // Optional positional args: design filenames or IDs (e.g. "design-d.png" or "design-d")
+  const filter = process.argv.slice(2).map((a) => a.replace(/\.png$/i, '').trim()).filter(Boolean);
+
+  const allFiles = (await readdir(MENUS_FULL_DIR)).filter((f) => f.endsWith('.png'));
+  const files = filter.length
+    ? allFiles.filter((f) => filter.includes(path.basename(f, '.png')))
+    : allFiles;
+
+  if (filter.length) {
+    const missing = filter.filter((id) => !allFiles.some((f) => path.basename(f, '.png') === id));
+    if (missing.length) console.warn(`Warning: no PNG found for: ${missing.join(', ')}`);
+  }
+
   if (!files.length) throw new Error(`No PNG files found in ${MENUS_FULL_DIR}`);
 
   for (const file of files) {

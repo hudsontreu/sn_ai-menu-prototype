@@ -1,6 +1,20 @@
 const DESIGN_W = 1920;
 const DESIGN_H = 1080;
 
+const FORMATTERS = {
+  price: (v) => (v == null ? null : Number(v).toFixed(2)),
+  calories: (v) => (v == null ? null : `${v} cal`),
+};
+
+function formatSlotValue(slot, pricing) {
+  const entry = pricing && pricing[slot.tag];
+  const raw = entry ? entry[slot.field] : null;
+  const fmt = FORMATTERS[slot.field] ?? ((v) => (v == null ? null : String(v)));
+  const result = fmt(raw);
+  if (result != null) return result;
+  return slot.field === 'price' ? '—.——' : '— cal';
+}
+
 export function createStage({ root, slotLayer, bgImg, placeHint, getState, setState, onChange }) {
   let scale = 1;
   let drag = null; // { index, startPointerX, startPointerY, startX, startY, moved }
@@ -26,7 +40,7 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
   }
 
   function renderSlots() {
-    const { design, selectedIndex } = getState();
+    const { design, selectedIndex, pricing } = getState();
     slotLayer.innerHTML = '';
     if (!design) return;
     design.slots.forEach((slot, i) => {
@@ -38,8 +52,20 @@ export function createStage({ root, slotLayer, bgImg, placeHint, getState, setSt
       el.style.top = `${slot.y}px`;
       el.style.width = `${slot.w || 40}px`;
       el.style.height = `${slot.h || 24}px`;
-      el.title = `${slot.tag} · ${slot.field} · ${slot.styleGroup || 'a'}`;
 
+      // Render overlay text using production CSS classes so typography matches exactly
+      const group = slot.styleGroup || 'a';
+      const textEl = document.createElement('div');
+      textEl.className = `overlay ${slot.field}-${group}`;
+      textEl.style.top = '0';
+      textEl.style.left = '0';
+      const span = document.createElement('span');
+      span.className = 'value';
+      span.textContent = formatSlotValue(slot, pricing);
+      textEl.appendChild(span);
+      el.appendChild(textEl);
+
+      // Slot index badge — sits above the box
       const label = document.createElement('span');
       label.className = 'qa-slot-label';
       label.textContent = `${i + 1}`;

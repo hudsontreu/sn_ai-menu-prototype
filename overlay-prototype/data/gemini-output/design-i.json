@@ -6,23 +6,23 @@
     {
       "tag": "SM_ICED_COFFEE",
       "field": "price",
-      "x": 1681.9,
-      "y": 448.2,
+      "x": 1678.1,
+      "y": 449.3,
       "w": 113,
-      "h": 46,
+      "h": 43,
       "confidence": 0.95,
-      "reasoning": "Matched to SM_ICED_COFFEE based on the primary item name 'Original Iced Coffee'. Box surrounds the red price text. Style matches group e for hero promotions.",
+      "reasoning": "Matched 'Original Iced Coffee' text to the closest semantic catalog tag SM_ICED_COFFEE. The price '4.29' is large red text, correctly mapping to styleGroup 'e'.",
       "styleGroup": "e"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "calories",
-      "x": 1566.7,
-      "y": 504.4,
-      "w": 228,
-      "h": 51,
+      "x": 1584,
+      "y": 507.6,
+      "w": 207,
+      "h": 44,
       "confidence": 0.95,
-      "reasoning": "Matched to SM_ICED_COFFEE. Box tight around the red '200 cal' text. Matches style group e for full-page hero promotional items.",
+      "reasoning": "Matched 'Original Iced Coffee' text to the closest semantic catalog tag SM_ICED_COFFEE. The calories '200 cal' is large red text, correctly mapping to styleGroup 'e'.",
       "styleGroup": "e"
     }
   ]
