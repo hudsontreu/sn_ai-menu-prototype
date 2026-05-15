@@ -11,7 +11,10 @@ const state = { manifest: null };
 
 function populateStores() {
   storeSelect.innerHTML = '';
-  for (const [storeId, store] of Object.entries(state.manifest.stores)) {
+  const sorted = Object.entries(state.manifest.stores).sort(([a], [b]) =>
+    a.localeCompare(b, undefined, { numeric: true })
+  );
+  for (const [storeId, store] of sorted) {
     const opt = document.createElement('option');
     opt.value = storeId;
     opt.textContent = `${storeId} — ${store.name}`;
@@ -22,7 +25,10 @@ function populateStores() {
 function populateScreens(storeId) {
   screenSelect.innerHTML = '';
   const store = state.manifest.stores[storeId];
-  for (const [screenId, entry] of Object.entries(store.screens)) {
+  const sorted = Object.entries(store.screens).sort(([a], [b]) =>
+    a.localeCompare(b, undefined, { numeric: true })
+  );
+  for (const [screenId, entry] of sorted) {
     const opt = document.createElement('option');
     opt.value = screenId;
     opt.textContent = `Screen ${screenId} (${entry.designId})`;

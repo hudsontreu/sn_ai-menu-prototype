@@ -1,5 +1,5 @@
 const FIELDS = ['price', 'calories'];
-const STYLE_GROUPS = ['a', 'b', 'c', 'd', 'e'];
+const STYLE_GROUPS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
 export function createInspector({ tbody, countEl, getState, onChange }) {
   let cachedTagOptions = null;

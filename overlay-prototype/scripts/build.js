@@ -115,11 +115,12 @@ async function main() {
     return designCache.get(designId);
   };
 
-  const loadPricing = async (storeId) => {
-    if (!pricingCache.has(storeId)) {
-      pricingCache.set(storeId, await loadPricingXml(path.join(DATA_DIR, 'pricing', `${storeId}.xml`)));
+  const loadPricing = async (pricingGroup) => {
+    if (!pricingCache.has(pricingGroup)) {
+      const filename = `pricing-group_${String(pricingGroup).padStart(2, '0')}.xml`;
+      pricingCache.set(pricingGroup, await loadPricingXml(path.join(DATA_DIR, 'pricing', filename)));
     }
-    return pricingCache.get(storeId);
+    return pricingCache.get(pricingGroup);
   };
 
   const manifest = {
@@ -138,7 +139,7 @@ async function main() {
         skippedCount++;
         continue;
       }
-      const pricing = await loadPricing(storeId);
+      const pricing = await loadPricing(store['pricing-group']);
       const html = renderOverlayHtml(design, pricing);
       const overlayFile = `${storeId}-${screenId}.html`;
       await writeFile(path.join(OVERLAYS_DIR, overlayFile), `${html}\n`, 'utf8');

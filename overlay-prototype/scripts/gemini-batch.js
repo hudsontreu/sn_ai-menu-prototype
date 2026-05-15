@@ -158,8 +158,7 @@ async function processDesign(designId, imagePath, catalog, ai, model) {
     '- "e" — Large red text (both price and calories). Used for full-page hero items like Iced Coffee promotions.',
     '- "f" — Medium sized, white text. Used in the same way as group d, but the text is white. The price and calorie values share uniform, equivalent styling.',
     '- "g" — Large white text (both price and calories). Similar to group e but the text is white.',
-    '',
-    'When unsure, prefer "a" — it is the default/most common group.',
+    '- groups d, e, f, and g are typically used with promotionals with product image backgounds, where as groups a, b, and c are typically used with the standard menu screens with white background.',
     '',
     '## Output rules',
     '- Cover the entire design: every visible price and every visible calorie value.',
@@ -272,3 +271,4 @@ main().catch((err) => {
   console.error(err.message || err);
   process.exitCode = 1;
 });
+

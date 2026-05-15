@@ -1,0 +1,117 @@
+{
+  "id": "design-k",
+  "name": "design-k",
+  "backgroundImage": "/assets/design-k.png",
+  "slots": [
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "price",
+      "x": 359,
+      "y": 319.7,
+      "w": 90,
+      "h": 40,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Sandwich' entree. Bounding box surrounds the price digits '6.69', excluding the word 'entree'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "calories",
+      "x": 409,
+      "y": 374.8,
+      "w": 140,
+      "h": 40,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Chick-fil-A Chicken Sandwich' entree. Bounding box surrounds '420 cal'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SPRITE",
+      "field": "price",
+      "x": 1129,
+      "y": 929.9,
+      "w": 60,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Sprite'. Price text is under the Sprite drink image. Bounding box isolates '3.15'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SPRITE",
+      "field": "calories",
+      "x": 1200,
+      "y": 929.9,
+      "w": 69,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Sprite'. Calories text is under the Sprite drink image. Bounding box isolates '190 cal'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
+      "field": "price",
+      "x": 1299.8,
+      "y": 929.9,
+      "w": 50,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Sunjoy'. Price text is under the Sunjoy drink image. Bounding box isolates '3.59'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
+      "field": "calories",
+      "x": 1359.4,
+      "y": 929.9,
+      "w": 81,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Sunjoy'. Calories text is under the Sunjoy drink image. Bounding box isolates '240 cal'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
+      "field": "price",
+      "x": 1459.2,
+      "y": 955.8,
+      "w": 50,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Frosted Lemonade'. Price text is under the Frosted Lemonade drink image. Bounding box isolates '5.09'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
+      "field": "calories",
+      "x": 1518.7,
+      "y": 955.8,
+      "w": 90,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Frosted Lemonade'. Calories text is under the Frosted Lemonade drink image. Bounding box isolates '360 cal'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
+      "field": "price",
+      "x": 1628.2,
+      "y": 929.9,
+      "w": 52,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Lemonade'. Price text is under the Lemonade drink image. Bounding box isolates '3.59'.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
+      "field": "calories",
+      "x": 1689.6,
+      "y": 929.9,
+      "w": 79,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches 'Strawberry Hibiscus Lemonade'. Calories text is under the Lemonade drink image. Bounding box isolates '270 cal'.",
+      "styleGroup": "a"
+    }
+  ]
+}

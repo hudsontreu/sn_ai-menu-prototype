@@ -2,6 +2,7 @@
   "stores": {
     "store-001": {
       "name": "Atlanta - Peachtree",
+      "pricing-group": 1,
       "screens": {
         "01": "design-a",
         "02": "design-b",
@@ -20,7 +21,8 @@
       }
     },
     "store-002": {
-      "name": "Atlanta - Peachtree",
+      "name": "Houston - Wilcrest",
+      "pricing-group": 2,
       "screens": {
         "01": "design-a",
         "02": "design-b",
@@ -29,7 +31,8 @@
       }
     },
     "store-003": {
-      "name": "Atlanta - Peachtree",
+      "name": "Detroit - The Boulevard",
+      "pricing-group": 1,
       "screens": {
         "01": "design-c",
         "02": "design-d"

@@ -1,0 +1,117 @@
+{
+  "id": "design-n",
+  "name": "design-n",
+  "backgroundImage": "/assets/design-n.png",
+  "slots": [
+    {
+      "tag": "BOTTLED_WATER",
+      "field": "price",
+      "x": 51.8,
+      "y": 639.4,
+      "w": 58,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Located the price value for Bottled Water just below its title label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BOTTLED_WATER",
+      "field": "calories",
+      "x": 128.6,
+      "y": 639.4,
+      "w": 77,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Located the calorie text directly to the right of the Bottled Water price.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_COOKIES_CREAM_MILKSHAKE",
+      "field": "price",
+      "x": 1009.9,
+      "y": 232.2,
+      "w": 58,
+      "h": 22,
+      "confidence": 0.9,
+      "reasoning": "Found the shared price for Hand-Spun Milkshakes; assigned to the first variant (Cookies & Cream).",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_COOKIES_CREAM_MILKSHAKE",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 264.6,
+      "w": 96,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Identified the calorie text aligned to the right of the Cookies & Cream flavor label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_CHOCOLATE_MILKSHAKE",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 298.1,
+      "w": 96,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Identified the calorie text aligned to the right of the Chocolate flavor label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_VANILLA_MILKSHAKE",
+      "field": "calories",
+      "x": 1217.3,
+      "y": 332.6,
+      "w": 96,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Identified the calorie text aligned to the right of the Vanilla flavor label.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_ICEDREAM_CONE",
+      "field": "price",
+      "x": 1009.9,
+      "y": 583.2,
+      "w": 58,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Located the price value directly beneath the Icedream title.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "SM_ICEDREAM_CONE",
+      "field": "calories",
+      "x": 1086.7,
+      "y": 583.2,
+      "w": 96,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Found the calorie text immediately following the price for the Icedream cone.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BROWNIE",
+      "field": "price",
+      "x": 1065.6,
+      "y": 847.8,
+      "w": 58,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Located the price value for the 1 ct Chocolate Fudge Brownie variant.",
+      "styleGroup": "a"
+    },
+    {
+      "tag": "BROWNIE",
+      "field": "calories",
+      "x": 1142.4,
+      "y": 847.8,
+      "w": 106,
+      "h": 24,
+      "confidence": 0.95,
+      "reasoning": "Located the calorie text directly beside the Chocolate Fudge Brownie price.",
+      "styleGroup": "a"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ Price and calorie data will be dynamic, changing based on which store the HTML i
 **script/build.js**
 
 - reads jsons in data/post-output
-- reads data/pricing to match item pricing to store locations
+- reads data/pricing/pricing-group_*.xml (resolved via each store's pricing-group in registry.json) to match item pricing to store locations
 - reads registry.json to map designs to stores and screens
 - generates html overlay that displays price and calorie in the correct coodinates, placed in public/overlays
 - generates public/active.json manifest to map stores and screens to the correct design overlays and background images
@@ -58,7 +58,7 @@ The browser never sees the catalog, pricing XML, or design JSON. Everything in `
 - `data/menus/background/*.png` — background-only PNGs (no text) for runtime compositing. Copied verbatim to `public/assets/` by `build.js`.
 - `data/cfa-items.json` — flat catalog keyed by canonical `tag` (e.g. `HONEY_PEP_PIM_CFA_MEAL`) → `{menu-item, pricing-tag, group}`. The tag is the join key used across every downstream artifact and matches `<Tag>` in the POS XML.
 - `data/variants.js` — variant vocabulary (`meal`, `entree`, `1ct`, …) passed to Gemini as a detection hint only. Variants are baked into the catalog `tag`; they never appear in slot output or pricing.
-- `data/pricing/{storeId}.xml` — POS feed per store, flat list of `<Item>` records with `<Tag>`, `<Price>`, `<Calories>` / `<CaloriesLow>` / `<CaloriesHigh>`. Updated frequently; independent of designs.
+- `data/pricing/pricing-group_{NN}.xml` — POS feed per pricing group, flat list of `<Item>` records with `<Tag>`, `<Price>`, `<Calories>` / `<CaloriesLow>` / `<CaloriesHigh>`. Each store in `registry.json` declares a `pricing-group` integer; `build.js` resolves it to the corresponding file. Updated frequently; independent of designs.
 - `data/registry.json` — maps `storeId → {name, screens: {screenId → designId}}`. Defines which design plays on which physical screen.
 
 ### Stage 1 — Slot extraction: `scripts/gemini-batch.js` (`npm run figma:batch`)
@@ -79,7 +79,7 @@ The browser never sees the catalog, pricing XML, or design JSON. Everything in `
 ### Stage 3 — Composition: `scripts/build.js` (`npm run build:overlays`)
 
 - Reads `data/registry.json` to walk every (storeId, screenId, designId) tuple.
-- For each design, lazy-loads `data/post-output/{designId}.json`. For each store, lazy-loads and parses `data/pricing/{storeId}.xml` into `Map<tag, {price, calories}>`.
+- For each design, lazy-loads `data/post-output/{designId}.json`. For each store, resolves its `pricing-group` from `registry.json`, lazy-loads and parses `data/pricing/pricing-group_{NN}.xml` into `Map<tag, {price, calories}>`.
 - For each (store, screen), renders an overlay HTML fragment: one absolutely-positioned `<div>` per slot, looked up by `tag`, formatted per `field` (`$X.XX`, `XXX cal`, or `—` with `.missing` class if absent). Calorie ranges fall back to `<CaloriesLow>/<CaloriesHigh>` when `<Calories>` is empty.
 - Writes `public/overlays/{storeId}-{screenId}.html` (one tiny fragment per physical screen).
 - Copies `data/menus/background/*.png` → `public/assets/` (shared bg images, CDN-cacheable).
@@ -114,7 +114,7 @@ npm run dev                # Vite on :5173
 ### How data gets assigned to a store/screen
 
 1. `registry.json` declares `storeId → screenId → designId`.
-2. `build.js` joins that with `data/post-output/{designId}.json` (slot positions) and `data/pricing/{storeId}.xml` (values) on the catalog `tag`.
+2. `build.js` joins that with `data/post-output/{designId}.json` (slot positions) and `data/pricing/pricing-group_{NN}.xml` (values, resolved from the store's `pricing-group`) on the catalog `tag`.
 3. The resulting overlay fragment and manifest entry are static — at runtime, a screen identifies itself by `(storeId, screenId)`, the frontend looks that up in `active.json`, and renders the two layers it points to. No runtime computation, no client-side data joins.
 
 ## Data Structure
