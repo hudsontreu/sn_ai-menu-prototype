@@ -34,7 +34,7 @@ const OUTPUT_SCHEMA = {
           },
           confidence: { type: 'number', minimum: 0, maximum: 1 },
           reasoning: { type: 'string' },
-          styleGroup: { type: 'string', enum: ['a', 'b', 'c', 'd', 'e'] },
+          styleGroup: { type: 'string', enum: ['a', 'b', 'c', 'd', 'e', 'f', 'g'] },
         },
         required: ['tag', 'field', 'box_2d', 'confidence', 'reasoning', 'styleGroup'],
       },

@@ -12,7 +12,8 @@
     "figma:gemini": "node --env-file=.env ./scripts/gemini.js",
     "figma:debug": "node ./scripts/gemini-debug.js",
     "figma:batch": "node --env-file=.env ./scripts/gemini-batch.js",
-    "post-gemini": "node ./scripts/post-gemini.js"
+    "post-gemini": "node ./scripts/post-gemini.js",
+    "pipeline": "npm run figma:batch && npm run post-gemini && npm run build:overlays"
   },
   "devDependencies": {
     "vite": "^5.4.0"

@@ -97,6 +97,19 @@ Splitting bg image (rare, heavy, shared) from overlay HTML (frequent, tiny, per-
 
 The frontend has zero awareness of slots, catalog tags, pricing, or the XML schema — all of that lives in `scripts/build.js`.
 
+### QA portal (qa.html → src/qa/qa-app.js)
+
+  - A completely separate page. Vite serves it at /qa.html.
+  - It does not consume active.json or public/overlays/*.html. It bypasses the build pipeline entirely and reads the authoring inputs directly (data/post-output/*.json and data/cfa-items.json) plus a single pricing XML, then re-renders an
+  editable preview client-side.
+  - The renderer logic in src/qa/stage.js's formatSlotValue is a near-copy of build.js's renderOverlayHtml — same formatters, same styleGroup classes — so the QA preview matches what build.js will produce.
+
+  The bridge — scripts/qa-plugin.js
+  - A Vite configureServer plugin (loaded in vite.config.js) that adds middleware for two URL prefixes:
+    - /api/qa/* — JSON REST endpoints for designs/catalog/pricing.
+    - /qa-assets/menus/{full,background}/*.png — streams source PNGs out of data/menus/ (these are not in public/).
+  - apply: 'serve' means this middleware only exists during npm run dev — there is no production QA portal. Edits go straight to disk via node:fs/promises writeFile.
+
 ### End-to-end execution order
 
 ```
