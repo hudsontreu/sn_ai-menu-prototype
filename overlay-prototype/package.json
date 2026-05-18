@@ -12,14 +12,19 @@
     "figma:gemini": "node --env-file=.env ./scripts/gemini.js",
     "figma:debug": "node ./scripts/gemini-debug.js",
     "figma:batch": "node --env-file=.env ./scripts/gemini-batch.js",
+    "ocr": "node --env-file=.env ./scripts/ocr-extract.js",
+    "ocr:debug": "node ./scripts/ocr-debug.js",
+    "figma:batch:ocr": "node --env-file=.env ./scripts/gemini-batch-ocr.js",
     "post-gemini": "node ./scripts/post-gemini.js",
-    "pipeline": "npm run figma:batch && npm run post-gemini && npm run build:overlays"
+    "pipeline": "npm run figma:batch && npm run post-gemini && npm run build:overlays",
+    "pipeline:ocr": "npm run ocr && npm run figma:batch:ocr && npm run post-gemini && npm run build:overlays"
   },
   "devDependencies": {
     "vite": "^5.4.0"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "latest",
+    "@google-cloud/vision": "^5.3.6",
     "@google/genai": "latest",
     "@modelcontextprotocol/sdk": "latest",
     "fast-xml-parser": "^5.7.3"

@@ -6,167 +6,227 @@
     {
       "tag": "JALAPENO_CFA_FILET",
       "field": "price",
-      "x": 409,
-      "y": 529.2,
-      "w": 60,
-      "h": 27,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' based on the fried filet and Jalapeño Ranch name. Found '8.09' centered below the item name and limited time badge. Group d for promotional red text.",
-      "styleGroup": "d"
+      "x": 413,
+      "y": 544,
+      "w": 41,
+      "h": 17,
+      "confidence": 0.9,
+      "reasoning": "Matches '8.09' for the Jalapeño Ranch Club promo. Tag selected is the closest match for the original filet variant.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        58
+      ],
+      "ocrText": "8.09"
     },
     {
       "tag": "JALAPENO_CFA_FILET",
       "field": "calories",
-      "x": 480,
-      "y": 529.2,
-      "w": 88,
-      "h": 27,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club'. Found '620 cal' centered below the item name. Group d for promotional red text.",
-      "styleGroup": "d"
+      "x": 462,
+      "y": 544,
+      "w": 39,
+      "h": 16,
+      "confidence": 0.9,
+      "reasoning": "Matches '620' calories for the Jalapeño Ranch Club promo.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        59
+      ],
+      "ocrText": "620"
     },
     {
       "tag": "JALAPENO_RANCH_ALCARTE",
       "field": "calories",
-      "x": 489.6,
-      "y": 977.4,
-      "w": 129,
-      "h": 27,
-      "confidence": 0.9,
-      "reasoning": "Matches Jalapeno Ranch Sauce. Found '70 calories' in the descriptive text at the bottom. Group a as it acts as a standard small/medium detail text.",
-      "styleGroup": "a"
+      "x": 481,
+      "y": 982,
+      "w": 26,
+      "h": 17,
+      "confidence": 0.95,
+      "reasoning": "Matches '70' calories added by the Jalapeño Ranch Sauce.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        71
+      ],
+      "ocrText": "70"
     },
     {
       "tag": "5CT_NUGGETS",
       "field": "price",
-      "x": 1071.4,
-      "y": 291.6,
-      "w": 61,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Chick-fil-A Nuggets 5ct in the Kids meal section. Found '8.95' next to variant '5ct'. Group a for standard medium dark gray price.",
-      "styleGroup": "a"
+      "x": 1076,
+      "y": 297,
+      "w": 56,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '8.95' for 5ct Chick-fil-A Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        39
+      ],
+      "ocrText": "8.95"
     },
     {
       "tag": "5CT_NUGGETS",
       "field": "calories",
-      "x": 1142.4,
-      "y": 291.6,
-      "w": 86,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Chick-fil-A Nuggets 5ct. Found '160 cal' next to the price. Group a for standard light gray cal.",
-      "styleGroup": "a"
+      "x": 1144,
+      "y": 297,
+      "w": 40,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '160' calories for 5ct Chick-fil-A Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        40
+      ],
+      "ocrText": "160"
     },
     {
       "tag": "GRILLED_NUGS_5_CT",
       "field": "price",
-      "x": 1499.5,
-      "y": 291.6,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Grilled Nuggets 5ct. Found '9.59' next to variant '5ct'. Group a.",
-      "styleGroup": "a"
+      "x": 1504,
+      "y": 301,
+      "w": 55,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '9.59' for 5ct Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        52
+      ],
+      "ocrText": "9.59"
     },
     {
       "tag": "GRILLED_NUGS_5_CT",
       "field": "calories",
-      "x": 1574.4,
-      "y": 291.6,
-      "w": 77,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Grilled Nuggets 5ct. Found '80 cal' next to the price. Group a.",
-      "styleGroup": "a"
+      "x": 1575,
+      "y": 301,
+      "w": 32,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '80' calories for 5ct Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        53
+      ],
+      "ocrText": "80"
     },
     {
       "tag": "FRUIT_CUP_SMALL",
       "field": "calories",
-      "x": 1046.4,
-      "y": 534.6,
-      "w": 77,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Fruit Cup (S). Found '60 cal' next to variant 'S'. Group a.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SM_WAFFLE_POTATO_FRIES",
-      "field": "calories",
-      "x": 1478.4,
-      "y": 561.6,
-      "w": 86,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matches Waffle Potato Fries (S). Found '320 cal' next to variant 'S'. Group a.",
-      "styleGroup": "a"
+      "x": 1050,
+      "y": 544,
+      "w": 31,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matches '60' calories for the small Fruit Cup side.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        66
+      ],
+      "ocrText": "60"
     },
     {
       "tag": "APPLE_SAUCE",
       "field": "calories",
-      "x": 1017.6,
-      "y": 691.2,
-      "w": 86,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Matches Cinnamon Apple Sauce. Found '45 cal' below the item title. Group a.",
-      "styleGroup": "a"
+      "x": 1022,
+      "y": 699,
+      "w": 29,
+      "h": 18,
+      "confidence": 0.95,
+      "reasoning": "Matches '45' calories for the Cinnamon Apple Sauce side.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        82
+      ],
+      "ocrText": "45"
+    },
+    {
+      "tag": "SM_WAFFLE_POTATO_FRIES",
+      "field": "calories",
+      "x": 1478,
+      "y": 571,
+      "w": 46,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matches '320' calories for the small Waffle Potato Fries side.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        120
+      ],
+      "ocrText": "320"
     },
     {
       "tag": "TEST_SM_MACNCHEESE",
       "field": "price",
-      "x": 1564.8,
-      "y": 648,
-      "w": 48,
-      "h": 27,
-      "confidence": 0.98,
-      "reasoning": "Matches Mac & Cheese substitute. Found '.98' in 'Substitute for an additional .98'. Group b because it is associated with the text 'Substitute'.",
-      "styleGroup": "b"
+      "x": 1575,
+      "y": 656,
+      "w": 36,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matches '.98' additional cost to substitute for Mac & Cheese in kids meal.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        126
+      ],
+      "ocrText": ".98"
     },
     {
       "tag": "TEST_SM_MACNCHEESE",
       "field": "calories",
-      "x": 1478.4,
-      "y": 718.2,
-      "w": 86,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Matches Mac & Cheese substitute. Found '270 cal' next to variant 'S'. Group a.",
-      "styleGroup": "a"
+      "x": 1470,
+      "y": 723,
+      "w": 44,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matches '270' calories for the small Mac & Cheese substitute.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        131
+      ],
+      "ocrText": "270"
     },
     {
       "tag": "MILK_WHITE_1_PERCENT",
       "field": "calories",
-      "x": 1017.6,
-      "y": 891,
-      "w": 86,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Matches 1% Milk. Found '90 cal' below the item title. Group a.",
-      "styleGroup": "a"
+      "x": 1022,
+      "y": 902,
+      "w": 32,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '90' calories for the 1% Milk drink.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        90
+      ],
+      "ocrText": "90"
     },
     {
       "tag": "MILK_CHOCOLATE_1_PERCENT",
       "field": "calories",
-      "x": 1017.6,
-      "y": 999,
-      "w": 96,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Matches 1% Chocolate Milk. Found '140 cal' below the item title. Group a.",
-      "styleGroup": "a"
+      "x": 1022,
+      "y": 1003,
+      "w": 41,
+      "h": 18,
+      "confidence": 0.95,
+      "reasoning": "Matches '140' calories for the 1% Chocolate Milk drink.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        97
+      ],
+      "ocrText": "140"
     },
     {
       "tag": "JUICE_MINUTE_MAID_APPLE",
       "field": "calories",
-      "x": 1449.6,
-      "y": 966.6,
-      "w": 86,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Matches Honest Kids Apple Juice. Found '35 cal' below the item title. Group a.",
-      "styleGroup": "a"
+      "x": 1451,
+      "y": 982,
+      "w": 26,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matches '35' calories for the Honest Kids Apple Juice Drink.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        144
+      ],
+      "ocrText": "35"
     }
   ]
 }

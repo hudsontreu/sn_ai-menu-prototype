@@ -6,178 +6,242 @@
     {
       "tag": "CFA_BISCUIT_MEAL",
       "field": "price",
-      "x": 109.4,
-      "y": 230.8,
-      "w": 65,
-      "h": 28,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Chick-fil-A Biscuit.",
-      "styleGroup": "a"
+      "x": 109.5,
+      "y": 250.8,
+      "w": 61,
+      "h": 21,
+      "confidence": 1,
+      "reasoning": "Matched '8.29' to Chick-fil-A Biscuit Meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        7
+      ],
+      "ocrText": "8.29"
     },
     {
       "tag": "CFA_BISCUIT_MEAL",
       "field": "calories",
-      "x": 318.7,
-      "y": 230.8,
-      "w": 100,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Chick-fil-A Biscuit.",
-      "styleGroup": "a"
+      "x": 318.8,
+      "y": 250.8,
+      "w": 51,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '720' to Chick-fil-A Biscuit Meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        9
+      ],
+      "ocrText": "720"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "price",
-      "x": 109.4,
-      "y": 264.6,
-      "w": 67,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Chick-fil-A Biscuit.",
-      "styleGroup": "a"
+      "x": 109.5,
+      "y": 287.5,
+      "w": 64,
+      "h": 20,
+      "confidence": 1,
+      "reasoning": "Matched '4.44' to Chick-fil-A Biscuit Entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        11
+      ],
+      "ocrText": "4.44"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "calories",
-      "x": 318.7,
-      "y": 264.6,
-      "w": 104,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Chick-fil-A Biscuit.",
-      "styleGroup": "a"
+      "x": 318.8,
+      "y": 287.5,
+      "w": 54,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '460' to Chick-fil-A Biscuit Entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        13
+      ],
+      "ocrText": "460"
     },
     {
       "tag": "SPICY_BISCUIT_MEAL",
       "field": "price",
-      "x": 1069.4,
-      "y": 230.8,
-      "w": 61,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Spicy Biscuit.",
-      "styleGroup": "a"
+      "x": 1068.5,
+      "y": 250.8,
+      "w": 59,
+      "h": 25,
+      "confidence": 1,
+      "reasoning": "Matched '9.01' to Spicy Biscuit Meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "9.01"
     },
     {
       "tag": "SPICY_BISCUIT_MEAL",
       "field": "calories",
-      "x": 1277.8,
-      "y": 230.8,
-      "w": 98,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Spicy Biscuit.",
-      "styleGroup": "a"
+      "x": 1278,
+      "y": 250.8,
+      "w": 46,
+      "h": 23,
+      "confidence": 1,
+      "reasoning": "Matched '710' to Spicy Biscuit Meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        21
+      ],
+      "ocrText": "710"
     },
     {
       "tag": "BISCUIT_SPICY_CHICKEN",
       "field": "price",
-      "x": 1069.4,
-      "y": 264.6,
-      "w": 65,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Spicy Biscuit.",
-      "styleGroup": "a"
+      "x": 1068.5,
+      "y": 287.5,
+      "w": 58,
+      "h": 21,
+      "confidence": 1,
+      "reasoning": "Matched '4.72' to Spicy Biscuit Entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        19
+      ],
+      "ocrText": "4.72"
     },
     {
       "tag": "BISCUIT_SPICY_CHICKEN",
       "field": "calories",
-      "x": 1277.8,
-      "y": 264.6,
-      "w": 106,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Spicy Biscuit.",
-      "styleGroup": "a"
+      "x": 1278,
+      "y": 287.5,
+      "w": 55,
+      "h": 23,
+      "confidence": 1,
+      "reasoning": "Matched '450' to Spicy Biscuit Entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        24
+      ],
+      "ocrText": "450"
     },
     {
       "tag": "MINIS_4CT_MEAL",
       "field": "price",
-      "x": 109.4,
-      "y": 681.5,
-      "w": 81,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Chick-n-Minis.",
-      "styleGroup": "a"
+      "x": 109.5,
+      "y": 739,
+      "w": 79,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '10.60' to Chick-n-Minis 4ct Meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        33
+      ],
+      "ocrText": "10.60"
     },
     {
       "tag": "MINIS_4CT_MEAL",
       "field": "calories",
-      "x": 318.7,
-      "y": 681.5,
-      "w": 104,
-      "h": 27,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Chick-n-Minis.",
-      "styleGroup": "a"
+      "x": 318.8,
+      "y": 739,
+      "w": 52,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '630' to Chick-n-Minis 4ct Meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        35
+      ],
+      "ocrText": "630"
     },
     {
       "tag": "CHICK_N_MINIS_4_COUNT",
       "field": "price",
-      "x": 109.4,
-      "y": 716,
-      "w": 65,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Chick-n-Minis.",
-      "styleGroup": "a"
+      "x": 109.5,
+      "y": 773,
+      "w": 59,
+      "h": 25,
+      "confidence": 1,
+      "reasoning": "Matched '5.70' to Chick-n-Minis 4ct Entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        37
+      ],
+      "ocrText": "5.70"
     },
     {
       "tag": "CHICK_N_MINIS_4_COUNT",
       "field": "calories",
-      "x": 318.7,
-      "y": 716,
-      "w": 104,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Chick-n-Minis.",
-      "styleGroup": "a"
+      "x": 318.8,
+      "y": 773,
+      "w": 52,
+      "h": 23,
+      "confidence": 1,
+      "reasoning": "Matched '360' to Chick-n-Minis 4ct Entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        39
+      ],
+      "ocrText": "360"
     },
     {
       "tag": "BISCUIT_BEC_MEAL",
       "field": "price",
-      "x": 1069.4,
-      "y": 690.1,
+      "x": 1068.5,
+      "y": 749,
       "w": 63,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Bacon, Egg & Cheese Biscuit.",
-      "styleGroup": "a"
+      "h": 21,
+      "confidence": 1,
+      "reasoning": "Matched '9.07' to Bacon, Egg & Cheese Biscuit Meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "9.07"
     },
     {
       "tag": "BISCUIT_BEC_MEAL",
       "field": "calories",
-      "x": 1277.8,
-      "y": 690.1,
-      "w": 104,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'meal' variant for Bacon, Egg & Cheese Biscuit.",
-      "styleGroup": "a"
+      "x": 1278,
+      "y": 749,
+      "w": 54,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '690' to Bacon, Egg & Cheese Biscuit Meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        50
+      ],
+      "ocrText": "690"
     },
     {
       "tag": "BEC_BISCUIT",
       "field": "price",
-      "x": 1069.4,
-      "y": 723.6,
-      "w": 65,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Bacon, Egg & Cheese Biscuit.",
-      "styleGroup": "a"
+      "x": 1068.5,
+      "y": 784.5,
+      "w": 63,
+      "h": 23,
+      "confidence": 1,
+      "reasoning": "Matched '4.84' to Bacon, Egg & Cheese Biscuit Entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        52
+      ],
+      "ocrText": "4.84"
     },
     {
       "tag": "BEC_BISCUIT",
       "field": "calories",
-      "x": 1277.8,
-      "y": 723.6,
-      "w": 104,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located next to 'entree' variant for Bacon, Egg & Cheese Biscuit.",
-      "styleGroup": "a"
+      "x": 1278,
+      "y": 784.5,
+      "w": 55,
+      "h": 22,
+      "confidence": 1,
+      "reasoning": "Matched '420' to Bacon, Egg & Cheese Biscuit Entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        54
+      ],
+      "ocrText": "420"
     }
   ]
 }
