@@ -6,68 +6,92 @@
     {
       "tag": "HASH_BROWNS",
       "field": "price",
-      "x": 963.8,
-      "y": 980.6,
-      "w": 58,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Red text located under 'Hash Browns'. Fits style 'd'.",
-      "styleGroup": "d"
+      "x": 965,
+      "y": 984,
+      "w": 50,
+      "h": 24,
+      "confidence": 0.99,
+      "reasoning": "Matched 'Hash Browns' to HASH_BROWNS. Price is 1.89.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        30
+      ],
+      "ocrText": "1.89"
     },
     {
       "tag": "HASH_BROWNS",
       "field": "calories",
-      "x": 1056,
-      "y": 980.6,
-      "w": 96,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Red text located under 'Hash Browns'. Fits style 'd'.",
-      "styleGroup": "d"
+      "x": 1046,
+      "y": 984,
+      "w": 54,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Matched 'Hash Browns' to HASH_BROWNS. Calories is 270.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        31
+      ],
+      "ocrText": "270"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "price",
-      "x": 1217.3,
-      "y": 980.6,
-      "w": 58,
-      "h": 28,
+      "x": 1216,
+      "y": 985,
+      "w": 59,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Red text located under 'Iced Coffee'. Matches the original cold brew tag. Fits style 'd'.",
-      "styleGroup": "d"
+      "reasoning": "Matched 'Iced Coffee' to SM_ICED_COFFEE. Price is 4.29.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        35
+      ],
+      "ocrText": "4.29"
     },
     {
       "tag": "SM_ICED_COFFEE",
       "field": "calories",
-      "x": 1305.6,
-      "y": 980.6,
-      "w": 111,
-      "h": 28,
+      "x": 1307,
+      "y": 985,
+      "w": 58,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Red text located under 'Iced Coffee'. Fits style 'd'.",
-      "styleGroup": "d"
+      "reasoning": "Matched 'Iced Coffee' to SM_ICED_COFFEE. Calories is 200.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        36
+      ],
+      "ocrText": "200"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "price",
-      "x": 1491.8,
-      "y": 1015.2,
-      "w": 58,
-      "h": 27,
+      "x": 1490,
+      "y": 1017,
+      "w": 142,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Red text located under 'Chick-fil-A Chicken Biscuit'. Matched to chicken biscuit entree. Fits style 'd'.",
-      "styleGroup": "d"
+      "reasoning": "Matched 'Chick-fil-A Chicken Biscuit' to BISCUIT_CHICKEN. OCR merged price and calories as '4.19-460'.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        45
+      ],
+      "ocrText": "4.19-460"
     },
     {
       "tag": "BISCUIT_CHICKEN",
       "field": "calories",
-      "x": 1584,
-      "y": 1015.2,
-      "w": 106,
-      "h": 27,
+      "x": 1490,
+      "y": 1017,
+      "w": 142,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Red text located under 'Chick-fil-A Chicken Biscuit'. Fits style 'd'.",
-      "styleGroup": "d"
+      "reasoning": "Matched 'Chick-fil-A Chicken Biscuit' to BISCUIT_CHICKEN. OCR merged price and calories as '4.19-460'.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        45
+      ],
+      "ocrText": "4.19-460"
     }
   ]
 }

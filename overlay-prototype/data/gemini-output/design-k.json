@@ -6,112 +6,152 @@
     {
       "tag": "SANDWICH_CFA_CHICKEN",
       "field": "price",
-      "x": 362.9,
-      "y": 330.5,
-      "w": 92,
-      "h": 36,
-      "confidence": 0.98,
-      "reasoning": "Matched Chick-fil-A Chicken Sandwich to SANDWICH_CFA_CHICKEN. Identified large white text representing the price.",
-      "styleGroup": "g"
+      "x": 363,
+      "y": 333,
+      "w": 84,
+      "h": 32,
+      "confidence": 0.99,
+      "reasoning": "Price for the Chick-fil-A Chicken Sandwich Entree.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        7
+      ],
+      "ocrText": "6.69"
     },
     {
       "tag": "SANDWICH_CFA_CHICKEN",
       "field": "calories",
-      "x": 403.2,
-      "y": 373.7,
-      "w": 154,
-      "h": 38,
-      "confidence": 0.98,
-      "reasoning": "Matched Chick-fil-A Chicken Sandwich to SANDWICH_CFA_CHICKEN. Identified large white text representing the calories.",
-      "styleGroup": "g"
+      "x": 403,
+      "y": 381,
+      "w": 80,
+      "h": 29,
+      "confidence": 0.99,
+      "reasoning": "Calories for the Chick-fil-A Chicken Sandwich Entree.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        9
+      ],
+      "ocrText": "420"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "price",
-      "x": 1134.7,
-      "y": 931,
-      "w": 52,
-      "h": 21,
-      "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Sprite to STRAWBERRY_HIBISCUS_SPRITE. Identified medium white text representing the price.",
-      "styleGroup": "f"
+      "x": 1134,
+      "y": 929,
+      "w": 43,
+      "h": 27,
+      "confidence": 0.99,
+      "reasoning": "Price for Strawberry Hibiscus Sprite.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        39
+      ],
+      "ocrText": "3.15"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "calories",
-      "x": 1198.1,
-      "y": 931,
-      "w": 73,
-      "h": 21,
-      "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Sprite to STRAWBERRY_HIBISCUS_SPRITE. Identified medium white text representing the calories.",
-      "styleGroup": "f"
+      "x": 1196,
+      "y": 928,
+      "w": 38,
+      "h": 27,
+      "confidence": 0.99,
+      "reasoning": "Calories for Strawberry Hibiscus Sprite.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        40
+      ],
+      "ocrText": "190"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "price",
-      "x": 1297.9,
-      "y": 931,
-      "w": 54,
-      "h": 21,
-      "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Sunjoy to STRAWBERRY_HIBISCUS_SWEETTEA_LEM. Identified medium white text representing the price.",
-      "styleGroup": "f"
+      "x": 1295,
+      "y": 927,
+      "w": 47,
+      "h": 26,
+      "confidence": 0.99,
+      "reasoning": "Price for Strawberry Hibiscus Sunjoy.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        42
+      ],
+      "ocrText": "3.59"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "calories",
-      "x": 1363.2,
-      "y": 931,
-      "w": 81,
-      "h": 21,
-      "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Sunjoy to STRAWBERRY_HIBISCUS_SWEETTEA_LEM. Identified medium white text representing the calories.",
-      "styleGroup": "f"
+      "x": 1362,
+      "y": 926,
+      "w": 42,
+      "h": 26,
+      "confidence": 0.99,
+      "reasoning": "Calories for Strawberry Hibiscus Sunjoy.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        43
+      ],
+      "ocrText": "240"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "price",
-      "x": 1463,
-      "y": 955.8,
-      "w": 54,
-      "h": 23,
+      "x": 1462,
+      "y": 960,
+      "w": 111,
+      "h": 18,
       "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Frosted Lemonade to STRAWBERRY_HIBISCUS_FROSTED_LEMONADE. Identified medium white text representing the price.",
-      "styleGroup": "f"
+      "reasoning": "Price for Strawberry Hibiscus Frosted Lemonade. The OCR combined price and calories into a single string.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "5.09.360"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "calories",
-      "x": 1528.3,
-      "y": 955.8,
-      "w": 83,
-      "h": 23,
+      "x": 1462,
+      "y": 960,
+      "w": 111,
+      "h": 18,
       "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Frosted Lemonade to STRAWBERRY_HIBISCUS_FROSTED_LEMONADE. Identified medium white text representing the calories.",
-      "styleGroup": "f"
+      "reasoning": "Calories for Strawberry Hibiscus Frosted Lemonade. The OCR combined price and calories into a single string.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "5.09.360"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "price",
-      "x": 1630.1,
-      "y": 931,
-      "w": 50,
-      "h": 21,
+      "x": 1628,
+      "y": 921,
+      "w": 106,
+      "h": 27,
       "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Lemonade to STRAWBERRY_HIBISCUS_LEMONADE. Identified medium white text representing the price.",
-      "styleGroup": "f"
+      "reasoning": "Price for Strawberry Hibiscus Lemonade. The OCR combined price and calories into a single string.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        46
+      ],
+      "ocrText": "3.59.270"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "calories",
-      "x": 1695.4,
-      "y": 931,
-      "w": 79,
-      "h": 21,
+      "x": 1628,
+      "y": 921,
+      "w": 106,
+      "h": 27,
       "confidence": 0.98,
-      "reasoning": "Matched Strawberry Hibiscus Lemonade to STRAWBERRY_HIBISCUS_LEMONADE. Identified medium white text representing the calories.",
-      "styleGroup": "f"
+      "reasoning": "Calories for Strawberry Hibiscus Lemonade. The OCR combined price and calories into a single string.",
+      "styleGroup": "f",
+      "ocrWordIndices": [
+        46
+      ],
+      "ocrText": "3.59.270"
     }
   ]
 }

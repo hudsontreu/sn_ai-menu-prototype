@@ -6,288 +6,407 @@
     {
       "tag": "MD_WAFFLE_POTATO_FRIES",
       "field": "price",
-      "x": 606.7,
-      "y": 271.1,
-      "w": 65,
-      "h": 32,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Fries' with 'M' size label. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
+      "x": 608,
+      "y": 280,
+      "w": 63,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Located price '2.65' next to 'M' for medium waffle fries in the sides section.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        21
+      ],
+      "ocrText": "2.65"
     },
     {
       "tag": "MD_WAFFLE_POTATO_FRIES",
       "field": "calories",
-      "x": 689.3,
-      "y": 274.3,
-      "w": 102,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Fries' with 'M' size label. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_WAFFLE_POTATO_FRIES",
-      "field": "price",
-      "x": 602.9,
-      "y": 311,
-      "w": 67,
-      "h": 29,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Fries' with 'L' size label. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_WAFFLE_POTATO_FRIES",
-      "field": "calories",
-      "x": 691.2,
-      "y": 313.2,
-      "w": 100,
-      "h": 27,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Fries' with 'L' size label. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "CHIPS_WAFFLE",
-      "field": "price",
-      "x": 577.9,
-      "y": 492.5,
-      "w": 60,
-      "h": 33,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Chips'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "CHIPS_WAFFLE",
-      "field": "calories",
-      "x": 660.5,
-      "y": 492.5,
-      "w": 163,
-      "h": 32,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Waffle Potato Chips'. Box is drawn tightly around the multiple calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "FRUIT_CUP_MEDIUM",
-      "field": "price",
-      "x": 59.5,
-      "y": 792.7,
-      "w": 63,
-      "h": 30,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Fruit Cup'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "FRUIT_CUP_MEDIUM",
-      "field": "calories",
-      "x": 130.6,
-      "y": 793.8,
-      "w": 83,
-      "h": 30,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Fruit Cup'. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_KALE_CRUNCH",
-      "field": "price",
-      "x": 261.1,
-      "y": 793.8,
-      "w": 63,
-      "h": 29,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Kale Crunch'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_KALE_CRUNCH",
-      "field": "calories",
-      "x": 341.8,
-      "y": 792.7,
-      "w": 94,
-      "h": 31,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Kale Crunch'. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "TEST_MD_MACNCHEESE",
-      "field": "price",
-      "x": 487.7,
-      "y": 792.7,
-      "w": 67,
-      "h": 30,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Mac & Cheese'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "TEST_MD_MACNCHEESE",
-      "field": "calories",
-      "x": 572.2,
-      "y": 792.7,
-      "w": 102,
-      "h": 31,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Mac & Cheese'. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "SALAD_SIDE",
-      "field": "price",
-      "x": 714.2,
-      "y": 792.7,
-      "w": 65,
-      "h": 30,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Side Salad'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "SALAD_SIDE",
-      "field": "calories",
-      "x": 798.7,
-      "y": 792.7,
-      "w": 94,
-      "h": 31,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Side Salad'. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "SM_CHICKEN_SOUP",
-      "field": "price",
-      "x": 157.4,
-      "y": 968.8,
-      "w": 61,
-      "h": 29,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Chicken Soup' with 'Cup' variant label. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "SM_CHICKEN_SOUP",
-      "field": "calories",
-      "x": 243.8,
-      "y": 969.8,
-      "w": 96,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Chicken Soup' with 'Cup' variant label. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_CHICKEN_SOUP",
-      "field": "price",
-      "x": 157.4,
-      "y": 1001.2,
-      "w": 61,
-      "h": 30,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Chicken Soup' with 'Bowl' variant label. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "LG_CHICKEN_SOUP",
-      "field": "calories",
-      "x": 241.9,
-      "y": 1001.2,
-      "w": 98,
-      "h": 29,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Chicken Soup' with 'Bowl' variant label. Box is drawn tightly around the calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
-      "field": "price",
-      "x": 585.6,
-      "y": 990.4,
-      "w": 63,
-      "h": 31,
-      "confidence": 0.9,
-      "reasoning": "Matches 'Berry Parfait'. Box is drawn tightly around the price digits.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
-      "field": "calories",
-      "x": 662.4,
-      "y": 990.4,
-      "w": 159,
-      "h": 31,
-      "confidence": 0.9,
-      "reasoning": "Matches 'Berry Parfait'. Box is drawn tightly around the dual calories text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "JALAPENO_GRILLED_FILET",
-      "field": "price",
-      "x": 994.6,
-      "y": 591.8,
-      "w": 52,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Grilled' label. Box is drawn tightly around the price digits.",
-      "styleGroup": "d"
-    },
-    {
-      "tag": "JALAPENO_GRILLED_FILET",
-      "field": "calories",
-      "x": 1067.5,
-      "y": 591.8,
-      "w": 84,
+      "x": 692,
+      "y": 280,
+      "w": 53,
       "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Located calories '420' next to the medium waffle fries price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "420"
+    },
+    {
+      "tag": "LG_WAFFLE_POTATO_FRIES",
+      "field": "price",
+      "x": 609,
+      "y": 316,
+      "w": 63,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located price '3.09' next to 'L' for large waffle fries.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        25
+      ],
+      "ocrText": "3.09"
+    },
+    {
+      "tag": "LG_WAFFLE_POTATO_FRIES",
+      "field": "calories",
+      "x": 692,
+      "y": 316,
+      "w": 54,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located calories '600' next to the large waffle fries price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        26
+      ],
+      "ocrText": "600"
+    },
+    {
+      "tag": "CHIPS_WAFFLE",
+      "field": "price",
+      "x": 577,
+      "y": 497,
+      "w": 58,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located price '2.19' under Waffle Potato Chips.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        46
+      ],
+      "ocrText": "2.19"
+    },
+    {
+      "tag": "CHIPS_WAFFLE",
+      "field": "calories",
+      "x": 659,
+      "y": 497,
+      "w": 117,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located calories '220/210' next to the chips price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        47
+      ],
+      "ocrText": "220/210"
+    },
+    {
+      "tag": "FRUIT_CUP_SMALL",
+      "field": "price",
+      "x": 58,
+      "y": 798,
+      "w": 61,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located price '4.29' under Fruit Cup in the substitute sides section.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        63
+      ],
+      "ocrText": "4.29"
+    },
+    {
+      "tag": "FRUIT_CUP_SMALL",
+      "field": "calories",
+      "x": 133,
+      "y": 798,
+      "w": 33,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located calories '70' next to the Fruit Cup price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        64
+      ],
+      "ocrText": "70"
+    },
+    {
+      "tag": "LG_KALE_CRUNCH",
+      "field": "price",
+      "x": 258,
+      "y": 798,
+      "w": 63,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Located price '4.29' under Kale Crunch.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        66
+      ],
+      "ocrText": "4.29"
+    },
+    {
+      "tag": "LG_KALE_CRUNCH",
+      "field": "calories",
+      "x": 344,
+      "y": 798,
+      "w": 43,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Located calories '170' next to the Kale Crunch price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        67
+      ],
+      "ocrText": "170"
+    },
+    {
+      "tag": "TEST_MD_MACNCHEESE",
+      "field": "price",
+      "x": 486,
+      "y": 798,
+      "w": 63,
+      "h": 22,
+      "confidence": 0.98,
+      "reasoning": "Located price '4.29' under Mac & Cheese.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        77
+      ],
+      "ocrText": "4.29"
+    },
+    {
+      "tag": "TEST_MD_MACNCHEESE",
+      "field": "calories",
+      "x": 570,
+      "y": 798,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.98,
+      "reasoning": "Located calories '450' next to the Mac & Cheese price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        78
+      ],
+      "ocrText": "450"
+    },
+    {
+      "tag": "SALAD_SIDE",
+      "field": "price",
+      "x": 713,
+      "y": 799,
+      "w": 64,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Located price '4.39' under Side Salad.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        80
+      ],
+      "ocrText": "4.39"
+    },
+    {
+      "tag": "SALAD_SIDE",
+      "field": "calories",
+      "x": 798,
+      "y": 799,
+      "w": 46,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Located calories '160' next to the Side Salad price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        81
+      ],
+      "ocrText": "160"
+    },
+    {
+      "tag": "SM_CHICKEN_SOUP",
+      "field": "price",
+      "x": 155,
+      "y": 969,
+      "w": 60,
+      "h": 29,
+      "confidence": 0.99,
+      "reasoning": "Located price '4.19' next to Cup for Chicken Soup.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        111
+      ],
+      "ocrText": "4.19"
+    },
+    {
+      "tag": "SM_CHICKEN_SOUP",
+      "field": "calories",
+      "x": 243,
+      "y": 970,
+      "w": 48,
+      "h": 27,
+      "confidence": 0.99,
+      "reasoning": "Located calories '140' next to the Chicken Soup Cup price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        112
+      ],
+      "ocrText": "140"
+    },
+    {
+      "tag": "LG_CHICKEN_SOUP",
+      "field": "price",
+      "x": 158,
+      "y": 1004,
+      "w": 62,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located price '6.39' next to Bowl for Chicken Soup.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        115
+      ],
+      "ocrText": "6.39"
+    },
+    {
+      "tag": "LG_CHICKEN_SOUP",
+      "field": "calories",
+      "x": 242,
+      "y": 1004,
+      "w": 52,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Located calories '270' next to the Chicken Soup Bowl price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        116
+      ],
+      "ocrText": "270"
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "price",
+      "x": 584,
+      "y": 995,
+      "w": 59,
+      "h": 21,
       "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Grilled' label. Box is drawn tightly around the calories text including asterisk.",
-      "styleGroup": "d"
+      "reasoning": "Located base price '4.99' under the Berry Parfait description.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        132
+      ],
+      "ocrText": "4.99"
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "calories",
+      "x": 664,
+      "y": 995,
+      "w": 115,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Located calories '270/240' next to the Berry Parfait base price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        133
+      ],
+      "ocrText": "270/240"
     },
     {
       "tag": "JALAPENO_CFA_FILET",
       "field": "price",
-      "x": 1378.6,
-      "y": 549.7,
-      "w": 48,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Original' label. Box is drawn tightly around the price digits.",
-      "styleGroup": "d"
+      "x": 1380,
+      "y": 554,
+      "w": 47,
+      "h": 17,
+      "confidence": 0.99,
+      "reasoning": "Located price '8.39' under Original for the Jalapeno Ranch Club.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        92
+      ],
+      "ocrText": "8.39"
     },
     {
       "tag": "JALAPENO_CFA_FILET",
       "field": "calories",
-      "x": 1447.7,
-      "y": 549.7,
-      "w": 88,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Original' label. Box is drawn tightly around the calories text including asterisk.",
-      "styleGroup": "d"
+      "x": 1450,
+      "y": 554,
+      "w": 40,
+      "h": 17,
+      "confidence": 0.99,
+      "reasoning": "Located calories '620' next to the Original Jalapeno Ranch Club price.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        93
+      ],
+      "ocrText": "620"
+    },
+    {
+      "tag": "JALAPENO_GRILLED_FILET",
+      "field": "price",
+      "x": 995,
+      "y": 596,
+      "w": 46,
+      "h": 18,
+      "confidence": 0.99,
+      "reasoning": "Located price '9.35' under Grilled for the Jalapeno Ranch Club.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        97
+      ],
+      "ocrText": "9.35"
+    },
+    {
+      "tag": "JALAPENO_GRILLED_FILET",
+      "field": "calories",
+      "x": 1063,
+      "y": 596,
+      "w": 43,
+      "h": 18,
+      "confidence": 0.99,
+      "reasoning": "Located calories '480' next to the Grilled Jalapeno Ranch Club price.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        98
+      ],
+      "ocrText": "480"
     },
     {
       "tag": "JALAPENO_SPICY_FILET",
       "field": "price",
-      "x": 1726.1,
-      "y": 578.9,
-      "w": 48,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Spicy' label. Box is drawn tightly around the price digits.",
-      "styleGroup": "d"
+      "x": 1727,
+      "y": 580,
+      "w": 46,
+      "h": 17,
+      "confidence": 0.99,
+      "reasoning": "Located price '8.69' under Spicy for the Jalapeno Ranch Club.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        102
+      ],
+      "ocrText": "8.69"
     },
     {
       "tag": "JALAPENO_SPICY_FILET",
       "field": "calories",
-      "x": 1795.2,
-      "y": 578.9,
-      "w": 88,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matches 'Jalapeno Ranch Club' with 'Spicy' label. Box is drawn tightly around the calories text including asterisk.",
-      "styleGroup": "d"
+      "x": 1795,
+      "y": 580,
+      "w": 43,
+      "h": 17,
+      "confidence": 0.99,
+      "reasoning": "Located calories '650' next to the Spicy Jalapeno Ranch Club price.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        103
+      ],
+      "ocrText": "650"
+    },
+    {
+      "tag": "JALAPENO_RANCH_ALCARTE",
+      "field": "calories",
+      "x": 1798,
+      "y": 1038,
+      "w": 25,
+      "h": 18,
+      "confidence": 0.98,
+      "reasoning": "Located '70' in the small text reading '*Sauce adds 70 calories'.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        175
+      ],
+      "ocrText": "70"
     }
   ]
 }

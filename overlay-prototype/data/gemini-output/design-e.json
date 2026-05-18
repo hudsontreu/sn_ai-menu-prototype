@@ -6,431 +6,812 @@
     {
       "tag": "MD_TEA_UNSWEET",
       "field": "price",
-      "x": 84.5,
-      "y": 265.7,
-      "w": 58,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Freshly-Brewed Iced Tea Medium' to 'MD_TEA_UNSWEET'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 84,
+      "y": 267,
+      "w": 54,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Medium Freshly-Brewed Iced Tea price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        13
+      ],
+      "ocrText": "2.69"
     },
     {
       "tag": "MD_TEA_UNSWEET",
       "field": "calories",
-      "x": 161.3,
-      "y": 265.7,
-      "w": 119,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Freshly-Brewed Iced Tea Medium' to 'MD_TEA_UNSWEET'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 160,
+      "y": 267,
+      "w": 77,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Medium Freshly-Brewed Iced Tea calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        14
+      ],
+      "ocrText": "0/120"
+    },
+    {
+      "tag": "MD_SWEET_TEA",
+      "field": "price",
+      "x": 84,
+      "y": 267,
+      "w": 54,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Medium Freshly-Brewed Iced Tea price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        13
+      ],
+      "ocrText": "2.69"
+    },
+    {
+      "tag": "MD_SWEET_TEA",
+      "field": "calories",
+      "x": 160,
+      "y": 267,
+      "w": 77,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Medium Freshly-Brewed Iced Tea calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        14
+      ],
+      "ocrText": "0/120"
     },
     {
       "tag": "LG_TEA_UNSWEET",
       "field": "price",
-      "x": 84.5,
-      "y": 297,
-      "w": 58,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Freshly-Brewed Iced Tea Large' to 'LG_TEA_UNSWEET'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 84,
+      "y": 300,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Large Freshly-Brewed Iced Tea price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        17
+      ],
+      "ocrText": "2.99"
     },
     {
       "tag": "LG_TEA_UNSWEET",
       "field": "calories",
-      "x": 161.3,
-      "y": 297,
-      "w": 119,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Freshly-Brewed Iced Tea Large' to 'LG_TEA_UNSWEET'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 161,
+      "y": 300,
+      "w": 74,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Large Freshly-Brewed Iced Tea calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "0/170"
+    },
+    {
+      "tag": "LG_SWEET_TEA",
+      "field": "price",
+      "x": 84,
+      "y": 300,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Large Freshly-Brewed Iced Tea price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        17
+      ],
+      "ocrText": "2.99"
+    },
+    {
+      "tag": "LG_SWEET_TEA",
+      "field": "calories",
+      "x": 161,
+      "y": 300,
+      "w": 74,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Large Freshly-Brewed Iced Tea calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "0/170"
     },
     {
       "tag": "MD_LEMONADE",
       "field": "price",
-      "x": 84.5,
-      "y": 422.3,
-      "w": 58,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Lemonade Medium' to 'MD_LEMONADE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 84,
+      "y": 425,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Lemonade price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        30
+      ],
+      "ocrText": "3.09"
     },
     {
       "tag": "MD_LEMONADE",
       "field": "calories",
-      "x": 161.3,
-      "y": 422.3,
-      "w": 142,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Lemonade Medium' to 'MD_LEMONADE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 160,
+      "y": 425,
+      "w": 97,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        31
+      ],
+      "ocrText": "60/260"
+    },
+    {
+      "tag": "MD_DIET_LEMONADE",
+      "field": "price",
+      "x": 84,
+      "y": 425,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Diet Lemonade price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        30
+      ],
+      "ocrText": "3.09"
+    },
+    {
+      "tag": "MD_DIET_LEMONADE",
+      "field": "calories",
+      "x": 160,
+      "y": 425,
+      "w": 97,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Diet Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        31
+      ],
+      "ocrText": "60/260"
     },
     {
       "tag": "LG_LEMONADE",
       "field": "price",
-      "x": 84.5,
-      "y": 453.6,
-      "w": 58,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Lemonade Large' to 'LG_LEMONADE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 84,
+      "y": 456,
+      "w": 54,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Lemonade price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        34
+      ],
+      "ocrText": "3.39"
     },
     {
       "tag": "LG_LEMONADE",
       "field": "calories",
-      "x": 161.3,
-      "y": 453.6,
-      "w": 142,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Lemonade Large' to 'LG_LEMONADE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 160,
+      "y": 456,
+      "w": 99,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        35
+      ],
+      "ocrText": "80/380"
+    },
+    {
+      "tag": "LG_DIET_LEMONADE",
+      "field": "price",
+      "x": 84,
+      "y": 456,
+      "w": 54,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Diet Lemonade price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        34
+      ],
+      "ocrText": "3.39"
+    },
+    {
+      "tag": "LG_DIET_LEMONADE",
+      "field": "calories",
+      "x": 160,
+      "y": 456,
+      "w": 99,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Diet Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        35
+      ],
+      "ocrText": "80/380"
     },
     {
       "tag": "MD_SWEET_TEA_LEMONADE",
       "field": "price",
-      "x": 84.5,
-      "y": 611.3,
-      "w": 58,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Sunjoy Medium' to 'MD_SWEET_TEA_LEMONADE'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "MD_SWEET_TEA_LEMONADE",
-      "field": "calories",
-      "x": 161.3,
-      "y": 611.3,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Sunjoy Medium' to 'MD_SWEET_TEA_LEMONADE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "LG_SWEET_TEA_LEMONADE",
-      "field": "price",
-      "x": 84.5,
-      "y": 643.7,
-      "w": 58,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Sunjoy Large' to 'LG_SWEET_TEA_LEMONADE'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "LG_SWEET_TEA_LEMONADE",
-      "field": "calories",
-      "x": 161.3,
-      "y": 643.7,
-      "w": 92,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chick-fil-A Sunjoy Large' to 'LG_SWEET_TEA_LEMONADE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DCB_MED_SODA",
-      "field": "price",
-      "x": 84.5,
-      "y": 735.5,
-      "w": 58,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Soft Drinks Medium' to 'DCB_MED_SODA'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DCB_MED_SODA",
-      "field": "calories",
-      "x": 161.3,
-      "y": 735.5,
-      "w": 119,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Soft Drinks Medium' to 'DCB_MED_SODA'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DCB_LG_SODA",
-      "field": "price",
-      "x": 84.5,
-      "y": 767.9,
-      "w": 58,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Soft Drinks Large' to 'DCB_LG_SODA'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DCB_LG_SODA",
-      "field": "calories",
-      "x": 161.3,
-      "y": 767.9,
-      "w": 121,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Soft Drinks Large' to 'DCB_LG_SODA'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BOTTLED_WATER",
-      "field": "price",
-      "x": 51.8,
-      "y": 858.6,
-      "w": 60,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Bottled Water' to 'BOTTLED_WATER'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BOTTLED_WATER",
-      "field": "calories",
-      "x": 130.6,
-      "y": 858.6,
-      "w": 61,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Bottled Water' to 'BOTTLED_WATER'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SM_ICED_COFFEE",
-      "field": "price",
-      "x": 51.8,
-      "y": 983.9,
-      "w": 60,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Cold Brew Iced Coffee' to 'SM_ICED_COFFEE'. Box encompasses only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SM_ICED_COFFEE",
-      "field": "calories",
-      "x": 130.6,
-      "y": 983.9,
-      "w": 92,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Cold Brew Iced Coffee' to 'SM_ICED_COFFEE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SM_COOKIES_CREAM_MILKSHAKE",
-      "field": "price",
-      "x": 1011.8,
-      "y": 232.2,
+      "x": 84,
+      "y": 613,
       "w": 56,
-      "h": 23,
-      "confidence": 0.95,
-      "reasoning": "Matched base price for Hand-Spun Milkshakes to 'SM_COOKIES_CREAM_MILKSHAKE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Sunjoy price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        51
+      ],
+      "ocrText": "3.09"
+    },
+    {
+      "tag": "MD_SWEET_TEA_LEMONADE",
+      "field": "calories",
+      "x": 159,
+      "y": 613,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Sunjoy calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        52
+      ],
+      "ocrText": "240"
+    },
+    {
+      "tag": "LG_SWEET_TEA_LEMONADE",
+      "field": "price",
+      "x": 84,
+      "y": 645,
+      "w": 55,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Sunjoy price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        55
+      ],
+      "ocrText": "3.39"
+    },
+    {
+      "tag": "LG_SWEET_TEA_LEMONADE",
+      "field": "calories",
+      "x": 160,
+      "y": 645,
+      "w": 49,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Sunjoy calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        56
+      ],
+      "ocrText": "350"
+    },
+    {
+      "tag": "DCB_MED_SODA",
+      "field": "price",
+      "x": 83,
+      "y": 739,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Soft Drink price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        61
+      ],
+      "ocrText": "2.69"
+    },
+    {
+      "tag": "DCB_MED_SODA",
+      "field": "calories",
+      "x": 160,
+      "y": 739,
+      "w": 74,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Medium Soft Drink calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        62
+      ],
+      "ocrText": "0-190"
+    },
+    {
+      "tag": "DCB_LG_SODA",
+      "field": "price",
+      "x": 83,
+      "y": 771,
+      "w": 55,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Soft Drink price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        65
+      ],
+      "ocrText": "2.99"
+    },
+    {
+      "tag": "DCB_LG_SODA",
+      "field": "calories",
+      "x": 160,
+      "y": 771,
+      "w": 78,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Large Soft Drink calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        66
+      ],
+      "ocrText": "0-270"
+    },
+    {
+      "tag": "BOTTLED_WATER",
+      "field": "price",
+      "x": 53,
+      "y": 863,
+      "w": 53,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Bottled Water price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        70
+      ],
+      "ocrText": "2.49"
+    },
+    {
+      "tag": "BOTTLED_WATER",
+      "field": "calories",
+      "x": 130,
+      "y": 863,
+      "w": 15,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Bottled Water calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        71
+      ],
+      "ocrText": "0"
+    },
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "price",
+      "x": 51,
+      "y": 987,
+      "w": 53,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Cold Brew Iced Coffee price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        80
+      ],
+      "ocrText": "4.29"
+    },
+    {
+      "tag": "SM_ICED_COFFEE",
+      "field": "calories",
+      "x": 126,
+      "y": 987,
+      "w": 49,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Cold Brew Iced Coffee calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        81
+      ],
+      "ocrText": "200"
+    },
+    {
+      "tag": "SM_ICED_COFFEE_VANILLA",
+      "field": "price",
+      "x": 51,
+      "y": 987,
+      "w": 53,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Cold Brew Iced Coffee Vanilla price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        80
+      ],
+      "ocrText": "4.29"
+    },
+    {
+      "tag": "SM_ICED_COFFEE_VANILLA",
+      "field": "calories",
+      "x": 126,
+      "y": 987,
+      "w": 49,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Cold Brew Iced Coffee Vanilla calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        81
+      ],
+      "ocrText": "200"
+    },
+    {
+      "tag": "SM_COOKIES_CREAM_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 232,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Hand-Spun Milkshake base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "5.19"
     },
     {
       "tag": "SM_COOKIES_CREAM_MILKSHAKE",
       "field": "calories",
-      "x": 1219.2,
-      "y": 265.7,
-      "w": 92,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Cookies & Cream Milkshake' to 'SM_COOKIES_CREAM_MILKSHAKE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1219,
+      "y": 267,
+      "w": 46,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Cookies & Cream Milkshake calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        100
+      ],
+      "ocrText": "630"
+    },
+    {
+      "tag": "SM_CHOCOLATE_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 232,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Hand-Spun Milkshake base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "5.19"
     },
     {
       "tag": "SM_CHOCOLATE_MILKSHAKE",
       "field": "calories",
-      "x": 1219.2,
-      "y": 301.3,
-      "w": 92,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Milkshake' to 'SM_CHOCOLATE_MILKSHAKE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1218,
+      "y": 301,
+      "w": 49,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Milkshake calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        103
+      ],
+      "ocrText": "600"
+    },
+    {
+      "tag": "SM_STRAWBERRY_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 232,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Hand-Spun Milkshake base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "5.19"
     },
     {
       "tag": "SM_STRAWBERRY_MILKSHAKE",
       "field": "calories",
-      "x": 1219.2,
-      "y": 337,
-      "w": 92,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Strawberry Milkshake' to 'SM_STRAWBERRY_MILKSHAKE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1218,
+      "y": 338,
+      "w": 47,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Strawberry Milkshake calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        106
+      ],
+      "ocrText": "560"
+    },
+    {
+      "tag": "SM_VANILLA_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 232,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Hand-Spun Milkshake base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "5.19"
     },
     {
       "tag": "SM_VANILLA_MILKSHAKE",
       "field": "calories",
-      "x": 1219.2,
-      "y": 372.6,
-      "w": 92,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Vanilla Milkshake' to 'SM_VANILLA_MILKSHAKE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1218,
+      "y": 372,
+      "w": 48,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Vanilla Milkshake calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        109
+      ],
+      "ocrText": "580"
     },
     {
       "tag": "SM_FROSTED_LEMONADE",
       "field": "price",
-      "x": 1011.8,
-      "y": 493.6,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Lemonade' to 'SM_FROSTED_LEMONADE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1014,
+      "y": 496,
+      "w": 55,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Frosted Lemonade base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        117
+      ],
+      "ocrText": "5.09"
     },
     {
       "tag": "SM_FROSTED_LEMONADE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 493.6,
-      "w": 159,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Lemonade' to 'SM_FROSTED_LEMONADE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1086,
+      "y": 496,
+      "w": 116,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Frosted Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        118
+      ],
+      "ocrText": "280/350"
+    },
+    {
+      "tag": "SM_DIET_FROSTED_LEMONADE",
+      "field": "price",
+      "x": 1014,
+      "y": 496,
+      "w": 55,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Diet Frosted Lemonade base price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        117
+      ],
+      "ocrText": "5.09"
+    },
+    {
+      "tag": "SM_DIET_FROSTED_LEMONADE",
+      "field": "calories",
+      "x": 1086,
+      "y": 496,
+      "w": 116,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Diet Frosted Lemonade calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        118
+      ],
+      "ocrText": "280/350"
     },
     {
       "tag": "SM_FROSTED_COFFEE",
       "field": "price",
-      "x": 1011.8,
-      "y": 584.3,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Coffee' to 'SM_FROSTED_COFFEE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1012,
+      "y": 589,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Frosted Coffee price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        122
+      ],
+      "ocrText": "4.69"
     },
     {
       "tag": "SM_FROSTED_COFFEE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 584.3,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Coffee' to 'SM_FROSTED_COFFEE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1085,
+      "y": 589,
+      "w": 48,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Frosted Coffee calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        123
+      ],
+      "ocrText": "260"
     },
     {
       "tag": "DCB_FLOATS_RANGE",
       "field": "price",
-      "x": 1011.8,
-      "y": 709.6,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Sodas & Floats' to 'DCB_FLOATS_RANGE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1012,
+      "y": 713,
+      "w": 57,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Frosted Sodas & Floats price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        134
+      ],
+      "ocrText": "4.69"
     },
     {
       "tag": "DCB_FLOATS_RANGE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 709.6,
-      "w": 159,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Frosted Sodas & Floats' to 'DCB_FLOATS_RANGE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1086,
+      "y": 713,
+      "w": 115,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Frosted Sodas & Floats calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        135
+      ],
+      "ocrText": "260-320"
     },
     {
       "tag": "SM_ICEDREAM_CONE",
       "field": "price",
-      "x": 1011.8,
-      "y": 801.4,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Icedream Cone' to 'SM_ICEDREAM_CONE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1012,
+      "y": 807,
+      "w": 57,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Icedream Cone price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        139
+      ],
+      "ocrText": "2.09"
     },
     {
       "tag": "SM_ICEDREAM_CONE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 801.4,
-      "w": 88,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Icedream Cone' to 'SM_ICEDREAM_CONE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1086,
+      "y": 807,
+      "w": 44,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Icedream Cone calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        140
+      ],
+      "ocrText": "180"
     },
     {
       "tag": "COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL",
       "field": "price",
-      "x": 1067.5,
-      "y": 940.7,
-      "w": 50,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Chunk Cookie 1 ct' to 'COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1068,
+      "y": 942,
+      "w": 48,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Chunk Cookie (1 ct) price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        147
+      ],
+      "ocrText": "1.79"
     },
     {
       "tag": "COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL",
       "field": "calories",
-      "x": 1144.3,
-      "y": 940.7,
-      "w": 90,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Chunk Cookie 1 ct' to 'COOKIE_CHOCOLATE_CHUNK_INDIVIDUAL'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1144,
+      "y": 942,
+      "w": 45,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Chunk Cookie (1 ct) calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        148
+      ],
+      "ocrText": "370"
     },
     {
       "tag": "COOKIE_CHOCOLATE_CHUNK_6_COUNT",
       "field": "price",
-      "x": 1067.5,
-      "y": 972,
-      "w": 71,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Chunk Cookie 6 ct' to 'COOKIE_CHOCOLATE_CHUNK_6_COUNT'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1068,
+      "y": 976,
+      "w": 69,
+      "h": 25,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Chunk Cookie (6 ct) price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        151
+      ],
+      "ocrText": "10.09"
     },
     {
       "tag": "COOKIE_CHOCOLATE_CHUNK_6_COUNT",
       "field": "calories",
-      "x": 1144.3,
-      "y": 972,
-      "w": 234,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Chunk Cookie 6 ct' to 'COOKIE_CHOCOLATE_CHUNK_6_COUNT'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1143,
+      "y": 976,
+      "w": 47,
+      "h": 25,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Chunk Cookie (6 ct) calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        152
+      ],
+      "ocrText": "370"
     },
     {
       "tag": "BROWNIE",
       "field": "price",
-      "x": 1518.7,
-      "y": 940.7,
-      "w": 56,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Fudge Brownie 1 ct' to 'BROWNIE'. Box encompasses only the price text.",
-      "styleGroup": "a"
+      "x": 1517,
+      "y": 941,
+      "w": 55,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Fudge Brownie price",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        162
+      ],
+      "ocrText": "2.39"
     },
     {
       "tag": "BROWNIE",
       "field": "calories",
-      "x": 1593.6,
-      "y": 940.7,
-      "w": 90,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched entity 'Chocolate Fudge Brownie 1 ct' to 'BROWNIE'. Box encompasses only the calorie text.",
-      "styleGroup": "a"
+      "x": 1594,
+      "y": 941,
+      "w": 46,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Chocolate Fudge Brownie calories",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        163
+      ],
+      "ocrText": "370"
     }
   ]
 }

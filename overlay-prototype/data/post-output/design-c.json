@@ -4,433 +4,544 @@
   "backgroundImage": "/assets/design-c.png",
   "slots": [
     {
-      "tag": "CFA_SANDWICH_MEAL",
-      "field": "price",
-      "x": 107.5,
-      "y": 247.3,
-      "w": 73,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Chicken', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "CFA_SANDWICH_MEAL",
-      "field": "calories",
-      "x": 297.6,
-      "y": 247.3,
-      "w": 167,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Chicken', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
       "tag": "SANDWICH_CFA_CHICKEN",
       "field": "price",
-      "x": 107.5,
-      "y": 280.8,
-      "w": 56,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Chicken', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SANDWICH_CFA_CHICKEN",
-      "field": "calories",
-      "x": 297.6,
-      "y": 280.8,
-      "w": 109,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Chicken', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DELUXE_AMERICAN_MEAL",
-      "field": "price",
-      "x": 209.3,
-      "y": 473,
-      "w": 69,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Chick-fil-A Deluxe', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DELUXE_AMERICAN_MEAL",
-      "field": "calories",
-      "x": 399.4,
-      "y": 473,
-      "w": 169,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Chick-fil-A Deluxe', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DELUXE_AMERICAN",
-      "field": "price",
-      "x": 209.3,
-      "y": 505.4,
-      "w": 58,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Chick-fil-A Deluxe', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "DELUXE_AMERICAN",
-      "field": "calories",
-      "x": 399.4,
-      "y": 505.4,
-      "w": 92,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Chick-fil-A Deluxe', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_MEAL",
-      "field": "price",
-      "x": 107.5,
-      "y": 625.3,
-      "w": 71,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Spicy Chicken', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_MEAL",
-      "field": "calories",
-      "x": 297.6,
-      "y": 625.3,
-      "w": 169,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Spicy Chicken', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
-      "field": "price",
-      "x": 107.5,
-      "y": 658.8,
-      "w": 50,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Spicy Chicken', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
-      "field": "calories",
-      "x": 297.6,
-      "y": 658.8,
-      "w": 92,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Spicy Chicken', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_PJ_MEAL",
-      "field": "price",
-      "x": 209.3,
-      "y": 851,
-      "w": 67,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Spicy Deluxe', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_PJ_MEAL",
-      "field": "calories",
-      "x": 399.4,
-      "y": 851,
-      "w": 157,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Spicy Deluxe', associated with 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_DELUXE_PEPPER_JACK",
-      "field": "price",
-      "x": 209.3,
-      "y": 884.5,
-      "w": 56,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Spicy Deluxe', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_DELUXE_PEPPER_JACK",
-      "field": "calories",
-      "x": 399.4,
-      "y": 884.5,
-      "w": 92,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Indented under 'Spicy Deluxe', associated with 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_8CT_MEAL",
-      "field": "price",
-      "x": 1065.6,
-      "y": 280.8,
-      "w": 73,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '8ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_8CT_MEAL",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 280.8,
-      "w": 157,
-      "h": 25,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '8ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_CFA_8_COUNT",
-      "field": "price",
-      "x": 1065.6,
-      "y": 313.2,
-      "w": 56,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '8ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_CFA_8_COUNT",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 313.2,
-      "w": 94,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '8ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_12CT_MEAL",
-      "field": "price",
-      "x": 1065.6,
-      "y": 379.1,
-      "w": 73,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '12ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_12CT_MEAL",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 379.1,
-      "w": 157,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '12ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_CFA_12_COUNT",
-      "field": "price",
-      "x": 1065.6,
-      "y": 412.6,
-      "w": 54,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '12ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_CFA_12_COUNT",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 412.6,
-      "w": 94,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Chick-fil-A Nuggets', associated with '12ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_8CT_MEAL",
-      "field": "price",
-      "x": 1065.6,
-      "y": 642.6,
-      "w": 75,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '8ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_8CT_MEAL",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 642.6,
-      "w": 156,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '8ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_8_COUNT",
-      "field": "price",
-      "x": 1065.6,
-      "y": 676.1,
-      "w": 54,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '8ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_8_COUNT",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 676.1,
-      "w": 92,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '8ct' and 'entree'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_12CT_MEAL",
-      "field": "price",
-      "x": 1065.6,
-      "y": 742,
-      "w": 75,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '12ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_12CT_MEAL",
-      "field": "calories",
-      "x": 1255.7,
-      "y": 742,
-      "w": 156,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '12ct' and 'meal'.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_12_COUNT",
-      "field": "price",
-      "x": 1065.6,
-      "y": 775.4,
+      "x": 109,
+      "y": 282.3,
       "w": 52,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '12ct' and 'entree'.",
-      "styleGroup": "a"
+      "h": 18,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Chicken entree price. Meal price is missing from the OCR list.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        19
+      ],
+      "ocrText": "5.85"
+    },
+    {
+      "tag": "SANDWICH_CFA_CHICKEN",
+      "field": "calories",
+      "x": 298,
+      "y": 282.3,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Chicken entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        21
+      ],
+      "ocrText": "420"
+    },
+    {
+      "tag": "DELUXE_AMERICAN_MEAL",
+      "field": "price",
+      "x": 211,
+      "y": 477,
+      "w": 62,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matched Deluxe with American cheese meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        37
+      ],
+      "ocrText": "11.39"
+    },
+    {
+      "tag": "DELUXE_AMERICAN_MEAL",
+      "field": "calories",
+      "x": 399,
+      "y": 477,
+      "w": 123,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matched Deluxe with American cheese meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        39
+      ],
+      "ocrText": "700-1090"
+    },
+    {
+      "tag": "DELUXE_AMERICAN",
+      "field": "price",
+      "x": 211,
+      "y": 510.5,
+      "w": 54,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matched Deluxe with American cheese entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        41
+      ],
+      "ocrText": "6.55"
+    },
+    {
+      "tag": "DELUXE_AMERICAN",
+      "field": "calories",
+      "x": 399,
+      "y": 510.5,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Deluxe with American cheese entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        43
+      ],
+      "ocrText": "490"
+    },
+    {
+      "tag": "SPICY_MEAL",
+      "field": "calories",
+      "x": 298,
+      "y": 627,
+      "w": 121,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Chicken meal calories. Meal price is missing from OCR.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        50
+      ],
+      "ocrText": "660-1050"
+    },
+    {
+      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
+      "field": "price",
+      "x": 109,
+      "y": 661,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Chicken entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "6.19"
+    },
+    {
+      "tag": "SPICY_CHICKEN_CFA_SANDWICH",
+      "field": "calories",
+      "x": 298,
+      "y": 661,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Chicken entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        53
+      ],
+      "ocrText": "450"
+    },
+    {
+      "tag": "SPICY_PJ_MEAL",
+      "field": "price",
+      "x": 211,
+      "y": 855,
+      "w": 63,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Deluxe with pepper jack meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        66
+      ],
+      "ocrText": "11.69"
+    },
+    {
+      "tag": "SPICY_PJ_MEAL",
+      "field": "calories",
+      "x": 399,
+      "y": 855,
+      "w": 113,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Deluxe with pepper jack meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        69
+      ],
+      "ocrText": "750-1140"
+    },
+    {
+      "tag": "SPICY_DELUXE_PEPPER_JACK",
+      "field": "price",
+      "x": 211,
+      "y": 886.5,
+      "w": 52,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Deluxe with pepper jack entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        67
+      ],
+      "ocrText": "6.79"
+    },
+    {
+      "tag": "SPICY_DELUXE_PEPPER_JACK",
+      "field": "calories",
+      "x": 399,
+      "y": 886.5,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Spicy Deluxe with pepper jack entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        72
+      ],
+      "ocrText": "540"
+    },
+    {
+      "tag": "NUGGETS_8CT_MEAL",
+      "field": "price",
+      "x": 1068.3,
+      "y": 282.3,
+      "w": 68,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 8ct meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        81
+      ],
+      "ocrText": "10.39"
+    },
+    {
+      "tag": "NUGGETS_8CT_MEAL",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 282.3,
+      "w": 112,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 8ct meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        83
+      ],
+      "ocrText": "460-850"
+    },
+    {
+      "tag": "NUGGETS_CFA_8_COUNT",
+      "field": "price",
+      "x": 1068.3,
+      "y": 315,
+      "w": 52,
+      "h": 18,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 8ct entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        85
+      ],
+      "ocrText": "5.99"
+    },
+    {
+      "tag": "NUGGETS_CFA_8_COUNT",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 315,
+      "w": 48,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 8ct entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        88
+      ],
+      "ocrText": "250"
+    },
+    {
+      "tag": "NUGGETS_12CT_MEAL",
+      "field": "price",
+      "x": 1068.3,
+      "y": 382,
+      "w": 67,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 12ct meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        90
+      ],
+      "ocrText": "12.75"
+    },
+    {
+      "tag": "NUGGETS_12CT_MEAL",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 382,
+      "w": 115,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 12ct meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        92
+      ],
+      "ocrText": "590-980"
+    },
+    {
+      "tag": "NUGGETS_CFA_12_COUNT",
+      "field": "price",
+      "x": 1068.3,
+      "y": 414,
+      "w": 48,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 12ct entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        94
+      ],
+      "ocrText": "8.15"
+    },
+    {
+      "tag": "NUGGETS_CFA_12_COUNT",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 414,
+      "w": 47,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matched CFA Nuggets 12ct entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "380"
+    },
+    {
+      "tag": "NUGGETS_GRILLED_8CT_MEAL",
+      "field": "price",
+      "x": 1068.3,
+      "y": 645.5,
+      "w": 63,
+      "h": 19,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 8ct meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        104
+      ],
+      "ocrText": "11.25"
+    },
+    {
+      "tag": "NUGGETS_GRILLED_8CT_MEAL",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 645.5,
+      "w": 109,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 8ct meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        106
+      ],
+      "ocrText": "340-730"
+    },
+    {
+      "tag": "GRILLED_NUGGETS_8_COUNT",
+      "field": "price",
+      "x": 1068.3,
+      "y": 676.5,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 8ct entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        108
+      ],
+      "ocrText": "6.69"
+    },
+    {
+      "tag": "GRILLED_NUGGETS_8_COUNT",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 676.5,
+      "w": 42,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 8ct entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        110
+      ],
+      "ocrText": "130"
+    },
+    {
+      "tag": "NUGGETS_GRILLED_12CT_MEAL",
+      "field": "price",
+      "x": 1068.3,
+      "y": 746,
+      "w": 68,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 12ct meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        113
+      ],
+      "ocrText": "12.39"
+    },
+    {
+      "tag": "NUGGETS_GRILLED_12CT_MEAL",
+      "field": "calories",
+      "x": 1256.5,
+      "y": 746,
+      "w": 107,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 12ct meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        115
+      ],
+      "ocrText": "410-800"
+    },
+    {
+      "tag": "GRILLED_NUGGETS_12_COUNT",
+      "field": "price",
+      "x": 1068.3,
+      "y": 777.5,
+      "w": 55,
+      "h": 20,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 12ct entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        117
+      ],
+      "ocrText": "9.55"
     },
     {
       "tag": "GRILLED_NUGGETS_12_COUNT",
       "field": "calories",
-      "x": 1255.7,
-      "y": 775.4,
-      "w": 90,
-      "h": 26,
-      "confidence": 0.99,
-      "reasoning": "Located under 'Grilled Nuggets', associated with '12ct' and 'entree'.",
-      "styleGroup": "a"
+      "x": 1256.5,
+      "y": 777.5,
+      "w": 49,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matched Grilled Nuggets 12ct entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        119
+      ],
+      "ocrText": "200"
     },
     {
       "tag": "CFA_SAUCE_ALLACART",
       "field": "calories",
-      "x": 1052.2,
-      "y": 1017.4,
-      "w": 44,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Chick-fil-A Sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1047,
+      "y": 1019,
+      "w": 23,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Chick-fil-A Sauce added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        152
+      ],
+      "ocrText": "140"
     },
     {
       "tag": "POLYNESIAN_ALLACART",
       "field": "calories",
-      "x": 1178.9,
-      "y": 1003.3,
-      "w": 42,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Polynesian sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1177,
+      "y": 1003.5,
+      "w": 20,
+      "h": 11,
+      "confidence": 0.95,
+      "reasoning": "Matched Polynesian Sauce added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        156
+      ],
+      "ocrText": "110"
     },
     {
       "tag": "HONEY_MUSTARD_1OZ_SAUCE",
       "field": "calories",
-      "x": 1313.3,
-      "y": 1017.4,
-      "w": 38,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Honey Mustard sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1309,
+      "y": 1019,
+      "w": 17,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Honey Mustard added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        161
+      ],
+      "ocrText": "50"
     },
     {
-      "tag": "GARLIC_HERB_ALLACART",
+      "tag": "RANCH_SAUCE_ALACARTE",
       "field": "calories",
-      "x": 1436.2,
-      "y": 1017.4,
-      "w": 42,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Garden Herb Ranch sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1435,
+      "y": 1019,
+      "w": 24,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Garden Herb Ranch added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        167
+      ],
+      "ocrText": "100"
     },
     {
       "tag": "BUFFALO_ALLACART",
       "field": "calories",
-      "x": 1568.6,
-      "y": 1017.4,
-      "w": 36,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Zesty Buffalo sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1569,
+      "y": 1019,
+      "w": 16,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Zesty Buffalo added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        172
+      ],
+      "ocrText": "25"
     },
     {
       "tag": "BBQ_ALLACART",
       "field": "calories",
-      "x": 1695.4,
-      "y": 1003.3,
-      "w": 36,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Barbeque sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1698,
+      "y": 1003.5,
+      "w": 17,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Barbeque added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        176
+      ],
+      "ocrText": "45"
     },
     {
       "tag": "SRIRACHA_ALLACART",
       "field": "calories",
-      "x": 1824,
-      "y": 1017.4,
-      "w": 36,
-      "h": 14,
-      "confidence": 0.98,
-      "reasoning": "Small calorie text found in the sauces section below the Sweet & Spicy Sriracha sauce logo, excluding the 'add' text.",
-      "styleGroup": "c"
+      "x": 1827,
+      "y": 1019,
+      "w": 17,
+      "h": 12,
+      "confidence": 0.95,
+      "reasoning": "Matched Sweet & Spicy Sriracha added calories.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        183
+      ],
+      "ocrText": "45"
     }
   ]
 }

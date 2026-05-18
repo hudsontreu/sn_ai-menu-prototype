@@ -6,90 +6,122 @@
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "price",
-      "x": 554.9,
-      "y": 264.6,
-      "w": 61,
-      "h": 22,
+      "x": 557,
+      "y": 268,
+      "w": 44,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus & Sprite. Price text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Sprite price '3.29'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        5
+      ],
+      "ocrText": "3.29"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SPRITE",
       "field": "calories",
-      "x": 625.9,
-      "y": 264.6,
-      "w": 75,
-      "h": 22,
+      "x": 615,
+      "y": 268,
+      "w": 42,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus & Sprite. Calorie text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Sprite calories '190'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        6
+      ],
+      "ocrText": "190"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "price",
-      "x": 785.3,
-      "y": 318.6,
-      "w": 60,
-      "h": 21,
+      "x": 788,
+      "y": 324,
+      "w": 46,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Sunjoy. Price text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Sunjoy price '3.69'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        9
+      ],
+      "ocrText": "3.69"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_SWEETTEA_LEM",
       "field": "calories",
-      "x": 856.3,
-      "y": 318.6,
-      "w": 79,
-      "h": 21,
+      "x": 846,
+      "y": 324,
+      "w": 47,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Sunjoy. Calorie text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Sunjoy calories '240'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        10
+      ],
+      "ocrText": "240"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "price",
-      "x": 1015.7,
-      "y": 222.5,
-      "w": 60,
-      "h": 22,
+      "x": 1021,
+      "y": 227,
+      "w": 47,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Lemonade. Price text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Lemonade price '3.69'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        13
+      ],
+      "ocrText": "3.69"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_LEMONADE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 222.5,
-      "w": 79,
-      "h": 22,
+      "x": 1079,
+      "y": 227,
+      "w": 42,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Lemonade. Calorie text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Lemonade calories '270'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        14
+      ],
+      "ocrText": "270"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "price",
-      "x": 1232.6,
-      "y": 318.6,
-      "w": 58,
-      "h": 21,
+      "x": 1234,
+      "y": 326,
+      "w": 46,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Frosted Lemonade. Price text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Frosted Lemonade price '5.49'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "5.49"
     },
     {
       "tag": "STRAWBERRY_HIBISCUS_FROSTED_LEMONADE",
       "field": "calories",
-      "x": 1301.8,
-      "y": 318.6,
-      "w": 77,
-      "h": 21,
+      "x": 1293,
+      "y": 326,
+      "w": 45,
+      "h": 18,
       "confidence": 0.99,
-      "reasoning": "Matched entity to Strawberry Hibiscus Frosted Lemonade. Calorie text is clearly visible in red.",
-      "styleGroup": "d"
+      "reasoning": "Matched Strawberry Hibiscus Frosted Lemonade calories '360'. Red text style for promotional items.",
+      "styleGroup": "d",
+      "ocrWordIndices": [
+        19
+      ],
+      "ocrText": "360"
     }
   ]
 }

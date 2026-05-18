@@ -6,112 +6,182 @@
     {
       "tag": "BOTTLED_WATER",
       "field": "price",
-      "x": 51.8,
-      "y": 639.4,
-      "w": 58,
-      "h": 24,
+      "x": 52,
+      "y": 653,
+      "w": 54,
+      "h": 19,
       "confidence": 0.95,
-      "reasoning": "Located the price value for Bottled Water just below its title label.",
-      "styleGroup": "a"
+      "reasoning": "Price for Bottled Water",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        36
+      ],
+      "ocrText": "4.99"
     },
     {
       "tag": "BOTTLED_WATER",
       "field": "calories",
-      "x": 128.6,
-      "y": 639.4,
-      "w": 77,
-      "h": 24,
+      "x": 128,
+      "y": 653,
+      "w": 15,
+      "h": 19,
       "confidence": 0.95,
-      "reasoning": "Located the calorie text directly to the right of the Bottled Water price.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Bottled Water, OCR detected as 'O'",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        37
+      ],
+      "ocrText": "O"
     },
     {
       "tag": "SM_COOKIES_CREAM_MILKSHAKE",
       "field": "price",
-      "x": 1009.9,
-      "y": 232.2,
-      "w": 58,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Found the shared price for Hand-Spun Milkshakes; assigned to the first variant (Cookies & Cream).",
-      "styleGroup": "a"
+      "x": 1012,
+      "y": 233,
+      "w": 59,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Shared price for hand-spun milkshakes",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "8.00"
     },
     {
       "tag": "SM_COOKIES_CREAM_MILKSHAKE",
       "field": "calories",
-      "x": 1217.3,
-      "y": 264.6,
-      "w": 96,
-      "h": 22,
+      "x": 1217.7,
+      "y": 268,
+      "w": 47,
+      "h": 20,
       "confidence": 0.95,
-      "reasoning": "Identified the calorie text aligned to the right of the Cookies & Cream flavor label.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Cookies & Cream milkshake",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        26
+      ],
+      "ocrText": "630"
+    },
+    {
+      "tag": "SM_CHOCOLATE_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 233,
+      "w": 59,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Shared price for hand-spun milkshakes",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "8.00"
     },
     {
       "tag": "SM_CHOCOLATE_MILKSHAKE",
       "field": "calories",
-      "x": 1217.3,
-      "y": 298.1,
-      "w": 96,
-      "h": 22,
+      "x": 1217.7,
+      "y": 305,
+      "w": 49,
+      "h": 19,
       "confidence": 0.95,
-      "reasoning": "Identified the calorie text aligned to the right of the Chocolate flavor label.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Chocolate milkshake",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        30
+      ],
+      "ocrText": "600"
+    },
+    {
+      "tag": "SM_VANILLA_MILKSHAKE",
+      "field": "price",
+      "x": 1012,
+      "y": 233,
+      "w": 59,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Shared price for hand-spun milkshakes",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "8.00"
     },
     {
       "tag": "SM_VANILLA_MILKSHAKE",
       "field": "calories",
-      "x": 1217.3,
-      "y": 332.6,
-      "w": 96,
-      "h": 22,
+      "x": 1217.7,
+      "y": 339,
+      "w": 47,
+      "h": 20,
       "confidence": 0.95,
-      "reasoning": "Identified the calorie text aligned to the right of the Vanilla flavor label.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Vanilla milkshake",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        32
+      ],
+      "ocrText": "580"
     },
     {
       "tag": "SM_ICEDREAM_CONE",
       "field": "price",
-      "x": 1009.9,
-      "y": 583.2,
-      "w": 58,
-      "h": 24,
+      "x": 1008,
+      "y": 596,
+      "w": 57,
+      "h": 21,
       "confidence": 0.95,
-      "reasoning": "Located the price value directly beneath the Icedream title.",
-      "styleGroup": "a"
+      "reasoning": "Price for Icedream",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        47
+      ],
+      "ocrText": "7.00"
     },
     {
       "tag": "SM_ICEDREAM_CONE",
       "field": "calories",
-      "x": 1086.7,
-      "y": 583.2,
-      "w": 96,
-      "h": 24,
+      "x": 1085,
+      "y": 596,
+      "w": 43,
+      "h": 21,
       "confidence": 0.95,
-      "reasoning": "Found the calorie text immediately following the price for the Icedream cone.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Icedream",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "140"
     },
     {
       "tag": "BROWNIE",
       "field": "price",
-      "x": 1065.6,
-      "y": 847.8,
-      "w": 58,
-      "h": 24,
+      "x": 1064,
+      "y": 860,
+      "w": 60,
+      "h": 20,
       "confidence": 0.95,
-      "reasoning": "Located the price value for the 1 ct Chocolate Fudge Brownie variant.",
-      "styleGroup": "a"
+      "reasoning": "Price for Chocolate Fudge Brownie",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        58
+      ],
+      "ocrText": "4.50"
     },
     {
       "tag": "BROWNIE",
       "field": "calories",
-      "x": 1142.4,
-      "y": 847.8,
-      "w": 106,
-      "h": 24,
+      "x": 1140,
+      "y": 860,
+      "w": 46,
+      "h": 20,
       "confidence": 0.95,
-      "reasoning": "Located the calorie text directly beside the Chocolate Fudge Brownie price.",
-      "styleGroup": "a"
+      "reasoning": "Calories for Chocolate Fudge Brownie",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        59
+      ],
+      "ocrText": "370"
     }
   ]
 }

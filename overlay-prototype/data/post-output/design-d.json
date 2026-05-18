@@ -6,420 +6,572 @@
     {
       "tag": "NUGGETS_GRILLED_8CT_MEAL",
       "field": "price",
-      "x": 167,
-      "y": 248.4,
-      "w": 63,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to '8ct meal' text. Matches Grilled Nuggets 8ct meal.",
-      "styleGroup": "a"
+      "x": 160.8,
+      "y": 248.5,
+      "w": 71,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "8ct meal price for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        9
+      ],
+      "ocrText": "10.99"
     },
     {
       "tag": "NUGGETS_GRILLED_8CT_MEAL",
       "field": "calories",
-      "x": 348,
-      "y": 248.4,
-      "w": 157,
+      "x": 348.8,
+      "y": 248.5,
+      "w": 109,
       "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to '8ct meal' text. Matches Grilled Nuggets 8ct meal.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "8ct meal calories for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        11
+      ],
+      "ocrText": "340-730"
     },
     {
       "tag": "GRILLED_NUGGETS_8_COUNT",
       "field": "price",
-      "x": 161.9,
-      "y": 279.7,
-      "w": 52,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to '8ct entree' text. Matches Grilled Nuggets 8ct entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_8_COUNT",
-      "field": "calories",
-      "x": 348,
-      "y": 279.7,
-      "w": 90,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to '8ct entree' text. Matches Grilled Nuggets 8ct entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_12CT_MEAL",
-      "field": "price",
-      "x": 161.9,
-      "y": 314.9,
-      "w": 69,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to '12ct meal' text. Matches Grilled Nuggets 12ct meal.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "NUGGETS_GRILLED_12CT_MEAL",
-      "field": "calories",
-      "x": 348,
-      "y": 314.9,
-      "w": 156,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to '12ct meal' text. Matches Grilled Nuggets 12ct meal.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_12_COUNT",
-      "field": "price",
-      "x": 161.9,
-      "y": 346.7,
-      "w": 52,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to '12ct entree' text. Matches Grilled Nuggets 12ct entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_NUGGETS_12_COUNT",
-      "field": "calories",
-      "x": 348,
-      "y": 346.7,
-      "w": 94,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to '12ct entree' text. Matches Grilled Nuggets 12ct entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_SANDWICH_MEAL",
-      "field": "price",
-      "x": 87.4,
-      "y": 489.8,
-      "w": 73,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken. Matches Grilled Chicken Sandwich Meal.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_SANDWICH_MEAL",
-      "field": "calories",
-      "x": 299.8,
-      "y": 489.8,
-      "w": 156,
+      "x": 160.8,
+      "y": 281,
+      "w": 53,
       "h": 18,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken. Matches Grilled Chicken Sandwich Meal.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "8ct entree price for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        13
+      ],
+      "ocrText": "6.55"
     },
     {
-      "tag": "GRILLED_CHICKEN_SANDWICH",
-      "field": "price",
-      "x": 87.4,
-      "y": 521.6,
-      "w": 50,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken. Matches Grilled Chicken Sandwich Entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_CHICKEN_SANDWICH",
+      "tag": "GRILLED_NUGGETS_8_COUNT",
       "field": "calories",
-      "x": 299.8,
-      "y": 521.6,
-      "w": 94,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken. Matches Grilled Chicken Sandwich Entree.",
-      "styleGroup": "a"
+      "x": 348.8,
+      "y": 281,
+      "w": 43,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "8ct entree calories for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        15
+      ],
+      "ocrText": "130"
     },
     {
-      "tag": "CLUB_CJ_MEAL",
+      "tag": "NUGGETS_GRILLED_12CT_MEAL",
       "field": "price",
-      "x": 87.4,
-      "y": 665.3,
-      "w": 67,
+      "x": 160.8,
+      "y": 316.5,
+      "w": 68,
       "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken Club (w/ Colby-Jack). Matches Grilled Chicken Club Colby Jack Meal.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "12ct meal price for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "12.69"
     },
     {
-      "tag": "CLUB_CJ_MEAL",
+      "tag": "NUGGETS_GRILLED_12CT_MEAL",
       "field": "calories",
-      "x": 299.8,
-      "y": 665.3,
-      "w": 163,
+      "x": 348.8,
+      "y": 316.5,
+      "w": 109,
       "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken Club (w/ Colby-Jack). Matches Grilled Chicken Club Colby Jack Meal.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "12ct meal calories for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        20
+      ],
+      "ocrText": "410-800"
+    },
+    {
+      "tag": "GRILLED_NUGGETS_12_COUNT",
+      "field": "price",
+      "x": 160.8,
+      "y": 350,
+      "w": 56,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "12ct entree price for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "9.35"
+    },
+    {
+      "tag": "GRILLED_NUGGETS_12_COUNT",
+      "field": "calories",
+      "x": 348.8,
+      "y": 350,
+      "w": 52,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "12ct entree calories for Grilled Nuggets.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        24
+      ],
+      "ocrText": "200"
+    },
+    {
+      "tag": "GRILLED_SANDWICH_MEAL",
+      "field": "price",
+      "x": 88,
+      "y": 493.5,
+      "w": 69,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Meal price for Grilled Chicken Sandwich.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        34
+      ],
+      "ocrText": "10.95"
+    },
+    {
+      "tag": "GRILLED_SANDWICH_MEAL",
+      "field": "calories",
+      "x": 300.5,
+      "y": 493.5,
+      "w": 110,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Meal calories for Grilled Chicken Sandwich.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        36
+      ],
+      "ocrText": "540-930"
+    },
+    {
+      "tag": "GRILLED_CHICKEN_SANDWICH",
+      "field": "price",
+      "x": 88,
+      "y": 525,
+      "w": 53,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Entree price for Grilled Chicken Sandwich.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        38
+      ],
+      "ocrText": "7.25"
+    },
+    {
+      "tag": "GRILLED_CHICKEN_SANDWICH",
+      "field": "calories",
+      "x": 300.5,
+      "y": 525,
+      "w": 46,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Entree calories for Grilled Chicken Sandwich.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        41
+      ],
+      "ocrText": "330"
+    },
+    {
+      "tag": "CLUB_CJ_MEAL",
+      "field": "price",
+      "x": 88,
+      "y": 669,
+      "w": 66,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Meal price for Grilled Chicken Club with Colby-Jack cheese.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        59
+      ],
+      "ocrText": "12.79"
+    },
+    {
+      "tag": "CLUB_CJ_MEAL",
+      "field": "calories",
+      "x": 300.5,
+      "y": 669,
+      "w": 118,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Meal calories for Grilled Chicken Club with Colby-Jack cheese.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        61
+      ],
+      "ocrText": "670-1060"
     },
     {
       "tag": "GRILLED_CLUB_COLBY_JACK",
       "field": "price",
-      "x": 87.4,
-      "y": 698.3,
+      "x": 88,
+      "y": 701,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Entree price for Grilled Chicken Club with Colby-Jack cheese.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        63
+      ],
+      "ocrText": "9.19"
+    },
+    {
+      "tag": "GRILLED_CLUB_COLBY_JACK",
+      "field": "calories",
+      "x": 300.5,
+      "y": 701,
       "w": 50,
       "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken Club (w/ Colby-Jack). Matches Grilled Chicken Club Colby Jack Entree.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "GRILLED_CLUB_COLBY_JACK",
-      "field": "calories",
-      "x": 299.8,
-      "y": 698.3,
-      "w": 92,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken Club (w/ Colby-Jack). Matches Grilled Chicken Club Colby Jack Entree.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "Entree calories for Grilled Chicken Club with Colby-Jack cheese.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        65
+      ],
+      "ocrText": "460"
     },
     {
       "tag": "30 cals (hardcoded)",
       "field": "price",
       "x": 144,
-      "y": 777.9,
-      "w": 48,
+      "y": 781.5,
+      "w": 47,
       "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'add' for substitute gluten-free bun.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "Add price for substitute gluten-free bun.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        75
+      ],
+      "ocrText": "1.79"
     },
     {
       "tag": "30 cals (hardcoded)",
       "field": "calories",
-      "x": 328.3,
-      "y": 777.9,
-      "w": 79,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'subtract' for substitute gluten-free bun.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "COOL_WRAP_MEAL",
-      "field": "price",
-      "x": 87.4,
-      "y": 969.8,
-      "w": 73,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken Cool Wrap. Matches Grilled Chicken Cool Wrap Meal.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "COOL_WRAP_MEAL",
-      "field": "calories",
-      "x": 299.8,
-      "y": 969.8,
-      "w": 157,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'meal' text for Grilled Chicken Cool Wrap. Matches Grilled Chicken Cool Wrap Meal.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "COOL_WRAP_GRILLED",
-      "field": "price",
-      "x": 87.4,
-      "y": 1003.3,
-      "w": 56,
+      "x": 329,
+      "y": 781.5,
+      "w": 33,
       "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken Cool Wrap. Matches Grilled Chicken Cool Wrap Entree.",
-      "styleGroup": "a"
+      "confidence": 0.99,
+      "reasoning": "Calories subtract amount for substitute gluten-free bun.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        77
+      ],
+      "ocrText": "30"
+    },
+    {
+      "tag": "COOL_WRAP_MEAL",
+      "field": "price",
+      "x": 88,
+      "y": 972,
+      "w": 67,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Meal price for Grilled Chicken Cool Wrap.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        101
+      ],
+      "ocrText": "12.49"
+    },
+    {
+      "tag": "COOL_WRAP_MEAL",
+      "field": "calories",
+      "x": 300.5,
+      "y": 972,
+      "w": 111,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Meal calories for Grilled Chicken Cool Wrap.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        192
+      ],
+      "ocrText": "560-950"
+    },
+    {
+      "tag": "COOL_WRAP_GRILLED",
+      "field": "price",
+      "x": 88,
+      "y": 1004.5,
+      "w": 52,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Entree price for Grilled Chicken Cool Wrap.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        103
+      ],
+      "ocrText": "8.89"
     },
     {
       "tag": "COOL_WRAP_GRILLED",
       "field": "calories",
-      "x": 299.8,
-      "y": 1003.3,
-      "w": 92,
-      "h": 19,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'entree' text for Grilled Chicken Cool Wrap. Matches Grilled Chicken Cool Wrap Entree.",
-      "styleGroup": "a"
+      "x": 300.5,
+      "y": 1004.5,
+      "w": 50,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Entree calories for Grilled Chicken Cool Wrap.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        194
+      ],
+      "ocrText": "350"
     },
     {
       "tag": "DCB_COBB_NUGGETS",
       "field": "price",
-      "x": 1009.9,
-      "y": 322.9,
-      "w": 58,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located under Cobb Salad text for base. Matches Cobb Salad w/ Nuggets w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1010.7,
+      "y": 327,
+      "w": 56,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Base price for Cobb Salad.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        131
+      ],
+      "ocrText": "9.99"
     },
     {
       "tag": "DCB_COBB_NUGGETS",
       "field": "calories",
-      "x": 1101.8,
-      "y": 322.9,
-      "w": 90,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located under Cobb Salad text for base. Matches Cobb Salad w/ Nuggets w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 327,
+      "w": 47,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Base calories for Cobb Salad without toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        129
+      ],
+      "ocrText": "440"
     },
     {
       "tag": "COBB_NUGGETS",
       "field": "calories",
-      "x": 1101.8,
-      "y": 359.6,
-      "w": 90,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'with toppings' under Cobb Salad. Matches Cobb Salad w/ Nuggets w/ Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 358,
+      "w": 47,
+      "h": 27,
+      "confidence": 0.99,
+      "reasoning": "Calories for Cobb Salad with toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        132
+      ],
+      "ocrText": "520"
     },
     {
       "tag": "DCB_SALAD_GRILLED_MARKET",
       "field": "price",
-      "x": 1009.9,
-      "y": 537.8,
-      "w": 63,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located under Market Salad text for base. Matches Market Salad w/ Grilled Filet w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1010.7,
+      "y": 540,
+      "w": 62,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Base price for Market Salad.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        149
+      ],
+      "ocrText": "10.19"
     },
     {
       "tag": "DCB_SALAD_GRILLED_MARKET",
       "field": "calories",
-      "x": 1101.8,
-      "y": 537.8,
-      "w": 88,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located under Market Salad text for base. Matches Market Salad w/ Grilled Filet w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 540,
+      "w": 42,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Base calories for Market Salad without toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        150
+      ],
+      "ocrText": "190"
     },
     {
       "tag": "SALAD_GRILLED_MARKET",
       "field": "calories",
-      "x": 1101.8,
-      "y": 573.5,
-      "w": 88,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'with toppings' under Market Salad. Matches Market Salad w/ Grilled Filet w/ Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 574,
+      "w": 47,
+      "h": 24,
+      "confidence": 0.99,
+      "reasoning": "Calories for Market Salad with toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        152
+      ],
+      "ocrText": "320"
     },
     {
       "tag": "DCB_SPICY_SOUTHWEST_SALAD_SGF",
       "field": "price",
-      "x": 1009.9,
-      "y": 777.9,
-      "w": 63,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located under Spicy Southwest text for base. Matches Spicy Southwest Salad w/ Spicy Grillet Filet w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1010.7,
+      "y": 781.5,
+      "w": 62,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Base price for Spicy Southwest Salad.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        180
+      ],
+      "ocrText": "10.19"
     },
     {
       "tag": "DCB_SPICY_SOUTHWEST_SALAD_SGF",
       "field": "calories",
-      "x": 1101.8,
-      "y": 777.9,
-      "w": 88,
-      "h": 21,
-      "confidence": 0.9,
-      "reasoning": "Located under Spicy Southwest text for base. Matches Spicy Southwest Salad w/ Spicy Grillet Filet w/o Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 781.5,
+      "w": 48,
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Base calories for Spicy Southwest Salad without toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        181
+      ],
+      "ocrText": "240"
     },
     {
       "tag": "SPICY_SOUTHWEST_SALAD_SGF",
       "field": "calories",
-      "x": 1101.8,
-      "y": 812.2,
-      "w": 90,
-      "h": 22,
-      "confidence": 0.9,
-      "reasoning": "Located next to 'with toppings' under Spicy Southwest Salad. Matches Spicy Southwest Salad w/ Spicy Grillet Filet w/ Toppings.",
-      "styleGroup": "a"
+      "x": 1101.3,
+      "y": 813,
+      "w": 47,
+      "h": 25,
+      "confidence": 0.99,
+      "reasoning": "Calories for Spicy Southwest Salad with toppings.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        183
+      ],
+      "ocrText": "390"
     },
     {
       "tag": "AVACADO_RAN_ALLACART",
       "field": "calories",
-      "x": 1044.5,
-      "y": 1007.6,
-      "w": 44,
-      "h": 14,
-      "confidence": 0.9,
-      "reasoning": "Located under Avocado Lime Ranch. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1041,
+      "y": 1010.8,
+      "w": 23,
+      "h": 12,
+      "confidence": 0.99,
+      "reasoning": "Calories for Avocado Lime Ranch dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        202
+      ],
+      "ocrText": "310"
     },
     {
       "tag": "CREAMY_SALSA_ALLACART",
       "field": "calories",
-      "x": 1173.1,
-      "y": 991.4,
-      "w": 44,
-      "h": 14,
-      "confidence": 0.9,
-      "reasoning": "Located under Creamy Salsa. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1169,
+      "y": 995,
+      "w": 26,
+      "h": 11,
+      "confidence": 0.99,
+      "reasoning": "Calories for Creamy Salsa dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        199
+      ],
+      "ocrText": "290"
     },
     {
       "tag": "VIN_APPLE_ALLACART",
       "field": "calories",
-      "x": 1303.7,
-      "y": 1023.8,
-      "w": 46,
-      "h": 13,
-      "confidence": 0.9,
-      "reasoning": "Located under Zesty Apple Cider Vinaigrette. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1298,
+      "y": 1026,
+      "w": 27,
+      "h": 12,
+      "confidence": 0.99,
+      "reasoning": "Calories for Zesty Apple Cider Vinaigrette dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        243
+      ],
+      "ocrText": "230"
     },
     {
       "tag": "GARLIC_HERB_ALLACART",
       "field": "calories",
-      "x": 1430.4,
-      "y": 1007.6,
-      "w": 44,
-      "h": 14,
-      "confidence": 0.9,
-      "reasoning": "Located under Garden Herb Ranch. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1429,
+      "y": 1010.8,
+      "w": 26,
+      "h": 11,
+      "confidence": 0.99,
+      "reasoning": "Calories for Garden Herb Ranch dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        249
+      ],
+      "ocrText": "280"
     },
     {
       "tag": "HONEY_MUST_ALLACART",
       "field": "calories",
-      "x": 1564.8,
-      "y": 1007.6,
-      "w": 42,
-      "h": 14,
-      "confidence": 0.9,
-      "reasoning": "Located under Fat Free Honey Mustard. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1564,
+      "y": 1010.8,
+      "w": 18,
+      "h": 11,
+      "confidence": 0.99,
+      "reasoning": "Calories for Fat Free Honey Mustard dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        256
+      ],
+      "ocrText": "90"
     },
     {
       "tag": "LITE_BALSAM_ALLACART",
       "field": "calories",
-      "x": 1699.2,
-      "y": 1007.6,
-      "w": 36,
-      "h": 13,
-      "confidence": 0.9,
-      "reasoning": "Located under Light Balsamic Vinaigrette. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1694,
+      "y": 1010.8,
+      "w": 18,
+      "h": 11,
+      "confidence": 0.99,
+      "reasoning": "Calories for Light Balsamic Vinaigrette dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        259
+      ],
+      "ocrText": "80"
     },
     {
       "tag": "ITALIAN_LITE_ALLACART",
       "field": "calories",
-      "x": 1827.8,
-      "y": 991.4,
-      "w": 36,
-      "h": 13,
-      "confidence": 0.9,
-      "reasoning": "Located under Light Italian. Excludes 'add' prefix.",
-      "styleGroup": "c"
+      "x": 1825,
+      "y": 995,
+      "w": 16,
+      "h": 11,
+      "confidence": 0.99,
+      "reasoning": "Calories for Light Italian dressing.",
+      "styleGroup": "c",
+      "ocrWordIndices": [
+        236
+      ],
+      "ocrText": "25"
     }
   ]
 }

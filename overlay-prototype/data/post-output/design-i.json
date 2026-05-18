@@ -11,7 +11,7 @@
       "w": 113,
       "h": 41,
       "confidence": 0.95,
-      "reasoning": "The OCR text '4.29' corresponds to the price of the Original Iced Coffee shown in the hero image.",
+      "reasoning": "Price matches the Iced Coffee promotional item, assigned to Original as primary.",
       "styleGroup": "e",
       "ocrWordIndices": [
         6
@@ -26,37 +26,7 @@
       "w": 110,
       "h": 41,
       "confidence": 0.95,
-      "reasoning": "The OCR text '200' corresponds to the calories of the Original Iced Coffee.",
-      "styleGroup": "e",
-      "ocrWordIndices": [
-        7
-      ],
-      "ocrText": "200"
-    },
-    {
-      "tag": "SM_ICED_COFFEE_VANILLA",
-      "field": "price",
-      "x": 1675,
-      "y": 490,
-      "w": 113,
-      "h": 41,
-      "confidence": 0.95,
-      "reasoning": "The OCR text '4.29' also corresponds to the price of the Vanilla Iced Coffee mentioned.",
-      "styleGroup": "e",
-      "ocrWordIndices": [
-        6
-      ],
-      "ocrText": "4.29"
-    },
-    {
-      "tag": "SM_ICED_COFFEE_VANILLA",
-      "field": "calories",
-      "x": 1584,
-      "y": 553,
-      "w": 110,
-      "h": 41,
-      "confidence": 0.95,
-      "reasoning": "The OCR text '200' also corresponds to the calories of the Vanilla Iced Coffee mentioned.",
+      "reasoning": "Calories match the Iced Coffee promotional item, assigned to Original as primary.",
       "styleGroup": "e",
       "ocrWordIndices": [
         7

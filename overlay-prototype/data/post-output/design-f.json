@@ -6,266 +6,362 @@
     {
       "tag": "MD_WAFFLE_POTATO_FRIES",
       "field": "price",
-      "x": 614.4,
-      "y": 277.6,
-      "w": 58,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Fries (M) to MD_WAFFLE_POTATO_FRIES. Bounding box captures the price text. Style 'b' chosen due to the darker, bold gray text typical of the sides section.",
-      "styleGroup": "b"
+      "x": 608,
+      "y": 281,
+      "w": 62,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Fries M price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        18
+      ],
+      "ocrText": "2.99"
     },
     {
       "tag": "MD_WAFFLE_POTATO_FRIES",
       "field": "calories",
-      "x": 691.2,
-      "y": 277.6,
-      "w": 102,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Fries (M) to MD_WAFFLE_POTATO_FRIES. Bounding box captures the calorie text. Style 'b' chosen based on its location in the sides section.",
-      "styleGroup": "b"
+      "x": 692,
+      "y": 281,
+      "w": 52,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Fries M calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        19
+      ],
+      "ocrText": "420"
     },
     {
       "tag": "LG_WAFFLE_POTATO_FRIES",
       "field": "price",
-      "x": 614.4,
-      "y": 313.2,
-      "w": 58,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Fries (L) to LG_WAFFLE_POTATO_FRIES. Bounding box captures the price text. Style 'b' chosen due to darker, bold gray text.",
-      "styleGroup": "b"
+      "x": 608,
+      "y": 316,
+      "w": 62,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Fries L price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        22
+      ],
+      "ocrText": "3.39"
     },
     {
       "tag": "LG_WAFFLE_POTATO_FRIES",
       "field": "calories",
-      "x": 691.2,
-      "y": 313.2,
-      "w": 102,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Fries (L) to LG_WAFFLE_POTATO_FRIES. Bounding box captures the calorie text. Style 'b' chosen for sides section text.",
-      "styleGroup": "b"
+      "x": 692,
+      "y": 316,
+      "w": 54,
+      "h": 23,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Fries L calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        23
+      ],
+      "ocrText": "600"
     },
     {
       "tag": "CHIPS_WAFFLE",
       "field": "price",
-      "x": 577.9,
-      "y": 492.5,
-      "w": 56,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Chips to CHIPS_WAFFLE. Bounding box covers the price. Style 'b' chosen for the darker gray format found in sides.",
-      "styleGroup": "b"
+      "x": 578,
+      "y": 497,
+      "w": 62,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Chips price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        42
+      ],
+      "ocrText": "2.59"
     },
     {
       "tag": "CHIPS_WAFFLE",
       "field": "calories",
-      "x": 652.8,
-      "y": 492.5,
-      "w": 173,
-      "h": 28,
-      "confidence": 0.95,
-      "reasoning": "Matched Waffle Potato Chips to CHIPS_WAFFLE. Bounding box covers the calorie range. Style 'b' chosen for sides section.",
-      "styleGroup": "b"
+      "x": 659,
+      "y": 497,
+      "w": 118,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Waffle Potato Chips calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        43
+      ],
+      "ocrText": "220/210"
     },
     {
       "tag": "FRUIT_CUP_MEDIUM",
       "field": "price",
-      "x": 124.8,
-      "y": 794.9,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched Fruit Cup to FRUIT_CUP_MEDIUM. Bounding box captures the price text. Style 'b' chosen due to bold, darker gray text under substitute section.",
-      "styleGroup": "b"
+      "x": 124,
+      "y": 797.3,
+      "w": 63,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Fruit Cup substitute price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        77
+      ],
+      "ocrText": "4.59"
     },
     {
       "tag": "FRUIT_CUP_MEDIUM",
       "field": "calories",
-      "x": 199.7,
-      "y": 794.9,
-      "w": 83,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched Fruit Cup to FRUIT_CUP_MEDIUM. Bounding box captures calorie text. Style 'b' chosen for substitute section items.",
-      "styleGroup": "b"
+      "x": 201,
+      "y": 797.3,
+      "w": 33,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Fruit Cup substitute calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        78
+      ],
+      "ocrText": "70"
     },
     {
       "tag": "LG_KALE_CRUNCH",
       "field": "price",
-      "x": 368.6,
-      "y": 794.9,
-      "w": 65,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched Kale Crunch to LG_KALE_CRUNCH. Bounding box captures price text. Style 'b' chosen due to darker, bold gray format.",
-      "styleGroup": "b"
+      "x": 368,
+      "y": 797.3,
+      "w": 63,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Kale Crunch substitute price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        83
+      ],
+      "ocrText": "4.59"
     },
     {
       "tag": "LG_KALE_CRUNCH",
       "field": "calories",
-      "x": 453.1,
-      "y": 794.9,
-      "w": 92,
-      "h": 24,
-      "confidence": 0.95,
-      "reasoning": "Matched Kale Crunch to LG_KALE_CRUNCH. Bounding box captures calorie text. Style 'b' chosen for substitute section items.",
-      "styleGroup": "b"
+      "x": 453,
+      "y": 797.3,
+      "w": 44,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Kale Crunch substitute calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        84
+      ],
+      "ocrText": "170"
     },
     {
       "tag": "TEST_MD_MACNCHEESE",
       "field": "price",
-      "x": 643.2,
-      "y": 794.9,
-      "w": 65,
-      "h": 24,
+      "x": 643,
+      "y": 797.3,
+      "w": 63,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Matched Mac & Cheese to TEST_MD_MACNCHEESE. Bounding box covers price. Style 'b' chosen for bold, dark gray text.",
-      "styleGroup": "b"
+      "reasoning": "Matched Mac & Cheese substitute price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        89
+      ],
+      "ocrText": "4.59"
     },
     {
       "tag": "TEST_MD_MACNCHEESE",
       "field": "calories",
-      "x": 727.7,
-      "y": 794.9,
-      "w": 102,
-      "h": 24,
+      "x": 727,
+      "y": 797.3,
+      "w": 53,
+      "h": 22,
       "confidence": 0.95,
-      "reasoning": "Matched Mac & Cheese to TEST_MD_MACNCHEESE. Bounding box covers calorie text. Style 'b' chosen for substitute section text.",
-      "styleGroup": "b"
+      "reasoning": "Matched Mac & Cheese substitute calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        90
+      ],
+      "ocrText": "450"
     },
     {
       "tag": "SALAD_SIDE",
       "field": "price",
-      "x": 111.4,
-      "y": 993.1,
+      "x": 110,
+      "y": 995.5,
+      "w": 64,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Side Salad substitute price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        95
+      ],
+      "ocrText": "4.59"
+    },
+    {
+      "tag": "SALAD_SIDE",
+      "field": "calories",
+      "x": 196,
+      "y": 995.5,
+      "w": 45,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Matched Side Salad substitute calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        96
+      ],
+      "ocrText": "160"
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "price",
+      "x": 540,
+      "y": 995.5,
+      "w": 58,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Berry Parfait substitute price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        126
+      ],
+      "ocrText": "5.09"
+    },
+    {
+      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
+      "field": "calories",
+      "x": 619,
+      "y": 995.5,
+      "w": 116,
+      "h": 22,
+      "confidence": 0.99,
+      "reasoning": "Matched Berry Parfait substitute calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        127
+      ],
+      "ocrText": "270/240"
+    },
+    {
+      "tag": "CFA_SANDWICH_MEAL",
+      "field": "price",
+      "x": 1083,
+      "y": 252,
       "w": 65,
-      "h": 22,
-      "confidence": 0.95,
-      "reasoning": "Matched Side Salad to SALAD_SIDE. Box captures price. Style 'b' chosen for bold, dark gray text.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "SALAD_SIDE",
-      "field": "calories",
-      "x": 195.8,
-      "y": 993.1,
-      "w": 96,
-      "h": 22,
-      "confidence": 0.95,
-      "reasoning": "Matched Side Salad to SALAD_SIDE. Box captures calories. Style 'b' chosen for substitute section items.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
-      "field": "price",
-      "x": 539.5,
-      "y": 993.1,
-      "w": 60,
-      "h": 26,
-      "confidence": 0.9,
-      "reasoning": "Matched Berry Parfait to YOGURT_GREEK_PARFAIT_GRANOLA as one of the valid sub-options. Box captures price. Style 'b' chosen for bold, dark gray text in substitute area.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
-      "field": "calories",
-      "x": 614.4,
-      "y": 993.1,
-      "w": 165,
-      "h": 26,
-      "confidence": 0.9,
-      "reasoning": "Matched Berry Parfait to YOGURT_GREEK_PARFAIT_GRANOLA. Box captures calorie text. Style 'b' chosen for substitute area.",
-      "styleGroup": "b"
-    },
-    {
-      "tag": "CFA_SANDWICH_MEAL",
-      "field": "price",
-      "x": 1082.9,
-      "y": 246.2,
-      "w": 67,
-      "h": 27,
-      "confidence": 0.95,
-      "reasoning": "Matched Chick-fil-A Chicken Meal to CFA_SANDWICH_MEAL. Box isolates price text. Style 'a' chosen for medium gray text common in entrees.",
-      "styleGroup": "a"
+      "h": 19,
+      "confidence": 0.99,
+      "reasoning": "Matched Chick-fil-A Chicken meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        59
+      ],
+      "ocrText": "10.39"
     },
     {
       "tag": "CFA_SANDWICH_MEAL",
       "field": "calories",
-      "x": 1271,
-      "y": 246.2,
-      "w": 167,
-      "h": 27,
-      "confidence": 0.95,
-      "reasoning": "Matched Chick-fil-A Chicken Meal to CFA_SANDWICH_MEAL. Box isolates calorie text. Style 'a' chosen for medium gray text common in entrees.",
-      "styleGroup": "a"
+      "x": 1271.5,
+      "y": 252,
+      "w": 122,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Matched Chick-fil-A Chicken meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        62
+      ],
+      "ocrText": "630-1020"
     },
     {
       "tag": "SANDWICH_CFA_CHICKEN",
       "field": "price",
-      "x": 1082.9,
-      "y": 277.6,
-      "w": 58,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Chick-fil-A Chicken Entree to SANDWICH_CFA_CHICKEN. Box isolates price text. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1083,
+      "y": 281,
+      "w": 53,
+      "h": 17,
+      "confidence": 0.99,
+      "reasoning": "Matched Chick-fil-A Chicken entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        60
+      ],
+      "ocrText": "5.85"
     },
     {
       "tag": "SANDWICH_CFA_CHICKEN",
       "field": "calories",
-      "x": 1271,
-      "y": 277.6,
-      "w": 94,
-      "h": 25,
-      "confidence": 0.95,
-      "reasoning": "Matched Chick-fil-A Chicken Entree to SANDWICH_CFA_CHICKEN. Box isolates calorie text. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1271.5,
+      "y": 281,
+      "w": 48,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Matched Chick-fil-A Chicken entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        65
+      ],
+      "ocrText": "420"
     },
     {
       "tag": "SPICY_MEAL",
       "field": "price",
-      "x": 1082.9,
-      "y": 631.8,
-      "w": 67,
-      "h": 26,
-      "confidence": 0.95,
-      "reasoning": "Matched Spicy Chicken Meal to SPICY_MEAL. Box captures price. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1083,
+      "y": 634.5,
+      "w": 65,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Matched Spicy Chicken meal price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        101
+      ],
+      "ocrText": "10.69"
     },
     {
       "tag": "SPICY_MEAL",
       "field": "calories",
-      "x": 1271,
-      "y": 631.8,
-      "w": 167,
-      "h": 26,
-      "confidence": 0.95,
-      "reasoning": "Matched Spicy Chicken Meal to SPICY_MEAL. Box captures calories. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1271.5,
+      "y": 634.5,
+      "w": 121,
+      "h": 21,
+      "confidence": 0.99,
+      "reasoning": "Matched Spicy Chicken meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        103
+      ],
+      "ocrText": "660-1050"
     },
     {
       "tag": "SPICY_CHICKEN_CFA_SANDWICH",
       "field": "price",
-      "x": 1082.9,
-      "y": 665.3,
-      "w": 58,
-      "h": 26,
-      "confidence": 0.95,
-      "reasoning": "Matched Spicy Chicken Entree to SPICY_CHICKEN_CFA_SANDWICH. Box captures price. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1083,
+      "y": 665,
+      "w": 50,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Matched Spicy Chicken entree price.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        105
+      ],
+      "ocrText": "6.15"
     },
     {
       "tag": "SPICY_CHICKEN_CFA_SANDWICH",
       "field": "calories",
-      "x": 1271,
-      "y": 665.3,
-      "w": 94,
-      "h": 26,
-      "confidence": 0.95,
-      "reasoning": "Matched Spicy Chicken Entree to SPICY_CHICKEN_CFA_SANDWICH. Box captures calories. Style 'a' chosen for medium gray text.",
-      "styleGroup": "a"
+      "x": 1271.5,
+      "y": 665,
+      "w": 49,
+      "h": 20,
+      "confidence": 0.99,
+      "reasoning": "Matched Spicy Chicken entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        107
+      ],
+      "ocrText": "450"
     }
   ]
 }

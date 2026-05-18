@@ -10,8 +10,8 @@
       "y": 545,
       "w": 41,
       "h": 17,
-      "confidence": 0.9,
-      "reasoning": "Matches '8.09' for the Jalapeño Ranch Club promo. Tag selected is the closest match for the original filet variant.",
+      "confidence": 0.95,
+      "reasoning": "Matches '8.09' for the Jalapeno Ranch Club.",
       "styleGroup": "d",
       "ocrWordIndices": [
         58
@@ -25,8 +25,8 @@
       "y": 545,
       "w": 39,
       "h": 16,
-      "confidence": 0.9,
-      "reasoning": "Matches '620' calories for the Jalapeño Ranch Club promo.",
+      "confidence": 0.95,
+      "reasoning": "Matches '620' for the Jalapeno Ranch Club.",
       "styleGroup": "d",
       "ocrWordIndices": [
         59
@@ -41,7 +41,7 @@
       "w": 26,
       "h": 17,
       "confidence": 0.95,
-      "reasoning": "Matches '70' calories added by the Jalapeño Ranch Sauce.",
+      "reasoning": "Matches '70' for the Jalapeno Ranch Sauce.",
       "styleGroup": "f",
       "ocrWordIndices": [
         71
@@ -56,7 +56,7 @@
       "w": 56,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '8.95' for 5ct Chick-fil-A Nuggets.",
+      "reasoning": "Matches '8.95' for the 5ct Chick-fil-A Nuggets Kids Meal.",
       "styleGroup": "a",
       "ocrWordIndices": [
         39
@@ -71,7 +71,7 @@
       "w": 40,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '160' calories for 5ct Chick-fil-A Nuggets.",
+      "reasoning": "Matches '160' for the 5ct Chick-fil-A Nuggets Kids Meal.",
       "styleGroup": "a",
       "ocrWordIndices": [
         40
@@ -86,7 +86,7 @@
       "w": 55,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '9.59' for 5ct Grilled Nuggets.",
+      "reasoning": "Matches '9.59' for the 5ct Grilled Nuggets Kids Meal.",
       "styleGroup": "a",
       "ocrWordIndices": [
         52
@@ -101,7 +101,7 @@
       "w": 32,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '80' calories for 5ct Grilled Nuggets.",
+      "reasoning": "Matches '80' for the 5ct Grilled Nuggets Kids Meal.",
       "styleGroup": "a",
       "ocrWordIndices": [
         53
@@ -116,27 +116,12 @@
       "w": 31,
       "h": 20,
       "confidence": 0.95,
-      "reasoning": "Matches '60' calories for the small Fruit Cup side.",
+      "reasoning": "Matches '60' for the small Fruit Cup.",
       "styleGroup": "a",
       "ocrWordIndices": [
         66
       ],
       "ocrText": "60"
-    },
-    {
-      "tag": "APPLE_SAUCE",
-      "field": "calories",
-      "x": 1022,
-      "y": 699,
-      "w": 29,
-      "h": 18,
-      "confidence": 0.95,
-      "reasoning": "Matches '45' calories for the Cinnamon Apple Sauce side.",
-      "styleGroup": "a",
-      "ocrWordIndices": [
-        82
-      ],
-      "ocrText": "45"
     },
     {
       "tag": "SM_WAFFLE_POTATO_FRIES",
@@ -146,12 +131,27 @@
       "w": 46,
       "h": 21,
       "confidence": 0.95,
-      "reasoning": "Matches '320' calories for the small Waffle Potato Fries side.",
+      "reasoning": "Matches '320' for the small Waffle Potato Fries.",
       "styleGroup": "a",
       "ocrWordIndices": [
         120
       ],
       "ocrText": "320"
+    },
+    {
+      "tag": "APPLE_SAUCE",
+      "field": "calories",
+      "x": 1022,
+      "y": 699,
+      "w": 29,
+      "h": 18,
+      "confidence": 0.95,
+      "reasoning": "Matches '45' for the Cinnamon Apple Sauce.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        82
+      ],
+      "ocrText": "45"
     },
     {
       "tag": "TEST_SM_MACNCHEESE",
@@ -161,7 +161,7 @@
       "w": 36,
       "h": 20,
       "confidence": 0.95,
-      "reasoning": "Matches '.98' additional cost to substitute for Mac & Cheese in kids meal.",
+      "reasoning": "Matches '.98' for the Mac & Cheese substitute upcharge.",
       "styleGroup": "a",
       "ocrWordIndices": [
         126
@@ -176,7 +176,7 @@
       "w": 44,
       "h": 20,
       "confidence": 0.95,
-      "reasoning": "Matches '270' calories for the small Mac & Cheese substitute.",
+      "reasoning": "Matches '270' for the small Mac & Cheese substitute.",
       "styleGroup": "a",
       "ocrWordIndices": [
         131
@@ -191,7 +191,7 @@
       "w": 32,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '90' calories for the 1% Milk drink.",
+      "reasoning": "Matches '90' for the 1% Milk.",
       "styleGroup": "a",
       "ocrWordIndices": [
         90
@@ -206,7 +206,7 @@
       "w": 41,
       "h": 18,
       "confidence": 0.95,
-      "reasoning": "Matches '140' calories for the 1% Chocolate Milk drink.",
+      "reasoning": "Matches '140' for the 1% Chocolate Milk.",
       "styleGroup": "a",
       "ocrWordIndices": [
         97
@@ -221,7 +221,7 @@
       "w": 26,
       "h": 19,
       "confidence": 0.95,
-      "reasoning": "Matches '35' calories for the Honest Kids Apple Juice Drink.",
+      "reasoning": "Matches '35' for the Honest Kids Apple Juice.",
       "styleGroup": "a",
       "ocrWordIndices": [
         144

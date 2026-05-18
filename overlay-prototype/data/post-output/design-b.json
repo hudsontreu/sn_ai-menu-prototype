@@ -4,246 +4,304 @@
   "backgroundImage": "/assets/design-b.png",
   "slots": [
     {
-      "tag": "SPICY_BISCUIT_MEAL",
-      "field": "price",
-      "x": 111.4,
-      "y": 250.6,
-      "w": 63,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Spicy Biscuit' with 'meal' variant to 'SPICY_BISCUIT_MEAL'. Bounding box contains only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "SPICY_BISCUIT_MEAL",
-      "field": "calories",
-      "x": 316.8,
-      "y": 250.6,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Spicy Biscuit' with 'meal' variant to 'SPICY_BISCUIT_MEAL'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
       "tag": "BISCUIT_SPICY_CHICKEN",
       "field": "price",
-      "x": 111.4,
-      "y": 286.2,
-      "w": 63,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Spicy Biscuit' with 'entree' variant to 'BISCUIT_SPICY_CHICKEN'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 108.3,
+      "y": 287.5,
+      "w": 61,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '4.69' for Spicy Biscuit entree. OCR missed the meal price, so only entree is included.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        3
+      ],
+      "ocrText": "4.69"
     },
     {
       "tag": "BISCUIT_SPICY_CHICKEN",
       "field": "calories",
-      "x": 316.8,
-      "y": 286.2,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Spicy Biscuit' with 'entree' variant to 'BISCUIT_SPICY_CHICKEN'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 318.7,
+      "y": 287.5,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '450' for Spicy Biscuit entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        5
+      ],
+      "ocrText": "450"
     },
     {
       "tag": "BISCUIT_BEC_MEAL",
       "field": "price",
-      "x": 111.4,
-      "y": 743,
-      "w": 63,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon, Egg & Cheese Biscuit' with 'meal' variant to 'BISCUIT_BEC_MEAL'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 108.3,
+      "y": 748.5,
+      "w": 62,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matches '9.79' for Bacon, Egg & Cheese Biscuit meal.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        14
+      ],
+      "ocrText": "9.79"
     },
     {
       "tag": "BISCUIT_BEC_MEAL",
       "field": "calories",
-      "x": 316.8,
-      "y": 743,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon, Egg & Cheese Biscuit' with 'meal' variant to 'BISCUIT_BEC_MEAL'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 318.7,
+      "y": 748.5,
+      "w": 53,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '690' for Bacon, Egg & Cheese Biscuit meal calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        17
+      ],
+      "ocrText": "690"
     },
     {
       "tag": "BEC_BISCUIT",
       "field": "price",
-      "x": 111.4,
-      "y": 778.7,
-      "w": 63,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon, Egg & Cheese Biscuit' with 'entree' variant to 'BEC_BISCUIT'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 108.3,
+      "y": 785,
+      "w": 61,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '4.85' for Bacon, Egg & Cheese Biscuit entree.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        15
+      ],
+      "ocrText": "4.85"
     },
     {
       "tag": "BEC_BISCUIT",
       "field": "calories",
-      "x": 316.8,
-      "y": 778.7,
-      "w": 94,
-      "h": 24,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon, Egg & Cheese Biscuit' with 'entree' variant to 'BEC_BISCUIT'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 318.7,
+      "y": 785,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '420' for Bacon, Egg & Cheese Biscuit entree calories.",
+      "styleGroup": "a",
+      "ocrWordIndices": [
+        20
+      ],
+      "ocrText": "420"
     },
     {
       "tag": "HASH_BROWNS",
       "field": "price",
-      "x": 1599.4,
-      "y": 193.3,
-      "w": 60,
-      "h": 23,
-      "confidence": 0.99,
-      "reasoning": "Matched side item 'Hash Browns' to 'HASH_BROWNS'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 1601.4,
+      "y": 202,
+      "w": 56,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '1.95' for Hash Browns price in the Sides section.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        44
+      ],
+      "ocrText": "1.95"
     },
     {
       "tag": "HASH_BROWNS",
       "field": "calories",
-      "x": 1689.6,
-      "y": 193.3,
-      "w": 104,
-      "h": 23,
-      "confidence": 0.99,
-      "reasoning": "Matched side item 'Hash Browns' to 'HASH_BROWNS'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 1691.4,
+      "y": 202,
+      "w": 52,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '270' for Hash Browns calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        45
+      ],
+      "ocrText": "270"
     },
     {
-      "tag": "BFST_FRUIT_CUP",
+      "tag": "FRUIT_CUP_SMALL",
       "field": "price",
-      "x": 1599.4,
-      "y": 254.9,
-      "w": 60,
-      "h": 22,
-      "confidence": 0.98,
-      "reasoning": "Matched side item 'Fruit Cup' to 'BFST_FRUIT_CUP'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 1601.4,
+      "y": 262,
+      "w": 59,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matches '4.89' for Fruit Cup price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        47
+      ],
+      "ocrText": "4.89"
     },
     {
-      "tag": "BFST_FRUIT_CUP",
+      "tag": "FRUIT_CUP_SMALL",
       "field": "calories",
-      "x": 1689.6,
-      "y": 254.9,
-      "w": 84,
-      "h": 22,
-      "confidence": 0.98,
-      "reasoning": "Matched side item 'Fruit Cup' to 'BFST_FRUIT_CUP'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 1691.4,
+      "y": 262,
+      "w": 34,
+      "h": 21,
+      "confidence": 0.95,
+      "reasoning": "Matches '70' for Fruit Cup calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        48
+      ],
+      "ocrText": "70"
     },
     {
       "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
       "field": "price",
-      "x": 1599.4,
-      "y": 315.4,
+      "x": 1601.4,
+      "y": 322,
       "w": 60,
-      "h": 22,
-      "confidence": 0.95,
-      "reasoning": "Matched 'Berry Parfait' to 'YOGURT_GREEK_PARFAIT_GRANOLA'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "h": 23,
+      "confidence": 0.85,
+      "reasoning": "Matches '5.69' for Berry Parfait price. Catalog maps closely to Greek Yogurt Parfait.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        50
+      ],
+      "ocrText": "5.69"
     },
     {
       "tag": "YOGURT_GREEK_PARFAIT_GRANOLA",
       "field": "calories",
-      "x": 1689.6,
-      "y": 315.4,
-      "w": 175,
+      "x": 1691.4,
+      "y": 322,
+      "w": 124,
+      "h": 23,
+      "confidence": 0.85,
+      "reasoning": "Matches '270/240' for Berry Parfait calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        51
+      ],
+      "ocrText": "270/240"
+    },
+    {
+      "tag": "BISCUIT_BUTTERED",
+      "field": "price",
+      "x": 1601.4,
+      "y": 490,
+      "w": 54,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matches '1.85' for Hot Buttered Biscuit price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        53
+      ],
+      "ocrText": "1.85"
+    },
+    {
+      "tag": "BISCUIT_BUTTERED",
+      "field": "calories",
+      "x": 1691.4,
+      "y": 490,
+      "w": 53,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matches '290' for Hot Buttered Biscuit calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        54
+      ],
+      "ocrText": "290"
+    },
+    {
+      "tag": "BISCUIT_EGG",
+      "field": "price",
+      "x": 1601.4,
+      "y": 550,
+      "w": 61,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matches '2.65' for Egg Biscuit price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        56
+      ],
+      "ocrText": "2.65"
+    },
+    {
+      "tag": "BISCUIT_EGG",
+      "field": "calories",
+      "x": 1691.4,
+      "y": 550,
+      "w": 47,
+      "h": 23,
+      "confidence": 0.95,
+      "reasoning": "Matches '310' for Egg Biscuit calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        57
+      ],
+      "ocrText": "310"
+    },
+    {
+      "tag": "BISCUIT_BACON",
+      "field": "price",
+      "x": 1601.4,
+      "y": 611,
+      "w": 59,
       "h": 22,
       "confidence": 0.95,
-      "reasoning": "Matched 'Berry Parfait' to 'YOGURT_GREEK_PARFAIT_GRANOLA'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BISCUIT_BUTTERED",
-      "field": "price",
-      "x": 1599.4,
-      "y": 484.9,
-      "w": 60,
-      "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Hot Buttered Biscuit' to 'BISCUIT_BUTTERED'. Bounding box contains only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BISCUIT_BUTTERED",
-      "field": "calories",
-      "x": 1689.6,
-      "y": 484.9,
-      "w": 104,
-      "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Hot Buttered Biscuit' to 'BISCUIT_BUTTERED'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BISCUIT_EGG",
-      "field": "price",
-      "x": 1599.4,
-      "y": 545.4,
-      "w": 60,
-      "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Egg Biscuit' to 'BISCUIT_EGG'. Bounding box contains only the price text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BISCUIT_EGG",
-      "field": "calories",
-      "x": 1689.6,
-      "y": 545.4,
-      "w": 104,
-      "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Egg Biscuit' to 'BISCUIT_EGG'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
-    },
-    {
-      "tag": "BISCUIT_BACON",
-      "field": "price",
-      "x": 1599.4,
-      "y": 604.8,
-      "w": 60,
-      "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon Biscuit' to 'BISCUIT_BACON'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "reasoning": "Matches '3.69' for Bacon Biscuit price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        59
+      ],
+      "ocrText": "3.69"
     },
     {
       "tag": "BISCUIT_BACON",
       "field": "calories",
-      "x": 1689.6,
-      "y": 604.8,
-      "w": 104,
+      "x": 1691.4,
+      "y": 611,
+      "w": 53,
       "h": 22,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Bacon Biscuit' to 'BISCUIT_BACON'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "confidence": 0.95,
+      "reasoning": "Matches '340' for Bacon Biscuit calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        60
+      ],
+      "ocrText": "340"
     },
     {
       "tag": "BISCUIT_SAUSAGE",
       "field": "price",
-      "x": 1599.4,
-      "y": 664.2,
-      "w": 60,
-      "h": 23,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Sausage Biscuit' to 'BISCUIT_SAUSAGE'. Bounding box contains only the price text.",
-      "styleGroup": "a"
+      "x": 1601.4,
+      "y": 672,
+      "w": 59,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '3.69' for Sausage Biscuit price.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        62
+      ],
+      "ocrText": "3.69"
     },
     {
       "tag": "BISCUIT_SAUSAGE",
       "field": "calories",
-      "x": 1689.6,
-      "y": 664.2,
-      "w": 104,
-      "h": 23,
-      "confidence": 0.99,
-      "reasoning": "Matched entity 'Sausage Biscuit' to 'BISCUIT_SAUSAGE'. Bounding box contains only the calorie text.",
-      "styleGroup": "a"
+      "x": 1691.4,
+      "y": 672,
+      "w": 54,
+      "h": 22,
+      "confidence": 0.95,
+      "reasoning": "Matches '540' for Sausage Biscuit calories.",
+      "styleGroup": "b",
+      "ocrWordIndices": [
+        63
+      ],
+      "ocrText": "540"
     }
   ]
 }
